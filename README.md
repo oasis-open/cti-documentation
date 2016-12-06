@@ -1,24 +1,18 @@
-# README
+# cti-documentation
 
-## <a id="readme-general">OASIS Open Repository: cti-documentation</a>
+*This is an [OASIS Open Repository](https://www.oasis-open.org/resources/open-repositories/). See the [Governance](#governance) section for more information.*
 
-This GitHub public repository ( **[https://github.com/oasis-open/cti-documentation](https://github.com/oasis-open/cti-documentation)** ) was created at the request of the [OASIS Cyber Threat Intelligence (CTI) TC](https://www.oasis-open.org/committees/cti/) as an [OASIS Open Repository](https://www.oasis-open.org/resources/open-repositories/) to support development of open source resources related to Technical Committee work.
+This repository is a GitHub Pages site storing non-normative information about the work of the CTI Technical Committee.
+
+## Governance
+
+This GitHub public repository ( **[https://github.com/oasis-open/cti-documentation](https://github.com/oasis-open/cti-documentation)** ) was [proposed](https://lists.oasis-open.org/archives/cti/201609/msg00001.html) and [approved](https://www.oasis-open.org/committees/ballot.php?id=2971) [[bis](https://issues.oasis-open.org/browse/TCADMIN-2435)] by the [OASIS Cyber Threat Intelligence (CTI) TC](https://www.oasis-open.org/committees/cti/) as an [OASIS Open Repository](https://www.oasis-open.org/resources/open-repositories/) to support development of open source resources related to Technical Committee work.
 
 While this Open Repository remains associated with the sponsor TC, its development priorities, leadership, intellectual property terms, participation rules, and other matters of governance are [separate and distinct](https://github.com/oasis-open/cti-documentation/blob/master/CONTRIBUTING.md#governance-distinct-from-oasis-tc-process) from the OASIS TC Process and related policies.
 
 All contributions made to this Open Repository are subject to open source license terms expressed in the [BSD-3-Clause License](https://www.oasis-open.org/sites/www.oasis-open.org/files/BSD-3-Clause.txt). That license was selected as the declared ["Applicable License"](https://www.oasis-open.org/resources/open-repositories/licenses) when the Open Repository was created.
 
 As documented in ["Public Participation Invited](https://github.com/oasis-open/cti-documentation/blob/master/CONTRIBUTING.md#public-participation-invited)", contributions to this OASIS Open Repository are invited from all parties, whether affiliated with OASIS or not. Participants must have a GitHub account, but no fees or OASIS membership obligations are required. Participation is expected to be consistent with the [OASIS Open Repository Guidelines and Procedures](https://www.oasis-open.org/policies-guidelines/open-repositories), the open source [LICENSE](https://github.com/oasis-open/cti-documentation/blob/master/LICENSE) designated for this particular repository, and the requirement for an [Individual Contributor License Agreement](https://www.oasis-open.org/resources/open-repositories/cla/individual-cla) that governs intellectual property.
-
-## <a id="purposeStatement">Statement of Purpose</a>
-
-Statement of Purpose for this OASIS Open Repository (cti-documentation) as [proposed](https://lists.oasis-open.org/archives/cti/201609/msg00001.html) and [approved](https://www.oasis-open.org/committees/ballot.php?id=2971) [[bis](https://issues.oasis-open.org/browse/TCADMIN-2435)] by the TC:
-
-This repository is a GitHub Pages site storing non-normative information about the work of the CTI Technical Committee.
-
-## <a id="purposeClarifications">Additions to Statement of Purpose</a>
-
-Repository Maintainers may include here any clarifications — any additional sections, subsections, and paragraphs that the Maintainer(s) wish to add as descriptive text, reflecting (sub-) project status, milestones, releases, modifications to statement of purpose, etc. The project Maintainers will create and maintain this content on behalf of the participants.
 
 ## <a id="maintainers">Maintainers</a>
 
