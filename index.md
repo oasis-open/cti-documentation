@@ -18,12 +18,19 @@ layout: default
       </div>
       <div class="panel-body">
         <p>
-          Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX enables organizations to share CTI with one another in a consistent and machine readable manner, allowing security communities to better understand what computer-based attacks they are most likely to see and to anticipate and/or respond to those attacks faster and more effectively. STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
+          Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
+        <p>
+        </p>
+          STIX enables organizations to share CTI with one another in a consistent and machine readable manner, allowing security communities to better understand what computer-based attacks they are most likely to see and to anticipate and/or respond to those attacks faster and more effectively.
+        <p>
+        </p>
+          STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
         <p>
           <h3>Links:</h3>
           <ul>
             <li markdown="span">[About STIX 2.0](stix/about)</li>
+            <li markdown="span">[Making the transition from STIX 1.x to STIX 2.0](stix/compare)</li>
           </ul>
         </p>
       </div>
