@@ -16,34 +16,36 @@
         
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STIX <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {% for pg in site.pages %}
+                  {% if pg.categories contains 'stix' and (pg.title or pg.short_title) %}
+                    <li {% if p.url == page.url %}class="active"{% endif %}>
+                      {% include page-link.html p=pg %} 
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">TAXII <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {% for pg in site.pages %}
+                  {% if pg.categories contains 'taxii' and (pg.title or pg.short_title) %}
+                    <li {% if p.url == page.url %}class="active"{% endif %}>
+                      {% include page-link.html p=pg %} 
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
             {% for pg in site.pages %}
-              {% if pg.title %}
-                {% if pg.categories contains 'stix' %}
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STIX <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-
-                      <li {% if p.url == page.url %}class="active"{% endif %}>
-                        <a href="{{ pg.url | prepend: site.baseurl }}">{{ pg.title }}</a>
-                      </li>
-                    </ul>
-                  </li>
-                {% elsif pg.categories contains 'taxii' %}
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">TAXII <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-
-                      <li>
-                        <a href="{{ pg.url | prepend: site.baseurl }}">{{ pg.title }}</a>
-                      </li>
-                    </ul>
-                  </li>
-                {% else %}
-                  <li>
-                    <a href="{{ pg.url | prepend: site.baseurl }}">{{ pg.title }}</a>
-                  </li>
-                {% endif %}
-              {% endif %}
+              {% unless (pg.categories contains 'taxii' or pg.categories contains 'stix') %}
+                <li>
+                  {% include page-link.html p=pg %} 
+                </li>
+              {% endunless %}
             {% endfor %}
           </ul>
           <ul class="nav navbar-nav navbar-right">

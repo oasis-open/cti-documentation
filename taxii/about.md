@@ -1,16 +1,11 @@
 ---
-layout: default
+layout: page
 title: About TAXII
 categories: taxii
 ---
 
 <div class="row">
 <div class="col-md-12" markdown="1">
-
-**About TAXII**
-==============
-
-
 
 
 **TAXII 2.0**
