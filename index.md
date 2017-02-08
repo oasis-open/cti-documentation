@@ -19,20 +19,31 @@ layout: default
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
-        <p>
         </p>
+        <p>
           STIX enables organizations to share CTI with one another in a consistent and machine readable manner, allowing security communities to better understand what computer-based attacks they are most likely to see and to anticipate and/or respond to those attacks faster and more effectively.
-        <p>
         </p>
+        <p>
           STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
-        <p>
-          <h3>Links:</h3>
-          <ul>
-            <li markdown="span">[About STIX 2.0](stix/about)</li>
-            <li markdown="span">[Making the transition from STIX 1.x to STIX 2.0](stix/compare)</li>
-          </ul>
-        </p>
+        <h3>Sample:</h3>
+{% highlight json%}
+{
+  "type": "campaign",
+  "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+  "created": "2016-04-06T20:03:00.000Z",
+  "name": "Green Group Attacks Against Finance",
+  "description": "Campaign by Green Group against targets in the financial services sector."
+}
+{% endhighlight %}
+        <h3>Links:</h3>
+        <ul>
+          <li markdown="span">[About STIX 2.0](stix/about)</li>
+          <li markdown="span">[STIX 2.0 Specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w) (Committee Specification Draft 1)</li>
+          <li markdown="span">[Making the transition from STIX 1.x to STIX 2.0](stix/compare)</li>
+          <li markdown="span">[Tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo)</li>
+          <li markdown="span">[Get Involved!](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix)</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -57,15 +68,12 @@ layout: default
           <h3>Links:</h3>
           <ul>
             <li markdown="span">[About TAXII 2.0](taxii/about)</li>
+            <li markdown="span">[TAXII 2.0 Specification](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4) (Draft 3)</li>
+            <li markdown="span">[Get Involved!](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-taxii)</li>
           </ul>
         </p>
       </div>
     </div>
   </div>
-
-</div>
-
-<div class="row">
-
 
 </div>

@@ -177,6 +177,14 @@ pre {
     }
 }
 
+.highlight pre {
+    word-wrap: normal;
+}
+
+.highlight pre code {
+    white-space: pre;
+}
+
 
 
 /**
@@ -239,4 +247,25 @@ pre {
 
 .alert span.glyphicon {
     padding-right: 5px;
+}
+
+
+
+/**
+ * Panels
+ */
+.panel-logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 100px;
+}
+
+.panel-title {
+    font-style: italic; 
+}
+
+.panel-body h3 {
+    padding-top: 10px;
 }
