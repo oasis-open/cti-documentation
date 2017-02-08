@@ -16,3 +16,6 @@ url: "https://oasis-open.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
