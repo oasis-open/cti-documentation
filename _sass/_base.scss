@@ -113,6 +113,20 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
  }
 
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #4E9BE1;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 0;
+}
+
 
 /**
  * Links

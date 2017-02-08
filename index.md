@@ -2,12 +2,11 @@
 layout: default
 ---
 
-
 <div class="row">
-  <div class="col-md-12">
-    <h1>
-      <img class="img-responsive" src="{{ site.baseurl }}/img/oasis.jpg" alt="OASIS Logo" /><span> {{ site.title }} </span>
-    </h1>
+  <div class="col-md-12 text-center">
+    <div class="jumbotron">
+      <h1>Sharing threat intelligence just got a lot easier!</h1>
+    </div>
   </div>
 
   <div class="col-md-6">
@@ -52,7 +51,7 @@ layout: default
     <div class="panel panel-default">
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
-        <div class="panel-title text-center">A transport mechanism to standardize the automated exchange of cyber threat information</div>
+        <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
       </div>
       <div class="panel-body">
         <p>
