@@ -39,7 +39,7 @@ Now let’s take a look at the objects and relationships presented in this scena
 
 ### Common Properties
 
-Every SDO and SRO in STIX use common properties found in all objects. Some of these are required for every object such as the **type** of object identified (e.g. indicator), an **id** property that uniquely identifies the object, and **created** and **modified** properties which are timestamps to represent the first version and latest version of the object respectively.
+Every SDO and SRO in STIX use common properties found in all objects. Some of these are required for every object such as the <span class="sdo">**type**</span> of object identified (e.g. indicator), an <span class="sdo">**id**</span> property that uniquely identifies the object, and <span class="sdo">**created**</span> and <span class="sdo">**modified**</span> properties which are timestamps to represent the first version and latest version of the object respectively.
 
 ```
  {
@@ -50,7 +50,7 @@ Every SDO and SRO in STIX use common properties found in all objects. Some of th
  }
 ```
 
-In the example above, the **created** and **modified** properties are the same, meaning that this is the first version of that object. When a new version of an object is created, the **modified** property is updated and will contain a later timestamp than the **created** property:
+In the example above, the <span class="sdo">**created**</span> and <span class="sdo">**modified**</span> properties are the same, meaning that this is the first version of that object. When a new version of an object is created, the <span class="sdo">**modified**</span> property is updated and will contain a later timestamp than the <span class="sdo">**created**</span> property:
 
 ```
 {
@@ -61,9 +61,10 @@ In the example above, the **created** and **modified** properties are the same, 
 
 The rest of the common properties are optional and will not be discussed in detail for this scenario. For more information on these properties see the [Common Properties](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.karbmftow040) section of the STIX 2.0 specification.
 
-### Indicator Object
+### Indicator Object ![Indicator Icon]({{ site.baseurl }}/img/indicator.png)
 
-Along with the common properties that are found in all STIX objects, each object has its own specific set of properties that represent information specific to that particular object. In our scenario for Company A, we use an Indicator and a Malware SDO. The Indicator object contains properties that describe that Indicator, such as its **name**, a **pattern** that is used for detection, a list of **labels** that specify the type of indicator, and a **valid\_from** property that details the time from which this Indicator is still considered valid intelligence.
+
+Along with the common properties that are found in all STIX objects, each object has its own specific set of properties that represent information specific to that particular object. In our scenario for Company A, we use an Indicator and a Malware SDO. The Indicator object contains properties that describe that Indicator, such as its <span class="sdo">**name**</span>, a <span class="sdo">**pattern**</span> that is used for detection, a list of <span class="sdo">**labels**</span> that specify the type of indicator, and a <span class="sdo">**valid_from**</span> property that details the time from which this Indicator is still considered valid intelligence.
 
 ```
  {
@@ -75,14 +76,14 @@ Along with the common properties that are found in all STIX objects, each object
  "description": "This file is a part of CryptoLocker",
  "pattern": "[file.hashes.SHA-256 = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
  "labels": ["malicious-activity"],
- "valid\_from": "2017-01-01T09:00:00.000000Z"
+ "valid_from": "2017-01-01T09:00:00.000000Z"
  }
 ```
-Walking through Company A’s Indicator object above, we see the four common properties first, followed by the **name** of the Indicator detailing that this is CryptoLocker hash. An optional property, **description**, gives more information about the Indicator object. Other optional properties can be seen in the [Indicator properties table](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.wfiae74706sw). Next, the **pattern** property for this particular indicator contains the STIX patterning representation for a SHA-256 file hash along with the hash value of the CryptoLocker variant. More information about STIX patterning is available in the [STIX Patterning](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit#heading=h.t32x0azc539r) part of the spec. Following **pattern** is a **labels** property that describes this particular type of Indicator as malicious-activity. The values for labeling Indicators come from the Indicator Label open-vocabulary located in the [Vocabularies section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.iit7tolczlxv) of the spec, which suggest values to use but do not require them. Finally, the **valid\_from** property gives a timestamp for this Indicator relaying that it is only valuable intelligence from that specific date.
+Walking through Company A’s Indicator object above, we see the four common properties first, followed by the <span class="sdo">**name**</span> of the Indicator detailing that this is CryptoLocker hash. An optional property, <span class="sdo">**description**</span>, gives more information about the Indicator object. Other optional properties can be seen in the [Indicator properties table](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.wfiae74706sw). Next, the <span class="sdo">**pattern**</span> property for this particular indicator contains the STIX patterning representation for a SHA-256 file hash along with the hash value of the CryptoLocker variant. More information about STIX patterning is available in the [STIX Patterning](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit#heading=h.t32x0azc539r) part of the spec. Following <span class="sdo">**pattern**</span> is a <span class="sdo">**labels**</span>  property that describes this particular type of Indicator as malicious-activity. The values for labeling Indicators come from the Indicator Label open-vocabulary located in the [Vocabularies section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.iit7tolczlxv) of the spec, which suggest values to use but do not require them. Finally, the <span class="sdo">**valid_from**</span> property gives a timestamp for this Indicator relaying that it is only valuable intelligence from that specific date.
 
-### Malware Object
+### Malware Object ![Malware Icon]({{ site.baseurl }}/img/malware.png)
 
-A Malware SDO is used to represent information about the CryptoLocker malware Company A detected. Along with the common properties, the Malware SDO captures properties such as the malware **name**, a **description** that provides more details about the malware, and also a list of **labels** which characterizes the malware type.
+A Malware SDO is used to represent information about the CryptoLocker malware Company A detected. Along with the common properties, the Malware SDO captures properties such as the malware <span class="sdo">**name**</span>, a <span class="sdo">**description**</span> that provides more details about the malware, and also a list of <span class="sdo">**labels**</span> which characterizes the malware type.
 
 ```
  {
@@ -96,11 +97,11 @@ A Malware SDO is used to represent information about the CryptoLocker malware Co
  }
 ```
 
-For Company A’s Malware object, we include the four common required properties followed by the **name** of the malware, CryptoLocker. The **description** field gives more context about CryptoLocker, and the **labels** property conveys that this particular malware is ransomware. This value comes from another open vocabulary seen in the [Malware Label](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.8cyb6e9yqzwr) section of the spec.
+For Company A’s Malware object, we include the four common required properties followed by the <span class="sdo">**name**</span> of the malware, CryptoLocker. The <span class="sdo">**description**</span> field gives more context about CryptoLocker, and the <span class="sdo">**labels**</span> property conveys that this particular malware is ransomware. This value comes from another open vocabulary seen in the [Malware Label](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.8cyb6e9yqzwr) section of the spec.
 
-### Relationship Object
+### Relationship Object ![Relationship Icon]({{ site.baseurl }}/img/relationship.png)
 
-A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This object contains the same common properties as the STIX SDOs along with required properties needed to define the relationship between the two objects. For instance, every Relationship requires a **source\_ref**, which captures the id of the source SDO, and a **target\_ref**, which contains the id of the target SDO. Along with these two properties, we need a **relationship\_type** property to identify the type of relationship. More information about the Relationship object as well as the full list of properties is available under the [Relationship section](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan) of the spec.
+A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This object contains the same common properties as the STIX SDOs along with required properties needed to define the relationship between the two objects. For instance, every Relationship requires a <span class="sdo">**source_ref**</span>, which captures the id of the source SDO, and a <span class="sdo">**target_ref**</span>, which contains the id of the target SDO. Along with these two properties, we need a <span class="sdo">**relationship_type**</span> property to identify the type of relationship. More information about the Relationship object as well as the full list of properties is available under the [Relationship section](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan) of the spec.
 
 ```
  {
@@ -114,7 +115,7 @@ A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This ob
  }
 ```
 
-So the Relationship object used in our scenario for Company A links the **source_ref** (indicator) with the **target_ref** (malware) by their unique ids. The **relationship_type** shows that the Indicator SDO indicates the Malware SDO. The indicates value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.sypzg7rvdvc1). These specification-designed relationship types are suggested, but content producers are able to define their own.
+So the Relationship object used in our scenario for Company A links the <span class="sdo">**source_ref**</span> (indicator) with the <span class="sdo">**target_ref**</span> (malware) by their unique ids. The <span class="sdo">**relationship_type**</span> shows that the Indicator SDO indicates the Malware SDO. The indicates value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.sypzg7rvdvc1). These specification-designed relationship types are suggested, but content producers are able to define their own.
 
 With this Relationship SRO, Company A has related the Indicator SDO to the Malware SDO. A diagram of this relationship below shows the SDO “nodes” and the SRO “edge”.
 
@@ -123,9 +124,9 @@ With this Relationship SRO, Company A has related the Indicator SDO to the Malwa
 **STIX Diagram Showing Relationship**
 </div>
 
-### STIX Bundle
+### STIX Bundle ![Bundle Icon]({{ site.baseurl }}/img/bundle.png)
 
-Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a **type** property that must be bundle and also a unique **id** property similar to STIX objects. There is also a required **spec_version** property to indicate the STIX specification which must be 2.0 in this example. In addition to these required properties the list of your STIX objects is contained in the **objects** property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
+Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be bundle and also a unique <span class="sdo">**id**</span> property similar to STIX objects. There is also a required <span class="sdo">**spec_version**</span> property to indicate the STIX specification which must be 2.0 in this example. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
 
 ```
  {
@@ -168,9 +169,9 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
 
 Company A can then publish this Bundle to a TAXII Server Company B is subscribed to for Company B to retrieve and use.
 
-### Sighting Object
+### Sighting Object  ![Sighting Icon]({{ site.baseurl }}/img/sighting.png)
 
-If Company B uses the Indicator provided by Company A and gets a match, it means that they probably have that same CryptoLocker Malware on their network. This is important information to share back to their community, and they can generate a Sighting object to do so. This is the other type of SRO in STIX 2.0, and means that some object has been seen. Sighting contains the same common properties as other STIX objects but only has one required property, **sighting_of_ref**. This property contains a reference to the object that was sighted. Other optional properties not used can be seen in the properties table under the [Sighting section](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.a795guqsap3r) of the spec.
+If Company B uses the Indicator provided by Company A and gets a match, it means that they probably have that same CryptoLocker Malware on their network. This is important information to share back to their community, and they can generate a Sighting object to do so. This is the other type of SRO in STIX 2.0, and means that some object has been seen. Sighting contains the same common properties as other STIX objects but only has one required property, <span class="sdo">**sighting_of_ref**</span>. This property contains a reference to the object that was sighted. Other optional properties not used can be seen in the properties table under the [Sighting section](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.a795guqsap3r) of the spec.
 
 ```
  {
@@ -182,7 +183,7 @@ If Company B uses the Indicator provided by Company A and gets a match, it means
  }
 ```
 
-Company B creates a Sighting SRO with the **sighting_of_ref** property that references the id of the Indicator object that contains the pattern for the malware hash of the CryptoLocker Malware (first created by Company A). Company B can publish this back to the TAXII server to let others know they also saw this malware present in their network. A STIX diagram with the Sighting object added can be seen below:
+Company B creates a Sighting SRO with the <span class="sdo">**sighting_of_ref**</span> property that references the id of the Indicator object that contains the pattern for the malware hash of the CryptoLocker Malware (first created by Company A). Company B can publish this back to the TAXII server to let others know they also saw this malware present in their network. A STIX diagram with the Sighting object added can be seen below:
 
 <div class="figure center-block text-center" markdown="span">
 ![STIX 2.0 Diagram 2]({{ site.baseurl }}/img/STIXdiagram2.PNG){: .figure-img .img-fluid}

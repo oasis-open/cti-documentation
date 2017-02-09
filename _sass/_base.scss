@@ -74,7 +74,9 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
+.sdo {
+  font-family: consolas;
+}
 
 /**
  * Lists
@@ -104,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -0.6em;
     opacity: 0;
  }
- 
+
  h2:hover .header-link,
  h3:hover .header-link,
  h4:hover .header-link,
@@ -125,6 +127,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     color: #fff;
     margin-bottom: 0;
+}
+
+h3 img {
+  max-height: 77px;
+  padding-right: $spacing-unit / 2;
 }
 
 
@@ -277,7 +284,7 @@ pre {
 }
 
 .panel-title {
-    font-style: italic; 
+    font-style: italic;
 }
 
 .panel-body h3 {
