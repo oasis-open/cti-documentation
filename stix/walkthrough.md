@@ -39,7 +39,7 @@ Now let’s take a look at the objects and relationships presented in this scena
 
 ### Common Properties
 
-Every SDO and SRO in STIX use common properties found in all objects. Some of these are required for every object such as the <span class="sdo">**type**</span> of object identified (e.g. indicator), an <span class="sdo">**id**</span> property that uniquely identifies the object, and <span class="sdo">**created**</span> and <span class="sdo">**modified**</span> properties which are timestamps to represent the first version and latest version of the object respectively.
+Every SDO and SRO in STIX use common properties found in all objects. Some of these are required for every object such as the <span class="sdo">**type**</span> of object identified (e.g. <span class="values">indicator</span>), an <span class="sdo">**id**</span> property that uniquely identifies the object, and <span class="sdo">**created**</span> and <span class="sdo">**modified**</span> properties which are timestamps to represent the first version and latest version of the object respectively.
 
 ```
  {
@@ -115,7 +115,7 @@ A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This ob
  }
 ```
 
-So the Relationship object used in our scenario for Company A links the <span class="sdo">**source_ref**</span> (indicator) with the <span class="sdo">**target_ref**</span> (malware) by their unique ids. The <span class="sdo">**relationship_type**</span> shows that the Indicator SDO indicates the Malware SDO. The indicates value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.sypzg7rvdvc1). These specification-designed relationship types are suggested, but content producers are able to define their own.
+So the Relationship object used in our scenario for Company A links the <span class="sdo">**source_ref**</span> (indicator) with the <span class="sdo">**target_ref**</span> (malware) by their unique ids. The <span class="sdo">**relationship_type**</span> shows that the Indicator SDO <span class="values">indicates</span> the Malware SDO. The <span class="values">indicates</span> value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.sypzg7rvdvc1). These specification-designed relationship types are suggested, but content producers are able to define their own.
 
 With this Relationship SRO, Company A has related the Indicator SDO to the Malware SDO. A diagram of this relationship below shows the SDO “nodes” and the SRO “edge”.
 
@@ -126,7 +126,7 @@ With this Relationship SRO, Company A has related the Indicator SDO to the Malwa
 
 ### STIX Bundle ![Bundle Icon]({{ site.baseurl }}/img/bundle.png)
 
-Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be bundle and also a unique <span class="sdo">**id**</span> property similar to STIX objects. There is also a required <span class="sdo">**spec_version**</span> property to indicate the STIX specification which must be 2.0 in this example. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
+Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be <span class="values">bundle</span> and also a unique <span class="sdo">**id**</span> property similar to STIX objects. There is also a required <span class="sdo">**spec_version**</span> property to indicate the STIX specification which must be <span class="values">2.0</span> in this example. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
 
 ```
  {
