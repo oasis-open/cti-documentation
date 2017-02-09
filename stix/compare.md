@@ -23,9 +23,52 @@ All objects in STIX 2.0 are [at the top-level](https://docs.google.com/document/
 
 The generic TTP (tactics, techniques, procedures) and Exploit Target types from STIX 1.x have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with specific purposes in STIX 2.0.
 
+### Sample SDO
+
+```
+{
+  "type": "attack-pattern",
+  "id": "attack-pattern--3098c57b-d623-4c11-92f4-5905da66658b",
+  "created": "2015-05-15T09:11:12.515000Z",
+  "modified": "2015-05-15T09:11:12.515000Z",
+  "name": "Initial Compromise",  
+  "external_references": [
+    {
+      "source_name": "capec",
+      "description": "spear phishing",
+      "external_id": "CAPEC-163"
+    }
+  ],
+  "kill_chain_phases": [
+    {
+      "kill_chain_name": "mandiant-attack-lifecycle-model",
+      "phase_name": "initial-compromise"
+    }
+  ]
+ }
+```
+
 ## Relationships as top-level objects
 
 STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.l326yout8qc1), which links two other top-level objects via a named relationship type. STIX 2.0 content can be thought of as a connected graph, where nodes are SDOs and edges are Relationship Objects. The STIX 2.0 specification suggests different named relationships, but content producers are able to define their own. In STIX 1.x relationships were “embedded” in other objects. The types of relationships supported was restricted by the STIX 1.x specification. Because STIX 1.x relationships themselves were not top-level objects, you could not express a relationship between two objects without changing one of them. In CTI, it is often desirable for others to assert a relationship. Using this new Relationship object, others, besides the original content creator, can add to the shared knowledge in an independent way.
+
+### Sample Relationship
+
+```
+ {
+    "type": "relationship",
+    "id": "relationship--1fbd9a8d-4c14-431c-9520-3ccc50b748c1",
+    "created": "2017-02-09T11:13:27.431000Z",
+    "modified": "2017-02-09T11:13:27.431000Z",
+    "relationship_type": "uses",
+    "source_ref": "attack-pattern--0781fe70-4c94-4300-8865-4b08b98611b4",
+    "target_ref": "tool--806a8f83-4913-4216-bb19-02b48ae25da5"
+ }
+```
+<div class="figure center-block text-center" markdown="span">
+![STIX 2.0 Diagram 3]({{ site.baseurl }}/img/STIXdiagram3.PNG){: .figure-img .img-fluid}
+**STIX Diagram Showing Attack Pattern using a Tool**
+</div>
 
 ## Streamlined Model
 
@@ -42,6 +85,29 @@ However, the need to incorporate concepts not yet in the specification is enable
 ## Indicator Pattern Language
 
 Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.0 takes a different approach, specifying [a language for patterns](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY) which is independent of the serialization language \[5\]. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
+
+### Indicator Example with Pattern
+
+```
+ {
+  "type": "indicator",
+  "id": "indicator--031778a4-057f-48e6-9db9-c8d72b81ccd5",
+  "created": "2017-02-09T12:11:11.415000Z",
+  "modified": "2017-02-09T12:11:11.415000Z",
+  "name": "HTRAN Hop Point Accessor",
+  "pattern": "[ipv4addr:value = '223.166.0.0/15']",
+  "labels": [
+  "malicious-activity"
+  ],
+  "valid_from": "2015-05-15T09:00:00.000000Z",
+  "kill_chain_phases": [
+    {
+      "kill_chain_name": "mandiant-attack-lifecycle-model",
+      "phase_name": "establish-foothold"
+    }
+  ]
+ }
+```
 
 ## Coming Attractions
 

@@ -25,6 +25,12 @@ layout: default
         <p>
           STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
+        <p>
+        <div class="figure center-block text-center" markdown="span">
+        ![STIX 2.0 Diagram 2]({{ site.baseurl }}/img/STIXdiagram2.PNG){: .figure-img .img-fluid}
+        **STIX Relationship Diagram with Sighting**
+        </div>
+        </p>
         <h3>Sample:</h3>
 {% highlight json%}
 {
@@ -62,6 +68,12 @@ layout: default
         <p>
         </p>
           TAXII is specifically designed to support the exchange of CTI represented in STIX.
+        </p>
+        <p>
+        <div class="figure center-block text-center" markdown="span">
+          ![TAXII Collections and Channels]({{ site.baseurl }}/img/taxii_diagram.png){: .figure-img .img-fluid}
+          **TAXII Collections and Channels**
+        </div>
         </p>
         <p>
           <h3>Links:</h3>

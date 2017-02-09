@@ -119,7 +119,7 @@ So the Relationship object used in our scenario for Company A links the **source
 With this Relationship SRO, Company A has related the Indicator SDO to the Malware SDO. A diagram of this relationship below shows the SDO “nodes” and the SRO “edge”.
 
 <div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Architecture]({{ site.baseurl }}/img/STIXDiagram1.png){: .figure-img .img-fluid}
+![STIX 2.0 Diagram 1]({{ site.baseurl }}/img/STIXdiagram1.PNG){: .figure-img .img-fluid}
 **STIX Diagram Showing Relationship**
 </div>
 
@@ -185,7 +185,7 @@ If Company B uses the Indicator provided by Company A and gets a match, it means
 Company B creates a Sighting SRO with the **sighting_of_ref** property that references the id of the Indicator object that contains the pattern for the malware hash of the CryptoLocker Malware (first created by Company A). Company B can publish this back to the TAXII server to let others know they also saw this malware present in their network. A STIX diagram with the Sighting object added can be seen below:
 
 <div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Architecture]({{ site.baseurl }}/img/STIXDiagram2.png){: .figure-img .img-fluid}
+![STIX 2.0 Diagram 2]({{ site.baseurl }}/img/STIXdiagram2.PNG){: .figure-img .img-fluid}
 **STIX Diagram with Sighting**
 </div>
 
