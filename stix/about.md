@@ -51,20 +51,10 @@ STIX 2.0 defines two STIX Relationship Objects (SROs):
 -   **Relationship** – used to link two SDOs and to describe how they are related to each other.
 -   **Sighting** – denotes the belief that an element of CTI was seen (e.g., indicator, malware).
 
-A STIX 2.0 architecture diagram is shown below. Each block with an *underlined title* corresponds to one of five parts of the [STIX 2.0 specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit?pref=2&pli=1).
+A STIX 2.0 architecture diagram is shown below.
 
 <div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Architecture]({{ site.baseurl }}/img/stix2_architecture.png){: .figure-img .img-fluid}
-**STIX 2.0 Architecture**
+![STIX 2.0 Architecture]({{ site.baseurl }}/img/stix2_architecture2.png){: .figure-img .img-fluid}
 </div>
 
-
-## STIX 1.x vs STIX 2.0
-
-STIX 1.x was designed to be flexible, enabling STIX producers to describe data in multiple ways; as a result, STIX 1.x consumers had difficulty working with STIX data from different producers. To address this issue, STIX 2.0 was significantly redesigned toward an overall simplification and a focus on core use cases; although STIX 2.0 defines more required fields, all fields have a single purpose.
-
-STIX 1.x is represented in XML, which was thought to be excessively complicated. Consequently, the OASIS CTI TC opted to represent STIX 2.0 using JSON. In fact, STIX 2.0 is a *serialization-independent* specification (i.e., the STIX 2.0 specification is normative, not the JSON-based schema), but all STIX 2.0-compatible tools must support JSON as a serialization format (and may support other serializations as well).
-
-STIX 1.x leveraged the Cyber Observable Expression (CybOX™) language, but to make it easier for STIX users to work with cyber observable data, the necessary elements of CybOX have been embedded in STIX 2.0 as the STIX Cyber Observables module. CybOX will no longer be supported as a separate specification.
-
-Other key changes in STIX 2.0 include splitting TTPs into separate top-level objects (Attack Pattern, Malware, Tool) and defining relationships as top-level objects.
+A comparison of STIX 2.0 to 1.x can also be seen [here](stix/compare).

@@ -47,9 +47,9 @@ layout: default
         <h3>Other Links:</h3>
         <ul>
           <li markdown="span">[About STIX 2.0](stix/about)</li>          
-          <li markdown="span">[Making the transition from STIX 1.x to STIX 2.0](stix/compare)</li>
+          <li markdown="span">[Comparing STIX 1 and STIX 2](stix/compare)</li>
           <li markdown="span">[Tools](stix/resources)</li>
-          <li markdown="span">[Get Involved!](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix)</li>
+          <li markdown="span">[Sample Walkthrough](stix/walkthrough)</li>          
         </ul>
       </div>
     </div>
@@ -79,10 +79,8 @@ layout: default
         </p>
         <p>
           <h3>Links:</h3>
-          <ul>
-            <li markdown="span">[About TAXII 2.0](taxii/about)</li>
-            <li markdown="span">[TAXII 2.0 Specification](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4) (Draft 3)</li>
-            <li markdown="span">[Get Involved!](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-taxii)</li>
+          <ul>            
+            <li markdown="span">[TAXII 2.0 Specification](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4) (Draft 3)</li>            
           </ul>
         </p>
       </div>
