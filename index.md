@@ -41,12 +41,14 @@ layout: default
   "description": "Campaign by Green Group against targets in the financial services sector."
 }
 {% endhighlight %}
-        <h3>Links:</h3>
+
+        <h3 markdown="span">[STIX 2.0 Specification (Committee Specification Draft 1)](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w)</h3>       
+
+        <h3>Other Links:</h3>
         <ul>
-          <li markdown="span">[About STIX 2.0](stix/about)</li>
-          <li markdown="span">[STIX 2.0 Specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w) (Committee Specification Draft 1)</li>
+          <li markdown="span">[About STIX 2.0](stix/about)</li>          
           <li markdown="span">[Making the transition from STIX 1.x to STIX 2.0](stix/compare)</li>
-          <li markdown="span">[Tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo)</li>
+          <li markdown="span">[Tools](stix/resources)</li>
           <li markdown="span">[Get Involved!](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix)</li>
         </ul>
       </div>
