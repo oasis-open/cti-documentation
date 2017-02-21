@@ -111,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: -0.6em;
     opacity: 0;
+    height: $header-icon-height;
  }
 
  h2:hover .header-link,
@@ -136,9 +137,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 img {
-  max-height: 77px;
+  max-height: $header-icon-height;
   padding-right: $spacing-unit / 2;
 }
+
+ .header-link .glyphicon {
+    top: $header-icon-height / 2;
+ }
 
 
 /**

@@ -3,13 +3,14 @@ $(document).ready(function($) {
     var $el, icon, id;
     $el = $(el);
     id = $el.attr('id');
-    icon = '<i class="glyphicon glyphicon-link"></i>';
+    icon = $('<i class="glyphicon glyphicon-link"></i>');
     if (id) {
-      anchor = $("<a />").addClass("header-link").attr("href", "#" + id).html(icon);
-      if ($el.has('img').length) {
-        anchor.css('top', el.offsetTop + 23 + 'px');
-      }
-      $el.prepend(anchor);
+      return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon
+        .css('top', '50%')
+        .css('transform', 'perspective(1px) translateY(-50%)')
+        .css('-webkit-transform', 'perspective(1px) translateY(-50%)')
+        .css('-ms-transform', 'perspective(1px) translateY(-50%)')
+      ));
     }
   });
 });
