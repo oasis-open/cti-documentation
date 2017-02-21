@@ -31,6 +31,10 @@ Complete information for STIX 2.0 is available on the [OASIS Cyber Threat Intell
 
 ## STIX 2.0
 
+<div class="figure center-block text-center" markdown="span">
+![STIX 2.0 Architecture]({{ site.baseurl }}/img/stix2_architecture2.png){: .figure-img .img-fluid}
+</div>
+
 The twelve SDOs included in STIX 2.0 (listed below) represent a minimally viable product (MVP) that fulfills basic consumer and producer requirements for CTI sharing. Objects and properties not included in STIX 2.0, but deemed necessary by the community, will be included in future releases.
 
 -   ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) **Attack Pattern** – a type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets.
@@ -50,11 +54,5 @@ STIX 2.0 defines two STIX Relationship Objects (SROs):
 
 -   ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) **Relationship** – used to link two SDOs and to describe how they are related to each other.
 -   ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) **Sighting** – denotes the belief that an element of CTI was seen (e.g., indicator, malware).
-
-A STIX 2.0 architecture diagram is shown below.
-
-<div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Architecture]({{ site.baseurl }}/img/stix2_architecture2.png){: .figure-img .img-fluid}
-</div>
 
 A comparison of STIX 2.0 to 1.x can also be seen [here](compare).

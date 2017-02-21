@@ -29,9 +29,10 @@
                     </li>
                   {% endif %}
                 {% endfor %}
+                <li> <a href="https://stixproject.github.io/">STIX 1.x</a></li>
               </ul>
             </li>
-            <!-- <li class="dropdown">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">TAXII <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 {% for pg in site.pages %}
@@ -41,8 +42,9 @@
                     </li>
                   {% endif %}
                 {% endfor %}
+                <li> <a href="https://taxiiproject.github.io/">TAXII 1.x</a></li>
               </ul>
-            </li> -->
+            </li>
             {% for pg in site.pages %}
               {% unless (pg.categories contains 'taxii' or pg.categories contains 'stix') %}
                 <li>
