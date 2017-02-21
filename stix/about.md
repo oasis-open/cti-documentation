@@ -19,7 +19,7 @@ A set of specifications provide the normative description of STIX 2.0. While STI
 ```
 
 <div class="figure pull-right text-center" markdown="span">
-![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example.png){: .figure-img .img-fluid}
+![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
 **STIX 2.0 Relationship Example**
 </div>
 
@@ -33,23 +33,23 @@ Complete information for STIX 2.0 is available on the [OASIS Cyber Threat Intell
 
 The twelve SDOs included in STIX 2.0 (listed below) represent a minimally viable product (MVP) that fulfills basic consumer and producer requirements for CTI sharing. Objects and properties not included in STIX 2.0, but deemed necessary by the community, will be included in future releases.
 
--   **Attack Pattern** – a type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets.
--   **Campaign** – a grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets.
--   **Course of Action** – an action taken to either prevent an attack or respond to an attack.
--   **Identity** – individuals, organizations, or groups, as well as classes of individuals, organizations, or groups.
--   **Indicator** – contains a pattern that can be used to detect suspicious or malicious cyber activity.
--   **Intrusion Set** – a grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor.
--   **Malware** – a type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system.
--   **Observed Data** – conveys information observed on a system or network (e.g., an IP address).
--   **Report** – collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details.
--   **Threat Actor** – individuals, groups, or organizations believed to be operating with malicious intent.
--   **Tool** – legitimate software that can be used by threat actors to perform attacks.
--   **Vulnerability** – a mistake in software that can be directly used by a hacker to gain access to a system or network.
+-   ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) **Attack Pattern** – a type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets.
+-   ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png) **Campaign** – a grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets.
+-   ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png) **Course of Action** – an action taken to either prevent an attack or respond to an attack.
+-   ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) **Identity** – individuals, organizations, or groups, as well as classes of individuals, organizations, or groups.
+-   ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) **Indicator** – contains a pattern that can be used to detect suspicious or malicious cyber activity.
+-   ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png) **Intrusion Set** – a grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor.
+-   ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png) **Malware** – a type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system.
+-   ![Observed Data Icon]({{ site.baseurl }}/img/icons/observed_data.png) **Observed Data** – conveys information observed on a system or network (e.g., an IP address).
+-   ![Report Icon]({{ site.baseurl }}/img/icons/report.png) **Report** – collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details.
+-   ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png) **Threat Actor** – individuals, groups, or organizations believed to be operating with malicious intent.
+-   ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png) **Tool** – legitimate software that can be used by threat actors to perform attacks.
+-   ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png) **Vulnerability** – a mistake in software that can be directly used by a hacker to gain access to a system or network.
 
 STIX 2.0 defines two STIX Relationship Objects (SROs):
 
--   **Relationship** – used to link two SDOs and to describe how they are related to each other.
--   **Sighting** – denotes the belief that an element of CTI was seen (e.g., indicator, malware).
+-   ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) **Relationship** – used to link two SDOs and to describe how they are related to each other.
+-   ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) **Sighting** – denotes the belief that an element of CTI was seen (e.g., indicator, malware).
 
 A STIX 2.0 architecture diagram is shown below.
 
