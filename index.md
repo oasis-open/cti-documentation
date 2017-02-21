@@ -63,10 +63,10 @@ layout: default
       </div>
       <div class="panel-body">
         <p>
-          TAXII™ is an application layer protocol for the communication of cyber threat information in a simple and scalable manner.
+          Trusted Automated Exchange of Intelligence Information (TAXII™) is an application layer protocol for the communication of cyber threat information in a simple and scalable manner.
         <p>
         </p>
-          Trusted Automated Exchange of Intelligence Information (TAXII) is a protocol used to exchange cyber threat intelligence (CTI) over HTTPS. TAXII enables organizations to share CTI by defining an API that aligns with common sharing models.
+          TAXII is a protocol used to exchange cyber threat intelligence (CTI) over HTTPS. TAXII enables organizations to share CTI by defining an API that aligns with common sharing models.
         <p>
         </p>
           TAXII is specifically designed to support the exchange of CTI represented in STIX.
