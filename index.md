@@ -14,6 +14,9 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (2.0 CSD 1)
+        </a>
       </div>
       <div class="panel-body">
         <p>
@@ -42,14 +45,13 @@ layout: default
 }
 {% endhighlight %}
 
-        <h3 markdown="span">[STIX 2.0 Specification (Committee Specification Draft 1)](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w)</h3>       
-
-        <h3>Other Links:</h3>
+        <h3>Links:</h3>
         <ul>
-          <li markdown="span">[About STIX 2.0](stix/about)</li>          
+          <li markdown="span">[About STIX 2.0](stix/about)</li>
           <li markdown="span">[Comparing STIX 1 and STIX 2](stix/compare)</li>
           <li markdown="span">[Tools](stix/resources)</li>
-          <li markdown="span">[Sample Walkthrough](stix/walkthrough)</li>          
+          <li markdown="span">[Sample Walkthrough](stix/walkthrough)</li>
+          <li markdown="span">[Archive of STIX 1.x](https://stixproject.github.io/)</li>
         </ul>
       </div>
     </div>
@@ -60,6 +62,9 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 3" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (Draft 3)
+        </a>
       </div>
       <div class="panel-body">
         <p>
@@ -79,8 +84,8 @@ layout: default
         </p>
         <p>
           <h3>Links:</h3>
-          <ul>            
-            <li markdown="span">[TAXII 2.0 Specification](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4) (Draft 3)</li>            
+          <ul>
+            <li markdown="span">[Archive of TAXII 1.x](https://taxiiproject.github.io/)</li>
           </ul>
         </p>
       </div>

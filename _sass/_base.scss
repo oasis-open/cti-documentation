@@ -163,6 +163,11 @@ a {
     }
 }
 
+.btn-spec {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
 
 
 /**
@@ -210,11 +215,7 @@ pre {
 }
 
 .highlight pre {
-    word-wrap: normal;
-}
-
-.highlight pre code {
-    white-space: pre;
+    word-break: normal;
 }
 
 
@@ -291,6 +292,10 @@ pre {
 /**
  * Panels
  */
+.panel-heading {
+    text-align: center;
+}
+
 .panel-logo {
     display: block;
     margin: 0 auto;
