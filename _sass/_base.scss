@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #4E9BE1;
+    background-color: lighten($brand-color, 9%);
 }
 
 .jumbotron h1 {
@@ -158,7 +158,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: lighten($brand-color, 10%);
         text-decoration: underline;
     }
 }
@@ -166,6 +166,10 @@ a {
 .btn-spec {
     font-size: 17px;
     margin: 10px 0;
+
+    &:visited {
+        color: $background-color;
+    }
 }
 
 

@@ -33,7 +33,7 @@ Complete information for STIX 2.0 is available on the [OASIS Cyber Threat Intell
 
 ## STIX 2.0
 
-<div class="figure center-block text-center" markdown="span">
+<div class="figure center-block text-center" markdown="span" style="width:80%">
 ![STIX 2.0 Architecture]({{ site.baseurl }}/img/stix2_architecture2.png){: .figure-img .img-fluid}
 </div>
 

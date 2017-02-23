@@ -47,9 +47,11 @@
             </li>
             {% for pg in site.pages %}
               {% unless (pg.categories contains 'taxii' or pg.categories contains 'stix') %}
-                <li>
-                  {% include page-link.html p=pg %}
-                </li>
+                {% if pg.title or pg.short_title %}
+                  <li>
+                    {% include page-link.html p=pg %}
+                  </li>
+                {% endif %}
               {% endunless %}
             {% endfor %}
           </ul>
