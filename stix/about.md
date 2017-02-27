@@ -4,7 +4,7 @@ title: About STIX
 categories: stix
 ---
 
-<div class="well info-box" markdown="span">Familiar with STIX 1.x?<br/> Here’s a [comparison](compare).</div>
+<div class="well info-box" markdown="span">Familiar with STIX 1.x?<br/> Here’s a [comparison to 2.0](compare).</div>
 
 Structured Threat Information Expression (STIX™) is a language for describing cyber threat information in a standardized and structured manner to enable the exchange of cyber threat intelligence (CTI). STIX characterizes an extensive set of CTI to include indicators of adversary activity, as well as contextual information characterizing cyber adversary motivations, capabilities, and activities and best courses of action for defense and mitigation.
 
