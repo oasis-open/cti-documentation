@@ -15,3 +15,4 @@ Below is a list of CTI-TC tools and resources to help you get started with STIX 
 -   [**cti-marking-prototype**](https://github.com/oasis-open/cti-marking-prototype): Prototype for processing granular data markings in STIX
 -   [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator): Convert STIX 1.2 XML to STIX 2.0 JSON
 -   [**cti-pattern-matcher**](https://github.com/oasis-open/cti-pattern-matcher): Match STIX content against STIX patterns
+-   [**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2): Python APIs for STIX 2
