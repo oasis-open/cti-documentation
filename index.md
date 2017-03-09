@@ -47,6 +47,7 @@ layout: default
 
         <h3>Links:</h3>
         <ul>
+          <li markdown="span">[STIX Review](stix/review)</li>
           <li markdown="span">[About STIX 2.0](stix/about)</li>
           <li markdown="span">[Comparing STIX 1 and STIX 2](stix/compare)</li>
           <li markdown="span">[Tools](stix/resources)</li>
