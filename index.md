@@ -17,7 +17,10 @@ layout: default
         <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
           <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (2.0 CSD 1)
         </a>
-      </div>
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Review" href="https://oasis-open.github.io/cti-documentation/stix/review">
+          <span class="glyphicon glyphicon-list-alt"></span> STIX 2.0 Public Review – Frequently Asked Questions
+        </a>
+      </div>      
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
