@@ -8,6 +8,27 @@ hide_title: true
 STIX 2.0 Public Review – Frequently Asked Questions
 ===================================================
 
+Where can I find the specification?
+-----------------------------------
+
+STIX Version 2.0 is a five-part specification. The prose documents and related files are available here:
+
+
+{:.table .table-hover}
+| Part # | Title                          | Links                                             |
+| --------------------------------------- | ------------------------------------------------- |
+| 1      | STIX Core Concepts             | [Editable Authoritative Source (DOCX)](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part1-stix-core/stix-v2.0-csprd01-part1-stix-core.docx) | [HTML](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part1-stix-core/stix-v2.0-csprd01-part1-stix-core.html) | [PDF](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part1-stix-core/stix-v2.0-csprd01-part1-stix-core.pdf) |
+| --------------------------------------- | ------------------------------------------------- |
+| 2      | STIX Objects                   | [Editable Authoritative Source (DOCX)](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part2-stix-objects/stix-v2.0-csprd01-part2-stix-objects.docx) | [HTML](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part2-stix-objects/stix-v2.0-csprd01-part2-stix-objects.html) | [PDF](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part1-stix-core/stix-v2.0-csprd01-part1-stix-core.pdf) |
+| --------------------------------------- | ------------------------------------------------- |
+| 3      | Cyber Observable Core Concepts | [Editable Authoritative Source (DOCX)](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part3-cyber-observable-core/stix-v2.0-csprd01-part3-cyber-observable-core.docx) | [HTML](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part3-cyber-observable-core/stix-v2.0-csprd01-part3-cyber-observable-core.html) | [PDF](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part3-cyber-observable-core/stix-v2.0-csprd01-part3-cyber-observable-core.pdf) |
+| --------------------------------------- | ------------------------------------------------- |
+| 4      | STIX Objects                   | [Editable Authoritative Source (DOCX)](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part4-cyber-observable-objects/stix-v2.0-csprd01-part4-cyber-observable-objects.docx) | [HTML](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part4-cyber-observable-objects/stix-v2.0-csprd01-part4-cyber-observable-objects.html) | [PDF](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part4-cyber-observable-objects/stix-v2.0-csprd01-part4-cyber-observable-objects.pdf) |
+| --------------------------------------- | ------------------------------------------------- |
+| 5      | STIX Objects                   | [Editable Authoritative Source (DOCX)](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part5-stix-patterning/stix-v2.0-csprd01-part5-stix-patterning.docx) | [HTML](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part5-stix-patterning/stix-v2.0-csprd01-part5-stix-patterning.html) | [PDF](http://docs.oasis-open.org/cti/stix/v2.0/csprd01/part5-stix-patterning/stix-v2.0-csprd01-part5-stix-patterning.pdf) |
+
+
+
 Why STIX 2.0?
 --------------
 
