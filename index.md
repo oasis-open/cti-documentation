@@ -66,8 +66,8 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 3" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (Draft 3)
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 2" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (Draft 2)
         </a>
       </div>
       <div class="panel-body">
