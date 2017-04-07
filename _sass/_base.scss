@@ -61,7 +61,9 @@ img {
     vertical-align: middle;
 }
 
-
+.table-example tr td:nth-child(2) {
+  width: 175px;
+}
 
 /**
  * Figures

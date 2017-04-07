@@ -54,6 +54,7 @@ layout: default
           <li markdown="span">[About STIX 2.0](stix/about)</li>
           <li markdown="span">[Comparing STIX 1 and STIX 2](stix/compare)</li>
           <li markdown="span">[Resources](stix/resources)</li>
+          <li markdown="span">[Examples](stix/examples)</li>
           <li markdown="span">[Sample Walkthrough](stix/walkthrough)</li>
           <li markdown="span">[Archive of STIX 1.x](https://stixproject.github.io/)</li>
         </ul>
