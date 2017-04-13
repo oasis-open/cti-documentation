@@ -19,3 +19,4 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
+  smart_quotes:  ["apos", "apos", "ldquo", "rdquo"]
