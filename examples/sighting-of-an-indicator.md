@@ -30,7 +30,7 @@ In some cases, an indicator like a URL can be spotted several times on a network
 
 A diagram of this scenario below shows the Identity and Indicator SDO’s and the Sighting SRO:
 
-![Sighting of an Indicator]({{ site.baseurl }}/img/Sighting-of-an-indicator.PNG)
+![Sighting of an Indicator]({{ site.baseurl }}/img/sighting-of-an-indicator.PNG)
 
 **Further Reading**
 -------------------
