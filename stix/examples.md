@@ -34,9 +34,16 @@ STIX 2.0 Tutorials
 
 The following tutorials help to clarify common STIX 2.0 concepts.
 
+STIX Versioning
+---------------
+
 The first video focuses on STIX 2.0 versioning. It discusses what STIX object versioning is, why objects are versioned, and who can version objects.
 
 [![STIX Versioning]({{ site.baseurl }}/img/Versioning-video.JPG)](https://www.youtube.com/watch?v=s4c4PHUfttE "STIX Versioning")
+
+
+Objects Overview
+----------------
 
 The next video provides an overview of STIX 2.0 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
 
