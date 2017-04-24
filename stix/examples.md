@@ -34,4 +34,4 @@ STIX 2.0 Tutorials
 
 Below is a link to a tutorial video on STIX 2.0 versioning. It discusses what STIX object versioning is, why objects are versioned, and who can version objects.
 
-[![STIX Versioning]({{ site.baseurl }}/img/Versioning-video.jpg)](https://www.youtube.com/watch?v=s4c4PHUfttE "STIX Versioning")
+[![STIX Versioning]({{ site.baseurl }}/img/Versioning-video.JPG)](https://www.youtube.com/watch?v=s4c4PHUfttE "STIX Versioning")
