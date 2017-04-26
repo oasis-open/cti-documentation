@@ -20,7 +20,7 @@ Next, Stark created a couple of STIX [Marking Definition](https://docs.google.co
 
 A second marking type, [Statement](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.3ru8r05saera), is used for Stark Industries’ copyright information and is applied to all objects they produce. This is similar in format to the TLP Marking Definition object, except the <span class="sdo">**definition\_type**</span> in this case must be <span class="values">statement</span>. The <span class="sdo">**definition**</span> field contains any type of terms of use or copyright information you want to convey. For this organization, it simply states <span class="values">Copyright @ Stark Industries 2017</span>. This property could also communicate any terms of use, or you could incorporate both since Statement allows for multiple marking types.
 
-A point of emphasis worth noting is that Marking Definition objects cannot be versioned like other STIX objects. For instance, if Stark Industries wanted to update their Statement information or add terms of use to the marking definition, they would have to generate a new Marking Definition object with the Indicator SDO updated to point to this new definition. They could not add or change their current Statement marking and simply update the modified property.
+A point of emphasis worth noting is that Marking Definition objects cannot be versioned like other STIX objects. For instance, if Stark Industries wanted to update their Statement information or add terms of use to the marking definition, they would have to generate a new Marking Definition object with the Indicator SDO updated to point to this new definition. They could not add or change their current Statement marking and simply update the <span class="sdo">**modified**</span> property like with other objects, because there is no required <span class="sdo">**modified**</span> property with Marking Definition objects.
 
 Finally, Stark can apply these marking definitions to the [Indicator](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.muftrcpnf89v) SDO that contains the malicious IP address they discovered on their network. These object markings are embedded within the Indicator object in the <span class="sdo">**object\_marking\_refs**</span> property and reference the Marking Definition object <span class="sdo">**id**</span>’s for both Statement and TLP. Once referenced, both of Stark’s markings apply to the Indicator object. It’s worth mentioning that this property and the <span class="sdo">**created\_by\_ref**</span> property presented earlier represent one of just a few embedded relationships in STIX 2.0. In most cases, to establish a relationship between objects in STIX, such as between an Indicator and Threat Actor SDO, you would create a [Relationship](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan) STIX Relationship Object (SRO).
 
@@ -62,14 +62,13 @@ To read more about the objects in this example as well as common properties and 
       "identity_class": "organization",
       "contact_information": "info@stark.com",
       "sectors": [
-        "defense"
-      ],
+        "defence"
+      ]
     },
     {
       "type": "marking-definition",
       "id": "marking-definition--05ac6c05-8b38-43f2-996d-e6715571090b",
       "created": "2017-04-14T13:07:49.812Z",
-      "modified": "2017-04-14T13:07:49.812Z",
       "created_by_ref": "identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
       "definition_type": "tlp",
       "definition": {
@@ -79,8 +78,7 @@ To read more about the objects in this example as well as common properties and 
     {
       "type": "marking-definition",
       "id": "marking-definition--d771aceb-3148-4315-b4b4-130b888533d0",
-      "created": "2017-04-14T13:07:49.812Z",
-      "modified": "2017-04-14T13:07:49.812Z",
+      "created": "2017-04-14T13:07:49.812Z",      
       "created_by_ref": "identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
       "definition_type": "statement",
       "definition": {
