@@ -20,9 +20,9 @@ In order to enforce limitations on specific properties of the Indicator object, 
 
 A point of emphasis worth noting is that the TLP Marking Object Types defined in the STIX 2.0 specification must be used to represent TLP markings. Gotham or any other producer could not create their own TLP markings but could create organization-specific [Statement Marking Object Types](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.3ru8r05saera). Both of these types, TLP and Statement, also cannot be versioned like other STIX objects, which is why there is no <span class="sdo">**modified**</span> property on either of these types. To understand more about versioning objects, check out this helpful tutorial video on [How to Use Versioning in STIX 2](https://www.youtube.com/watch?v=s4c4PHUfttE).
 
-Now that Gotham has selected the appropriate TLP Marking Object types, they can be applied to other STIX objects or properties of objects. In this scenario, they are attached to properties of an [Indicator](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.muftrcpnf89v) SDO Gotham generated. This Indicator was created to represent a fake email address suspected in emailing the bank's members asking for their credentials. Due to the sensitivity of some of the information contained within this Indicator, they applied different TLP markings to individual portions of this object with the <span class="sdo">**granular\_markings**</span> property. This property is a list that contains Marking Definition object ID references with the <span class="sdo">**marking\_ref**</span> field, and a <span class="sdo">**selectors**</span> property that specifies the content that should be marked with this marking definition. For instance, Gotham felt the need to apply strict TLP: Red markings to the <span class="sdo">**pattern**</span> and <span class="sdo">**description**</span> fields since they contain the most detailed and sensitive intelligence about the Indicator. To illustrate further, within the <span class="sdo">**granular\_markings**</span> field of the Indicator, the <span class="sdo">**marking\_ref**</span> property would contain the marking definition UUID for TLP: Red and the <span class="sdo">**selectors**</span> list would hold the values <span class="values">pattern</span> and <span class="values">description</span>.
+Now that Gotham has selected the appropriate TLP Marking Object types, they can be applied to other STIX objects or properties of objects. In the first part of this scenario, they are attached to properties of an [Indicator](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.muftrcpnf89v) SDO Gotham generated. This Indicator was created to represent a fake email address suspected in emailing the bank's members asking for their credentials. Due to the sensitivity of some of the information contained within this Indicator, they applied different TLP markings to individual portions of this object with the <span class="sdo">**granular\_markings**</span> property. This property is a list that contains Marking Definition object ID references with the <span class="sdo">**marking\_ref**</span> field, and a <span class="sdo">**selectors**</span> property that specifies the content that should be marked with this marking definition. For instance, Gotham felt the need to apply a strict TLP: Red marking to the <span class="sdo">**description**</span> field since this gives certain sensitive intelligence about the threat actor in this scenario (discussed later). To illustrate further, within the <span class="sdo">**granular\_markings**</span> field of the Indicator, the <span class="sdo">**marking\_ref**</span> property would contain the marking definition ID for TLP: Red and the <span class="sdo">**selectors**</span> list would hold the value <span class="values">description</span>.
 
-For other Indicator properties, Gotham used less restrictive TLP markings than TLP: Red. One required Indicator property is a list of <span class="sdo">**labels**</span>, which gives more context about the type of indicator being modeled. In this property list, Gotham labeled this indicator as both <span class="values">malicious-activity</span> and <span class="values">fake-email</span>. The first label in the list, <span class="values">malicious-activity</span>, comes from the [Indicator Label Open Vocabulary](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.cvhfwe3t9vuo) and the 2nd label, <span class="values">fake-email</span>, is one Gotham chose since they are free to apply their own labels outside of the recommended STIX 2.0 vocabulary. Since <span class="values">malicious-activity</span> is a more generic label than <span class="values">fake-email</span>, Gotham applied the less restrictive TLP: Green marking. However for <span class="values">fake-email</span>, Gotham felt the need to attach a more moderately restrictive marking of TLP: Amber. In order to communicate two different markings like this on the <span class="sdo">**labels**</span> property, you would represent the first label in the list as <span class="values">labels\[0\]</span>, and the second as <span class="values">labels\[1\]</span>. To illustrate this, the JSON sample below shows how these would be marked if we were just marking the <span class="sdo">**labels**</span> field only (Note: Marking Definition ID starting with "f88..." is TLP: Amber and the ID starting with "340..." is TLP: Green):
+For other Indicator properties, Gotham used less restrictive TLP markings than TLP: Red. One required Indicator property is a list of <span class="sdo">**labels**</span>, which gives more context about the type of indicator being modeled. In this property list, Gotham labeled this indicator as both <span class="values">malicious-activity</span> and <span class="values">attribution</span>. Both labels in the list come from the STIX 2.0 specification's [Indicator Label Open Vocabulary](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.cvhfwe3t9vuo). Gotham decided to apply the less restrictive TLP: Green marking to <span class="values">malicious-activity</span> and felt a the more restrictive TLP: Amber marking was needed for <span class="values">attribution</span>. In order to communicate two different markings like this on the <span class="sdo">**labels**</span> property, the first label in the list is represented as <span class="values">labels\[0\]</span>, and the second as <span class="values">labels\[1\]</span>. To illustrate this, the JSON sample below shows how these would be marked if we were just marking the <span class="sdo">**labels**</span> field only (Note: Marking Definition ID starting with "f88..." is TLP: Amber and the ID starting with "340..." is TLP: Green):
 
 ```
 {
@@ -42,7 +42,11 @@ For other Indicator properties, Gotham used less restrictive TLP markings than T
 ]}
 ```
 
-Along with these Indicator <span class="sdo">**labels**</span>, Gotham chose to mark the property <span class="sdo">**name**</span> as TLP: Amber and the property <span class="sdo">**valid\_from**</span> as TLP: Green. They can mark any property they would like but cannot mark invalid properties such as <span class="values">labels\[3\]</span>, or <span class="values">kill\_chain\_phases\[0\]</span> since these are not present currently within this Indicator SDO.
+Along with these Indicator <span class="sdo">**labels**</span>, Gotham chose to mark the properties <span class="sdo">**name**</span> and <span class="sdo">**pattern**</span> as TLP: Green. They can mark any property they would like but cannot mark invalid properties such as <span class="values">labels\[3\]</span>, or <span class="values">kill\_chain\_phases\[0\]</span> since these are not present currently within this Indicator SDO.
+
+Gotham also created a [Threat Actor SDO](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.k017w16zutw) to capture information about the threat actor this Indicator indicates. In this example, the threat actor, whose <span class="sdo">**name**</span> is known as <span class="values">The Joker</span>, has been attributed to the fake email indicator. Along with <span class="sdo">**name**</span>, this object helps to structure other information about The Joker such as <span class="sdo">**aliases**</span>, <span class="sdo">**roles**</span>, and a <span class="sdo">**primary_motivation**</span>. Since all of this intelligence is considered sensitive to Gotham National, they marked the entire object as TLP: Red using [object markings](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.bnienmcktc0n) instead of granular markings. This is accomplished through a property inherent in all SDO's and STIX Relationship Object's (SRO's) called <span class="sdo">**object_marking_refs**</span>, which lists all the marking definition IDs that apply to this object. Unlike the <span class="sdo">**granular\_markings**</span> property that would apply to different fields within Threat Actor, the <span class="sdo">**object_marking_refs**</span> applies to the entire Threat Actor SDO.  
+
+The final piece of intelligence in this scenario is a [Relationship SRO](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan) that connects the Indicator and Threat Actor SDO's together. In this relationship, a <span class="sdo">**relationship_type**</span> property specifies that this Indicator <span class="values">indicates</span> the Threat Actor. Due to the fact this Relationship object links to a TLP: Red marked object, Gotham also marked it as TLP: Red once again using the <span class="sdo">**object_marking_refs**</span> field within Relationship.
 
 The full JSON representation can be seen at the very end of this example and a diagram of the scenario is illustrated below:
 
@@ -57,8 +61,11 @@ To read more about the objects in this example as well as common properties and 
 -   [Vocabularies](https://docs.google.com/document/d/1HRVFn2kAxBOTMbEb3KRu8tjMoHm-KRAI-2R8CTzGil4/edit#heading=h.iit7tolczlxv)
 -   [Identity](https://docs.google.com/document/d/1nipwFIaFwkHo4Gzw-qxZQpCjP_5tX7rbI3Ic5C56Z88/edit#heading=h.wh296fiwpklp)
 -   [Indicator](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.muftrcpnf89v)
+-   [Threat Actor](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.k017w16zutw)
+-   [Relationship](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan)
 -   [Marking Definitions](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.j0uqagkk6m9n)
 -   [Granular Markings](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.robezi5egfdr)
+-   [Object Markings](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.bnienmcktc0n)
 -   [Statement Marking Object Type](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.3ru8r05saera)
 -   [TLP Object Marking Type](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.yd3ar14ekwrs)
 -   [STIX Patterning](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit)
@@ -83,6 +90,30 @@ To read more about the objects in this example as well as common properties and 
       "contact_information": "contact@gothamnational.com",
       "sectors": [
         "financial-services"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
+      "created": "2017-04-27T16:18:24.318Z",
+      "modified": "2017-04-27T16:18:24.318Z",
+      "created_by_ref": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
+      "name": "The Joker",
+      "labels": [
+        "criminal",
+        "terrorist"
+      ],
+      "aliases": [
+        "Joe Kerr",
+        "The Clown Prince of Crime"
+      ],
+      "roles": [
+        "director"
+      ],
+      "resource_level": "team",
+      "primary_motivation": "personal-satisfaction",
+      "object_marking_refs": [
+        "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
       ]
     },
     {
@@ -119,10 +150,10 @@ To read more about the objects in this example as well as common properties and 
       "modified": "2017-04-27T16:18:24.318Z",
       "created_by_ref": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
       "name": "Fake email address",
-      "description": "Messages from this false email address been sent to customers.",
+      "description": "Known to be used by The Joker.",
       "labels": [
         "malicious-activity",
-        "fake-email"
+        "attribution"
       ],
       "pattern": "[email-message:from_ref.value MATCHES '.+\\\\banking@g0thamnatl\\\\.com$']",
       "valid_from": "2017-04-27T16:18:24.318Z",
@@ -130,14 +161,12 @@ To read more about the objects in this example as well as common properties and 
         {
           "marking_ref": "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
           "selectors": [
-            "pattern",
             "description"
           ]
         },
         {
           "marking_ref": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
           "selectors": [
-            "name",
             "labels.[1]"
           ]
         },
@@ -145,10 +174,23 @@ To read more about the objects in this example as well as common properties and 
           "marking_ref": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
           "selectors": [
             "labels.[0]",
-            "valid_from"
+            "name",
+            "pattern"
           ]
         }
       ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--3d1dd3cc-eb47-4704-9c77-ceff2971b95c",
+      "created": "2017-04-27T16:18:24.318Z",
+      "modified": "2017-04-27T16:18:24.318Z",
+      "relationship_type": "indicates",
+      "object_marking_refs": [
+        "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
+      ],
+      "source_ref": "indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
+      "target_ref": "threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c"
     }
   ]
 }

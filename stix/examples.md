@@ -27,7 +27,7 @@ The examples below demonstrate how to use STIX 2.0 concepts for common use cases
 | --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
 | [Using Marking Definitions](/cti-documentation/examples/using-marking-definitions) | ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) ![Amber Marking Icon]({{ site.baseurl }}/img/icons/tlp_amber.png) ![Statement Marking Icon]({{ site.baseurl }}/img/icons/restricted_marking.png) | Sometimes when creating STIX objects it may be useful to provide guidance or permissions on how those objects may be used. In this example, Marking Definition objects are created and applied to an Indicator object to specify restrictions and copyright information. |
 | --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
-| [Using Granular Markings](/cti-documentation/examples/using-granular-markings) | ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) ![Green Marking Icon]({{ site.baseurl }}/img/icons/tlp_green.png) ![Amber Marking Icon]({{ site.baseurl }}/img/icons/tlp_amber.png) ![Red Marking Icon]({{ site.baseurl }}/img/icons/tlp_red.png) | Whereas object markings in STIX can limit or restrict how entire objects are used, granular markings delve deeper into the objects and focus on restricting specific individual properties. This example demonstrates how to enforce different TLP markings on multiple properties of an Indicator SDO. | 
+| [Using Granular Markings](/cti-documentation/examples/using-granular-markings) | ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) ![Green Marking Icon]({{ site.baseurl }}/img/icons/tlp_green.png) ![Amber Marking Icon]({{ site.baseurl }}/img/icons/tlp_amber.png) ![Red Marking Icon]({{ site.baseurl }}/img/icons/tlp_red.png) | Whereas object markings in STIX can limit or restrict how entire objects are used, granular markings delve deeper into the objects and focus on restricting specific individual properties. This example demonstrates how to enforce different TLP markings on multiple properties of an Indicator SDO. |
 
 
 STIX 2.0 Tutorials
@@ -58,6 +58,19 @@ The next video provides an overview of STIX 2.0 objects. It highlights the four 
 	<div class="video-container">
 		<iframe src="https://www.youtube.com/embed/iAnd3rApMcA?ecver=2" width="640" height="360" frameborder="0"></iframe>
 	</div>
-	<!-- /video -->
+	<!-- /video --><br><br>
+</div>
+<!-- /video-wrapper -->
+
+Common Properties
+----------------
+
+This video discusses the common properties that are universal to all STIX Domain Objects (SDOs) and STIX Relationship Objects (SROs).
+
+<div class="video-wrapper">
+	<div class="video-container">
+		<iframe src="https://www.youtube.com/embed/dv-Zt4k1zt0?ecver=2" width="640" height="360" frameborder="0"></iframe>
+	</div>
+	<!-- /video --><br><br>
 </div>
 <!-- /video-wrapper -->
