@@ -24,7 +24,7 @@ A point of emphasis worth noting is that Marking Definition objects cannot be ve
 
 Finally, Stark can apply these marking definitions to the [Indicator](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.muftrcpnf89v) SDO that contains the malicious IP address they discovered on their network. These object markings are embedded within the Indicator object in the <span class="sdo">**object\_marking\_refs**</span> property and reference the Marking Definition object <span class="sdo">**id**</span>’s for both Statement and TLP. Once referenced, these markings apply to the Indicator object. It’s worth mentioning that this property and the <span class="sdo">**created\_by\_ref**</span> property presented earlier represent one of just a few embedded relationships in STIX 2.0. In most cases, to establish a relationship between objects in STIX, such as between an Indicator and Threat Actor SDO, you would create a [Relationship](https://docs.google.com/document/d/1S5XhY6F5OT599b0OuHtUf8IBzFvNY8RysFHIj93DgsY/edit#heading=h.e2e1szrqfoan) STIX Relationship Object (SRO).
 
-Other than object marking references, the rest of the Indicator object contains properties that detail information about the IP address. The <span class="sdo">**pattern**</span> property, for instance, is based on the [STIX patterning language](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit) and represents an IPv4 address as a comparison expression: <span class="values">\[ipv4addr:value = '10.0.0.0'\]</span>. Stark also knows this is a nefarious IP and relays this information with the <span class="sdo">**labels**</span> property indicating this IP is associated with <span class="values">malicious-activity</span>. Due to the fact this was a known bad IP present on their network, it is advantageous for Stark to be able to apply the appropriate TLP marking definitions to this indicator.
+Other than object marking references, the rest of the Indicator object contains properties that detail information about the IP address. The <span class="sdo">**pattern**</span> property, for instance, is based on the [STIX patterning language](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit) and represents an IPv4 address as a comparison expression: <span class="values">\[ipv4-addr:value = '10.0.0.0'\]</span>. Stark also knows this is a nefarious IP and relays this information with the <span class="sdo">**labels**</span> property indicating this IP is associated with <span class="values">malicious-activity</span>. Due to the fact this was a known bad IP present on their network, it is advantageous for Stark to be able to apply the appropriate TLP marking definitions to this indicator.
 
 A diagram of this scenario below shows both the Identity and Indicator SDO’s as well as the Marking Definition objects:
 
@@ -94,7 +94,7 @@ To read more about the objects in this example as well as common properties and 
       "labels": [
         "malicious-activity"
       ],
-      "pattern": "[ipv4addr:value = '10.0.0.0']",
+      "pattern": "[ipv4-addr:value = '10.0.0.0']",
       "valid_from": "2017-04-14T13:07:49.812Z",
       "object_marking_refs": [
         "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",

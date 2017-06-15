@@ -95,7 +95,7 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
   "created": "2017-02-09T12:11:11.415000Z",
   "modified": "2017-02-09T12:11:11.415000Z",
   "name": "HTRAN Hop Point Accessor",
-  "pattern": "[ipv4addr:value = '223.166.0.0/15']",
+  "pattern": "[ipv4-addr:value = '223.166.0.0/15']",
   "labels": [
   "malicious-activity"
   ],
