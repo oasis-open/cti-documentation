@@ -15,11 +15,8 @@ layout: default
         <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
         <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (2.0 CSD 1)
-        </a>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Review" href="https://oasis-open.github.io/cti-documentation/stix/review">
-          <span class="glyphicon glyphicon-list-alt"></span> STIX 2.0 Public Review – Frequently Asked Questions
-        </a>
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification!
+        </a>        
       </div>      
       <div class="panel-body">
         <p>
