@@ -16,8 +16,16 @@ layout: default
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
         <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
           <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification!
-        </a>        
-      </div>      
+        </a>
+        <div class="panel-title text-center">Or check out each individual part here:</div>
+        <div class="figure center-block text-center" markdown="span">
+          [Part 1: STIX Core Concepts](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub)<br>
+          [Part 2: STIX Objects](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub)<br>
+          [Part 3: Cyber Observable Core Concepts](https://docs.google.com/document/d/1ti4Ei_ii_Uc4izHNZlYmBP9NgD5-iVWC--y-3HmGZyg/pub)<br>
+          [Part 4: Cyber Observable Objects](https://docs.google.com/document/d/167aIyr5BIAJJORzjT11U25cGSBJ0cBNSdkheNJFz6l8/pub)<br>
+          [Part 5: STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub)          
+        </div>
+        </div>          
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
