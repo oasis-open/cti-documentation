@@ -74,7 +74,7 @@ To read more about the objects in this example as well as common properties and 
 **Implementation**
 ------------------
 
-{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="using-granular" %}{% highlight xml linenos %}
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="using-granular" %}{% highlight json linenos %}
 {% include_relative example_json/using-granular-markings.json %}
 {% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
 {% include_relative producer_python/using-granular-markings-producer.py %}

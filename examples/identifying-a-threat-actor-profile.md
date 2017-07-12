@@ -46,7 +46,7 @@ To read more about the objects in this example as well as common properties and 
 **Implementation**
 ------------------
 
-{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="identify-ta-profile" %}{% highlight xml linenos %}
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="identify-ta-profile" %}{% highlight json linenos %}
 {% include_relative example_json/identifying-a-threat-actor-profile.json %}
 {% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
 {% include_relative producer_python/identifying-a-threat-actor-profile-producer.py %}

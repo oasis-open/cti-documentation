@@ -50,7 +50,7 @@ To read more about the objects in this example as well as common properties and 
 **Implementation**
 ------------------
 
-{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="sighting-data" %}{% highlight xml linenos %}
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="sighting-data" %}{% highlight json linenos %}
 {% include_relative example_json/sighting-of-observed-data.json %}
 {% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
 {% include_relative producer_python/sighting-of-observed-data-producer.py %}

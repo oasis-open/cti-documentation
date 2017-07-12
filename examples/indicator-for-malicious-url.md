@@ -46,7 +46,7 @@ To read more about the objects in this example as well as common properties and 
 **Implementation**
 ------------------
 
-{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="indicator-url" %}{% highlight xml linenos %}
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="indicator-url" %}{% highlight json linenos %}
 {% include_relative example_json/indicator-for-malicious-url.json %}
 {% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
 {% include_relative producer_python/indicator-for-malicious-url-producer.py %}
