@@ -1,0 +1,56 @@
+import stix2
+
+for obj in bundle.objects:
+    if obj == identityAlpha:
+        print("------------------")
+        print("== IDENTITY ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Name: " + obj.name)
+        print("Identity Class: " + obj.identity_class)
+        print("Contact Information: " + obj.contact_information)
+        print("Labels: " + obj.labels[0])
+        print("Sectors: " + obj.sectors[0])
+
+    elif obj == identityBeta:
+        print("------------------")
+        print("== IDENTITY ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Name: " + obj.name)
+        print("Identity Class: " + obj.identity_class)
+        print("Contact Information: " + obj.contact_information)
+        print("Labels: " + obj.labels[0])
+        print("Sectors: " + obj.sectors[0])
+
+    elif obj == indicator:
+        print("------------------")
+        print("== INDICATOR ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Created by Ref: " + obj.created_by_ref)
+        print("Name: " + obj.name)
+        print("Description: " + obj.description)
+        print("Labels: " + obj.labels[0])
+        print("Pattern: " + obj.pattern)
+        print("Valid From: " + str(obj.valid_from))
+
+    elif obj == sighting:
+        print("------------------")
+        print("== SIGHTING ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Created by Ref: " + obj.created_by_ref)
+        print("First Seen: " + str(obj.first_seen))
+        print("Last Seen: " + str(obj.last_seen))
+        print("Count: " + str(obj.count))
+        print("Sighting of Ref: " + obj.sighting_of_ref)
+        print("Where Sighted Refs: " + obj.where_sighted_refs[0])

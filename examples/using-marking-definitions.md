@@ -44,64 +44,14 @@ To read more about the objects in this example as well as common properties and 
 -   [TLP Object Marking Type](https://docs.google.com/document/d/1IcA5KhglNdyX3tO17bBluC5nqSf70M5qgK9nuAoYJgw/edit#heading=h.yd3ar14ekwrs)
 -   [STIX Patterning](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit)
 
-**JSON**
+**Implementation**
 ------------------
 
-```
-{
-  "type": "bundle",
-  "id": "bundle--b56c1e2e-a40c-44ca-83dd-09e25936d273",
-  "spec_version": "2.0",
-  "objects": [
-    {
-      "type": "identity",
-      "id": "identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
-      "created": "2017-04-14T13:07:49.812Z",
-      "modified": "2017-04-14T13:07:49.812Z",
-      "name": "Stark Industries",
-      "identity_class": "organization",
-      "contact_information": "info@stark.com",
-      "sectors": [
-        "defence"
-      ]
-    },
-    {
-      "type": "marking-definition",
-      "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
-      "created": "2017-01-20T00:00:00.000Z",
-      "definition_type": "tlp",
-      "definition": {
-        "tlp": "amber"
-      }
-    },
-    {
-      "type": "marking-definition",
-      "id": "marking-definition--d771aceb-3148-4315-b4b4-130b888533d0",
-      "created": "2017-04-14T13:07:49.812Z",
-      "created_by_ref": "identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
-      "definition_type": "statement",
-      "definition": {
-        "statement": "Copyright © Stark Industries 2017."
-      }
-    },
-    {
-      "type": "indicator",
-      "id": "indicator--33fe3b22-0201-47cf-85d0-97c02164528d",
-      "created": "2017-04-14T13:07:49.812Z",
-      "modified": "2017-04-14T13:07:49.812Z",
-      "created_by_ref": "identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
-      "name": "Known malicious IP Address",
-      "labels": [
-        "malicious-activity"
-      ],
-      "pattern": "[ipv4-addr:value = '10.0.0.0']",
-      "valid_from": "2017-04-14T13:07:49.812Z",
-      "object_marking_refs": [
-        "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
-        "marking-definition--d771aceb-3148-4315-b4b4-130b888533d0"
-      ]
-    }
-  ]
-}
-
-```
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="using-marking-defs" %}{% highlight xml linenos %}
+{% include_relative example_json/using-marking-definitions.json %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% include_relative producer_python/using-marking-definitions-producer.py %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% include_relative consumer_python/using-marking-definitions-consumer.py %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% endhighlight %}{% include end_tabs.html %}

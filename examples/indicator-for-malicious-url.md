@@ -43,54 +43,14 @@ To read more about the objects in this example as well as common properties and 
 -   [Relationship](https://docs.google.com/document/d/1nipwFIaFwkHo4Gzw-qxZQpCjP_5tX7rbI3Ic5C56Z88/edit#heading=h.e2e1szrqfoan)
 -   [STIX Patterning](https://docs.google.com/document/d/1suvd7z7YjNKWOwgko-vJ84jfGuxSYZjOQlw5leCswPY/edit#heading=h.jphmvccraytb)
 
-**JSON**
+**Implementation**
 ------------------
 
-```
-{
-  "type": "bundle",
-  "id": "bundle--44af6c39-c09b-49c5-9de2-394224b04982",
-  "spec_version": "2.0",
-  "objects": [
-    {
-      "type": "indicator",
-      "id": "indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
-      "created": "2014-06-29T13:49:37.079000Z",
-      "modified": "2014-06-29T13:49:37.079000Z",
-      "labels": [
-        "malicious-activity"
-      ],
-      "name": "Malicious site hosting downloader",
-      "pattern": "[url:value = 'http://x4z9arb.cn/4712/']",
-      "valid_from": "2014-06-29T13:49:37.079000Z"
-    },
-    {
-      "type": "malware",
-      "id": "malware--162d917e-766f-4611-b5d6-652791454fca",
-      "created": "2014-06-30T09:15:17.182Z",
-      "modified": "2014-06-30T09:15:17.182Z",
-      "name": "x4z9arb backdoor",
-      "labels": [
-        "backdoor",
-        "remote-access-trojan"
-      ],
-      "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
-      "kill_chain_phases": [
-        {
-          "kill_chain_name": "mandiant-attack-lifecycle-model",
-          "phase_name": "establish-foothold"
-        }
-      ]
-    },
-    {
-      "type": "relationship",
-      "id": "relationship--6ce78886-1027-4800-9301-40c274fd472f",
-      "created": "2014-06-30T09:15:17.182Z",
-      "modified": "2014-06-30T09:15:17.182Z",
-      "relationship_type": "indicates",
-      "source_ref": "indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
-      "target_ref": "malware--162d917e-766f-4611-b5d6-652791454fca"
-    }
-  ]
-}
-```
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="indicator-url" %}{% highlight xml linenos %}
+{% include_relative example_json/indicator-for-malicious-url.json %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% include_relative producer_python/indicator-for-malicious-url-producer.py %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% include_relative consumer_python/indicator-for-malicious-url-consumer.py %}
+{% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
+{% endhighlight %}{% include end_tabs.html %}

@@ -1,0 +1,57 @@
+import stix2
+
+for obj in bundle.objects:
+    if obj == threat_actor:
+        print("------------------")
+        print("== THREAT ACTOR ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Created by Ref:" + obj.created_by_ref)
+        print("Name: " + obj.name)
+        print("Labels: " + obj.labels[0] + ", " + obj.labels[1])
+        print("Aliases: " + obj.aliases[0] + ", " + obj.aliases[1])
+        print("Roles: " + str(obj.roles))
+        print("Resource Level: " + obj.resource_level)
+        print("Primary Motivation: " + obj.primary_motivation)
+        print("Object Marking Refs: " + str(obj.object_marking_refs))
+
+    elif obj == identity:
+        print("------------------")
+        print("== IDENTITY ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Name: " + obj.name)
+        print("Identity Class: " + obj.identity_class)
+        print("Contact Information: " + obj.contact_information)
+        print("Sectors: " + str(obj.sectors))
+
+    elif obj == indicator:
+        print("------------------")
+        print("== INDICATOR ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Created by Ref:" + obj.created_by_ref)
+        print("Name: " + obj.name)
+        print("Description: " + obj.description)
+        print("Labels: " + obj.labels[0])
+        print("Pattern: " + obj.pattern)
+        print("Valid From: " + str(obj.valid_from))
+        print("Granular Markings: " + str(obj.granular_markings))
+
+    elif obj == rel:
+        print("------------------")
+        print("== RELATIONSHIP ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Created: " + str(obj.created))
+        print("Modified: " + str(obj.modified))
+        print("Relationship Type: " + obj.relationship_type)
+        print("Source Ref: " + obj.source_ref)
+        print("Target Ref: " + obj.target_ref)
+        print("Object Marking Refs: " + str(obj.object_marking_refs))

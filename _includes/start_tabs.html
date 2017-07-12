@@ -1,0 +1,7 @@
+<div class="tab-container">
+  <ul class="nav nav-tabs">{% assign tabs = include.tabs | split: "|" %}{% assign tab_name = include.name %}{% assign tab_index = '1' %}
+{% for tab in tabs %}
+  <li{% if forloop.index == 1 %} class="active"{% endif %}><a href="#{{tab_name}}-{{forloop.index}}" data-toggle="tab">{{tab}}</a></li>
+{% endfor %}
+  </ul>
+  <div class="tab-content">{% include tabbed_content_start.html %}
