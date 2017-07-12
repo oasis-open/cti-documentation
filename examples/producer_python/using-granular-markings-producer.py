@@ -1,44 +1,17 @@
 import stix2
 
-marking_def_amber = stix2.MarkingDefinition(
-    id="marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
-    created="2017-01-20T00:00:00.000Z",
-    definition_type="tlp",
-    definition={
-        "tlp": "amber"
-    }
-)
-
-marking_def_green = stix2.MarkingDefinition(
-    id="marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
-    created="2017-01-20T00:00:00.000Z",
-    definition_type="tlp",
-    definition={
-        "tlp": "green"
-    }
-)
-
-marking_def_red = stix2.MarkingDefinition(
-    id="marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
-    created="2017-01-20T00:00:00.000Z",
-    definition_type="tlp",
-    definition={
-        "tlp": "red"
-    }
-)
-
 granular_red = stix2.GranularMarking(
-        marking_ref="marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
+        marking_ref=stix2.TLP_RED.id,
         selectors=["description"]
 )
 
 granular_amber = stix2.GranularMarking(
-        marking_ref="marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+        marking_ref=stix2.TLP_AMBER.id,
         selectors=["labels.[1]"]
 )
 
 granular_green = stix2.GranularMarking(
-        marking_ref="marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+        marking_ref=stix2.TLP_GREEN.id,
         selectors=["labels.[0]", "name", "pattern"]
 )
 
@@ -63,7 +36,7 @@ threat_actor = stix2.ThreatActor(
     roles=["director"],
     resource_level="team",
     primary_motivation="personal-satisfaction",
-    object_marking_refs=[marking_def_red]
+    object_marking_refs=[stix2.TLP_RED]
 )
 
 indicator = stix2.Indicator(
@@ -86,7 +59,7 @@ rel = stix2.Relationship(
     relationship_type='indicates',
     source_ref="indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
     target_ref="threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
-    object_marking_refs=[marking_def_red]
+    object_marking_refs=[stix2.TLP_RED]
 )
 
 bundle = stix2.Bundle(objects=[identity, indicator, threat_actor, rel])
