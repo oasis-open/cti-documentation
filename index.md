@@ -14,17 +14,9 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification!
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
         </a>
-        <div class="panel-title text-center">Or check out each individual part here:</div>
-        <div class="figure center-block text-center" markdown="span">
-          [Part 1: STIX Core Concepts](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub)<br>
-          [Part 2: STIX Objects](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub)<br>
-          [Part 3: Cyber Observable Core Concepts](https://docs.google.com/document/d/1ti4Ei_ii_Uc4izHNZlYmBP9NgD5-iVWC--y-3HmGZyg/pub)<br>
-          [Part 4: Cyber Observable Objects](https://docs.google.com/document/d/167aIyr5BIAJJORzjT11U25cGSBJ0cBNSdkheNJFz6l8/pub)<br>
-          [Part 5: STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub)          
-        </div>
         </div>          
       <div class="panel-body">
         <p>
@@ -36,33 +28,11 @@ layout: default
         <p>
           STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
-        <p>
-        <div class="figure center-block text-center" markdown="span">
-        ![STIX 2.0 Diagram 2]({{ site.baseurl }}/img/STIXdiagram2.PNG){: .figure-img .img-fluid}
-        **STIX Relationship Diagram with Sighting**
-        </div>
-        </p>
-        <h3>Sample:</h3>
-{% highlight json%}
-{
-  "type": "campaign",
-  "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
-  "created": "2016-04-06T20:03:00.000Z",
-  "name": "Green Group Attacks Against Finance",
-  "description": "Campaign by Green Group against targets in the financial services sector."
-}
-{% endhighlight %}
 
-        <h3>Links:</h3>
-        <ul>
-          <li markdown="span">[STIX Review](stix/review)</li>
-          <li markdown="span">[About STIX 2.0](stix/about)</li>
-          <li markdown="span">[Comparing STIX 1 and STIX 2](stix/compare)</li>
-          <li markdown="span">[Resources](stix/resources)</li>
-          <li markdown="span">[Examples and Tutorials](stix/examples)</li>
-          <li markdown="span">[Sample Walkthrough](stix/walkthrough)</li>
-          <li markdown="span">[Archive of STIX 1.x](https://stixproject.github.io/)</li>
-        </ul>
+        <div class="figure text-center" markdown="span">
+        ![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
+        **STIX 2.0 Relationship Example**
+        </div>
       </div>
     </div>
   </div>
@@ -72,8 +42,8 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 2" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (Draft 2)
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Committee Specification" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification (Draft 2)
         </a>
       </div>
       <div class="panel-body">
@@ -92,14 +62,7 @@ layout: default
           **TAXII Collections and Channels**
         </div>
         </p>
-        <p>
-          <h3>Links:</h3>
-          <ul>
-            <li markdown="span">[Archive of TAXII 1.x](https://taxiiproject.github.io/)</li>
-          </ul>
-        </p>
       </div>
     </div>
   </div>
-
 </div>
