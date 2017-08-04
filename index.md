@@ -14,10 +14,15 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
-        </a>
-        </div>          
+        <div>
+          <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/about"> 
+            STIX Home
+          </a>
+          <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="STIX Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
+            <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
+          </a>
+        </div>
+      </div>          
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
@@ -28,7 +33,6 @@ layout: default
         <p>
           STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
-
         <div class="figure text-center" markdown="span">
         ![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
         **STIX 2.0 Relationship Example**
@@ -42,9 +46,14 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Committee Specification" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification (Draft 2)
-        </a>
+        <div>        
+          <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/about"> 
+              TAXII Home
+          </a>
+          <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="TAXII Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
+            <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
+          </a>
+        </div>
       </div>
       <div class="panel-body">
         <p>
