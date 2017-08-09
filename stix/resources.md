@@ -4,9 +4,10 @@ title: Resources
 categories: stix
 ---
 
-Below is a list of CTI-TC tools and resources to help you get started with STIX and TAXII:
+### STIX/TAXII Youtube Page
+-  [**Youtube Videos**](https://www.youtube.com/channel/UCmW_oi_zce3On4LyK9KDnfg): Informational videos about STIX/TAXII
 
-### OASIS Open Source Repositories Sponsored by the Committee
+### [OASIS Open Source Repositories](https://github.com/oasis-open) Sponsored by the Committee
 -   [**cti-stix2-json-schemas**](https://github.com/oasis-open/cti-stix2-json-schemas): Non-normative STIX and Cyber Observable schemas and examples
 -   [**cti-documentation**](https://github.com/oasis-open/cti-documentation): GitHub Pages site for STIX, CybOX, and TAXII
 -   [**cti-stix-validator**](https://github.com/oasis-open/cti-stix-validator): Validator for STIX 2.0 JSON normative requirements and best practices

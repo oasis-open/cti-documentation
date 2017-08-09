@@ -12,11 +12,11 @@ layout: default
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
+        <div markdown="span">[![STIX Logo]({{ site.baseurl }}/img/LOGO_STIX.svg){: .panel-logo}]({{site.baseurl}}/stix/about)</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
         <div>
           <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/about"> 
-            STIX Home
+            <span class="glyphicon glyphicon-home"></span> STIX Home
           </a>
           <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="STIX Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
             <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
@@ -44,11 +44,11 @@ layout: default
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
+        <div markdown="span">[![TAXII Logo]({{ site.baseurl }}/img/LOGO_TAXII.svg){: .panel-logo}]({{site.baseurl}}/taxii/about)</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
         <div>        
           <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/about"> 
-              TAXII Home
+              <span class="glyphicon glyphicon-home"></span> TAXII Home
           </a>
           <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="TAXII Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
             <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification

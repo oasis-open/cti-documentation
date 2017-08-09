@@ -5,7 +5,6 @@ short_title: Comparing STIX 1 and 2
 categories: stix
 ---
 
-Here is a quick overview of the differences between STIX 1.x/CybOX 2.x and STIX 2.0.
 
 ## One Standard
 
@@ -66,7 +65,7 @@ STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/do
  }
 ```
 <div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Diagram 3]({{ site.baseurl }}/img/STIXdiagram3.PNG){: .figure-img .img-fluid}
+![STIX 2.0 Diagram 3]({{ site.baseurl }}/img/NewSTIXdiagram3.PNG){: .figure-img .img-fluid}
 **STIX Diagram Showing Attack Pattern using a Tool**
 </div>
 

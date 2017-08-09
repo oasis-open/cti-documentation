@@ -37,7 +37,7 @@ STIX Icons represent a minimally viable product (MVP) that fulfills basic consum
 
 #### STIX 2.0 defines twelve STIX Domain Objects (SDOs):
 
-{:.table .table-hover .table-example .table-desc}
+{: .table .table-hover .table-example .table-desc}
 | Icon | Name | Description |
 | :---: | :---: | --- |
 | ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) | **Attack Pattern** | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
@@ -60,3 +60,16 @@ STIX Icons represent a minimally viable product (MVP) that fulfills basic consum
 | :---: | :---:| --- |
 | ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) | **Relationship** | Used to link two SDOs and to describe how they are related to each other. |
 | ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) | **Sighting** | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
+
+Objects Overview
+----------------
+
+The next video provides an overview of STIX 2.0 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
+
+<div class="video-wrapper">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/iAnd3rApMcA?ecver=2" width="640" height="360" frameborder="0"></iframe>
+    </div>
+    <!-- /video --><br><br>
+</div>
+<!-- /video-wrapper -->
