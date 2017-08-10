@@ -1,6 +1,6 @@
 ---
 layout: page
-title: STIX Review
+title: Review
 categories: stix
 hide_title: true
 ---

@@ -15,7 +15,7 @@ layout: default
         <div markdown="span">![STIX Logo]({{ site.baseurl }}/img/stix.png){: .panel-logo}</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
         <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX 2.0 Committee Specification Draft 01" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification!
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
         </a>
         <div class="panel-title text-center">Or check out each individual part here:</div>
         <div class="figure center-block text-center" markdown="span">
@@ -72,9 +72,14 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">![TAXII Logo]({{ site.baseurl }}/img/taxii.png){: .panel-logo}</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 2" href="https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4">
-          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification! (Draft 2)
+        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII 2.0 Draft 2" href="https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/edit#heading=h.4do73o99e2l7">
+          <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification (Draft 2)
         </a>
+        <div class="panel-title text-center">Or check out the published draft here:</div>
+        <div class="figure center-block text-center" markdown="span">
+          [TAXII Version 2.0](https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/pub)         
+        </div>
+        </div>
       </div>
       <div class="panel-body">
         <p>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: STIX Examples and Tutorials
+title: Examples and Tutorials
 categories: stix
 hide_title: true
 ---
@@ -14,6 +14,8 @@ The examples below demonstrate how to use STIX 2.0 concepts for common use cases
 {:.table .table-hover .table-example .table-desc}
 
 | Example                                 | STIX Types                                        | Description                                 |
+| --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
+| [Defining Campaigns vs. Intrusion Sets vs. Threat Actors](/cti-documentation/examples/defining-campaign-ta-is)      | ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png) ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png)![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png) | Intrusion Sets in STIX are represented as an attack package consisting of potentially several campaigns, threat actors and attack patterns. This example helps explain the differences between the Campaign, Intrusion Set, and Threat Actor objects and demonstrates a scenario where all three are used together.|
 | --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
 | [Identifying a Threat Actor Profile](/cti-documentation/examples/identifying-a-threat-actor-profile)      | ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png) | Threat Actors often have several discernible characteristics such as aliases, goals and motivations which can be captured within a STIX Threat Actor object. In this example, the threat actor can also be attributed to an Identity object which models more basic identifiable information. |
 | --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
