@@ -4,6 +4,7 @@ title: Resources
 categories: stix
 ---
 
+
 ### STIX/TAXII Youtube Page
 -  [**Youtube Videos**](https://www.youtube.com/channel/UCmW_oi_zce3On4LyK9KDnfg): Informational videos about STIX/TAXII
 
