@@ -4,7 +4,11 @@ title: Contribute
 categories: stix
 ---
 
-<div class="h2 well info-bo ltred" span="markdown"> STIX is open source and free! Nothing is required to use STIX related material</div>
+<div class="col-md-12">
+    <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="h2 well info-bo ltred" span="markdown"> STIX is open source and free!</div>
+    </div>
+</div>
 
 ## Feedback and Mailing list
 
