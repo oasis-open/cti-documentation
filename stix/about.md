@@ -40,26 +40,26 @@ STIX Icons represent a minimally viable product (MVP) that fulfills basic consum
 {: .table .table-hover .table-example .table-desc}
 | Icon | Name | Description |
 | :---: | :---: | --- |
-| ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) | **Attack Pattern** | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
-| ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png) | **Campaign** | A grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets. |
-| ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png) | **Course of Action** | An action taken to either prevent an attack or respond to an attack. |
-| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) | **Identity** | Individuals, organizations, or groups, as well as classes of individuals, organizations, or groups. 
-| ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) | **Indicator** | Contains a pattern that can be used to detect suspicious or malicious cyber activity. |
-| ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png) | **Intrusion Set** | A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. |
-| ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png) | **Malware** | A type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system. |
-| ![Observed Data Icon]({{ site.baseurl }}/img/icons/observed_data.png) | **Observed Data** | Conveys information observed on a system or network (e.g., an IP address). |
-| ![Report Icon]({{ site.baseurl }}/img/icons/report.png) | **Report** | Collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details. |
-| ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png) | **Threat Actor** |Individuals, groups, or organizations believed to be operating with malicious intent. |
-| ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png) | **Tool** | Legitimate software that can be used by threat actors to perform attacks. |
-| ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png) | **Vulnerability** | A mistake in software that can be directly used by a hacker to gain access to a system or network. |
+| ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) | [**Attack Pattern**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.axjijf603msy) | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
+| ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png) | [**Campaign**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.pcpvfz4ik6d6) | A grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets. |
+| ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png) | [**Course of Action**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a925mpw39txn) | An action taken to either prevent an attack or respond to an attack. |
+| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) | [**Identity**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.wh296fiwpklp) | Individuals, organizations, or groups, as well as classes of individuals, organizations, or groups. 
+| ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) | [**Indicator**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.muftrcpnf89v) | Contains a pattern that can be used to detect suspicious or malicious cyber activity. |
+| ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png) | [**Intrusion Set**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.5ol9xlbbnrdn) | A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. |
+| ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png) | [**Malware**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.s5l7katgbp09) | A type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system. |
+| ![Observed Data Icon]({{ site.baseurl }}/img/icons/observed_data.png) | [**Observed Data**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.p49j1fwoxldc) | Conveys information observed on a system or network (e.g., an IP address). |
+| ![Report Icon]({{ site.baseurl }}/img/icons/report.png) | [**Report**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.n8bjzg1ysgdq) | Collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details. |
+| ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png) | [**Threat Actor**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.k017w16zutw) |Individuals, groups, or organizations believed to be operating with malicious intent. |
+| ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png) | [**Tool**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.z4voa9ndw8v) | Legitimate software that can be used by threat actors to perform attacks. |
+| ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png) | [**Vulnerability**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.q5ytzmajn6re) | A mistake in software that can be directly used by a hacker to gain access to a system or network. |
 
 #### STIX 2.0 defines two STIX Relationship Objects (SROs):
 
 {:.table .table-hover .table-example .table-desc}
 | Icon | Name | Description |
 | :---: | :---:| --- |
-| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) | **Relationship** | Used to link two SDOs and to describe how they are related to each other. |
-| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) | **Sighting** | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
+| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) | [**Relationship**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.e2e1szrqfoan) | Used to link two SDOs and to describe how they are related to each other. |
+| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) | [**Sighting**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a795guqsap3r) | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
 
 Objects Overview
 ----------------
