@@ -31,14 +31,14 @@ A companion CTI specification, [TAXII](https://docs.google.com/document/d/1Jv9IC
 
 Complete information for STIX 2.0 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti) website. [Specification documents](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit?pref=2&pli=1) and [schemas and tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo) are also available.
 
-## STIX 2.0 Icons
+## STIX 2.0 Objects
 
-STIX Icons represent a minimally viable product (MVP) that fulfills basic consumer and producer requirements for CTI sharing. Objects and properties not included in STIX 2.0, but deemed necessary by the community, will be included in future releases.
+STIX Objects represent a minimally viable product (MVP) that fulfills basic consumer and producer requirements for CTI sharing. Objects and properties not included in STIX 2.0, but deemed necessary by the community, will be included in future releases.
 
 #### STIX 2.0 defines twelve STIX Domain Objects (SDOs):
 
 {: .table .table-hover .table-example .table-desc}
-| Icon | Name | Description |
+| Object | Name | Description |
 | :---: | :---: | --- |
 | ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png) | [**Attack Pattern**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.axjijf603msy) | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
 | ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png) | [**Campaign**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.pcpvfz4ik6d6) | A grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets. |
@@ -56,7 +56,7 @@ STIX Icons represent a minimally viable product (MVP) that fulfills basic consum
 #### STIX 2.0 defines two STIX Relationship Objects (SROs):
 
 {:.table .table-hover .table-example .table-desc}
-| Icon | Name | Description |
+| Object | Name | Description |
 | :---: | :---:| --- |
 | ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) | [**Relationship**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.e2e1szrqfoan) | Used to link two SDOs and to describe how they are related to each other. |
 | ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) | [**Sighting**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a795guqsap3r) | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
