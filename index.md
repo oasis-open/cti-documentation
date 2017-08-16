@@ -14,14 +14,6 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">[![STIX Logo]({{ site.baseurl }}/img/LOGO_STIX.svg){: .panel-logo}]({{site.baseurl}}/stix/about)</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
-        <div>
-          <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/about"> 
-            <span class="glyphicon glyphicon-home"></span> STIX Home
-          </a>
-          <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="STIX Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-            <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
-          </a>
-        </div>
       </div>          
       <div class="panel-body">
         <p>
@@ -34,8 +26,13 @@ layout: default
           STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
         </p>
         <div class="figure text-center" markdown="span">
-        ![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
-        **STIX 2.0 Relationship Example**
+        ![STIX Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
+        **STIX Relationship Example**
+        </div>
+        <div class="panel-heading">
+          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/about"> 
+            <span class="glyphicon glyphicon-home"></span> Learn More
+          </a>
         </div>
       </div>
     </div>
@@ -46,14 +43,6 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">[![TAXII Logo]({{ site.baseurl }}/img/LOGO_TAXII.svg){: .panel-logo}]({{site.baseurl}}/taxii/about)</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
-        <div>        
-          <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/about"> 
-              <span class="glyphicon glyphicon-home"></span> TAXII Home
-          </a>
-          <a class="btn btn-primary btn-spec" data-toggle="tooltip" target="_blank" title="TAXII Committee Specification" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">
-            <span class="glyphicon glyphicon-list-alt"></span> Read the Latest Specification
-          </a>
-        </div>
       </div>
       <div class="panel-body">
         <p>
@@ -65,12 +54,16 @@ layout: default
         </p>
           TAXII is specifically designed to support the exchange of CTI represented in STIX.
         </p>
-        <p>
+        <br><br>
         <div class="figure center-block text-center" markdown="span">
           ![TAXII Collections and Channels]({{ site.baseurl }}/img/taxii_diagram.png){: .figure-img .img-fluid}
           **TAXII Collections and Channels**
         </div>
-        </p>
+        <div style="margin-top: -2px;" class="panel-heading">        
+          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/about"> 
+              <span class="glyphicon glyphicon-home"></span> Learn More
+          </a>
+        </div>
       </div>
     </div>
   </div>
