@@ -187,9 +187,10 @@ a {
     }
 }
 
-@media (min-width:992px) and (max-width:1200px) {
+@media (max-width:1200px) {
     .btn-spec {
         max-width: 520px;
+        min-width: 150px;
         white-space: normal;
     }
 }
@@ -381,25 +382,39 @@ pre {
 /*
  * FAQ Related CSS
  */
- .faq {
+.faq-btn {
+    margin-left: 40%;
+    margin-right: 40%;
+    white-space: normal;
+}
+
+@media (max-width:530px) {
+    .faq-btn {
+        margin-left: 29%;
+        margin-right: 51%;
+        white-space: normal;
+    }
+}
+
+.faq {
     margin-left: 15%;
     width: 70%;
     height: 800px;
- }
+}
 
 
 
 /*
  * Tables
  */
- .table-anchor tbody tr td:nth-of-type(1) {
+.table-anchor tbody tr td:nth-of-type(1) {
     width: 25%;  
- }
+}
 
- .table-anchor tbody tr td:nth-of-type(2) {
+.table-anchor tbody tr td:nth-of-type(2) {
     width: 20%;  
- }
+}
 
- .table-anchor tbody tr td a{
+.table-anchor tbody tr td a{
     text-decoration: underline;
- }
+}
