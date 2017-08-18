@@ -22,9 +22,11 @@ All objects in STIX 2.0 are [at the top-level](https://docs.google.com/document/
 
 The generic TTP (tactics, techniques, procedures) and Exploit Target types from STIX 1.x have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with specific purposes in STIX 2.0.
 
-### Sample SDO
 
-```
+<div class="col-md-6" markdown="1">
+{:.text-center}
+### STIX 2 Sample SDO 
+```json
 {
   "type": "attack-pattern",
   "id": "attack-pattern--3098c57b-d623-4c11-92f4-5905da66658b",
@@ -46,6 +48,47 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
   ]
  }
 ```
+</div>
+
+<div class="col-md-6" markdown="1">
+{:.text-center}
+### STIX 1 Sample Object
+```xml
+<xs:complexType name="AttackPatternType">
+  <xs:sequence>
+    <xs:element name="Title" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>Initial Compromise</xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="Description" type="stixCommon:StructuredTextType" minOccurs="0" maxOccurs="unbounded">
+      <xs:annotation>
+        <xs:documentation>Spear Phishing</xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+  <xs:attribute name="id" type="xs:QName">
+    <xs:annotation>
+      <xs:documentation>attack-pattern--3098c57b-d623-4c11-92f4-5905da66658b</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:attribute name="capec_id">
+    <xs:annotation>
+      <xs:documentation>CAPEC-163</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="CAPEC-\d+"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:complexType>
+``` 
+</div>
+
+
+
+
 
 ## Relationships as Top-Level Objects
 
@@ -53,7 +96,7 @@ STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/do
 
 ### Sample Relationship
 
-```
+```json
  {
     "type": "relationship",
     "id": "relationship--1fbd9a8d-4c14-431c-9520-3ccc50b748c1",
@@ -85,9 +128,11 @@ However, the need to incorporate concepts not yet in the specification is enable
 
 Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.0 takes a different approach, specifying [a language for patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) which is independent of the serialization language. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
 
-### Indicator Example with Pattern
+<div class="col-md-6" markdown="1">
+{:.text-center}
+### STIX 2 Indicator Example with Pattern
 
-```
+```json
  {
   "type": "indicator",
   "id": "indicator--031778a4-057f-48e6-9db9-c8d72b81ccd5",
@@ -107,6 +152,34 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
   ]
  }
 ```
+</div>
+
+<div class="col-md-6" markdown="1">
+{:.text-center}
+### STIX 1 Indicator Example
+
+```xml
+ <xs:complexType name="IndicatorBaseType">
+  <xs:attribute name="id" type="xs:QName" use="optional">
+    <xs:annotation>
+      <xs:documentation>indicator--031778a4-057f-48e6-9db9-c8d72b81ccd5</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+    </xs:annotation>
+  </xs:attribute>
+  <xs:element name="Title" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>HTRAN Hop Point Accessor</xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  <xs:attribute name="timestamp" type="xs:dateTime">
+    <xs:annotation>
+      <xs:documentation>2017-02-09T12:11:11.415000Z</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+</xs:complexType>
+```
+</div>
 
 ## Coming Attractions
 
