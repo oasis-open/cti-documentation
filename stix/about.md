@@ -4,11 +4,14 @@ title: About
 categories: stix
 ---
 
-<div class="well info-box" markdown="span">Familiar with STIX 1.x?<br/> Here’s a [comparison to 2.0](compare).</div>
+<div class="well info-box">Familiar with STIX 1.X?<br/>Here's a comparison<br/>
+  <a class="btn btn-primary btn-spec pannel-btn" data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare">STIX 1 <span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right pannel-glfy"></span>  STIX 2
+  </a>
+</div>
 
-Structured Threat Information Expression (STIX™) is a language for describing cyber threat information in a standardized and structured manner to enable the exchange of cyber threat intelligence (CTI). STIX characterizes an extensive set of CTI to include indicators of adversary activity, as well as contextual information characterizing cyber adversary motivations, capabilities, and activities and best courses of action for defense and mitigation.
+## STIX 2 JSON Example
 
-A set of [specifications](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit#heading=h.t32x0azc539r) provide the normative description of STIX 2.0. While STIX 2.0 is defined to be independent of any specific serialization, JSON is the mandatory-to-implement serialization and informative [JSON schemas](https://github.com/oasis-open/cti-stix2-json-schemas) are available. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6):
+STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6):
 
 ```
 {  
@@ -20,22 +23,31 @@ A set of [specifications](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLq
 }
 ```
 
-<div class="figure pull-right text-center" markdown="span">
-![STIX 2.0 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png){: .figure-img .img-fluid}
-**STIX 2.0 Relationship Example**
+<div class="pull-right text-center about-fig" markdown="span">
+![STIX 2 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png)
+**STIX 2 Relationship Example**
 </div>
 
-In addition to describing a set of STIX Domain Objects (SDOs), STIX 2.0 enables relationships to be defined *between* objects. As the example shows, a Campaign may be attributed to a Threat Actor and may target a Vulnerability while an Indicator indicates the Campaign.
+In addition to describing a set of STIX Domain Objects (SDOs), STIX 2 enables relationships to be defined *between* objects. As the example shows, a Campaign may be attributed to a Threat Actor and may target a Vulnerability while an Indicator indicates the Campaign.
 
-A companion CTI specification, [TAXII](https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/pub)™, is designed specifically to transport STIX Objects. However, the structures and serializations of STIX do not rely on any specific transport mechanism, and STIX provides a “Bundle,” a container for STIX Objects to allow for transportation of bulk STIX data, especially over non-TAXII communication mechanisms.
 
-Complete information for STIX 2.0 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti) website. [Specification documents](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit?pref=2&pli=1) and [schemas and tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo) are also available.
+Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti) website. [Specification documents](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit?pref=2&pli=1) and [schemas and tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo) are also available.
 
-## STIX 2.0 Objects
+### Already know some STIX? 
 
-STIX Objects represent a minimally viable product (MVP) that fulfills basic consumer and producer requirements for CTI sharing. Objects and properties not included in STIX 2.0, but deemed necessary by the community, will be included in future releases.
+<div>
+  <a style="width: 150px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
+    <span class="glyphicon glyphicon-education"></span> Examples
+  </a>
 
-#### STIX 2.0 defines twelve STIX Domain Objects (SDOs):
+  <a style="width: 300px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough" href="{{site.baseurl}}/stix/Walkthrough"> 
+    <span class="glyphicon glyphicon-road"></span> Introductory Walkthrough
+  </a>
+</div>
+
+## STIX 2 Objects
+
+#### STIX 2 defines twelve STIX Domain Objects (SDOs):
 
 {: .table .table-hover .table-example .table-desc}
 | Object | Name | Description |
@@ -53,7 +65,7 @@ STIX Objects represent a minimally viable product (MVP) that fulfills basic cons
 | ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png "Tool Icon") | [**Tool**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.z4voa9ndw8v) | Legitimate software that can be used by threat actors to perform attacks. |
 | ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png "Vulnerability Icon") | [**Vulnerability**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.q5ytzmajn6re) | A mistake in software that can be directly used by a hacker to gain access to a system or network. |
 
-#### STIX 2.0 defines two STIX Relationship Objects (SROs):
+#### STIX 2 defines two STIX Relationship Objects (SROs):
 
 {:.table .table-hover .table-example .table-desc}
 | Object | Name | Description |
@@ -64,7 +76,7 @@ STIX Objects represent a minimally viable product (MVP) that fulfills basic cons
 Objects Overview
 ----------------
 
-The next video provides an overview of STIX 2.0 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
+The next video provides an overview of STIX 2 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
 
 <div class="video-wrapper">
     <div class="video-container">

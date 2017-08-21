@@ -98,6 +98,17 @@ figcaption {
   background-color: #D9EAD3;
 }
 
+.about-fig {
+    width: 310px;
+}
+
+@media (min-width:700px) {
+    .about-fig {
+        width: 500px;
+    }
+}
+
+
 /**
  * Lists
  */
@@ -341,12 +352,27 @@ pre {
 
 .well.info-box {
     float: right;
-    width: 35%;
     font-size: 22px;
     margin-left: 25px;
     text-align: center;
 }
 
+.pannel-btn {
+    width: 220px; 
+    font-size: 100%;
+}
+
+.pannel-glfy {
+    width: 10px;
+    margin-left: -10px;
+    padding-right: 20px;
+}
+
+@media (max-width:730px) {
+    .pannel-btn {
+        width: 50px;
+    }
+}
 
 
 /**
