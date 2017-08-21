@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Comparing STIX 1.x/CybOX 2.x with STIX 2.0
+title: Comparing STIX 1.x/CybOX 2.x with STIX 2
 short_title: Comparing STIX 1 and 2
 categories: stix
 ---
@@ -22,10 +22,11 @@ All objects in STIX 2.0 are [at the top-level](https://docs.google.com/document/
 
 The generic TTP (tactics, techniques, procedures) and Exploit Target types from STIX 1.x have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with specific purposes in STIX 2.0.
 
-
+<div class="row">
 <div class="col-md-6" markdown="1">
 {:.text-center}
-### STIX 2 Sample SDO 
+### STIX 2 Sample SDO
+
 ```json
 {
   "type": "attack-pattern",
@@ -53,42 +54,29 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 <div class="col-md-6" markdown="1">
 {:.text-center}
 ### STIX 1 Sample Object
+
 ```xml
-<xs:complexType name="AttackPatternType">
-  <xs:sequence>
-    <xs:element name="Title" type="xs:string" minOccurs="0">
-      <xs:annotation>
-        <xs:documentation>Initial Compromise</xs:documentation>
-      </xs:annotation>
-    </xs:element>
-    <xs:element name="Description" type="stixCommon:StructuredTextType" minOccurs="0" maxOccurs="unbounded">
-      <xs:annotation>
-        <xs:documentation>Spear Phishing</xs:documentation>
-      </xs:annotation>
-    </xs:element>
-  </xs:sequence>
-  <xs:attribute name="id" type="xs:QName">
-    <xs:annotation>
-      <xs:documentation>attack-pattern--3098c57b-d623-4c11-92f4-5905da66658b</xs:documentation>
-    </xs:annotation>
-  </xs:attribute>
-  <xs:attribute name="capec_id">
-    <xs:annotation>
-      <xs:documentation>CAPEC-163</xs:documentation>
-    </xs:annotation>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:pattern value="CAPEC-\d+"/>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:attribute>
-</xs:complexType>
+<stix:TTPs>
+    <stix:TTP id="attack-pattern:ttp-3098c57b-d623-4c11-92f4-5905da66658b" xsi:type='ttp:TTPType' version="1.1">
+        <ttp:Title>Initial Compromise</ttp:Title>
+        <ttp:Behavior>
+            <ttp:Attack_Patterns>
+                <ttp:Attack_Pattern capec_id="CAPEC-163">
+                    <ttp:Description>Spear Phishing</ttp:Description>
+                </ttp:Attack_Pattern>
+            </ttp:Attack_Patterns>
+        </ttp:Behavior>
+    </stix:TTP>
+</stix:TTPs>
+<stix:TTPs>
+  <stix:Kill_Chains>
+      <stixCommon:Kill_Chain id="stix:TTP-af3e707f-2fb9-49e5-8c37-14026ca0a5ff" name="mandiant-attack-lifecycle-model">
+          <stixCommon:Kill_Chain_Phase name="initial-compromise" phase_id="stix:TTP-af1016d6-a744-4ed7-ac91-00fe2272185a"/>
+  </stix:Kill_Chains>
+</stix:TTPs>
 ``` 
 </div>
-
-
-
-
+</div>
 
 ## Relationships as Top-Level Objects
 
@@ -128,6 +116,7 @@ However, the need to incorporate concepts not yet in the specification is enable
 
 Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.0 takes a different approach, specifying [a language for patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) which is independent of the serialization language. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
 
+<div class="row">
 <div class="col-md-6" markdown="1">
 {:.text-center}
 ### STIX 2 Indicator Example with Pattern
@@ -159,26 +148,23 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
 ### STIX 1 Indicator Example
 
 ```xml
- <xs:complexType name="IndicatorBaseType">
-  <xs:attribute name="id" type="xs:QName" use="optional">
-    <xs:annotation>
-      <xs:documentation>indicator--031778a4-057f-48e6-9db9-c8d72b81ccd5</xs:documentation>
-    </xs:annotation>
-  </xs:attribute>
-    </xs:annotation>
-  </xs:attribute>
-  <xs:element name="Title" type="xs:string" minOccurs="0">
-      <xs:annotation>
-        <xs:documentation>HTRAN Hop Point Accessor</xs:documentation>
-      </xs:annotation>
-    </xs:element>
-  <xs:attribute name="timestamp" type="xs:dateTime">
-    <xs:annotation>
-      <xs:documentation>2017-02-09T12:11:11.415000Z</xs:documentation>
-    </xs:annotation>
-  </xs:attribute>
-</xs:complexType>
+<stix:Indicator id="example:indicator-031778a4-057f-48e6-9db9-c8d72b81ccd5" timestamp="2017-02-09T12:11:11.415000+00:00" xsi:type='indicator:IndicatorType'>
+    <indicator:Title>HTRAN Hop Point Accessor</indicator:Title>
+</stix:Indicator>
+<stix:TTPs>
+  <stix:Kill_Chains>
+      <stixCommon:Kill_Chain id="stix:TTP-af3e707f-2fb9-49e5-8c37-14026ca0a5ff" name="mandiant-attack-lifecycle-model">
+          <stixCommon:Kill_Chain_Phase name="establish-foothold" phase_id="stix:TTP-af1016d6-a744-4ed7-ac91-00fe2272185a"/>
+  </stix:Kill_Chains>
+</stix:TTPs>
+<indicator:Observable id="example:Observable-87c9a5bb-d005-4b3e-8081-99f720fad62b">
+  <cybox:Object id="example:Object-12c760ba-cd2c-4f5d-a37d-18212eac7928">
+        <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+        <AddressObj:Address_Value condition="Equals">223.166.0.0/15</AddressObj:Address_Value>
+    </cybox:Object>
+</indicator:Observable>
 ```
+</div>
 </div>
 
 ## Coming Attractions
