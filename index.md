@@ -25,7 +25,7 @@ layout: default
           [Part 4: Cyber Observable Objects](https://docs.google.com/document/d/167aIyr5BIAJJORzjT11U25cGSBJ0cBNSdkheNJFz6l8/pub)<br>
           [Part 5: STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub)          
         </div>
-        </div>          
+      </div>          
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
@@ -64,6 +64,8 @@ layout: default
           <li markdown="span">[Archive of STIX 1.x](https://stixproject.github.io/)</li>
         </ul>
       </div>
+    </div>
+  </div>
 
 
   <div class="col-md-6">
@@ -77,7 +79,6 @@ layout: default
         <div class="panel-title text-center">Or check out the published draft here:</div>
         <div class="figure center-block text-center" markdown="span">
           [TAXII Version 2.0](https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/pub)         
-        </div>
         </div>
       </div>
       <div class="panel-body">
