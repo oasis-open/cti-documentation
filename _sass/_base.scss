@@ -433,7 +433,8 @@ pre {
 /*
  * Tables
  */
-.table-anchor tbody tr td:nth-of-type(1) {
+.table-anchor tbody tr td:nth-of-type(1), 
+.table-col1-width tbody tr td:nth-of-type(1){
     width: 25%;  
 }
 
@@ -444,3 +445,5 @@ pre {
 .table-anchor tbody tr td a{
     text-decoration: underline;
 }
+
+
