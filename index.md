@@ -64,8 +64,7 @@ layout: default
           <li markdown="span">[Archive of STIX 1.x](https://stixproject.github.io/)</li>
         </ul>
       </div>
-    </div>
-  </div>
+
 
   <div class="col-md-6">
     <div class="panel panel-default">
