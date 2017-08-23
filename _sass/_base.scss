@@ -42,9 +42,9 @@ ul, ol, dl, figure,
 /**
  * Coloring
  */
-  .ltred{
-    /** Light Red */
-    background-color: #ffd6d6;
+  .ltgreen{
+    /** Light Green */
+    background-color: #a6ff72;
  }
 
 
@@ -374,6 +374,22 @@ pre {
     }
 }
 
+.med-info-box {
+    width: 848px;
+    margin-top: 20px;
+    margin-right: 100%;
+}
+
+@media (max-width:800px) {
+    .med-info-box {
+        width: 100%;
+    }
+}
+
+.compare-info {
+    margin-top: 8%;
+    padding-bottom: 2%;
+}
 
 /**
  * Videos

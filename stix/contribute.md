@@ -6,7 +6,7 @@ categories: stix
 
 <div class="col-md-12">
     <div class="col-md-6 col-md-offset-3 text-center">
-        <div class="h2 well info-bo ltred" span="markdown"> STIX is Open Source and Free!</div>
+        <div class="h2 well info-bo ltgreen" span="markdown"> STIX is Open Source and Free!</div>
     </div>
 </div>
 <br>

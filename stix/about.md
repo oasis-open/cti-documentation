@@ -4,7 +4,7 @@ title: About
 categories: stix
 ---
 
-<div class="well info-box">Familiar with STIX 1.X?<br/>Here's a comparison<br/>
+<div class="well info-box compare-info">Familiar with STIX 1.X?<br/>Here's a comparison<br/>
   <a class="btn btn-primary btn-spec pannel-btn" data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare">STIX 1 <span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right pannel-glfy"></span>  STIX 2
   </a>
 </div>
@@ -31,18 +31,19 @@ STIX 2 objects are represented in JSON. The following is a JSON-based example of
 In addition to describing a set of STIX Domain Objects (SDOs), STIX 2 enables relationships to be defined *between* objects. As the example shows, a Campaign may be attributed to a Threat Actor and may target a Vulnerability while an Indicator indicates the Campaign.
 
 
-Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit?pref=2&pli=1){: target="_blank"} and [schemas and tools](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti#openrepo){: target="_blank"} are also available.
+Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/stix/resources) are also available.
 
-### Already know some STIX? 
-
-<div>
-  <a style="width: 150px; margin-right: 30px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
-    <span class="glyphicon glyphicon-education"></span> Examples
-  </a>
-
-  <a style="width: 300px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough" href="{{site.baseurl}}/stix/Walkthrough"> 
-    <span class="glyphicon glyphicon-road"></span> Introductory Walkthrough
-  </a>
+<div class="med-info-box well info-box pull-left" style="margin-left: 0;">
+  Already know some STIX?
+  <div>
+    <a style="width: 150px; margin-right: 30px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples  " href="{{site.baseurl}}/stix/examples"> 
+      <span class="glyphicon glyphicon-education"></span> Examples
+    </a>
+  
+    <a style="width: 260px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/Walkthrough"> 
+      <span class="glyphicon glyphicon-road"></span> Introductory Walkthrough
+    </a>
+  </div>
 </div>
 
 ## STIX 2 Objects
