@@ -33,6 +33,18 @@ The examples below demonstrate how to use STIX 2.0 concepts for common use cases
 | --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
 | [Using Granular Markings](/cti-documentation/examples/using-granular-markings) | ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png) ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) ![Green Marking Icon]({{ site.baseurl }}/img/icons/tlp_green.png) ![Amber Marking Icon]({{ site.baseurl }}/img/icons/tlp_amber.png) ![Red Marking Icon]({{ site.baseurl }}/img/icons/tlp_red.png) | Whereas object markings in STIX can limit or restrict how entire objects are used, granular markings delve deeper into the objects and focus on restricting specific individual properties. This example demonstrates how to enforce different TLP markings on multiple properties of an Indicator SDO. |
 
+STIX 2.0 Threat Reports
+==================
+
+The following threat reports have been converted into STIX 2.0.
+
+{:.table .table-hover .table-example .table-desc}
+
+| Threat Report                             | JSON Representation                                       | Description                                 |
+| --------------------------------------- | ------------------------------------------------- | ------------------------------------------- |
+| [Mandiant's APT1 Report](https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf)  |  [APT1 JSON](https://oasis-open.github.io/cti-documentation/stix/examples/example_json/apt1.zip) | This in-depth threat report by Mandiant focuses on a sophisticated advanced persistent threat simply called "APT1". Mandiant concluded that this extensive APT conducted cyber espionage campaigns potentially with sponsorship by the Chinese government. Within the STIX 2 JSON for this report, there are several Campaign, Threat Actor, Indicator, Attack Pattern and Malware objects, as well as an Intrusion Set SDO used to model APT1. Along with these SDOs, there are multiple relationships linking these objects together. Feel free to download this converted report to see all of the SDOs and SROs used.  |  
+| [Fireeye's Poison Ivy Report](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-poison-ivy.pdf)  | [Poison Ivy JSON](https://oasis-open.github.io/cti-documentation/stix/examples/example_json/poisonivy.zip) | Fireeye's threat report on Poison Ivy covers how this remote access tool (RAT) was used by different campaigns and threat actors. In this converted report, there are several variants of PIVY malware represented by the Malware SDO, as well as Campaign, Threat Actor, Attack Pattern, and Vulnerability objects. Relationship SROs help link the malware variants to the campaigns and threat actors and demonstrate the vulnerabilities PIVY exploits. The JSON representation is available for download.   |
+
 
 STIX 2.0 Tutorials
 ==================
