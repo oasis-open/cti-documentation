@@ -12,7 +12,7 @@ layout: default
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <div markdown="span">[![STIX Logo]({{ site.baseurl }}/img/LOGO_STIX.svg){: .panel-logo}]({{site.baseurl}}/stix/about)</div>
+        <div markdown="span">[![STIX Logo]({{ site.baseurl }}/img/LOGO_STIX.svg){: .panel-logo}]({{site.baseurl}}/stix/intro)</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
       </div>          
       <div class="panel-body">
@@ -30,7 +30,7 @@ layout: default
         **STIX Relationship Example**
         </div>
         <div class="panel-heading">
-          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/about"> 
+          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Home" href="{{site.baseurl}}/stix/intro"> 
             <span class="glyphicon glyphicon-home"></span> Learn More
           </a>
         </div>
@@ -41,7 +41,7 @@ layout: default
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <div markdown="span">[![TAXII Logo]({{ site.baseurl }}/img/LOGO_TAXII.svg){: .panel-logo}]({{site.baseurl}}/taxii/about)</div>
+        <div markdown="span">[![TAXII Logo]({{ site.baseurl }}/img/LOGO_TAXII.svg){: .panel-logo}]({{site.baseurl}}/taxii/intro)</div>
         <div class="panel-title text-center">A transport mechanism for sharing cyber threat intelligence</div>
       </div>
       <div class="panel-body">
@@ -60,7 +60,7 @@ layout: default
           **TAXII Collections and Channels**
         </div>
         <div style="margin-top: -2px;" class="panel-heading">        
-          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/about"> 
+          <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/intro"> 
               <span class="glyphicon glyphicon-home"></span> Learn More
           </a>
         </div>

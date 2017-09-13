@@ -1,42 +1,23 @@
 ---
 layout: page
-title: About
+title: Introduction to STIX
 categories: stix
 ---
 
-<div class="well info-box compare-info">Familiar with STIX 1.X?<br/>Here's a comparison<br/>
-  <a class="btn btn-primary btn-spec pannel-btn" data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare">STIX 1 <span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right pannel-glfy"></span>  STIX 2
-  </a>
-</div>
-
-## STIX 2 JSON Example
-
-STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6){: target="_blank"}:
-
-```
-{  
-    "type": "campaign",  
-    "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",  
-    "created": "2016-04-06T20:03:00.000Z",  
-    "name": "Green Group Attacks Against Finance",  
-    "description": "Campaign by Green Group against targets in the financial services sector."  
-}
-```
-
-<div class="pull-right text-center about-fig" markdown="span">
-![STIX 2 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png)
-**STIX 2 Relationship Example**
-</div>
-
-In addition to describing a set of STIX Domain Objects (SDOs), STIX 2 enables relationships to be defined *between* objects. As the example shows, a Campaign may be attributed to a Threat Actor and may target a Vulnerability while an Indicator indicates the Campaign.
 
 
-Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/stix/resources) are also available.
+## What is STIX?
+Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/stix/contribute) and [ask questions]({{ site.baseurl }}/stix/faq) freely.
 
-<div class="med-info-box well info-box pull-left" style="margin-left: 0;">
+
+## Why should you care?
+Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of suspicion, compromise and attribution can be represented clearly with objects and descriptive relationships. STIX information can be visually represented for an analyst or stored as JSON to be quickly machine readible. STIX's openess allows for integration into existing tools and products or utilized for your specific analyst or network needs.
+
+<div class="row">
+<div class="info-box pull-left med-info-box well">
   Already know some STIX?
   <div>
-    <a style="width: 150px; margin-right: 30px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples  " href="{{site.baseurl}}/stix/examples"> 
+    <a style="width: 150px; margin-right: 30px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
       <span class="glyphicon glyphicon-education"></span> Examples
     </a>
   
@@ -45,8 +26,13 @@ Complete information for STIX 2 is available on the [OASIS Cyber Threat Intellig
     </a>
   </div>
 </div>
+<div class="well info-box compare-info">Familiar with old STIX 1.X?<br>
+    <a style="width: 260px;" class="btn btn-primary btn-spec " data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare"><span class="glyphicon glyphicon-duplicate"></span> Here's a comparison</a>
+</div>
+</div>
 
 ## STIX 2 Objects
+STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex represenations of CTI. Below is a list of what can be represented through STIX.
 
 #### STIX 2 defines twelve STIX Domain Objects (SDOs):
 
@@ -74,10 +60,33 @@ Complete information for STIX 2 is available on the [OASIS Cyber Threat Intellig
 | ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png "Relationship Icon") | [**Relationship**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.e2e1szrqfoan){: target="_blank"} | Used to link two SDOs and to describe how they are related to each other. |
 | ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png "Sighting Icon") | [**Sighting**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a795guqsap3r){: target="_blank"} | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
 
+
+## A look at the structure
+
+STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6){: target="_blank"}:
+
+```
+{  
+    "type": "campaign",  
+    "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",  
+    "created": "2016-04-06T20:03:00.000Z",  
+    "name": "Green Group Attacks Against Finance",  
+    "description": "Campaign by Green Group against targets in the financial services sector."  
+}
+```
+
+<div class="pull-right text-center about-fig" markdown="span">
+![STIX 2 Relationship Example]({{ site.baseurl }}/img/stix2_relationship_example_2.png)
+**STIX 2 Relationship Example**
+</div>
+
+Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/stix/resources) are also available.
+
+
 Objects Overview
 ----------------
 
-The next video provides an overview of STIX 2 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
+The video below provides an overview of STIX 2 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
 
 <div class="video-wrapper">
     <div class="video-container">

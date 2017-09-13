@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 2.5%;
+}
+
 
 
 /**
@@ -148,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
  }
 
 .jumbotron {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     background-color: lighten($brand-color, 9%);
 }
@@ -353,19 +357,8 @@ pre {
 .well.info-box {
     float: right;
     font-size: 22px;
-    margin-left: 25px;
+    margin-left: 15px;
     text-align: center;
-}
-
-.pannel-btn {
-    width: 220px; 
-    font-size: 100%;
-}
-
-.pannel-glfy {
-    width: 10px;
-    margin-left: -10px;
-    padding-right: 20px;
 }
 
 @media (max-width:730px) {
@@ -375,9 +368,9 @@ pre {
 }
 
 .med-info-box {
-    width: 848px;
+    width: 700px;
     margin-top: 20px;
-    margin-right: 100%;
+    padding-bottom: 26px;
 }
 
 @media (max-width:800px) {
@@ -387,9 +380,11 @@ pre {
 }
 
 .compare-info {
-    margin-top: 8%;
-    padding-bottom: 2%;
+    margin: 20px 40px 20px 0;
+    padding-bottom: 27px;
 }
+
+
 
 /**
  * Videos
@@ -425,9 +420,24 @@ pre {
  * FAQ Related CSS
  */
 .faq-btn {
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 27%;
+    margin-right: 20%;
     white-space: normal;
+}
+
+@media (max-width:1200px) {
+    .faq-btn {
+        margin-left: 22%;
+        margin-right: 20%;
+        white-space: normal;
+    }
+}
+
+@media (max-width:990px) {
+    .faq-btn {
+        margin-left: 30%;
+        white-space: normal;
+    }
 }
 
 @media (max-width:530px) {
