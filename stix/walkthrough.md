@@ -9,7 +9,7 @@ This sample walkthrough explains how to use STIX 2.0 indicators, malware, sighti
 
 ## Prerequisites
 
-Prior to following this walkthrough, you should have a basic understanding of STIX 2.0 and JSON. You can gain a high-level overview of STIX from the [About page](https://oasis-open.github.io/cti-documentation/stix/about.html) and a more detailed understanding from the [specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.0, that information can be found [here](https://oasis-open.github.io/cti-documentation/stix/compare.html).
+Prior to following this walkthrough, you should have a basic understanding of STIX 2.0 and JSON. You can gain a high-level overview of STIX from the [Intreoduction page](https://oasis-open.github.io/cti-documentation/stix/intro.html) and a more detailed understanding from the [specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.0, that information can be found [here](https://oasis-open.github.io/cti-documentation/stix/compare.html).
 
 It is helpful to have some knowledge of JSON (JavaScript Object Notation), which is the data-interchange format STIX 2.0 uses to serialize objects and properties. An introduction to JSON can be found [here](http://www.json.org/).
 
@@ -119,8 +119,8 @@ So the Relationship object used in our scenario for Company A links the <span cl
 
 With this Relationship SRO, Company A has related the Indicator SDO to the Malware SDO. A diagram of this relationship below shows the SDO “nodes” and the SRO “edge”.
 
-<div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Diagram 1]({{ site.baseurl }}/img/STIXdiagram1.PNG){: .figure-img .img-fluid}
+<div class="about-fig center-block text-center" markdown="span">
+![STIX 2.0 Diagram 1]({{ site.baseurl }}/img/NewSTIXdiagram1.PNG)
 **STIX Diagram Showing Relationship**
 </div>
 
@@ -185,8 +185,8 @@ If Company B uses the Indicator provided by Company A and gets a match, it means
 
 Company B creates a Sighting SRO with the <span class="sdo">**sighting_of_ref**</span> property that references the id of the Indicator object that contains the pattern for the malware hash of the CryptoLocker Malware (first created by Company A). Company B can publish this back to the TAXII server to let others know they also saw this malware present in their network. A STIX diagram with the Sighting object added can be seen below:
 
-<div class="figure center-block text-center" markdown="span">
-![STIX 2.0 Diagram 2]({{ site.baseurl }}/img/STIXdiagram2.PNG){: .figure-img .img-fluid}
+<div class="about-fig center-block text-center" markdown="span">
+![STIX 2 Diagram 2]({{ site.baseurl }}/img/NewSTIXdiagram2.PNG)
 **STIX Diagram with Sighting**
 </div>
 
@@ -197,3 +197,5 @@ To summarize, we just looked at how Company A could create some threat intellige
 ## Where to Go from Here
 
 This walkthrough is a very basic look at a data exchange between two organizations using the concepts in STIX 2.0. It is meant to give a simple overview of what you can do with STIX SDOs and SROs in one threat intelligence sharing scenario. We really just scratched the surface with what you can do with STIX. There are many more objects used to model threat information such as Threat Actors, Campaigns, Intrusion Sets, Observed Data and Vulnerabilities to name a few. You can also use [Data Markings](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.j0uqagkk6m9n) to restrict how the information can be shared as well as [Customized](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.4ne27rjj6udo) objects and properties to suit more specific needs. To learn more about all of these concepts, see the [STIX 2.0 specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit), which contains all the information you need to get started with STIX 2.0.
+
+### [More specific examples]({{site.baseurl}}/stix/examples)

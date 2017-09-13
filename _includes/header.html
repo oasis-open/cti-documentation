@@ -22,14 +22,15 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STIX <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                {% for pg in site.pages %}
-                  {% if pg.categories contains 'stix' and (pg.title or pg.short_title) %}
-                    <li {% if p.url == page.url %}class="active"{% endif %}>
-                      {% include page-link.html p=pg %}
-                    </li>
-                  {% endif %}
-                {% endfor %}
-                <li> <a href="https://stixproject.github.io/">STIX 1.x (archive)</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/intro">Introduction to STIX</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/walkthrough">Beginners Walkthrough</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/resources">Tools, Libraries and Specifications</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/examples">Examples and Use Cases</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/faq">Need help? - FAQ</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/contribute">Contributors Guide</a></li>
+                <li> <a href="{{ site.baseurl }}/stix/compare">STIX 1.X and STIX 2 Comparison</a></li>
+                <li> <a target="_blank" href="https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w">Latest STIX Specifications</a></li>
+                <li> <a target="_blank" href="https://stixproject.github.io/">STIX 1.x (archive)</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -42,7 +43,8 @@
                     </li>
                   {% endif %}
                 {% endfor %}
-                <li> <a href="https://taxiiproject.github.io/">TAXII 1.x (archive)</a></li>
+                <li> <a target="_blank" href="https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/pub">Latest TAXII Specification</a></li>
+                <li> <a target="_blank" href="https://taxiiproject.github.io/">TAXII 1.x (archive)</a></li>
               </ul>
             </li>
             {% for pg in site.pages %}

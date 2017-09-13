@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 2.5%;
+}
+
 
 
 /**
@@ -40,6 +44,16 @@ ul, ol, dl, figure,
 
 
 /**
+ * Coloring
+ */
+  .ltgreen{
+    /** Light Green */
+    background-color: #a6ff72;
+ }
+
+
+
+/**
  * Images
  */
 img {
@@ -65,6 +79,8 @@ img {
   width: 175px;
 }
 
+
+
 /**
  * Figures
  */
@@ -85,6 +101,17 @@ figcaption {
   color: #38761d;
   background-color: #D9EAD3;
 }
+
+.about-fig {
+    width: 310px;
+}
+
+@media (min-width:700px) {
+    .about-fig {
+        width: 500px;
+    }
+}
+
 
 /**
  * Lists
@@ -125,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
  }
 
 .jumbotron {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     background-color: lighten($brand-color, 9%);
 }
@@ -146,6 +173,7 @@ h3 img {
  .header-link .glyphicon {
     top: $header-icon-height / 2;
  }
+
 
 
 /**
@@ -174,12 +202,14 @@ a {
     }
 }
 
-@media (min-width:992px) and (max-width:1200px) {
+@media (max-width:1200px) {
     .btn-spec {
         max-width: 520px;
+        min-width: 150px;
         white-space: normal;
     }
 }
+
 
 
 /**
@@ -313,7 +343,7 @@ pre {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-height: 100px;
+    max-height: 130px;
 }
 
 .panel-title {
@@ -326,20 +356,43 @@ pre {
 
 .well.info-box {
     float: right;
-    width: 35%;
     font-size: 22px;
-    margin-left: 25px;
+    margin-left: 15px;
     text-align: center;
 }
+
+@media (max-width:730px) {
+    .pannel-btn {
+        width: 50px;
+    }
+}
+
+.med-info-box {
+    width: 700px;
+    margin-top: 20px;
+    padding-bottom: 26px;
+}
+
+@media (max-width:800px) {
+    .med-info-box {
+        width: 100%;
+    }
+}
+
+.compare-info {
+    margin: 20px 40px 20px 0;
+    padding-bottom: 27px;
+}
+
+
 
 /**
  * Videos
  */
 .video-container {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 52%;
 	padding-top: 30px;
-	height: 0;
 	overflow: hidden;
 }
 
@@ -349,13 +402,74 @@ pre {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 85%;
+	height: 85%;
 }
+
 .video-wrapper {
-	width: 640px;
+	width: 800px;
 	float:none;
 	margin-left:auto;
 	margin-right:auto;
 	max-width: 100%;
 }
+
+
+
+/*
+ * FAQ Related CSS
+ */
+.faq-btn {
+    margin-left: 27%;
+    margin-right: 20%;
+    white-space: normal;
+}
+
+@media (max-width:1200px) {
+    .faq-btn {
+        margin-left: 22%;
+        margin-right: 20%;
+        white-space: normal;
+    }
+}
+
+@media (max-width:990px) {
+    .faq-btn {
+        margin-left: 30%;
+        white-space: normal;
+    }
+}
+
+@media (max-width:530px) {
+    .faq-btn {
+        margin-left: 29%;
+        margin-right: 51%;
+        white-space: normal;
+    }
+}
+
+.faq {
+    margin-left: 15%;
+    width: 70%;
+    height: 800px;
+}
+
+
+
+/*
+ * Tables
+ */
+.table-anchor tbody tr td:nth-of-type(1), 
+.table-col1-width tbody tr td:nth-of-type(1){
+    width: 25%;  
+}
+
+.table-anchor tbody tr td:nth-of-type(2) {
+    width: 20%;  
+}
+
+.table-anchor tbody tr td a{
+    text-decoration: underline;
+}
+
+
