@@ -21,7 +21,7 @@ Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of s
       <span class="glyphicon glyphicon-education"></span> Examples
     </a>
   
-    <a style="width: 260px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/Walkthrough"> 
+    <a style="width: 260px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/walkthrough"> 
       <span class="glyphicon glyphicon-road"></span> Introductory Walkthrough
     </a>
   </div>
