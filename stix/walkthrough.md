@@ -74,7 +74,7 @@ Along with the common properties that are found in all STIX objects, each object
  "modified": "2017-02-06T09:13:07.243000Z",
  "name": "CryptoLocker Hash",
  "description": "This file is a part of CryptoLocker",
- "pattern": "[file.hashes.SHA-256 = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+ "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
  "labels": ["malicious-activity"],
  "valid_from": "2017-01-01T09:00:00.000000Z"
  }
@@ -141,7 +141,7 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
  "modified": "2017-02-06T09:13:07.243000Z",
  "name": "CryptoLocker Hash",
  "description": "This file is a part of CryptoLocker",
- "pattern": "[file.hashes.SHA-256 = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+ "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
  "labels": ["malicious-activity"],
  "valid_from": "2017-01-01T09:00:00.000000Z"
  },
