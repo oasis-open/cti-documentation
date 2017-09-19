@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-categories: stix
+categories: FAQ
 hide_title: true
 ---
 

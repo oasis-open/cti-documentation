@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -0.6em;
     opacity: 0;
     height: $header-icon-height;
+    margin-top: -.5%;
  }
 
  h2:hover .header-link,
@@ -329,6 +330,10 @@ pre {
     margin: 1px 3px 1px 0px;
 }
 
+.github-icon {
+    width: 22px;
+}
+
 
 
 /**
@@ -368,15 +373,8 @@ pre {
 }
 
 .med-info-box {
-    width: 700px;
     margin-top: 20px;
     padding-bottom: 26px;
-}
-
-@media (max-width:800px) {
-    .med-info-box {
-        width: 100%;
-    }
 }
 
 .compare-info {
@@ -465,11 +463,14 @@ pre {
 }
 
 .table-anchor tbody tr td:nth-of-type(2) {
-    width: 20%;  
+    width: 15%;  
 }
 
 .table-anchor tbody tr td a{
     text-decoration: underline;
 }
 
+.table-img tbody tr td img {
+    width: 30%;
+}
 
