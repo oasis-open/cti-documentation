@@ -7,32 +7,34 @@ categories: stix
 
 
 ## What is STIX?
-Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/stix/contribute) and [ask questions]({{ site.baseurl }}/stix/faq) freely.
+Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/stix/contribute) and [ask questions]({{ site.baseurl }}/faq) freely.
 
 
 ## Why should you care?
-Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of suspicion, compromise and attribution can be represented clearly with objects and descriptive relationships. STIX information can be visually represented for an analyst or stored as JSON to be quickly machine readible. STIX's openess allows for integration into existing tools and products or utilized for your specific analyst or network needs.
+Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of suspicion, compromise and attribution can be represented clearly with objects and descriptive relationships. STIX information can be visually represented for an analyst or stored as JSON to be quickly machine readible. STIX's openness allows for integration into existing tools and products or utilized for your specific analyst or network needs.
 
 <div class="row">
-<div class="info-box pull-left med-info-box well">
-  Already know some STIX?
-  <div>
-    <a style="width: 150px; margin-right: 30px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
-      <span class="glyphicon glyphicon-education"></span> Examples
-    </a>
+  <div class="info-box pull-left med-info-box col-md-12 well">
+    Already know some STIX?
+    <div>
+      <a style="padding: 6px 50px 6px 50px; margin-left: 3%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
+        <span class="glyphicon glyphicon-education"></span> View Examples
+      </a>
+    
+      <a style="margin-right: 10%; margin-left: 10%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/walkthrough"> 
+        <span class="glyphicon glyphicon-road"></span> View Introductory Walkthrough
+      </a>
   
-    <a style="width: 260px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/walkthrough"> 
-      <span class="glyphicon glyphicon-road"></span> Introductory Walkthrough
-    </a>
+      <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare"><span class="glyphicon glyphicon-duplicate"></span> STIX 1.x &amp; STIX 2 Comparison
+      </a>
+
+    </div>
   </div>
 </div>
-<div class="well info-box compare-info">Familiar with old STIX 1.X?<br>
-    <a style="width: 260px;" class="btn btn-primary btn-spec " data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare"><span class="glyphicon glyphicon-duplicate"></span> Here's a comparison</a>
-</div>
-</div>
+
 
 ## STIX 2 Objects
-STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex represenations of CTI. Below is a list of what can be represented through STIX.
+STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX.
 
 #### STIX 2 defines twelve STIX Domain Objects (SDOs):
 
@@ -80,7 +82,7 @@ STIX 2 objects are represented in JSON. The following is a JSON-based example of
 **STIX 2 Relationship Example**
 </div>
 
-Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/stix/resources) are also available.
+Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/resources) are also available.
 
 
 Objects Overview

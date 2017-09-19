@@ -57,8 +57,8 @@ layout: default
         </p>
         <br><br>
         <div class="figure center-block text-center" markdown="span">
-          ![TAXII Collections and Channels]({{ site.baseurl }}/img/taxii_diagram.png){: .figure-img .img-fluid}
-          **TAXII Collections and Channels**
+          ![TAXII Collections]({{ site.baseurl }}/img/taxii_diagram.png){: .figure-img .img-fluid}
+          **TAXII Collections**
         </div>
         <div style="margin-top: -2px;" class="panel-heading">        
           <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/intro"> 

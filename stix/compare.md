@@ -104,7 +104,7 @@ STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/do
 </div>
 <div class="center-block text-center about-fig" markdown="span">
 ![STIX 2 Diagram 3]({{ site.baseurl }}/img/NewSTIXdiagram3.PNG)
-**STIX Diagram Showing Attack Pattern using a Tool**
+**Attack Pattern SDO that "Uses" a Tool SDO**
 </div>
 
 ## Streamlined Model

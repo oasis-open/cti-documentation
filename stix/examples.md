@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Examples and Tutorials
+title: Examples
 categories: stix
 hide_title: true
 ---
@@ -10,9 +10,9 @@ STIX 2.0 Examples
 
 The examples below demonstrate how to use STIX 2.0 concepts for common use cases. They are useful for linking multiple concepts together and provide more detail regarding STIX objects and properties.
 
-Done with examples? [Check out the spec!]({{ site.baseurl }}/stix/resources.html#stix-public-documents)
+Done with examples? [Check out the spec!]({{ site.baseurl }}/resources#stix-20-specification)
 
-{:.table .table-hover .table-example .table-desc .table-anchor}
+{:.table .table-hover .table-example .table-desc .table-anchor .table-img}
 
 | Example | STIX Types | Description |
 | --- | --- | --- |
