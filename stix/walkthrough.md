@@ -68,15 +68,15 @@ Along with the common properties that are found in all STIX objects, each object
 
 ```
  {
-     "type": "indicator",
-     "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-     "created": "2017-02-06T09:13:07.243000Z",
-     "modified": "2017-02-06T09:13:07.243000Z",
-     "name": "CryptoLocker Hash",
-     "description": "This file is a part of CryptoLocker",
-     "pattern": "[file.hashes.SHA-256 = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
-     "labels": ["malicious-activity"],
-     "valid_from": "2017-01-01T09:00:00.000000Z"
+    "type": "indicator",
+    "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
+    "created": "2017-02-06T09:13:07.243000Z",
+    "modified": "2017-02-06T09:13:07.243000Z",
+    "name": "CryptoLocker Hash",
+    "description": "This file is a part of CryptoLocker",
+    "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+    "labels": ["malicious-activity"],
+    "valid_from": "2017-01-01T09:00:00.000000Z"
  }
 ```
 Walking through Company A’s Indicator object above, we see the four common properties first, followed by the <span class="sdo">**name**</span> of the Indicator detailing that this is CryptoLocker hash. An optional property, <span class="sdo">**description**</span>, gives more information about the Indicator object. Other optional properties can be seen in the [Indicator properties table](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.wfiae74706sw). Next, the <span class="sdo">**pattern**</span> property for this particular indicator contains the STIX patterning representation for a SHA-256 file hash along with the hash value of the CryptoLocker variant. More information about STIX patterning is available in the [STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) part of the spec. Following <span class="sdo">**pattern**</span> is a <span class="sdo">**labels**</span>  property that describes this particular type of Indicator as malicious-activity. The values for labeling Indicators come from the Indicator Label open-vocabulary located in the [Vocabularies section](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.iit7tolczlxv) of the spec, which suggest values to use but do not require them. Finally, the <span class="sdo">**valid_from**</span> property gives a timestamp for this Indicator relaying that it is only valuable intelligence from that specific date.
@@ -130,6 +130,7 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
 
 ```
  {
+<<<<<<< HEAD
      "type": "bundle",
      "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
      "spec_version": "2.0",
@@ -164,6 +165,42 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
              "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
          }
     ]
+=======
+ "type": "bundle",
+ "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
+ "spec_version": "2.0",
+ "objects": [
+ {
+ "type": "indicator",
+ "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
+ "created": "2017-02-06T09:13:07.243000Z",
+ "modified": "2017-02-06T09:13:07.243000Z",
+ "name": "CryptoLocker Hash",
+ "description": "This file is a part of CryptoLocker",
+ "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+ "labels": ["malicious-activity"],
+ "valid_from": "2017-01-01T09:00:00.000000Z"
+ },
+ {
+ "type": "malware",
+ "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
+ "created": "2017-02-06T09:26:21.647000Z",
+ "modified": "2017-02-06T09:26:21.647000Z",
+ "name": "CryptoLocker",
+ "description": "CryptoLocker is known to be malicious ransomware.",
+ "labels": ["ransomware"]
+ },
+ {
+ "type": "relationship",
+ "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
+ "created": "2017-02-06T09:30:51.987000Z",
+ "modified": "2017-02-06T09:30:51.987000Z",
+ "relationship_type": "indicates",
+ "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
+ "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
+ }
+ ]
+>>>>>>> 6fdd1503c7b8d00a7a22c723208267dc4c734743
  }
 ```
 
