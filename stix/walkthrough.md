@@ -129,8 +129,7 @@ With this Relationship SRO, Company A has related the Indicator SDO to the Malwa
 Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be <span class="values">bundle</span> and also a unique <span class="sdo">**id**</span> property similar to STIX objects. There is also a required <span class="sdo">**spec_version**</span> property to indicate the STIX specification which must be <span class="values">2.0</span> in this example. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
 
 ```
- {
-<<<<<<< HEAD
+  {
      "type": "bundle",
      "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
      "spec_version": "2.0",
@@ -142,7 +141,7 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
              "modified": "2017-02-06T09:13:07.243000Z",
              "name": "CryptoLocker Hash",
              "description": "This file is a part of CryptoLocker",
-             "pattern": "[file.hashes.SHA-256 = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+             "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
              "labels": ["malicious-activity"],
              "valid_from": "2017-01-01T09:00:00.000000Z"
          },
@@ -164,43 +163,7 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
              "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
              "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
          }
-    ]
-=======
- "type": "bundle",
- "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
- "spec_version": "2.0",
- "objects": [
- {
- "type": "indicator",
- "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
- "created": "2017-02-06T09:13:07.243000Z",
- "modified": "2017-02-06T09:13:07.243000Z",
- "name": "CryptoLocker Hash",
- "description": "This file is a part of CryptoLocker",
- "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
- "labels": ["malicious-activity"],
- "valid_from": "2017-01-01T09:00:00.000000Z"
- },
- {
- "type": "malware",
- "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
- "created": "2017-02-06T09:26:21.647000Z",
- "modified": "2017-02-06T09:26:21.647000Z",
- "name": "CryptoLocker",
- "description": "CryptoLocker is known to be malicious ransomware.",
- "labels": ["ransomware"]
- },
- {
- "type": "relationship",
- "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
- "created": "2017-02-06T09:30:51.987000Z",
- "modified": "2017-02-06T09:30:51.987000Z",
- "relationship_type": "indicates",
- "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
- "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
- }
- ]
->>>>>>> 6fdd1503c7b8d00a7a22c723208267dc4c734743
+     ]
  }
 ```
 
