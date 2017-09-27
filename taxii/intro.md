@@ -4,13 +4,15 @@ title: Introduction to TAXII
 categories: taxii
 ---
 
-Trusted Automated Exchange of Intelligence Information (TAXII™) is an application protocol for exchanging CTI over HTTPS. ​TAXII defines a RESTful API (a set of services and message exchanges) and a set of requirements for TAXII Clients and Servers. As depicted in Figure 5, TAXII defines two primary services to support a variety of common sharing models:
+Trusted Automated Exchange of Intelligence Information (TAXII™) is an application protocol for exchanging CTI over HTTPS. ​TAXII defines a RESTful API (a set of services and message exchanges) and a set of requirements for TAXII Clients and Servers. As depicted below, TAXII defines two primary services to support a variety of common sharing models:
 
 -   **Collection** - A Collection is an interface to a logical repository of CTI objects provided by a TAXII Server that allows a producer to host a set of CTI data that can be requested by consumers: TAXII Clients and Servers exchange information in a request-response model.
 
 -   **Channel** - Maintained by a TAXII Server, a Channel allows producers to push data to many consumers and consumers to receive data from many producers: TAXII Clients exchange information with other TAXII Clients in a publish-subscribe model. Note: The TAXII 2.0 specification reserves the keywords required for Channels but does not specify Channel services. Channels and their services will be defined in a later version of TAXII.
 
+<div class="center-block text-center" markdown="span">
 ![TAXII Collections and Channels]({{ site.baseurl }}/img/taxii_diagram2.png)
+</div>
 
 Collections and Channels can be organized in different ways. For example, they can be grouped to support the needs of a particular trust group.
 
@@ -22,4 +24,4 @@ TAXII was specifically designed to support the exchange of CTI represented in ST
 
 TAXII design principles include minimizing operational changes needed for adoption; easy integration with existing sharing agreements, and support for all widely used threat sharing models: hub-and-spoke, peer-to-peer, source-subscriber.
 
-TAXII 2.0 is defined by a single normative [specification document](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4).
+TAXII 2.0 is defined by a single normative [specification document](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4){: target="_blank"}.
