@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   and sophisticated threat analysis.
 baseurl: "/cti-documentation" # the subpath of your site, e.g. /blog
 url: "https://oasis-open.github.io" # the base hostname & protocol for your site
-last_updated: "Wed Sep 20 20:43:56 UTC 2017" # Should be changed whenever a new commit is made to master. 
+last_updated: "Tue Sep 26 17:53:45 UTC 2017" # Should be changed whenever a new commit is made to master. 
                                              # Currently is manual with `date -u` used for UTC
 copyright: "Copyright &copy; 2017, OASIS Open"
 
