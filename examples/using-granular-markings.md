@@ -48,7 +48,7 @@ Gotham also created a [Threat Actor SDO](https://docs.google.com/document/d/1Ivk
 
 The final piece of intelligence in this scenario is a [Relationship SRO](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) that connects the Indicator and Threat Actor SDO's together. In this relationship, a <span class="sdo">**relationship_type**</span> property specifies that this Indicator <span class="values">indicates</span> the Threat Actor. Due to the fact this Relationship object links to a TLP: Red marked object, Gotham also marked it as TLP: Red once again using the <span class="sdo">**object_marking_refs**</span> field within Relationship.
 
-The full JSON representation can be seen at the very end of this example and a diagram of the scenario is illustrated below:
+The full JSON representation can be seen at the very end of this example and a diagram of the scenario is illustrated below [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/using-granular-markings.json){: target="_blank"}:
 
 ![Using Granular Markings Diagram]({{ site.baseurl }}/img/Using-granular-markings.PNG)
 

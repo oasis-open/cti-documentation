@@ -27,7 +27,7 @@ A Malware SDO can also be useful for capturing kill chain information about the 
 
 Finally, a [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) SRO can be used to link the Indicator and Malware objects. The URL Indicator <span class="values">indicates</span> the backdoor Malware object. In this relationship, the indicator id is the <span class="sdo">**source\_ref**</span>, and the malware id is the <span class="sdo">**target\_ref**</span>.
 
-A diagram of this relationship below shows the Indicator and Malware SDO’s and the Relationship SRO between them:
+A diagram of this relationship below shows the Indicator and Malware SDO’s and the Relationship SRO between them [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/indicator-for-malicious-url.json){: target="_blank"}:
 
 ![Indicator for malicious url]({{ site.baseurl }}/img/Indicator-for-malicious-url.PNG)
 

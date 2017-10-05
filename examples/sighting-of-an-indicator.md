@@ -28,7 +28,7 @@ In this example, Beta’s Sighting object captures information about Alpha’s I
 
 In some cases, an indicator like a URL can be spotted several times on a network over a significant period of time. For this scenario, however, Beta only spotted the URL once which results in the **count** field reflecting an integer value of “1”. Since it was just seen once, the <span class="sdo">**first\_seen**</span>, and <span class="sdo">**last\_seen**</span> properties portray the same timestamp.
 
-A diagram of this scenario below shows the Identity and Indicator SDO’s and the Sighting SRO:
+A diagram of this scenario below shows the Identity and Indicator SDO’s and the Sighting SRO [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/sighting-of-an-indicator.json){: target="_blank"}:
 
 ![Sighting of an Indicator]({{ site.baseurl }}/img/sighting-of-an-indicator.PNG)
 
