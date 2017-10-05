@@ -14,8 +14,8 @@ Done with examples? [Check out the spec!]({{ site.baseurl }}/resources#stix-20-s
 
 <script src="{{ site.baseurl }}/js/example_filter.js"></script>
 
-{% assign SDO_list = "Attack Pattern,Campaign,Course of Action,Identity,Indicator,Intrusion Set,Malware,Observed Data,Report,Threat Actor,Tool,Vulnerability,Relationship,Sighting" %}
-{% assign SRO_list = "Relationship,Sighting" %}
+{% assign SDO_list = "Attack Pattern,Campaign,Course of Action,Identity,Indicator,Intrusion Set,Malware,Observed Data,Report,Threat Actor,Tool,Vulnerability" %}
+{% assign SRO_list = "Sighting" %}
 <div class="btn-group">
     <button style="width: 150px;" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
       STIX Type Filter <span class="caret"></span></button>
@@ -28,7 +28,7 @@ Done with examples? [Check out the spec!]({{ site.baseurl }}/resources#stix-20-s
         <li role="presentation"><a class="tag-filter" role="menuitem" tabindex="-1" href="#">{{tag}}</a></li>
         {% endfor %}
         <li role="presentation" class="divider"></li>
-        <li role="presentation" class="dropdown-header">STIX Relationshiop Objects</li>
+        <li role="presentation" class="dropdown-header">STIX Relationship Objects</li>
         {% assign SRO = SRO_list | split:"," | sort %}
         {% for tag in SRO %}
         <li role="presentation"><a class="tag-filter" role="menuitem" tabindex="-1" href="#">{{tag}}</a></li>
