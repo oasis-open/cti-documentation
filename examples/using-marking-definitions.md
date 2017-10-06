@@ -26,7 +26,7 @@ Finally, Stark can apply these marking definitions to the [Indicator](https://do
 
 Other than object marking references, the rest of the Indicator object contains properties that detail information about the IP address. The <span class="sdo">**pattern**</span> property, for instance, is based on the [STIX patterning language](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) and represents an IPv4 address as a comparison expression: <span class="values">\[ipv4-addr:value = '10.0.0.0'\]</span>. Stark also knows this is a nefarious IP and relays this information with the <span class="sdo">**labels**</span> property indicating this IP is associated with <span class="values">malicious-activity</span>. Due to the fact this was a known bad IP present on their network, it is advantageous for Stark to be able to apply the appropriate TLP marking definitions to this indicator.
 
-A diagram of this scenario below shows both the Identity and Indicator SDO’s as well as the Marking Definition objects:
+A diagram of this scenario below shows both the Identity and Indicator SDO’s as well as the Marking Definition objects [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/using-marking-definitions.json){: target="_blank"}:
 
 ![Using Marking Definitions Diagram]({{ site.baseurl }}/img/Using-marking-definitions.PNG)
 
