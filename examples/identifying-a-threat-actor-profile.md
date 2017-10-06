@@ -28,9 +28,11 @@ Basic identifying information of the threat actor can be modeled with the [Ident
 
 Now that the information for Disco Team is represented in the Threat Actor and Identity SDO’s, the [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) SRO links the two objects together. In this example, the <span class="sdo">**source\_ref**</span> threat actor id is <span class="values">attributed-to</span> the <span class="sdo">**target\_ref**</span> identity id:
 
-A diagram of this relationship below shows the Threat Actor and Identity SDO’s and the Relationship SRO:
+A diagram of this relationship below shows the Threat Actor and Identity SDO’s and the Relationship SRO [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/identifying-a-threat-actor-profile.json){: target="_blank"}:
 
 ![Identifying a TA Profile Diagram]({{ site.baseurl }}/img/Identifying-a-TA-profile.PNG)
+
+
 
 **Further Reading**
 -------------------

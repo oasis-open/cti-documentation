@@ -28,7 +28,7 @@ Besides the [common properties](https://docs.google.com/document/d/1dIrh1Lp3KAjE
 
 Finally, it is worth mentioning that none of the objects in this scenario use the standard [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) SRO which is typically used to relate objects with one another. The Sighting SRO is used instead for the sighting of the Malware object and all other relationships in the diagram below are embedded within the objects. For instance, the Sighting object contains several embedded relationships including what was observed, who the object was created by and where the sighting was seen.
 
-A diagram of this scenario is depicted below:
+A diagram of this scenario is depicted below [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/sighting-of-observed-data.json){: target="_blank"}:
 
 ![Sighting of Observed-data]({{ site.baseurl }}/img/Sighting-of-observed-data.PNG)
 
