@@ -24,4 +24,4 @@ TAXII was specifically designed to support the exchange of CTI represented in ST
 
 TAXII design principles include minimizing operational changes needed for adoption; easy integration with existing sharing agreements, and support for all widely used threat sharing models: hub-and-spoke, peer-to-peer, source-subscriber.
 
-TAXII 2.0 is defined by a single normative [specification document](https://docs.google.com/document/d/1eyhS3-fOlRkDB6N39Md6KZbvbCe3CjQlampiZPg-5u4){: target="_blank"}.
+### [TAXII 2.0 Specification Document]({{ site.baseurl }}/resources.html#taxii-20-specification)
