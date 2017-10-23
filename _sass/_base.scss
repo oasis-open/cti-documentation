@@ -475,13 +475,10 @@ pre {
     width: 30%;
 }
 
-
-
 /*
-* Example Label Filter - Just used for tags, not CSS
-*/
-#examples-table{}
-#tag-filterer{}
-.tag-filter{}
-
+ * CSS for visulized-sdo-relationships.md
+ */
+ .relationshipIcon {
+    cursor: pointer;
+ }
 
