@@ -6,7 +6,7 @@ categories: examples
 
 <script src="{{ site.baseurl }}/js/visualized_sdo_relationships.js"></script>
 
-This example iterates over all SDOs and visually represents possible relationships of each SDO to another. Visual representations can simplify understanding and are often easier to interpret than text alone. All graphs were created with [Graphvis](http://graphviz.org/){: target="_blank"}. To download the Graphvis files [go here](#graphvis-files).
+This example iterates over all SDOs and visually represents possible relationships of each SDO to another. Visual representations can simplify understanding and are often easier to interpret than text alone. All graphs were created with [Graphviz](http://graphviz.org/){: target="_blank"}. To download the Graphviz files [go here](#graphviz-files).
 
 **Overview of All Relationships**
 ------------
@@ -48,5 +48,5 @@ Click the SDO in the table you wish to view.
 </div>
 </div>
 
-## [Graphvis Files]({{ site.baseurl }}/img/relationships/SDO_Relationships_Dot_Files.zip)
+## [Graphviz Files]({{ site.baseurl }}/img/relationships/SDO_Relationships_Dot_Files.zip)
 
