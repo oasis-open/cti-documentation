@@ -15,7 +15,8 @@ The graphic below shows how each SDO fits in the overall SDO ecosystem with regu
 
 **Note:** Report and Observed Data do not have any relationships.
 
-![SDO Relationship Overview]({{ site.baseurl }}/img/relationships/SDO_Relationships_Graphviz.png)
+
+<a href="{{site.baseurl}}/img/relationships/SDO_Relationships_Graphviz.png"><img src="{{site.baseurl}}/img/relationships/SDO_Relationships_Graphviz.png"></a>
 
 **Visulized SDOs**
 --------------
@@ -49,4 +50,3 @@ Click the SDO in the table you wish to view.
 </div>
 
 ## [Graphviz Files]({{ site.baseurl }}/img/relationships/SDO_Relationships_Dot_Files.zip)
-
