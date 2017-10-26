@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $('img.relationshipGraph').hide();
+    $('object.relationshipGraph').hide();
     $('img.relationshipIcon').bind('click', function() {
-        $('img.relationshipGraph').fadeOut("fast");
+        $('object.relationshipGraph').hide();
         $('#'+$(this).attr('data-tag')).fadeIn("fast");
     });
 });
