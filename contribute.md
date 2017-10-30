@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Contribute and Join The Global Community
-categories: stix
+title: Contribute
+categories: Contribute
+hide_title: true
 ---
+
+Contribute and Join The Global Community
+===================================================
 
 ### Feedback and Mailing list
 
