@@ -38,7 +38,7 @@ categories: resources
 {: .table .table-hover .table-example .table-desc .table-col1-width .table-col2-width}
 | Google Doc | Text | |
 | :------ | | :------ | ----------- |
-[**Part 1: STIX 2.0 Interoperability Test Document**](https://docs.google.com/document/d/1Bk3QsGqS84odU2iJtTZ8GokLZIOuz52iM7QKkRhJtQc){: target="_blank"}|**TBD**|Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX 2.0 if they wish to self-certify that their software is verified as interoperable|
+[**Part 1: STIX 2.0 Interoperability Test Document**](https://docs.google.com/document/d/1Bk3QsGqS84odU2iJtTZ8GokLZIOuz52iM7QKkRhJtQc){: target="_blank"}|[**Part 1: STIX 2.0 Interoperability Test Document**](https://docs.google.com/document/d/1Bk3QsGqS84odU2iJtTZ8GokLZIOuz52iM7QKkRhJtQc/pub){: target="_blank"}|Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX 2.0 if they wish to self-certify that their software is verified as interoperable|
 
 
 ### OASIS CTI TC [Open Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
