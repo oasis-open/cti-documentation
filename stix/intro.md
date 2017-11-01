@@ -34,7 +34,7 @@ Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of s
 
 
 ## STIX 2 Objects
-STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX.
+STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX. More detail and visual representations can be found [here.]({{ site.baseurl }}/examples/visualized-sdo-relationships)
 
 #### STIX 2 defines twelve STIX Domain Objects (SDOs):
 
