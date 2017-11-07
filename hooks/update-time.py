@@ -12,7 +12,7 @@ def main():
     old_date_loc = filedata.find('last_updated: \"')
     if old_date_loc < 0:
         print_err()
-        
+
     old_date = filedata[old_date_loc:filedata.find("\n", old_date_loc)]
     filedata = filedata.replace(old_date, new_date)
 
