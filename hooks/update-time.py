@@ -22,7 +22,7 @@ def main():
     if call(["git", "add", "_config.yml"]):
         print_err()
 
-    if call(["git", "commit", "-m", "\"Git Hook: Updated 'last_updated' time\""]):
+    if call(["git", "commit", "-m", "Git Hook: Updated 'last_updated' time"]):
         print_err()
 
     print "[+] Updated 'last_updated' time"
