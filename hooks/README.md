@@ -1,6 +1,6 @@
 ## Git Hooks
 
-To take advantage of the `update-time.py` pre-push Git Hook issue the command below from the repositories root directory. 
+To take advantage of the `update-time.py` pre-push Git Hook issue the command below from the repository's root directory. 
 
 ```ln -s -f ../../hooks/update-time.py .git/hooks/pre-push```
 
