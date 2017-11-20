@@ -2,9 +2,13 @@
 
 from time import gmtime, strftime
 from sys import exit, stderr
-from subprocess import call
+from subprocess import call, check_output
 
 def main():
+    git_log = check_output("git log".split(' '))
+    if git_log.split('\n')[4].find("Git Hook: Updated 'last_updated' time") >= 0:
+        exit(0)
+
     new_date = 'last_updated: {}'.format(strftime("\"%a %b %d %H:%M:%S UTC %Y\"", gmtime()))
     with open('_config.yml', 'rb') as FILE:
         filedata = FILE.read()
@@ -19,14 +23,14 @@ def main():
     with open('_config.yml', 'wb') as FILE:
         FILE.write(filedata)
 
-    if call(["git", "add", "_config.yml"]):
+    if call("git add _config.yml".split(' ')):
         print_err()
 
     if call(["git", "commit", "-m", "Git Hook: Updated 'last_updated' time"]):
         print_err()
 
-    print "[+] Updated 'last_updated' time"
-    exit(0)
+    print "[+] Updated 'last_updated' time. Please `git push` again."
+    exit(1)
 
 def print_err():
     stderr.write("[!] Error updating 'last_updated:' in '_config.yml. Exiting...\n")
