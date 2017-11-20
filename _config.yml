@@ -13,8 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   and sophisticated threat analysis.
 baseurl: "/cti-documentation" # the subpath of your site, e.g. /blog
 url: "https://oasis-open.github.io" # the base hostname & protocol for your site
-last_updated: "Tue Oct 31 18:26:49 UTC 2017" # Should be changed whenever a new commit is made to master. 
-                                             # Currently is manual with `date -u` used for UTC
+# DO NOT MODIFY THE `last_updated` date. It should be updated automatically
+# by the git pre-push hook.
+last_updated: "Mon Nov 20 22:12:09 UTC 2017"
 copyright: "Copyright &copy; 2017, OASIS Open"
 
 # Build settings

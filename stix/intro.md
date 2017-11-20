@@ -4,8 +4,6 @@ title: Introduction to STIX
 categories: stix
 ---
 
-
-
 ## What is STIX?
 Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/contribute) and [ask questions]({{ site.baseurl }}/faq) freely.
 
@@ -17,14 +15,14 @@ Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of s
   <div class="info-box pull-left med-info-box col-md-12 well">
     Already know some STIX?
     <div>
-      <a style="padding: 6px 50px 6px 50px; margin-left: 3%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples"> 
+      <a style="padding: 6px 50px 6px 50px; margin-left: 3%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Examples" href="{{site.baseurl}}/stix/examples">
         <span class="glyphicon glyphicon-education"></span> View Examples
       </a>
-    
-      <a style="margin-right: 10%; margin-left: 10%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/walkthrough"> 
+
+      <a style="margin-right: 10%; margin-left: 10%;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="Introductory Walkthrough"   href="{{site.baseurl}}/stix/walkthrough">
         <span class="glyphicon glyphicon-road"></span> View Introductory Walkthrough
       </a>
-  
+
       <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="STIX Version Comparison" href="{{site.baseurl}}/stix/compare"><span class="glyphicon glyphicon-duplicate"></span> STIX 1.x &amp; STIX 2 Comparison
       </a>
 
@@ -44,7 +42,7 @@ STIX Objects categorize each piece of information with specific attributes to be
 | ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png "Attack Pattern Icon") | [**Attack Pattern**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.axjijf603msy){: target="_blank"} | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
 | ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png "Campaign Icon") | [**Campaign**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.pcpvfz4ik6d6){: target="_blank"} | A grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets. |
 | ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png "Course of Action Icon") | [**Course of Action**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a925mpw39txn){: target="_blank"} | An action taken to either prevent an attack or respond to an attack. |
-| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png "Identity Icon") | [**Identity**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.wh296fiwpklp){: target="_blank"} | Individuals, organizations, or groups, as well as classes of individuals, organizations, or groups. 
+| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png "Identity Icon") | [**Identity**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.wh296fiwpklp){: target="_blank"} | Individuals, organizations, or groups, as well as classes of individuals, organizations, or groups.
 | ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png "Indicator Icon") | [**Indicator**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.muftrcpnf89v){: target="_blank"} | Contains a pattern that can be used to detect suspicious or malicious cyber activity. |
 | ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png "Intrusion Set Icon") | [**Intrusion Set**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.5ol9xlbbnrdn){: target="_blank"} | A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. |
 | ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png "Malware Icon") | [**Malware**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.s5l7katgbp09){: target="_blank"} | A type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system. |
