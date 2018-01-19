@@ -18,6 +18,9 @@ categories: resources
 #### STIX 2.0 Specification
 
 | HTML | PDF | Word | Description |
+| --- | --- | --- | --- |
+| HTML | PDF | Word | Description |
+
 | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.html){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.pdf){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.docx){: target="_blank"} | Defines concepts that apply across all of STIX and defines the overall structure of the STIX language |
 
 |[**Part 2: STIX Objects**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part2-stix-objects.html){: target="_blank"} |[**Part 2: STIX Objects**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part2-stix-objects.pdf){: target="_blank"} |[**Part 2: STIX Objects**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part2-stix-objects.docx){: target="_blank"} |Defines the set of domain objects and relationship objects that STIX uses to represent cyber threat information|
