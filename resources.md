@@ -20,6 +20,7 @@ categories: resources
 | HTML | PDF | Word | Description |
 | --- | --- | --- | --- |
 | HTML | PDF | Word | Description |
+| [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.html){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.pdf){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.docx){: target="_blank"} | Defines concepts that apply across all of STIX and defines the overall structure of the STIX language |
 
 | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.html){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.pdf){: target="_blank"} | [**Part 1: STIX Core Concepts**](https://docs.oasis-open.org/cti/stix/v2.0/stix-v2.0-part1-stix-core.docx){: target="_blank"} | Defines concepts that apply across all of STIX and defines the overall structure of the STIX language |
 
