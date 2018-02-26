@@ -50,6 +50,7 @@ categories: resources
 |[**cti-pattern-validator**](https://github.com/oasis-open/cti-pattern-validator){: target="_blank"}|Validate patterns used to express CybOX content in STIX Indicators|
 |[**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2){: target="_blank"}|Python APIs for STIX 2 |
 |[**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"}|Convert STIX 1.2 XML to STIX 2.0 JSON|
+|[**cti-stix-slider**](https://github.com/oasis-open/cti-stix-slider){: target="_blank"}|Convert STIX 2.0 JSON to STIX 1.2 XML|
 |[**cti-stix-validator**](https://github.com/oasis-open/cti-stix-validator){: target="_blank"}|Validator for STIX 2.0 JSON normative requirements and best practices|
 |[**cti-stix-visualization**](https://github.com/oasis-open/cti-stix-visualization){: target="_blank"}|Lightweight visualization for STIX 2.0 objects and relationships|
 |[**cti-stix2-json-schemas**](https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"}| Non-normative STIX and Cyber Observable schemas and examples|
