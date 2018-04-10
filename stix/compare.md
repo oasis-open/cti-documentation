@@ -60,8 +60,8 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 {
   "type": "attack-pattern",
   "id": "attack-pattern--01",
-  "created": "2015-05-15T09:11:12.515000Z",
-  "modified": "2015-05-15T09:11:12.515000Z",
+  "created": "2015-05-15T09:11:12.515Z",
+  "modified": "2015-05-15T09:11:12.515Z",
   "name": "Initial Compromise",  
   "external_references": [
     {
@@ -94,8 +94,8 @@ STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/do
  {
     "type": "relationship",
     "id": "relationship--01",
-    "created": "2017-02-09T11:13:27.431000Z",
-    "modified": "2017-02-09T11:13:27.431000Z",
+    "created": "2017-02-09T11:13:27.431Z",
+    "modified": "2017-02-09T11:13:27.431Z",
     "relationship_type": "uses",
     "source_ref": "attack-pattern--03",
     "target_ref": "tool--04"
@@ -161,8 +161,8 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
  {
   "type": "indicator",
   "id": "indicator--01",
-  "created": "2017-02-09T12:11:11.415000Z",
-  "modified": "2017-02-09T12:11:11.415000Z",
+  "created": "2017-02-09T12:11:11.415Z",
+  "modified": "2017-02-09T12:11:11.415Z",
   "name": "HTRAN Hop Point Accessor",
   "pattern": "[ipv4-addr:value = 
                       '10.1.0.0/15']",
