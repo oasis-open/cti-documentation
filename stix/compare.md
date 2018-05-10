@@ -29,7 +29,7 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 
 ```xml
 <stix:TTPs>
- <stix:TTP id="attack-pattern:ttp-01" xsi:type='ttp:TTPType' 
+ <stix:TTP id="attack-pattern:ttp-01" xsi:type='ttp:TTPType'
            version="1.1">
    <ttp:Title>Initial Compromise</ttp:Title>
     <ttp:Behavior>
@@ -43,13 +43,13 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 </stix:TTPs>
 <stix:TTPs>
  <stix:Kill_Chains>
-  <stixCommon:Kill_Chain id="stix:TTP-02" 
+  <stixCommon:Kill_Chain id="stix:TTP-02"
                          name="mandiant-attack-lifecycle-model">
-  <stixCommon:Kill_Chain_Phase name="initial-compromise" 
+  <stixCommon:Kill_Chain_Phase name="initial-compromise"
                                phase_id="stix:TTP-03"/>
  </stix:Kill_Chains>
 </stix:TTPs>
-``` 
+```
 </div>
 
 <div class="col-md-5" markdown="1">
@@ -129,22 +129,22 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
 ### STIX 1 Indicator Example
 
 ```xml
-<stix:Indicator id="example:indicator-01" 
-                timestamp="2017-02-09T12:11:11.415000+00:00" 
+<stix:Indicator id="example:indicator-01"
+                timestamp="2017-02-09T12:11:11.415000+00:00"
                 xsi:type='indicator:IndicatorType'>
  <indicator:Title>HTRAN Hop Point Accessor</indicator:Title>
 </stix:Indicator>
 <stix:TTPs>
  <stix:Kill_Chains>
-  <stixCommon:Kill_Chain id="stix:TTP-02" 
+  <stixCommon:Kill_Chain id="stix:TTP-02"
                          name="mandiant-attack-lifecycle-model">
-  <stixCommon:Kill_Chain_Phase name="establish-foothold" 
+  <stixCommon:Kill_Chain_Phase name="establish-foothold"
                                phase_id="stix:TTP-03"/>
  </stix:Kill_Chains>
 </stix:TTPs>
 <indicator:Observable id="example:Observable-04">
  <cybox:Object id="example:Object-05">
-  <cybox:Properties xsi:type="AddressObj:AddressObjectType" 
+  <cybox:Properties xsi:type="AddressObj:AddressObjectType"
                     category="ipv4-addr">
   <AddressObj:Address_Value condition="Equals">10.1.0.0/15
   </AddressObj:Address_Value>
@@ -164,13 +164,13 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
   "created": "2017-02-09T12:11:11.415000Z",
   "modified": "2017-02-09T12:11:11.415000Z",
   "name": "HTRAN Hop Point Accessor",
-  "pattern": "[ipv4-addr:value = 
+  "pattern": "[ipv4-addr:value =
                       '10.1.0.0/15']",
   "labels": [ "malicious-activity" ],
   "valid_from": "2015-05-15T09:00:00.000000Z",
   "kill_chain_phases": [
     {
-      "kill_chain_name": 
+      "kill_chain_name":
         "mandiant-attack-lifecycle-model",
       "phase_name": "establish-foothold"
     }

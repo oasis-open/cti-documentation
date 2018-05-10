@@ -457,14 +457,14 @@ pre {
 /*
  * Tables
  */
-.table-anchor tbody tr td:nth-of-type(1), 
+.table-anchor tbody tr td:nth-of-type(1),
 .table-col1-width tbody tr td:nth-of-type(1),
 .table-col2-width tbody tr td:nth-of-type(2) {
-    width: 25%;  
+    width: 25%;
 }
 
 .table-anchor tbody tr td:nth-of-type(2) {
-    width: 15%;  
+    width: 15%;
 }
 
 .table-anchor tbody tr td a{
@@ -481,4 +481,3 @@ pre {
  .relationshipIcon {
     cursor: pointer;
  }
-
