@@ -1,0 +1,7 @@
+language: python
+
+install:
+  - pip install stix2-validator
+
+script:
+  - validate-examples.sh
