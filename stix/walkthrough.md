@@ -45,8 +45,8 @@ Every SDO and SRO in STIX use common properties found in all objects. Some of th
  {
      "type": "indicator",
      "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-     "created": "2017-02-06T09:13:07.243000Z",
-     "modified": "2017-02-06T09:13:07.243000Z"
+     "created": "2017-02-06T09:13:07.243Z",
+     "modified": "2017-02-06T09:13:07.243Z"
  }
 ```
 
@@ -54,8 +54,8 @@ In the example above, the <span class="sdo">**created**</span> and <span class="
 
 ```
 {
-    "created": "2017-02-06T09:13:07.243000Z",
-    "modified": "2017-07-19T04:18:09.864000Z"
+    "created": "2017-02-06T09:13:07.243Z",
+    "modified": "2017-07-19T04:18:09.864Z"
 }
 ```
 
@@ -70,8 +70,8 @@ Along with the common properties that are found in all STIX objects, each object
  {
     "type": "indicator",
     "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-    "created": "2017-02-06T09:13:07.243000Z",
-    "modified": "2017-02-06T09:13:07.243000Z",
+    "created": "2017-02-06T09:13:07.243Z",
+    "modified": "2017-02-06T09:13:07.243Z",
     "name": "CryptoLocker Hash",
     "description": "This file is a part of CryptoLocker",
     "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
@@ -89,8 +89,8 @@ A Malware SDO is used to represent information about the CryptoLocker malware Co
  {
      "type": "malware",
      "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
-     "created": "2017-02-06T09:26:21.647000Z",
-     "modified": "2017-02-06T09:26:21.647000Z",
+     "created": "2017-02-06T09:26:21.647Z",
+     "modified": "2017-02-06T09:26:21.647Z",
      "name": "CryptoLocker",
      "description": "CryptoLocker is known to hold files hostage for ransom.",
      "labels": ["ransomware"]
@@ -107,8 +107,8 @@ A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This ob
  {
      "type": "relationship",
      "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
-     "created": "2017-02-06T09:30:51.987000Z",
-     "modified": "2017-02-06T09:30:51.987000Z",
+     "created": "2017-02-06T09:30:51.987Z",
+     "modified": "2017-02-06T09:30:51.987Z",
      "relationship_type": "indicates",
      "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
      "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
@@ -137,8 +137,8 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
          {
              "type": "indicator",
              "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-             "created": "2017-02-06T09:13:07.243000Z",
-             "modified": "2017-02-06T09:13:07.243000Z",
+             "created": "2017-02-06T09:13:07.243Z",
+             "modified": "2017-02-06T09:13:07.243Z",
              "name": "CryptoLocker Hash",
              "description": "This file is a part of CryptoLocker",
              "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
@@ -148,8 +148,8 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
          {
              "type": "malware",
              "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
-             "created": "2017-02-06T09:26:21.647000Z",
-             "modified": "2017-02-06T09:26:21.647000Z",
+             "created": "2017-02-06T09:26:21.647Z",
+             "modified": "2017-02-06T09:26:21.647Z",
              "name": "CryptoLocker",
              "description": "CryptoLocker is known to be malicious ransomware.",
              "labels": ["ransomware"]
@@ -157,8 +157,8 @@ Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are u
          {
              "type": "relationship",
              "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
-             "created": "2017-02-06T09:30:51.987000Z",
-             "modified": "2017-02-06T09:30:51.987000Z",
+             "created": "2017-02-06T09:30:51.987Z",
+             "modified": "2017-02-06T09:30:51.987Z",
              "relationship_type": "indicates",
              "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
              "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
