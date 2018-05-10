@@ -6,7 +6,7 @@ identity = stix2.Identity(
     modified="2017-04-14T13:07:49.812Z",
     name="Stark Industries",
     contact_information="info@stark.com",
-    identity_class="organisation",
+    identity_class="organization",
     sectors=["defence"]
 )
 

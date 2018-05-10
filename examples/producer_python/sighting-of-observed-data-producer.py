@@ -5,7 +5,7 @@ identityOscorp = stix2.Identity(
     created="2017-04-14T13:07:49.812Z",
     modified="2017-04-14T13:07:49.812Z",
     name="Oscorp Industries",
-    identity_class="organisation",
+    identity_class="organization",
     contact_information="norman@oscorp.com",
     sectors=["technology"]
 )
@@ -15,7 +15,7 @@ identityPym = stix2.Identity(
     created="2017-04-14T13:07:49.812Z",
     modified="2017-04-14T13:07:49.812Z",
     name="Pym Technologies",
-    identity_class="organisation",
+    identity_class="organization",
     contact_information="hank@pymtech.com",
     sectors=["technology"]
 )

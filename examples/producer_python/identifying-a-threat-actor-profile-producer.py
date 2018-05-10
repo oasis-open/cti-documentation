@@ -21,7 +21,7 @@ identity = stix2.Identity(
     modified="2016-08-23T18:05:49.307Z",
     name="Disco Team",
     description="Disco Team is the name of an organized threat actor crime-syndicate.",
-    identity_class="organisation",
+    identity_class="organization",
     contact_information="disco-team@stealthemail.com"
 )
 

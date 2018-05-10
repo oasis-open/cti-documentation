@@ -9,7 +9,7 @@
       "created": "2016-08-08T15:50:10.983Z",
       "modified": "2016-08-08T15:50:10.983Z",
       "name": "Franistan Intelligence",
-      "identity_class": "organisation"
+      "identity_class": "organization"
     },
     {
       "type": "identity",
@@ -23,7 +23,7 @@
         }
       ],
       "name": "Branistan Peoples Party",
-      "identity_class": "organisation"
+      "identity_class": "organization"
     },
     {
       "type": "threat-actor",

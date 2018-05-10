@@ -19,7 +19,7 @@ identity1 = stix2.Identity(
     created="2016-08-08T15:50:10.983Z",
     modified="2016-08-08T15:50:10.983Z",
     name="Franistan Intelligence",
-    identity_class="organisation"
+    identity_class="organization"
 )
 
 ref_bpp = stix2.ExternalReference(
@@ -32,7 +32,7 @@ identity2 = stix2.Identity(
     created="2016-08-08T15:50:10.983Z",
     modified="2016-08-08T15:50:10.983Z",
     name="Branistan Peoples Party",
-    identity_class="organisation"
+    identity_class="organization"
     external_references= [ref_bpp]
 )
 

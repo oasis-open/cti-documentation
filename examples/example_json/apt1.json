@@ -209,7 +209,7 @@
       "created": "2015-05-15T09:00:00.000Z",
       "modified": "2015-05-15T09:00:00.000Z",
       "name": "Mandiant",
-      "identity_class": "organisation",
+      "identity_class": "organization",
       "contact_information": "info@stark.com",
       "sectors": [
         "defence"

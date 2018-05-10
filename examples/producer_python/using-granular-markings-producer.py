@@ -21,7 +21,7 @@ identity = stix2.Identity(
     modified="2017-04-27T16:18:24.318Z",
     name="Gotham National Bank",
     contact_information="contact@gothamnational.com",
-    identity_class="organisation",
+    identity_class="organization",
     sectors=["financial-services"]
 )
 
