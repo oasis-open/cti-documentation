@@ -26,7 +26,7 @@ Prior to creating your STIX objects you may want to review the [JSON schemas]( h
 
 A sample of how an object is structured can be seen below:
 
-```
+```json
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "attack-pattern",
@@ -55,7 +55,7 @@ A sample of how an object is structured can be seen below:
         },
         "description": {
           "type": "string",
-          "description": "A description that provides more details and context about the Attack Pattern, 
+          "description": "A description that provides more details and context about the Attack Pattern,
                             potentially including its purpose and its key characteristics."
         },
         "kill_chain_phases": {
@@ -81,7 +81,7 @@ The [STIX validator](https://github.com/oasis-open/cti-stix-validator) tool is a
 
 ## Pattern Validator
 
-Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, ```[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']``` would pass the pattern validator tool whereas something like, ```[file:hashes.'SHA-256'= 'example.exe']``` would not. This tool can be used via command line or as a Python library.
+Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, `[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']` would pass the pattern validator tool whereas something like, `[file:hashes.'SHA-256'= 'example.exe']` would not. This tool can be used via command line or as a Python library.
 
 ## STIX Visualization
 
@@ -121,7 +121,7 @@ For instance, putting this STIX 1.x XML content into the elevator (NOTE: STIX_Pa
 ```
 
 Results in the following STIX 2.0 JSON output:
-```
+```json
 {
     "id": "bundle--8fab937e-b694-11e3-b71c-0800271e87d2",
     "objects": [

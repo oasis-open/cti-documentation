@@ -30,7 +30,7 @@ The next common relationship involves the Identity SDO of the Branistan Peopleâ€
 
 Finally, there are several more relationships that link the campaigns, intrusion set, and threat actor together. Both campaigns are <span class="values">attributed-to</span> the Intrusion Set and Threat Actor SDOs (in separate relationships). Also, due to Intrusion Set representing the entire attack package orchestrated by this Threat Actor, the Intrusion Set SDO is <span class="values">attributed-to</span> the Threat Actor object as well.
 
-The following diagrams help visualize the relationships between the SDOs in this scenario. 
+The following diagrams help visualize the relationships between the SDOs in this scenario.
 [An interactive version can be found here.](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/defining-campaigns-threat-actors-intrusion-sets.json){: target="_blank"} The first diagram below serves to represent the connections among the Intrusion Set, Threat Actor, and Campaign objects:
 
 ![Identifying a TA Profile Diagram]({{ site.baseurl }}/img/campaign-ta-is-1.PNG)
@@ -60,7 +60,7 @@ To read more about the objects in this example as well as common properties and 
 **Implementation**
 ------------------
 
-{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="campaign-is-ta" %}{% highlight xml linenos %}
+{% include start_tabs.html tabs="JSON|Python Producer|Python Consumer" name="campaign-is-ta" %}{% highlight json linenos %}
 {% include_relative example_json/defining-campaigns-threat-actors-intrusion-sets.json %}
 {% endhighlight %}{% include tab_separator.html %}{% highlight python linenos %}
 {% include_relative producer_python/defining-campaigns-threat-actors-intrusion-sets-producer.py %}

@@ -24,19 +24,19 @@ Now that Gotham has selected the appropriate TLP Marking Object types, they can 
 
 For other Indicator properties, Gotham used less restrictive TLP markings than TLP: Red. One required Indicator property is a list of <span class="sdo">**labels**</span>, which gives more context about the type of indicator being modeled. In this property list, Gotham labeled this indicator as both <span class="values">malicious-activity</span> and <span class="values">attribution</span>. Both labels in the list come from the STIX 2.0 specification's [Indicator Label Open Vocabulary](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.cvhfwe3t9vuo). Gotham decided to apply the less restrictive TLP: Green marking to <span class="values">malicious-activity</span> and felt a the more restrictive TLP: Amber marking was needed for <span class="values">attribution</span>. In order to communicate two different markings like this on the <span class="sdo">**labels**</span> property, the first label in the list is represented as <span class="values">labels\[0\]</span>, and the second as <span class="values">labels\[1\]</span>. To illustrate this, the JSON sample below shows how these would be marked if we were just marking the <span class="sdo">**labels**</span> field only (Note: Marking Definition ID starting with "f88..." is TLP: Amber and the ID starting with "340..." is TLP: Green):
 
-```
+```json
 {
-"granular_markings": [  
+"granular_markings": [
   {
     "marking_ref": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
-    "selectors": [    
+    "selectors": [
       "labels.[1]"
     ]
   },
   {
     "marking_ref": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
     "selectors": [
-      "labels.[0]",      
+      "labels.[0]",
     ]
   }
 ]}
@@ -44,7 +44,7 @@ For other Indicator properties, Gotham used less restrictive TLP markings than T
 
 Along with these Indicator <span class="sdo">**labels**</span>, Gotham chose to mark the properties <span class="sdo">**name**</span> and <span class="sdo">**pattern**</span> as TLP: Green. They can mark any property they would like but cannot mark invalid properties such as <span class="values">labels\[3\]</span>, or <span class="values">kill\_chain\_phases\[0\]</span> since these are not present currently within this Indicator SDO.
 
-Gotham also created a [Threat Actor SDO](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.k017w16zutw) to capture information about the threat actor this Indicator indicates. In this example, the threat actor, whose <span class="sdo">**name**</span> is known as <span class="values">The Joker</span>, has been attributed to the fake email indicator. Along with <span class="sdo">**name**</span>, this object helps to structure other information about The Joker such as <span class="sdo">**aliases**</span>, <span class="sdo">**roles**</span>, and a <span class="sdo">**primary_motivation**</span>. Since all of this intelligence is considered sensitive to Gotham National, they marked the entire object as TLP: Red using [object markings](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.bnienmcktc0n) instead of granular markings. This is accomplished through a property inherent in all SDO's and STIX Relationship Object's (SRO's) called <span class="sdo">**object_marking_refs**</span>, which lists all the marking definition IDs that apply to this object. Unlike the <span class="sdo">**granular\_markings**</span> property that would apply to different fields within Threat Actor, the <span class="sdo">**object_marking_refs**</span> applies to the entire Threat Actor SDO.  
+Gotham also created a [Threat Actor SDO](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.k017w16zutw) to capture information about the threat actor this Indicator indicates. In this example, the threat actor, whose <span class="sdo">**name**</span> is known as <span class="values">The Joker</span>, has been attributed to the fake email indicator. Along with <span class="sdo">**name**</span>, this object helps to structure other information about The Joker such as <span class="sdo">**aliases**</span>, <span class="sdo">**roles**</span>, and a <span class="sdo">**primary_motivation**</span>. Since all of this intelligence is considered sensitive to Gotham National, they marked the entire object as TLP: Red using [object markings](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.bnienmcktc0n) instead of granular markings. This is accomplished through a property inherent in all SDO's and STIX Relationship Object's (SRO's) called <span class="sdo">**object_marking_refs**</span>, which lists all the marking definition IDs that apply to this object. Unlike the <span class="sdo">**granular\_markings**</span> property that would apply to different fields within Threat Actor, the <span class="sdo">**object_marking_refs**</span> applies to the entire Threat Actor SDO.
 
 The final piece of intelligence in this scenario is a [Relationship SRO](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) that connects the Indicator and Threat Actor SDO's together. In this relationship, a <span class="sdo">**relationship_type**</span> property specifies that this Indicator <span class="values">indicates</span> the Threat Actor. Due to the fact this Relationship object links to a TLP: Red marked object, Gotham also marked it as TLP: Red once again using the <span class="sdo">**object_marking_refs**</span> field within Relationship.
 

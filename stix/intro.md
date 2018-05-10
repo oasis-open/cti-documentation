@@ -65,13 +65,13 @@ STIX Objects categorize each piece of information with specific attributes to be
 
 STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6){: target="_blank"}:
 
-```
-{  
-    "type": "campaign",  
-    "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",  
-    "created": "2016-04-06T20:03:00.000Z",  
-    "name": "Green Group Attacks Against Finance",  
-    "description": "Campaign by Green Group against targets in the financial services sector."  
+```json
+{
+    "type": "campaign",
+    "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+    "created": "2016-04-06T20:03:00.000Z",
+    "name": "Green Group Attacks Against Finance",
+    "description": "Campaign by Green Group against targets in the financial services sector."
 }
 ```
 
