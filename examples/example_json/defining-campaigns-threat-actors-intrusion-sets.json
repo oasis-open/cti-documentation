@@ -257,7 +257,7 @@
     },
     {
       "type": "relationship",
-      "id": "relationship--f9d2f337-bf47-40d2-8afd-908d4e366572",
+      "id": "relationship--b43d0fac-02e5-49cf-b660-4261fccfd3b3",
       "created": "2016-08-08T15:50:10.983Z",
       "modified": "2016-08-08T15:50:10.983Z",
       "relationship_type": "uses",
@@ -266,7 +266,7 @@
     },
     {
       "type": "relationship",
-      "id": "relationship--f9d2f337-bf47-40d2-8afd-908d4e366572",
+      "id": "relationship--5d7d4355-f199-4494-8330-d8f772749d8f",
       "created": "2016-08-08T15:50:10.983Z",
       "modified": "2016-08-08T15:50:10.983Z",
       "relationship_type": "uses",
