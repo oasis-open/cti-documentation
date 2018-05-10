@@ -13,14 +13,14 @@
       ],
       "name": "APT1",
       "description": "APT1 is a single organization of operators that has conducted a cyber espionage campaign against a broad range of victims since at least 2006.",
-      "first_seen": "2006-06-00T00:00:00.000Z",
+      "first_seen": "2006-06-01T00:00:00.000Z",
       "resource_level": "government",
       "primary_motivation": "organizational-gain",
       "aliases": [
         "Comment Crew",
         "Comment Group",
         "Shady Rat"
-      ]
+  ]
     },
     {
       "type": "threat-actor",
