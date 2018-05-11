@@ -1,0 +1,21 @@
+exclude: >
+    (?x)^(
+        .*\.svg$|
+        js/bootstrap.min.js
+    )$
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.1-1
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: local
+    hooks:
+    -   id: update-time
+        name: Update last-updated time
+        entry: hooks/update-time.py
+        language: python
+        types: [file]
+        stages: [push]

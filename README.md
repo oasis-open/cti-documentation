@@ -4,6 +4,37 @@
 
 This repository is a GitHub Pages site storing non-normative information about the work of the CTI Technical Committee.
 
+## Developing
+
+Setting up a development environment requires a working Ruby environment (for Jekyll)
+and a working Python environment (for running git hooks and validating examples).
+
+The following commmands should help:
+
+```bash
+gem install bundler
+bundle install
+
+pip install pre-commit
+pre-commit install
+pre-commit install --hook-type pre-push
+
+pip install stix2-validator
+```
+
+To build the documentation, run:
+
+```
+bundle exec jekyll serve --incremental
+```
+
+To test that examples are valid before pushing:
+
+```
+./validate-examples.sh
+```
+
+
 ## Governance
 
 This GitHub public repository ( **[https://github.com/oasis-open/cti-documentation](https://github.com/oasis-open/cti-documentation)** ) was [proposed](https://lists.oasis-open.org/archives/cti/201609/msg00001.html) and [approved](https://www.oasis-open.org/committees/ballot.php?id=2971) [[bis](https://issues.oasis-open.org/browse/TCADMIN-2435)] by the [OASIS Cyber Threat Intelligence (CTI) TC](https://www.oasis-open.org/committees/cti/) as an [OASIS TC Open Repository](https://www.oasis-open.org/resources/open-repositories/) to support development of open source resources related to Technical Committee work.
