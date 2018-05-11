@@ -10,7 +10,6 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
-    -   id: check-added-large-files
 -   repo: local
     hooks:
     -   id: update-time
