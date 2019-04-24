@@ -20,7 +20,7 @@ marking_def_amber = stix2.MarkingDefinition(
 )
 
 marking_def_statement = stix2.MarkingDefinition(
-    id="marking-definition--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
+    id="marking-definition--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
     created="2017-04-14T13:07:49.812Z",
     definition_type="statement",
     definition=stix2.StatementMarking("Copyright (c) Stark Industries 2017.")

@@ -5,7 +5,7 @@
   "objects": [
     {
       "type": "indicator",
-      "id": "indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
+      "id": "indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
       "created": "2014-06-29T13:49:37.079Z",
       "modified": "2014-06-29T13:49:37.079Z",
       "labels": [
@@ -39,7 +39,7 @@
       "created": "2014-06-30T09:15:17.182Z",
       "modified": "2014-06-30T09:15:17.182Z",
       "relationship_type": "indicates",
-      "source_ref": "indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
+      "source_ref": "indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
       "target_ref": "malware--162d917e-766f-4611-b5d6-652791454fca"
     }
   ]

@@ -1,7 +1,7 @@
 import stix2
 
 indicator = stix2.Indicator(
-    id="indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
+    id="indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
     created="2014-06-29T13:49:37.079Z",
     modified="2014-06-29T13:49:37.079Z",
     name="Malicious site hosting downloader",

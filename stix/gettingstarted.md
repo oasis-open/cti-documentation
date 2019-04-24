@@ -123,11 +123,11 @@ For instance, putting this STIX 1.x XML content into the elevator (NOTE: STIX_Pa
 Results in the following STIX 2.0 JSON output:
 ```json
 {
-    "id": "bundle--8fab937e-b694-11e3-b71c-0800271e87d2",
+    "id": "bundle--8fab937e-b694-41e3-b71c-0800271e87d2",
     "objects": [
         {
             "created": "2017-09-26T10:36:01.961Z",
-            "id": "indicator--d81f86b9-975b-bc0b-775e-810c5ad45a4f",
+            "id": "indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
             "labels": [
                 "url-watchlist"
             ],

@@ -22,6 +22,8 @@ All objects in STIX 2 are [at the top-level](https://docs.google.com/document/d/
 
 The generic TTP (tactics, techniques, procedures) and Exploit Target types from STIX 1.X have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with specific purposes in STIX 2.
 
+**Note**: The IDs in these examples have been simplified to them easier to read. STIX 2 requires that IDs contain UUIDs after the `--`.
+
 <div class="row">
 <div class="col-md-7" markdown="1">
 {:.text-center}
