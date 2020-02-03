@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from time import gmtime, strftime
 from sys import exit, stderr
