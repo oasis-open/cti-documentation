@@ -63,8 +63,8 @@ STIX Objects categorize each piece of information with specific attributes to be
 {:.table .table-hover .table-example .table-desc}
 | Object | Name | Description |
 | :---: | :---:| --- |
-| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png "Relationship Icon") | [**Relationship**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.e2e1szrqfoan){: target="_blank"} | Used to link two SDOs and to describe how they are related to each other. |
-| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png "Sighting Icon") | [**Sighting**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a795guqsap3r){: target="_blank"} | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
+| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png "Relationship Icon") | [**Relationship**](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070673){: target="_blank"} | Used to link together two SDOs or SCOs in order to describe how they are related to each other. |
+| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png "Sighting Icon") | [**Sighting**](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070677){: target="_blank"} | Denotes the belief that something in CTI (e.g., an indicator, malware, tool, threat actor, etc.) was seen.  |
 
 
 ## A look at the structure
