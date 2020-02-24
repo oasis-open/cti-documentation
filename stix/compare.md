@@ -14,7 +14,7 @@ Now when you discuss “STIX”, you are talking about the one standard needed f
 
 ## JSON vs. XML
 
-STIX 2.0 requires implementations to [support JSON serialization](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.vj2dopx186bb), while STIX 1.x was defined using XML. Though both XML and JSON have benefits, the CTI TC determined that JSON was more lightweight, and sufficient to express the semantics of cyber threat intelligence information. It is simpler to use and increasingly preferred by developers.
+STIX 2.x requires implementations to [support JSON serialization](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.vj2dopx186bb), while STIX 1.x was defined using XML. Though both XML and JSON have benefits, the CTI TC determined that JSON was more lightweight, and sufficient to express the semantics of cyber threat intelligence information. It is simpler to use and increasingly preferred by developers.
 
 ## STIX Domain Objects
 
@@ -60,26 +60,27 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 
 ```json
 {
-  "type": "attack-pattern",
-  "id": "attack-pattern--01",
-  "created": "2015-05-15T09:11:12.515000Z",
-  "modified": "2015-05-15T09:11:12.515000Z",
-  "name": "Initial Compromise",  
-  "external_references": [
-    {
-      "source_name": "capec",
-      "description": "spear phishing",
-      "external_id": "CAPEC-163"
-    }
-  ],
-  "kill_chain_phases": [
-    {
-      "kill_chain_name": "mandiant-attack-
-                          lifecycle-model",
-      "phase_name": "initial-compromise"
-    }
-  ]
- }
+    "type": "attack-pattern",
+    
+    "id": "attack-pattern--01",
+    "spec_version": "2.1",
+    "created": "2015-05-15T09:11:12.515Z",
+    "modified": "2015-05-15T09:11:12.515Z",
+    "name": "Initial Compromise",  
+    "external_references": [
+      {
+        "source_name": "capec",
+        "description": "spear phishing",
+        "external_id": "CAPEC-163"
+      }
+    ],
+    "kill_chain_phases": [
+      {
+        "kill_chain_name": "mandiant-attack-lifecycle-model",
+        "phase_name": "initial-compromise"
+      }
+    ]
+   }
 ```
 </div>
 </div>
@@ -93,11 +94,12 @@ STIX 2.0 introduces a top-level [Relationship object](https://docs.google.com/do
 ### Sample Relationship
 
 ```json
- {
+{
     "type": "relationship",
     "id": "relationship--01",
-    "created": "2017-02-09T11:13:27.431000Z",
-    "modified": "2017-02-09T11:13:27.431000Z",
+    "spec_version": "2.1",
+    "created": "2017-02-09T11:13:27.431Z",
+    "modified": "2017-02-09T11:13:27.431Z",
     "relationship_type": "uses",
     "source_ref": "attack-pattern--03",
     "target_ref": "tool--04"
@@ -119,11 +121,11 @@ However, the need to incorporate concepts not yet in the specification is enable
 
 ## Data Markings
 
-[Data markings](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.j0uqagkk6m9n) no longer use a serialization specific language, e.g., XPath. In STIX 2, there are two types of data markings: object marking – applicable to a whole object, and granular markings – applicable to a property or properties of an object. Data markings scope is only within the object where they are defined.
+[Data markings](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070761) no longer use a serialization specific language, e.g., XPath. In STIX 2.x, there are two types of data markings: object marking – applicable to a whole object, and granular markings – applicable to a property or properties of an object. Data markings scope is only within the object where they are defined.
 
 ## Indicator Pattern Language
 
-Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.0 takes a different approach, specifying [a language for patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) which is independent of the serialization language. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
+Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.x takes a different approach, specifying [a language for patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) which is independent of the serialization language. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
 
 <div class="row">
 <div class="col-md-7" markdown="1">
@@ -160,24 +162,25 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
 ### STIX 2 Indicator Example with Pattern
 
 ```json
- {
-  "type": "indicator",
-  "id": "indicator--01",
-  "created": "2017-02-09T12:11:11.415000Z",
-  "modified": "2017-02-09T12:11:11.415000Z",
-  "name": "HTRAN Hop Point Accessor",
-  "pattern": "[ipv4-addr:value =
-                      '10.1.0.0/15']",
-  "labels": [ "malicious-activity" ],
-  "valid_from": "2015-05-15T09:00:00.000000Z",
-  "kill_chain_phases": [
-    {
-      "kill_chain_name":
-        "mandiant-attack-lifecycle-model",
-      "phase_name": "establish-foothold"
-    }
-  ]
- }
+  {
+    "type": "indicator",
+    "id": "indicator--01",
+    "spec_version": "2.1",
+    "created": "2017-02-09T12:11:11.415Z",
+    "modified": "2017-02-09T12:11:11.415Z",
+    "name": "HTRAN Hop Point Accessor",
+    "pattern": "[ipv4-addr:value = '10.1.0.0/15']",
+    "valid_from": "2015-05-15T09:00:00.000Z",
+    "indicator_types": ["malicious-activity"],
+    "pattern_type": "stix",
+    "kill_chain_phases": [
+      {
+        "kill_chain_name":
+          "mandiant-attack-lifecycle-model",
+        "phase_name": "establish-foothold"
+      }
+    ]
+   }
 ```
 </div>
 </div>
