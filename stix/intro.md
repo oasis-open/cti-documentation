@@ -89,17 +89,3 @@ STIX 2 objects are represented in JSON. The following is a JSON-based example of
 </div>
 
 Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/resources) are also available.
-
-
-Objects Overview
-----------------
-
-The video below provides an overview of STIX 2 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
-
-<div class="video-wrapper">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/iAnd3rApMcA?ecver=2" width="640" height="360" frameborder="0"></iframe>
-    </div>
-    <!-- /video --><br><br>
-</div>
-<!-- /video-wrapper -->
