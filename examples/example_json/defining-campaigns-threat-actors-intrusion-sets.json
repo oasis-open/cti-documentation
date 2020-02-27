@@ -1,299 +1,49 @@
 {
-    "id": "bundle--81810123-b298-40f6-a4e7-186efcd07670",
+    "id": "bundle--c9567f73-3803-415c-b06e-2b0622830e5d",
     "objects": [
         {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "identity--8c6af861-7b20-41ef-9b59-6344fd872a8f",
-            "identity_class": "organization",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "Franistan Intelligence",
-            "spec_version": "2.1",
-            "type": "identity"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "external_references": [
-                {
-                    "source_name": "website",
-                    "url": "http://www.bpp.bn"
-                }
+            "aliases": [
+                "Equipo del Discoteca"
             ],
-            "id": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "identity_class": "organization",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "Branistan Peoples Party",
-            "spec_version": "2.1",
-            "type": "identity"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
+            "created": "2014-11-19T23:39:03.893Z",
+            "description": "This organized threat actor group operates to create profit from all types of crime.",
             "goals": [
-                "Influence the election in Branistan"
+                "Steal Credit Card information"
             ],
-            "id": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "Fake BPP (Branistan Peoples Party)",
-            "primary_motivation": "ideology",
-            "resource_level": "government",
+            "id": "threat-actor--dfaa8d77-07e2-4e28-b2c8-92e9f7b04428",
+            "modified": "2014-11-19T23:39:03.893Z",
+            "name": "Disco Team Threat Actor Group",
+            "primary_motivation": "personal-gain",
+            "resource_level": "organization",
             "roles": [
-                "director"
+                "agent"
             ],
-            "secondary_motivations": [
-                "dominance"
-            ],
-            "sophistication": "strategic",
+            "sophistication": "expert",
             "spec_version": "2.1",
             "threat_actor_types": [
-                "nation-state"
+                "crime-syndicate"
             ],
             "type": "threat-actor"
         },
         {
-            "aliases": [
-                "OBF"
-            ],
-            "created": "2016-08-08T15:50:10.983Z",
-            "description": "A concerted effort to insert false information into the BPP's web pages",
-            "first_seen": "2016-01-08T12:50:40.123Z",
-            "id": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "Operation Bran Flakes",
-            "objective": "Hack www.bpp.bn",
+            "contact_information": "disco-team@stealthemail.com",
+            "created": "2016-08-23T18:05:49.307Z",
+            "description": "Disco Team is the name of an organized threat actor crime-syndicate.",
+            "id": "identity--733c5838-34d9-4fbf-949c-62aba761184c",
+            "identity_class": "organization",
+            "modified": "2016-08-23T18:05:49.307Z",
+            "name": "Disco Team",
             "spec_version": "2.1",
-            "type": "campaign"
+            "type": "identity"
         },
         {
-            "aliases": [
-                "ORB"
-            ],
-            "created": "2016-08-08T15:50:10.983Z",
-            "description": "A DDOS campaign to flood BPP web servers",
-            "first_seen": "2016-02-07T19:45:32.126Z",
-            "id": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "Operation Raisin Bran",
-            "objective": "Flood www.bpp.bn",
-            "spec_version": "2.1",
-            "type": "campaign"
-        },
-        {
-            "aliases": [
-                "Bran-teaser"
-            ],
-            "created": "2016-08-08T15:50:10.983Z",
-            "description": "An advanced persistent threat that seeks to disrupt Branistan's election with multiple attacks",
-            "first_seen": "2016-01-08T12:50:40.123Z",
-            "goals": [
-                "Influence the Branistan election",
-                "Disrupt the BPP"
-            ],
-            "id": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "name": "APT BPP",
-            "primary_motivation": "ideology",
-            "resource_level": "government",
-            "secondary_motivations": [
-                "dominance"
-            ],
-            "spec_version": "2.1",
-            "type": "intrusion-set"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "external_references": [
-                {
-                    "external_id": "CAPEC-148",
-                    "source_name": "capec"
-                }
-            ],
-            "id": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a",
-            "modified": "2017-01-30T21:15:04.127Z",
-            "name": "Content Spoofing",
-            "spec_version": "2.1",
-            "type": "attack-pattern"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "external_references": [
-                {
-                    "external_id": "CAPEC-488",
-                    "source_name": "capec"
-                }
-            ],
-            "id": "attack-pattern--f6050ea6-a9a3-4524-93ed-c27858d6cb3c",
-            "modified": "2017-01-30T21:15:04.127Z",
-            "name": "HTTP Flood",
-            "spec_version": "2.1",
-            "type": "attack-pattern"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--3dcf59c3-30e3-4aa5-9c05-2cbffcee5922",
-            "modified": "2016-08-08T15:50:10.983Z",
+            "created": "2016-08-23T18:05:49.307Z",
+            "id": "relationship--966c5838-34d9-4fbf-949c-62aba7611837",
+            "modified": "2016-08-23T18:05:49.307Z",
             "relationship_type": "attributed-to",
-            "source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+            "source_ref": "threat-actor--dfaa8d77-07e2-4e28-b2c8-92e9f7b04428",
             "spec_version": "2.1",
-            "target_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--45cd8846-fec5-4e64-8271-3d807dc4ea3b",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "attributed-to",
-            "source_ref": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
-            "spec_version": "2.1",
-            "target_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--9b35d9a0-87ae-4800-88fc-f1fc63246c18",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "attributed-to",
-            "source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
-            "spec_version": "2.1",
-            "target_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--50896dfd-d12f-4376-8b47-26ca4155ed52",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "attributed-to",
-            "source_ref": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
-            "spec_version": "2.1",
-            "target_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--8bd69586-33a6-4dab-99b1-e5728cc3dcd8",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "attributed-to",
-            "source_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "spec_version": "2.1",
-            "target_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--11290b55-63e2-40f7-be78-7c32a8c08e68",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "targets",
-            "source_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "spec_version": "2.1",
-            "target_ref": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--af2a647c-c215-4dc1-af29-19b4aab94f96",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--98f8012d-a797-43f8-bd59-ed11c078fae0",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--f6050ea6-a9a3-4524-93ed-c27858d6cb3c",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--6b6b524f-f115-4eeb-b488-045d62ddfb66",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "targets",
-            "source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
-            "spec_version": "2.1",
-            "target_ref": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--032fb0f6-c1ab-4caf-95aa-25cdd7fb0563",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "targets",
-            "source_ref": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
-            "spec_version": "2.1",
-            "target_ref": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--1f820ee7-bb30-4d0c-96c8-08e07e08b0ed",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--addad2d4-f7f1-4d8d-95fb-a94fe084a433",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--f6050ea6-a9a3-4524-93ed-c27858d6cb3c",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--5b271699-d2ad-468c-903d-304ad7a17d71",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "attributed-to",
-            "source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "spec_version": "2.1",
-            "target_ref": "identity--8c6af861-7b20-41ef-9b59-6344fd872a8f",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--f9d2f337-bf47-40d2-8afd-908d4e366572",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "impersonates",
-            "source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "spec_version": "2.1",
-            "target_ref": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--51c9484f-e415-4156-a910-613e9f06ba98",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "targets",
-            "source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "spec_version": "2.1",
-            "target_ref": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--b43d0fac-02e5-49cf-b660-4261fccfd3b3",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a",
-            "type": "relationship"
-        },
-        {
-            "created": "2016-08-08T15:50:10.983Z",
-            "id": "relationship--5d7d4355-f199-4494-8330-d8f772749d8f",
-            "modified": "2016-08-08T15:50:10.983Z",
-            "relationship_type": "uses",
-            "source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
-            "spec_version": "2.1",
-            "target_ref": "attack-pattern--f6050ea6-a9a3-4524-93ed-c27858d6cb3c",
+            "target_ref": "identity--733c5838-34d9-4fbf-949c-62aba761184c",
             "type": "relationship"
         }
     ],
