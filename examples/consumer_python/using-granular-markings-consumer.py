@@ -1,4 +1,4 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
     if obj == threat_actor:
@@ -8,14 +8,19 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
-        print("Created by Ref:" + obj.created_by_ref)
         print("Name: " + obj.name)
-        print("Labels: " + obj.labels[0] + ", " + obj.labels[1])
-        print("Aliases: " + obj.aliases[0] + ", " + obj.aliases[1])
+        #print("Description: " + obj.description)
+        print("Threat Actor Types: " + str(obj.threat_actor_types))
+        print("Aliases: " + str(obj.aliases))
+        #print("First Seen: " + str(obj.first_seen))
+        #print("Last Seen: " + str(obj.last_seen))
         print("Roles: " + str(obj.roles))
+        #print("Goals: " + str(obj.goals))
+        #print("Sophistication: " + obj.sophistication)
         print("Resource Level: " + obj.resource_level)
         print("Primary Motivation: " + obj.primary_motivation)
-        print("Object Marking Refs: " + str(obj.object_marking_refs))
+        #print("Secondary Motivations: " + str(obj.secondary_motivations))
+        #print("Personal Motivations: " + str(obj.personal_motivations))
 
     elif obj == identity:
         print("------------------")
@@ -25,9 +30,11 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        #print("Description: " + obj.description)
+        #print("Roles: " + str(obj.roles))
         print("Identity Class: " + obj.identity_class)
-        print("Contact Information: " + obj.contact_information)
         print("Sectors: " + str(obj.sectors))
+        print("Contact Information: " + obj.contact_information)
 
     elif obj == indicator:
         print("------------------")
@@ -36,12 +43,16 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
-        print("Created by Ref:" + obj.created_by_ref)
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0])
+        print("Type: " + obj.type)
+        print("Indicator Types: " + str(obj.indicator_types))
         print("Pattern: " + obj.pattern)
+        print("Pattern Type: " + obj.pattern_type)
+        #print("Pattern Version: " + obj.pattern_version)
         print("Valid From: " + str(obj.valid_from))
+        #print("Valid Until: " + str(obj.valid_until))
+        #print("Kill Chain Phases: " + str(obj.kill_chain_phases))
         print("Granular Markings: " + str(obj.granular_markings))
 
     elif obj == rel:
@@ -51,7 +62,10 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
+        #print("Description: " + obj.description)
+        print("Type: " + obj.type)
         print("Relationship Type: " + obj.relationship_type)
         print("Source Ref: " + obj.source_ref)
         print("Target Ref: " + obj.target_ref)
-        print("Object Marking Refs: " + str(obj.object_marking_refs))
+        #print("Start Time: " + str(obj.start_time))
+        #print("Stop Time: " + str(obj.stop_time))
