@@ -1,23 +1,7 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
-    if obj == threat_actor:
-        print("------------------")
-        print("== THREAT ACTOR ==")
-        print("------------------")
-        print("ID: " + obj.id)
-        print("Created: " + str(obj.created))
-        print("Modified: " + str(obj.modified))
-        print("Created by Ref:" + obj.created_by_ref)
-        print("Name: " + obj.name)
-        print("Labels: " + obj.labels[0] + ", " + obj.labels[1])
-        print("Aliases: " + obj.aliases[0] + ", " + obj.aliases[1])
-        print("Roles: " + str(obj.roles))
-        print("Resource Level: " + obj.resource_level)
-        print("Primary Motivation: " + obj.primary_motivation)
-        print("Object Marking Refs: " + str(obj.object_marking_refs))
-
-    elif obj == identity:
+    if obj == identity:
         print("------------------")
         print("== IDENTITY ==")
         print("------------------")
@@ -25,9 +9,11 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        #print("Description: " + obj.description)
+        #print("Roles: " + str(obj.roles))
         print("Identity Class: " + obj.identity_class)
-        print("Contact Information: " + obj.contact_information)
         print("Sectors: " + str(obj.sectors))
+        print("Contact Information: " + obj.contact_information)
 
     elif obj == indicator:
         print("------------------")
@@ -36,22 +22,35 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
-        print("Created by Ref:" + obj.created_by_ref)
         print("Name: " + obj.name)
-        print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0])
+        #print("Description: " + obj.description)
+        print("Type: " + obj.type)
+        print("Indicator Types: " + str(obj.indicator_types))
         print("Pattern: " + obj.pattern)
+        print("Pattern Type: " + obj.pattern_type)
+        #print("Pattern Version: " + obj.pattern_version)
         print("Valid From: " + str(obj.valid_from))
-        print("Granular Markings: " + str(obj.granular_markings))
+        #print("Valid Until: " + str(obj.valid_until))
+        #print("Kill Chain Phases: " + str(obj.kill_chain_phases))
 
-    elif obj == rel:
+    elif obj == marking_def_amber:
         print("------------------")
-        print("== RELATIONSHIP ==")
+        print("== MARKING DEFINITION ==")
         print("------------------")
         print("ID: " + obj.id)
+        print("Type: " + obj.type)
+        #print("Name: " + obj.name)
         print("Created: " + str(obj.created))
-        print("Modified: " + str(obj.modified))
-        print("Relationship Type: " + obj.relationship_type)
-        print("Source Ref: " + obj.source_ref)
-        print("Target Ref: " + obj.target_ref)
-        print("Object Marking Refs: " + str(obj.object_marking_refs))
+        print("Definition Type: " + obj.definition_type)
+        print("Definition: " + str(obj.definition))
+
+    elif obj == marking_def_statement:
+        print("------------------")
+        print("== MARKING DEFINITION ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Type: " + obj.type)
+        #print("Name: " + obj.name)
+        print("Created: " + str(obj.created))
+        print("Definition Type: " + obj.definition_type)
+        print("Definition: " + str(obj.definition))

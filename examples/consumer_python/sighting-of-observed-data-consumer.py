@@ -1,4 +1,4 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
     if obj == identityPym:
@@ -9,9 +9,11 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        #print("Description: " + obj.description)
+        #print("Roles: " + str(obj.roles))
         print("Identity Class: " + obj.identity_class)
+        print("Sectors: " + str(obj.sectors))
         print("Contact Information: " + obj.contact_information)
-        print("Sectors: " + obj.sectors[0])
 
     elif obj == identityOscorp:
         print("------------------")
@@ -21,9 +23,11 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        #print("Description: " + obj.description)
+        #print("Roles: " + str(obj.roles))
         print("Identity Class: " + obj.identity_class)
+        print("Sectors: " + str(obj.sectors))
         print("Contact Information: " + obj.contact_information)
-        print("Sectors: " + obj.sectors[0])
 
     elif obj == malware:
         print("------------------")
@@ -32,10 +36,21 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
-        print("Created by Ref: " + obj.created_by_ref)
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0])
+        print("Type: " + obj.type)
+        print("Malware Types: " + str(obj.malware_types))
+        print("Is Family:" + str(obj.is_family))
+        #print("Aliases: " + str(obj.aliases))
+        #print("Kill Chain: " + str(obj.kill_chain_phases))
+        #print("First Seen: " + str(obj.first_seen))
+        #print("Last Seen: " + str(obj.last_seen))
+        #print("OS Execution Environments: " + str(obj.os_execution_envs))
+        #print("Architecture Execution Environments: " + str(obj.architecture_execution_envs))
+        #print("Implementation Languages: " + str(obj.implementation_languages))
+        #print("Capabilities: " + str(obj.capabilities))
+        #print("Sample References: " + str(obj.sample_refs))
+
 
     elif obj == observedDataFile:
         print("------------------")
@@ -70,9 +85,13 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
+        print("Type: " + obj.type)
+        #print("Description: " + obj.description)
         print("Created by Ref: " + obj.created_by_ref)
         print("First Seen: " + str(obj.first_seen))
         print("Last Seen: " + str(obj.last_seen))
         print("Count: " + str(obj.count))
         print("Sighting of Ref: " + obj.sighting_of_ref)
-        print("Where Sighted Refs: " + obj.where_sighted_refs[0])
+        print("Observed Data Ref: " + str(obj.observed_data_refs))
+        print("Where Sighted Refs: " + str(obj.where_sighted_refs))
+        #print("Summary: " + obj.summary)

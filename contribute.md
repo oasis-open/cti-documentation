@@ -33,7 +33,7 @@ Contribute and Join The Global Community
 ### Contribute Tools and Libaries
 
 To have code commited to OASIS repositories a Contributor License Agreement(CLA) must be submitted and approved.
-Bug reports, suggestions and help requests about spcific OASIS github projects should be done through Github issues on their respective repository.
+Bug reports, suggestions and help requests about specific OASIS github projects should be done through Github issues on their respective repository.
 
 <div class="row">
   <div class="col-md-4 info-box well pull-left">
