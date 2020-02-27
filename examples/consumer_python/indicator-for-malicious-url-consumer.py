@@ -1,4 +1,4 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
     if obj == malware:
@@ -10,8 +10,18 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0] + ", " + obj.labels[1])
+        print("Type: " + obj.type)
+        print("Malware Types: " + str(obj.malware_types))
+        print("Is Family:" + str(obj.is_family))
+        #print("Aliases: " + str(obj.aliases))
         print("Kill Chain: " + str(obj.kill_chain_phases))
+        #print("First Seen: " + str(obj.first_seen))
+        #print("Last Seen: " + str(obj.last_seen))
+        #print("OS Execution Environments: " + str(obj.os_execution_envs))
+        #print("Architecture Execution Environments: " + str(obj.architecture_execution_envs))
+        #print("Implementation Languages: " + str(obj.implementation_languages))
+        #print("Capabilities: " + str(obj.capabilities))
+        #print("Sample References: " + str(obj.sample_refs))
 
     elif obj == indicator:
         print("------------------")
@@ -22,9 +32,14 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0])
+        print("Type: " + obj.type)
+        print("Indicator Types: " + str(obj.indicator_types))
         print("Pattern: " + obj.pattern)
+        print("Pattern Type: " + obj.pattern_type)
+        #print("Pattern Version: " + obj.pattern_version)
         print("Valid From: " + str(obj.valid_from))
+        #print("Valid Until: " + str(obj.valid_until))
+        #print("Kill Chain Phases: " + str(obj.kill_chain_phases))
 
     elif obj == relationship:
         print("------------------")
@@ -33,6 +48,10 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
+        #print("Description: " + obj.description)
+        print("Type: " + obj.type)
         print("Relationship Type: " + obj.relationship_type)
         print("Source Ref: " + obj.source_ref)
         print("Target Ref: " + obj.target_ref)
+        #print("Start Time: " + str(obj.start_time))
+        #print("Stop Time: " + str(obj.stop_time))
