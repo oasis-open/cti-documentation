@@ -9,7 +9,7 @@ This introductory walkthrough explains how to use STIX 2.1 indicators, malware, 
 
 ## Prerequisites
 
-Prior to following this walkthrough, you should have a basic understanding of STIX 2.1 and JSON. You can gain a high-level overview of STIX from the [introduction page](https://oasis-open.github.io/cti-documentation/stix/intro.html) and a more detailed understanding from the [specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.x, that information can be found [here](https://oasis-open.github.io/cti-documentation/stix/compare.html).
+Prior to following this walkthrough, you should have a basic understanding of STIX 2.1 and JSON. You can gain a high-level overview of STIX from the [introduction page]({{ site.baseurl }}/stix/intro.html) and a more detailed understanding from the [specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.x, that information can be found [here]({{ site.baseurl }}/stix/compare.html).
 
 It is helpful to have some knowledge of JSON (JavaScript Object Notation), which is the data-interchange format STIX 2.1 uses to serialize objects and properties. An introduction to JSON can be found [here](http://www.json.org/).
 
