@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Getting Started with STIX 2.0
+title: Getting Started with STIX 2.1
 categories: stix
 ---
 
 ## Overview
 
-This guide provides information on several of the tools and resources available which can help you get started with STIX 2.0. Before getting started, it would be beneficial for you to have a basic understanding of STIX 2. Some of the most helpful information can be found here:
+This guide provides information on several of the tools and resources available which can help you get started with STIX 2.1. Before getting started, it would be beneficial for you to have a basic understanding of STIX 2. Some of the most helpful information can be found here:
 
 -   [About STIX](about)—Gives a general overview of STIX and the objects used in STIX 2.
 
--   [STIX FAQ](../faq)—Provides an FAQ-style review of STIX 2.0. Also, each part of the STIX 2.0 specification is located here.
+-   [STIX FAQ](../faq)—Provides an FAQ-style review of STIX 2.1. Also, each part of the STIX 2.1 specification is located here.
 
 -   [Comparing STIX 1 to STIX 2](compare)—If you’re familiar with STIX 1.x, this will help you get caught up on the key differences.
 
@@ -20,9 +20,9 @@ This guide provides information on several of the tools and resources available 
 
 ## JSON Schemas
 
-One of the biggest changes between STIX 1.x and STIX 2.0 is the transition from XML to JSON. So before getting started with creating objects and properties, it may be helpful to have some knowledge of JSON. An introduction to JSON can be found at [www.json.org](http://www.json.org){: target=_"blank"}.
+One of the biggest changes between STIX 1.x and STIX 2.1 is the transition from XML to JSON. So before getting started with creating objects and properties, it may be helpful to have some knowledge of JSON. An introduction to JSON can be found at [www.json.org](http://www.json.org){: target=_"blank"}.
 
-Prior to creating your STIX objects you may want to review the [JSON schemas]( https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} as well as the examples (see link above in the Overview section) to understand the properties for each object and the relationships among objects. The schemas were built to follow the STIX 2.0 specification and enforce several of the MUST requirements indicated in the spec. However, there are limits to what the schemas can enforce, so some requirements needed to be implemented with the STIX 2 validator tool (see next section). To understand the checks not enforced by the schemas, check out the README guide from the stix2-json-schemas repository on github.
+Prior to creating your STIX objects you may want to review the [JSON schemas]( https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} as well as the examples (see link above in the Overview section) to understand the properties for each object and the relationships among objects. The schemas were built to follow the STIX 2.1 specification and enforce several of the MUST requirements indicated in the spec. However, there are limits to what the schemas can enforce, so some requirements needed to be implemented with the STIX 2 validator tool (see next section). To understand the checks not enforced by the schemas, check out the README guide from the stix2-json-schemas repository on github.
 
 A sample of how an object is structured can be seen below:
 
