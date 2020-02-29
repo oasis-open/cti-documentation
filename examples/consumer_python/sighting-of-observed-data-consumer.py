@@ -37,7 +37,7 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
-        print("Description: " + obj.description)
+        #print("Description: " + obj.description)
         print("Type: " + obj.type)
         print("Malware Types: " + str(obj.malware_types))
         print("Is Family:" + str(obj.is_family))

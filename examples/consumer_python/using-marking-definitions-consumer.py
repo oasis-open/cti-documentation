@@ -1,4 +1,4 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
     if obj == identity:
@@ -22,7 +22,7 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Created by Ref: " + obj.created_by_ref)
         print("Name: " + obj.name)
-        print("Labels: " + obj.labels[0])
+        print("Indicator Types: " + obj.indicator_types[0])
         print("Pattern: " + obj.pattern)
         print("Valid From: " + str(obj.valid_from))
         print("Object Marking Refs: " + str(obj.object_marking_refs))
