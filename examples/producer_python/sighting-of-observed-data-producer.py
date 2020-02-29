@@ -1,6 +1,5 @@
 from stix2.v21 import (Identity, Malware, ObservedData, Sighting, Bundle)
 
-
 identityOscorp = Identity(
     id="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
     created="2017-04-14T13:07:49.812Z",
@@ -81,15 +80,15 @@ observedDataRegKey = ObservedData(
 
 sighting = Sighting(
     id="sighting--779c4ae8-e134-4180-baa4-03141095d971",
-    created_by_ref="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
-    created="2017-02-28T19:37:11.213Z",
-    modified="2017-02-28T19:37:11.213Z",
-    first_seen="2017-02-28T19:07:24.856Z",
-    last_seen="2017-02-28T19:07:24.857Z",
-    count=1,
-    sighting_of_ref="malware--ae560258-a5cb-4be8-8f05-013d6712295f",
-    where_sighted_refs=["identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"],
-    observed_data_refs=["observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1", "observed-data--a0d34360-66ad-4977-b255-d9e1080421c4"], 
+    #created_by_ref="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+    #created="2017-02-28T19:37:11.213Z",
+    #modified="2017-02-28T19:37:11.213Z",
+    #first_seen="2017-02-28T19:07:24.856Z",
+    #last_seen="2017-02-28T19:07:24.857Z",
+    #count=1,
+    #sighting_of_ref="malware--ae560258-a5cb-4be8-8f05-013d6712295f",
+    #where_sighted_refs=["identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"],
+    #observed_data_refs=["observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1", "observed-data--a0d34360-66ad-4977-b255-d9e1080421c4"], 
     spec_version="2.1",
     type="sighting"
 )

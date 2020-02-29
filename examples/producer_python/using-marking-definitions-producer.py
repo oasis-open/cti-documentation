@@ -1,6 +1,5 @@
 from stix2.v21 import (Identity, MarkingDefinition, Indicator, StatementMarking, Bundle)
 
-
 identity = Identity(
     id="identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
     created="2017-04-14T13:07:49.812Z",
