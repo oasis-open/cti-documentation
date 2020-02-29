@@ -1,50 +1,51 @@
 {
-    "id": "bundle--44af6c39-c09b-49c5-9de2-394224b04982",
+    "type": "bundle",
+    "id": "bundle--56be2a3b-1534-4bef-8fe9-602926274089",
     "objects": [
         {
-            "created": "2014-06-29T13:49:37.079Z",
+            "type": "indicator",
+            "spec_version": "2.1",
             "id": "indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
+            "created": "2014-06-29T13:49:37.079Z",
+            "modified": "2014-06-29T13:49:37.079Z",
+            "name": "Malicious site hosting downloader",
+            "description": "This organized threat actor group operates to create profit from all types of crime.",
             "indicator_types": [
                 "malicious-activity"
             ],
-            "modified": "2014-06-29T13:49:37.079Z",
-            "name": "Malicious site hosting downloader",
             "pattern": "[url:value = 'http://x4z9arb.cn/4712/']",
             "pattern_type": "stix",
-            "spec_version": "2.1",
-            "type": "indicator",
-            "valid_from": "2014-06-29T13:49:37.079000Z"
+            "valid_from": "2014-06-29T13:49:37.079Z"
         },
         {
-            "created": "2014-06-30T09:15:17.182Z",
-            "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+            "type": "malware",
+            "spec_version": "2.1",
             "id": "malware--162d917e-766f-4611-b5d6-652791454fca",
+            "created": "2014-06-30T09:15:17.182Z",
+            "modified": "2014-06-30T09:15:17.182Z",
+            "name": "x4z9arb backdoor",
+            "description": "This malware attempts to download remote files after establishing a foothold as a backdoor.",
+            "malware_types": [
+                "backdoor",
+                "remote-access-trojan"
+            ],
+            "is_family": false,
             "kill_chain_phases": [
                 {
                     "kill_chain_name": "mandiant-attack-lifecycle-model",
                     "phase_name": "establish-foothold"
                 }
-            ],
-            "malware_types": [
-                "backdoor",
-                "remote-access-trojan"
-            ],
-            "modified": "2014-06-30T09:15:17.182Z",
-            "name": "x4z9arb backdoor",
-            "spec_version": "2.1",
-            "is_family": "false",
-            "type": "malware"
+            ]
         },
         {
-            "created": "2014-06-30T09:15:17.182Z",
-            "id": "relationship--6ce78886-1027-4800-9301-40c274fd472f",
-            "modified": "2014-06-30T09:15:17.182Z",
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--864af2ea-46f9-4d23-b3a2-1c2adf81c265",
+            "created": "2020-02-29T18:03:58.029Z",
+            "modified": "2020-02-29T18:03:58.029Z",
             "relationship_type": "indicates",
             "source_ref": "indicator--d81f86b9-975b-4c0b-875e-810c5ad45a4f",
-            "spec_version": "2.1",
-            "target_ref": "malware--162d917e-766f-4611-b5d6-652791454fca",
-            "type": "relationship"
+            "target_ref": "malware--162d917e-766f-4611-b5d6-652791454fca"
         }
-    ],
-    "type": "bundle"
+    ]
 }

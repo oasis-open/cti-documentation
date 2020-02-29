@@ -1,78 +1,36 @@
 {
-    "id": "bundle--963410f2-fd7d-4d80-937c-8ad3aed5f432",
+    "type": "bundle",
+    "id": "bundle--f0af3c36-a642-4cb0-8526-b4ca899cc1db",
     "objects": [
         {
-            "contact_information": "contact@gothamnational.com",
-            "created": "2017-04-27T16:18:24.318Z",
+            "type": "identity",
+            "spec_version": "2.1",
             "id": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
-            "identity_class": "organization",
+            "created": "2017-04-27T16:18:24.318Z",
             "modified": "2017-04-27T16:18:24.318Z",
             "name": "Gotham National Bank",
+            "identity_class": "organization",
             "sectors": [
                 "financial-services"
             ],
-            "spec_version": "2.1",
-            "type": "identity"
+            "contact_information": "contact@gothamnational.com"
         },
         {
-            "aliases": [
-                "Joe Kerr",
-                "The Clown Prince of Crime"
-            ],
-            "created": "2017-04-27T16:18:24.318Z",
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
             "created_by_ref": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
-            "id": "threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
+            "created": "2017-04-27T16:18:24.318Z",
             "modified": "2017-04-27T16:18:24.318Z",
-            "name": "The Joker",
-            "object_marking_refs": [
-                "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
-            ],
-            "primary_motivation": "personal-satisfaction",
-            "resource_level": "team",
-            "roles": [
-                "director"
-            ],
-            "spec_version": "2.1",
-            "threat_actor_types": [
-                "criminal",
-                "terrorist"
-            ],
-            "type": "threat-actor"
-        },
-        {
-            "created": "2017-01-20T00:00:00.000Z",
-            "definition": {
-                "tlp": "green"
-            },
-            "definition_type": "tlp",
-            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
-            "spec_version": "2.1",
-            "type": "marking-definition"
-        },
-        {
-            "created": "2017-01-20T00:00:00.000Z",
-            "definition": {
-                "tlp": "amber"
-            },
-            "definition_type": "tlp",
-            "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
-            "spec_version": "2.1",
-            "type": "marking-definition"
-        },
-        {
-            "created": "2017-01-20T00:00:00.000Z",
-            "definition": {
-                "tlp": "red"
-            },
-            "definition_type": "tlp",
-            "id": "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
-            "spec_version": "2.1",
-            "type": "marking-definition"
-        },
-        {
-            "created": "2017-04-27T16:18:24.318Z",
-            "created_by_ref": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
+            "name": "Fake email address",
             "description": "Known to be used by The Joker.",
+            "indicator_types": [
+                "malicious-activity",
+                "attribution"
+            ],
+            "pattern": "[email-message:from_ref.value MATCHES '.+\\\\banking@g0thamnatl\\\\.com$']",
+            "pattern_type": "stix",
+            "valid_from": "2017-04-27T16:18:24.318Z",
             "granular_markings": [
                 {
                     "marking_ref": "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
@@ -94,33 +52,45 @@
                         "pattern"
                     ]
                 }
-            ],
-            "id": "indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
-            "indicator_types": [
-                "malicious-activity",
-                "attribution"
-            ],
-            "modified": "2017-04-27T16:18:24.318Z",
-            "name": "Fake email address",
-            "pattern": "[email-message:from_ref.value MATCHES '.+\\\\banking@g0thamnatl\\\\.com$']",
-            "pattern_type": "stix",
-            "spec_version": "2.1",
-            "type": "indicator",
-            "valid_from": "2017-04-27T16:18:24.318Z"
+            ]
         },
         {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
+            "created_by_ref": "identity--b38dfe21-7477-40d1-aa90-5c8671ce51ca",
             "created": "2017-04-27T16:18:24.318Z",
-            "id": "relationship--3d1dd3cc-eb47-4704-9c77-ceff2971b95c",
             "modified": "2017-04-27T16:18:24.318Z",
+            "name": "The Joker",
+            "threat_actor_types": [
+                "terrorist",
+                "criminal"
+            ],
+            "aliases": [
+                "Joe Kerr",
+                "The Clown Prince of Crime"
+            ],
+            "roles": [
+                "director"
+            ],
+            "resource_level": "team",
+            "primary_motivation": "personal-satisfaction",
             "object_marking_refs": [
                 "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
-            ],
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3d1dd3cc-eb47-4704-9c77-ceff2971b95c",
+            "created": "2017-04-27T16:18:24.318Z",
+            "modified": "2017-04-27T16:18:24.318Z",
             "relationship_type": "indicates",
             "source_ref": "indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
-            "spec_version": "2.1",
             "target_ref": "threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
-            "type": "relationship"
+            "object_marking_refs": [
+                "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
+            ]
         }
-    ],
-    "type": "bundle"
+    ]
 }
