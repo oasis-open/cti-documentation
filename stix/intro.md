@@ -44,7 +44,7 @@ STIX 2.1 differs from STIX 2.0 in the following ways:
 ## STIX 2.1 Objects
 STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX. More detail and visual representations can be found [here.]({{ site.baseurl }}/examples/visualized-sdo-relationships)
 
-#### STIX 2.1 defines sixteen STIX Domain Objects (SDOs):
+#### STIX 2.1 defines 18 STIX Domain Objects (SDOs):
 
 {: .table .table-hover .table-example .table-desc}
 | Object | Name | Description |
