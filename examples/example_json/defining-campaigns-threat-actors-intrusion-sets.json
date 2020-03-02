@@ -7,7 +7,7 @@
             "spec_version": "2.1",
             "id": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "Fake BPP (Branistan Peoples Party)",
             "threat_actor_types": [
                 "nation-state"
@@ -30,7 +30,7 @@
             "spec_version": "2.1",
             "id": "identity--8c6af861-7b20-41ef-9b59-6344fd872a8f",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "Franistan Intelligence",
             "identity_class": "organization"
         },
@@ -39,7 +39,7 @@
             "spec_version": "2.1",
             "id": "identity--ddfe7140-2ba4-48e4-b19a-df069432103b",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "Branistan Peoples Party",
             "identity_class": "organization",
             "external_references": [
@@ -84,7 +84,7 @@
             "spec_version": "2.1",
             "id": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "Operation Bran Flakes",
             "description": "A concerted effort to insert false information into the BPP's web pages.",
             "aliases": [
@@ -98,7 +98,7 @@
             "spec_version": "2.1",
             "id": "campaign--1d8897a7-fdc2-4e59-afc9-becbe04df727",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "Operation Raisin Bran",
             "description": "A DDOS campaign to flood BPP web servers.",
             "aliases": [
@@ -112,7 +112,7 @@
             "spec_version": "2.1",
             "id": "intrusion-set--ed69450a-f067-4b51-9ba2-c4616b9a6713",
             "created": "2016-08-08T15:50:10.983Z",
-            "modified": "2016-08-08T15:50:10.984Z",
+            "modified": "2016-08-08T15:50:10.983Z",
             "name": "APT BPP",
             "description": "An advanced persistent threat that seeks to disrupt Branistan's election with multiple attacks.",
             "aliases": [

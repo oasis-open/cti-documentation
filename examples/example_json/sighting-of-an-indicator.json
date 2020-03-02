@@ -8,7 +8,7 @@
             "id": "indicator--9299f726-ce06-492e-8472-2b52ccb53191",
             "created_by_ref": "identity--39012926-a052-44c4-ae48-caaf4a10ee6e",
             "created": "2017-02-27T13:57:10.515Z",
-            "modified": "2017-02-27T13:57:10.516Z",
+            "modified": "2017-02-27T13:57:10.515Z",
             "name": "Malicious URL",
             "description": "This URL is potentially associated with malicious activity and is listed on several blacklist sites.",
             "indicator_types": [
@@ -23,7 +23,7 @@
             "spec_version": "2.1",
             "id": "identity--39012926-a052-44c4-ae48-caaf4a10ee6e",
             "created": "2017-02-24T15:50:10.564Z",
-            "modified": "2017-02-24T15:50:10.565Z",
+            "modified": "2017-02-24T15:50:10.564Z",
             "name": "Alpha Threat Analysis Org.",
             "roles": [
                 "Cyber Security"
@@ -39,7 +39,7 @@
             "spec_version": "2.1",
             "id": "identity--5206ba14-478f-4b0b-9a48-395f690c20a2",
             "created": "2017-02-26T17:55:10.442Z",
-            "modified": "2017-02-26T17:55:10.443Z",
+            "modified": "2017-02-26T17:55:10.442Z",
             "name": "Beta Cyber Intelligence Company",
             "roles": [
                 "Cyber Security"
@@ -56,7 +56,7 @@
             "id": "sighting--8356e820-8080-4692-aa91-ecbe94006833",
             "created_by_ref": "identity--5206ba14-478f-4b0b-9a48-395f690c20a2",
             "created": "2017-02-28T19:37:11.213Z",
-            "modified": "2017-02-28T19:37:11.214Z",
+            "modified": "2017-02-28T19:37:11.213Z",
             "first_seen": "2017-02-27T21:37:11.213Z",
             "last_seen": "2017-02-27T21:37:11.214Z",
             "count": 1,
