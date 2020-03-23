@@ -21,7 +21,7 @@ ___
 
 | HTML | PDF | Word | Description |
 | --- | --- | --- | --- |
-| [**STIX 2.1 Specification**](HTML LINK) | [**STIX 2.1 Specification**](PDF link) | [**STIX 2.1 Specification**](DOCX LINK) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
+| [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.pdf) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.docx) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
 
 Note: This version of the specification is no longer a multipart document.
 
