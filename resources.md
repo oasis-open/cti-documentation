@@ -15,7 +15,6 @@ categories: resources
 
 ### Individual Specification Documents
 
-___
 
 #### STIX 2.1 Specification
 
@@ -31,7 +30,6 @@ Note: This version of the specification is no longer a multipart document.
 | --- | --- | --- | --- |
 | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.html) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.pdf) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.docx) | Defines the TAXII RESTful API and its resources along with the requirements for TAXII Client and Server implementations |
 
-___
 
 #### STIX 2.0 Specification
 
@@ -56,7 +54,6 @@ ___
 | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.html) | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.pdf) | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.docx) | Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX/TAXII 2.0 if they wish to self-certify that their software is verified as interoperable |
 | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.html) | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.pdf) | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.docx) | Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX/TAXII 2.0 if they wish to self-certify that their software is verified as interoperable |
 
-___
 
 ### OASIS CTI TC [Open Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
 
