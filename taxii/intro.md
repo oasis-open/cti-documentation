@@ -48,4 +48,4 @@ TAXII 2.1 differs from TAXII 2.0 in the following ways:
 - Cleaned up and deemphasized text around support for content other than STIX
 - Added user-agent HTTP header description
 
-### [TAXII 2.0 Specification Document]({{ site.baseurl }}/resources.html#taxii-20-specification)
+### [TAXII 2.1 Specification Document]({{ site.baseurl }}/resources.html#taxii-21-specification)
