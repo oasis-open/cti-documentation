@@ -37,7 +37,7 @@ A diagram of this scenario is depicted below [(An interactive version can be fou
 
 To read more about the objects in this example as well as common properties and vocabularies, check out the links below:
 
--   [STIX Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_xzbicbtscatx)
+-   [Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_xzbicbtscatx)
 -   [Vocabularies](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_izngjy1g98l2)
 -   [Identity](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_wh296fiwpklp)
 -   [Sighting](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_a795guqsap3r)
