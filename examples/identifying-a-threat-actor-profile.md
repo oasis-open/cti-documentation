@@ -14,9 +14,9 @@ In this scenario, a threat actor group named “Disco Team” is modeled using S
 **Data model**
 --------------
 
-Threat actor identification is, as you would expect, represented using the [Threat Actor](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.k017w16zutw) STIX Domain Object (SDO). Information relevant to threat actors, such as goals and motivations, can be captured within this object. Other basic information not specific to threat actors, such as contact information, is best represented using an Identity SDO. Identity objects can also be used for more than threat actors in STIX. They can model organizations, government agencies, and information sources to name a few.
+Threat actor identification is, as you would expect, represented using the [Threat Actor](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070663) STIX Domain Object (SDO). Information relevant to threat actors, such as goals and motivations, can be captured within this object. Other basic information not specific to threat actors, such as contact information, is best represented using an Identity SDO. Identity objects can also be used for more than threat actors in STIX. They can model organizations, government agencies, and information sources to name a few.
 
-It is important to note that the Disco Team group operates as a Threat Actor and not an [Intrusion Set](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.5ol9xlbbnrdn) in this scenario. They could potentially support an intrusion set, but that information is unknown. An Intrusion Set is best used to describe an entire attack set that would include multiple campaigns and purposes. In this instance, Disco Team is a self-named threat actor operating with one purpose in mind.
+It is important to note that the Disco Team group operates as a Threat Actor and not an [Intrusion Set](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070639) in this scenario. They could potentially support an intrusion set, but that information is unknown. An Intrusion Set is best used to describe an entire attack set that would include multiple campaigns and purposes. In this instance, Disco Team is a self-named threat actor operating with one purpose in mind.
 
 The <span class="sdo">**name**</span> and <span class="sdo">**threat_actor_types**</span> properties are the only required properties needed for a Threat Actor SDO. The <span class="sdo">**threat_actor_types**</span> field is important for describing what type of threat actor Disco Team is. Because Disco Team is regarded as large, organized, and driven to steal financial information, they are best represented with the threat actor type <span class="values">crime-syndicate</span>.
 
@@ -24,9 +24,9 @@ The Threat Actor SDO can also model optional properties that construct a more co
 
 Like most threat actors, Disco Team has a specific goal in mind for their attacks. Therefore, a list of <span class="sdo">**goals**</span> describes what the threat actor is trying to do. In this case, Disco Team’s only goal is stealing credit card credentials. Threat actors also have varying degrees of expertise, so the <span class="sdo">**sophistication**</span> level of the attacker, if known, can describe the attacker’s skill and knowledge. Disco Team is labeled as <span class="values">expert</span> due to advanced attack methods and proficiency with tools or malicious code. Their <span class="sdo">**resource\_level**</span> of <span class="values">organization</span> indicates that they are large and well-funded, more so than smaller individuals or teams. Finally, threat actors usually have one or several motivations behind their attacks. The <span class="sdo">**primary\_motivation**</span> field describes the main reason for attacking. Some threat actors may seek notoriety or dominance, while others are strictly doing it for revenge or personal satisfaction. For Disco Team, obtaining financial information falls under the motivation of <span class="values">personal-gain</span>.
 
-Basic identifying information of the threat actor can be modeled with the [Identity](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.wh296fiwpklp) SDO. For Disco Team, they are a type of <span class="values">organization</span>, which the <span class="sdo">**identity\_class**</span> field captures. This is due to this threat actor being more formal and organized, rather than an <span class="values">individual</span> hacker or informal <span class="values">group</span> of hackers. Another property that captures <span class="sdo">**contact\_information**</span>, if known for the identity, represents any email addresses or phone numbers. For Disco Team, an email address is provided.
+Basic identifying information of the threat actor can be modeled with the [Identity](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070630) SDO. For Disco Team, they are a type of <span class="values">organization</span>, which the <span class="sdo">**identity\_class**</span> field captures. This is due to this threat actor being more formal and organized, rather than an <span class="values">individual</span> hacker or informal <span class="values">group</span> of hackers. Another property that captures <span class="sdo">**contact\_information**</span>, if known for the identity, represents any email addresses or phone numbers. For Disco Team, an email address is provided.
 
-Now that the information for Disco Team is represented in the Threat Actor and Identity SDO’s, the [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) SRO links the two objects together. In this example, the <span class="sdo">**source\_ref**</span> threat actor id is <span class="values">attributed-to</span> the <span class="sdo">**target\_ref**</span> identity id:
+Now that the information for Disco Team is represented in the Threat Actor and Identity SDO’s, the [Relationship](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070673) SRO links the two objects together. In this example, the <span class="sdo">**source\_ref**</span> threat actor id is <span class="values">attributed-to</span> the <span class="sdo">**target\_ref**</span> identity id:
 
 A diagram of this relationship below shows the Threat Actor and Identity SDO’s and the Relationship SRO [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/identifying-a-threat-actor-profile.json){: target="_blank"}:
 
@@ -39,12 +39,12 @@ A diagram of this relationship below shows the Threat Actor and Identity SDO’s
 
 To read more about the objects in this example as well as common properties and vocabularies, check out the links below:
 
--   [Common Properties](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.xzbicbtscatx)
--   [Vocabularies](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.iit7tolczlxv)
--   [Threat Actor](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.k017w16zutw)
--   [Identity](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.wh296fiwpklp)
--   [Intrusion Set](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.5ol9xlbbnrdn)
--   [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan)
+-   [Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070605)
+-   [Vocabularies](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070793)
+-   [Threat Actor](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070663)
+-   [Identity](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070630)
+-   [Intrusion Set](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070639)
+-   [Relationship](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070673)
 
 **Implementation**
 ------------------
