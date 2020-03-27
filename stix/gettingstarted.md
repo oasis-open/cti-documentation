@@ -8,7 +8,7 @@ categories: stix
 
 This guide provides information on several of the tools and resources available which can help you get started with STIX 2.1. Before getting started, it would be beneficial for you to have a basic understanding of STIX 2. Some of the most helpful information can be found here:
 
--   [About STIX](about)—Gives a general overview of STIX and the objects used in STIX 2.
+-   [Introduction to STIX](intro)—Gives a general overview of STIX and the objects used in STIX 2.
 
 -   [STIX FAQ](../faq)—Provides an FAQ-style review of STIX 2.1. Also, each part of the STIX 2.1 specification is located here.
 
