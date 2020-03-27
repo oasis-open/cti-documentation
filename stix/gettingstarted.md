@@ -124,6 +124,7 @@ Results in the following STIX 2.0 JSON output:
 ```json
 {
     "id": "bundle--8fab937e-b694-41e3-b71c-0800271e87d2",
+    "type": "bundle",
     "objects": [
         {
             "created": "2017-09-26T10:36:01.961Z",
@@ -134,12 +135,12 @@ Results in the following STIX 2.0 JSON output:
             "modified": "2017-09-26T10:36:01.961Z",
             "name": "Malicious site hosting downloader",
             "pattern": "[url:value = 'http://x4z9arb.cn/4712']",
+            "pattern_type": "stix",
+            "spec_version": "2.1",
             "type": "indicator",
             "valid_from": "2017-09-26T10:36:01.961333Z"
         }
-    ],
-    "spec_version": "2.0",
-    "type": "bundle"
+    ]
 }
 ```
 
@@ -148,7 +149,7 @@ The [pattern matching](https://github.com/oasis-open/cti-pattern-matcher){: targ
 
 ## Python STIX 2 API
 
-Finally, the STIX 2 API provides a variety of features and functionality for creating STIX 2.0 content. The [README](https://github.com/oasis-open/cti-python-stix2\#cti-python-stix2){: target="_blank"} provides the best synopsis of the API, but a brief list of the functionality is included below:
+Finally, the STIX 2 API provides a variety of features and functionality for creating STIX 2.1 content. The [README](https://github.com/oasis-open/cti-python-stix2\#cti-python-stix2){: target="_blank"} provides the best synopsis of the API, but a brief list of the functionality is included below:
 
 -   Serializes/de-serializes JSON content
 
