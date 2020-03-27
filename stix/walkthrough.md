@@ -9,11 +9,11 @@ This introductory walkthrough explains how to use STIX 2.1 indicators, malware, 
 
 ## Prerequisites
 
-Prior to following this walkthrough, you should have a basic understanding of STIX 2.1 and JSON. You can gain a high-level overview of STIX from the [introduction page]({{ site.baseurl }}/stix/intro.html) and a more detailed understanding from the [specification](https://docs.google.com/document/d/1yvqWaPPnPW-2NiVCLqzRszcx91ffMowfT5MmE9Nsy_w/edit). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.x, that information can be found [here]({{ site.baseurl }}/stix/compare.html).
+Prior to following this walkthrough, you should have a basic understanding of STIX 2.1 and JSON. You can gain a high-level overview of STIX from the [introduction page]({{ site.baseurl }}/stix/intro.html) and a more detailed understanding from the [specification](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html). If you are familiar with STIX 1.x and would benefit from a comparison between 1.x and 2.x, that information can be found [here]({{ site.baseurl }}/stix/compare.html).
 
 It is helpful to have some knowledge of JSON (JavaScript Object Notation), which is the data-interchange format STIX 2.1 uses to serialize objects and properties. An introduction to JSON can be found [here](http://www.json.org/).
 
-Finally, for this particular example it may also be useful to have an understanding of how STIX is transported using TAXII. An overview of the communication methods used to transport STIX in TAXII 2.1 is available in the [TAXII specification draft]({{ site.baseurl }}/resources#taxii-20-specification).
+Finally, for this particular example it may also be useful to have an understanding of how STIX is transported using TAXII. An overview of the communication methods used to transport STIX in TAXII 2.1 is available in the [TAXII specification draft]({{ site.baseurl }}/resources#taxii-21-specification).
 
 ## Scenario Overview
 
@@ -59,7 +59,7 @@ In the example above, the <span class="sdo">**created**</span> and <span class="
 }
 ```
 
-The rest of the common properties are optional and will not be discussed in detail for this scenario. For more information on these properties see the [Common Properties](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.xzbicbtscatx) section of the STIX 2.1 specification.
+The rest of the common properties are optional and will not be discussed in detail for this scenario. For more information on these properties see the [Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_xzbicbtscatx) section of the STIX 2.1 specification.
 
 ### ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png) Indicator Object
 
@@ -69,17 +69,19 @@ Along with the common properties that are found in all STIX objects, each object
 ```json
  {
     "type": "indicator",
+    "spec_version": "2.1",
     "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
     "created": "2017-02-06T09:13:07.243000Z",
     "modified": "2017-02-06T09:13:07.243000Z",
     "name": "CryptoLocker Hash",
     "description": "This file is a part of CryptoLocker",
     "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+    "pattern_type": "stix",
     "indicator_types": ["malicious-activity"],
     "valid_from": "2017-01-01T09:00:00.000000Z"
  }
 ```
-Walking through Company A’s Indicator object above, we see the four common properties first, followed by the <span class="sdo">**name**</span> of the Indicator detailing that this is CryptoLocker hash. An optional property, <span class="sdo">**description**</span>, gives more information about the Indicator object. Other optional properties can be seen in the [Indicator properties table](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.wfiae74706sw). Next, the <span class="sdo">**pattern**</span> property for this particular indicator contains the STIX patterning representation for a SHA-256 file hash along with the hash value of the CryptoLocker variant. More information about STIX patterning is available in the [STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) part of the spec. Following <span class="sdo">**pattern**</span> is a <span class="sdo">**indicator_types**</span>  property that describes this particular type of Indicator as malicious-activity. The values for labeling Indicators come from the Indicator Type open-vocabulary located in the [Vocabularies section](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.iit7tolczlxv) of the spec, which suggest values to use but do not require them. Finally, the <span class="sdo">**valid_from**</span> property gives a timestamp for this Indicator relaying that it is only valuable intelligence from that specific date.
+Walking through Company A’s Indicator object above, we see the four common properties first, followed by the <span class="sdo">**name**</span> of the Indicator detailing that this is CryptoLocker hash. An optional property, <span class="sdo">**description**</span>, gives more information about the Indicator object. Other optional properties can be seen in the [Indicator properties table](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070634). Next, the <span class="sdo">**pattern**</span> property for this particular indicator contains the STIX patterning representation for a SHA-256 file hash along with the hash value of the CryptoLocker variant. More information about STIX patterning is available in the [STIX Patterning](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070773) part of the spec. Following <span class="sdo">**pattern**</span> is a <span class="sdo">**indicator_types**</span>  property that describes this particular type of Indicator as malicious-activity. The values for labeling Indicators come from the Indicator Type open-vocabulary located in the [Vocabularies section](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070793) of the spec, which suggest values to use but do not require them. Finally, the <span class="sdo">**valid_from**</span> property gives a timestamp for this Indicator relaying that it is only valuable intelligence from that specific date.
 
 ### ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png) Malware Object
 
@@ -89,6 +91,7 @@ A Malware SDO is used to represent information about the CryptoLocker malware Co
  {
      "type": "malware",
      "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
+     "spec_version": "2.1",
      "created": "2017-02-06T09:26:21.647000Z",
      "modified": "2017-02-06T09:26:21.647000Z",
      "name": "CryptoLocker",
@@ -97,16 +100,17 @@ A Malware SDO is used to represent information about the CryptoLocker malware Co
  }
 ```
 
-For Company A’s Malware object, we include the four common required properties followed by the <span class="sdo">**name**</span> of the malware, CryptoLocker. The <span class="sdo">**description**</span> field gives more context about CryptoLocker, and the <span class="sdo">**malware_types**</span> property conveys that this particular malware is ransomware. This value comes from another open vocabulary seen in the [Malware Types](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.8cyb6e9yqzwr) section of the spec.
+For Company A’s Malware object, we include the four common required properties followed by the <span class="sdo">**name**</span> of the malware, CryptoLocker. The <span class="sdo">**description**</span> field gives more context about CryptoLocker, and the <span class="sdo">**malware_types**</span> property conveys that this particular malware is ransomware. This value comes from another open vocabulary seen in the [Malware Types](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070808) section of the spec.
 
 ### ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png) Relationship Object
 
-A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This object contains the same common properties as the STIX SDOs along with required properties needed to define the relationship between the two objects. For instance, every Relationship requires a <span class="sdo">**source_ref**</span>, which captures the id of the source SDO, and a <span class="sdo">**target_ref**</span>, which contains the id of the target SDO. Along with these two properties, we need a <span class="sdo">**relationship_type**</span> property to identify the type of relationship. More information about the Relationship object as well as the full list of properties is available under the [Relationship section](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) of the spec.
+A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This object contains the same common properties as the STIX SDOs along with required properties needed to define the relationship between the two objects. For instance, every Relationship requires a <span class="sdo">**source_ref**</span>, which captures the id of the source SDO, and a <span class="sdo">**target_ref**</span>, which contains the id of the target SDO. Along with these two properties, we need a <span class="sdo">**relationship_type**</span> property to identify the type of relationship. More information about the Relationship object as well as the full list of properties is available under the [Relationship section](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070673) of the spec.
 
 ```json
  {
      "type": "relationship",
      "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
+     "spec_version": "2.1",
      "created": "2017-02-06T09:30:51.987000Z",
      "modified": "2017-02-06T09:30:51.987000Z",
      "relationship_type": "indicates",
@@ -115,7 +119,7 @@ A Relationship SRO links Company A’s Indicator SDO to the Malware SDO. This ob
  }
 ```
 
-So the Relationship object used in our scenario for Company A links the <span class="sdo">**source_ref**</span> (indicator) with the <span class="sdo">**target_ref**</span> (malware) by their unique ids. The <span class="sdo">**relationship_type**</span> shows that the Indicator SDO <span class="values">indicates</span> the Malware SDO. The <span class="values">indicates</span> value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.sypzg7rvdvc1). These specification-designed relationship types are suggested, but content producers are able to define their own.
+So the Relationship object used in our scenario for Company A links the <span class="sdo">**source_ref**</span> (indicator) with the <span class="sdo">**target_ref**</span> (malware) by their unique ids. The <span class="sdo">**relationship_type**</span> shows that the Indicator SDO <span class="values">indicates</span> the Malware SDO. The <span class="values">indicates</span> value is a specification-designed relationship type with the full table of defined relationships available [here](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070849). These specification-designed relationship types are suggested, but content producers are able to define their own.
 
 With this Relationship SRO, Company A has related the Indicator SDO to the Malware SDO. A diagram of this relationship below shows the SDO “nodes” and the SRO “edge”.
 
@@ -126,57 +130,61 @@ With this Relationship SRO, Company A has related the Indicator SDO to the Malwa
 
 ### ![Bundle Icon]({{ site.baseurl }}/img/icons/bundle.png) STIX Bundle
 
-Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be <span class="values">bundle</span> and also a unique <span class="sdo">**id**</span> property similar to STIX objects. There is also a required <span class="sdo">**spec_version**</span> property to indicate the STIX specification which must be <span class="values">2.1</span> in this example. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.rvtdrdkf1jdv). Altogether, Company A’s Bundle will look like this:
+Company A utilizes a STIX Bundle to hold these three STIX Objects. Bundles are used to share a collection of STIX objects in one JSON document and can have any number of arbitrary, unrelated objects. In this scenario the objects happen to be related, but this is not necessary or required for bundles. A Bundle is not a STIX object, so it doesn’t contain all of the common properties that objects hold. However, it does contain a <span class="sdo">**type**</span> property that must be <span class="values">bundle</span> and also a unique <span class="sdo">**id**</span> property similar to STIX objects. In addition to these required properties the list of your STIX objects is contained in the <span class="sdo">**objects**</span> property list. More information on Bundle is available in the spec under the [Bundle section](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070770). Altogether, Company A’s Bundle will look like this:
 
 ```json
-  {
-     "type": "bundle",
-     "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
-     "spec_version": "2.1",
-     "objects": [
-         {
-             "type": "indicator",
-             "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-             "created": "2017-02-06T09:13:07.243000Z",
-             "modified": "2017-02-06T09:13:07.243000Z",
-             "name": "CryptoLocker Hash",
-             "description": "This file is a part of CryptoLocker",
-             "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
-             "indicator_types": ["malicious-activity"],
-             "valid_from": "2017-01-01T09:00:00.000000Z"
-         },
-         {
-             "type": "malware",
-             "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
-             "created": "2017-02-06T09:26:21.647000Z",
-             "modified": "2017-02-06T09:26:21.647000Z",
-             "name": "CryptoLocker",
-             "description": "CryptoLocker is known to be malicious ransomware.",
-             "labels": ["ransomware"]
-         },
-         {
-             "type": "relationship",
-             "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
-             "created": "2017-02-06T09:30:51.987000Z",
-             "modified": "2017-02-06T09:30:51.987000Z",
-             "relationship_type": "indicates",
-             "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
-             "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
-         }
-     ]
- }
+{
+    "type": "bundle",
+    "id": "bundle--1736e032-a96a-41e9-8302-126677d4d781",
+    "objects": [
+        {
+            "type": "indicator",
+            "id": "indicator--71312c48-925d-44b7-b10e-c11086995358",
+            "spec_version": "2.1",
+            "created": "2017-02-06T09:13:07.243000Z",
+            "modified": "2017-02-06T09:13:07.243000Z",
+            "name": "CryptoLocker Hash",
+            "description": "This file is a part of CryptoLocker",
+            "pattern": "[file:hashes.'SHA-256' = '46afeb295883a5efd6639d4197eb18bcba3bff49125b810ca4b9509b9ce4dfbf']",
+            "pattern_type": "stix",
+            "indicator_types": ["malicious-activity"],
+            "valid_from": "2017-01-01T09:00:00.000000Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6",
+            "spec_version": "2.1",
+            "created": "2017-02-06T09:26:21.647000Z",
+            "modified": "2017-02-06T09:26:21.647000Z",
+            "name": "CryptoLocker",
+            "description": "CryptoLocker is known to be malicious ransomware.",
+            "malware_types": ["ransomware"]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--a19fac85-f6f5-47f3-aacd-4bfb54557852",
+            "spec_version": "2.1",
+            "created": "2017-02-06T09:30:51.987000Z",
+            "modified": "2017-02-06T09:30:51.987000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358",
+            "target_ref": "malware--81be4588-96a8-4de2-9938-9e16130ce7e6"
+        }
+    ]
+}
 ```
 
 Company A can then publish this Bundle to a TAXII Server Company B is subscribed to for Company B to retrieve and use.
 
 ### ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png) Sighting Object
 
-If Company B uses the Indicator provided by Company A and gets a match, it means that they probably have that same CryptoLocker Malware on their network. This is important information to share back to their community, and they can generate a Sighting object to do so. This is the other type of SRO in STIX 2.1, and means that some object has been seen. Sighting contains the same common properties as other STIX objects but only has one required property, <span class="sdo">**sighting_of_ref**</span>. This property contains a reference to the object that was sighted. Other optional properties not used can be seen in the properties table under the [Sighting section](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.a795guqsap3r) of the spec.
+If Company B uses the Indicator provided by Company A and gets a match, it means that they probably have that same CryptoLocker Malware on their network. This is important information to share back to their community, and they can generate a Sighting object to do so. This is the other type of SRO in STIX 2.1, and means that some object has been seen. Sighting contains the same common properties as other STIX objects but only has one required property, <span class="sdo">**sighting_of_ref**</span>. This property contains a reference to the object that was sighted. Other optional properties not used can be seen in the properties table under the [Sighting section](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070677) of the spec.
 
 ```json
  {
      "type": "sighting",
      "id": "sighting--4eebf1e1-5351-49ed-9b7b-28f0da806d82",
+     "spec_version": "2.1",
      "created": "2017-02-07T20:08:31.154Z",
      "modified": "2017-02-07T20:08:31.154Z",
      "sighting_of_ref": "indicator--71312c48-925d-44b7-b10e-c11086995358"
@@ -196,6 +204,6 @@ To summarize, we just looked at how Company A could create some threat intellige
 
 ## Where to Go from Here
 
-This walkthrough is a very basic look at a data exchange between two organizations using the concepts in STIX 2.0. It is meant to give a simple overview of what you can do with STIX SDOs and SROs in one threat intelligence sharing scenario. We really just scratched the surface with what you can do with STIX. There are many more objects used to model threat information such as Threat Actors, Campaigns, Intrusion Sets, Observed Data and Vulnerabilities to name a few. You can also use [Data Markings](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.j0uqagkk6m9n) to restrict how the information can be shared as well as [Customized](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.4ne27rjj6udo) objects and properties to suit more specific needs. To learn more about all of these concepts, see the [STIX 2.1 specification]({{site.baseurl}}/resources#stix-20-specification), which contains all the information you need to get started with STIX 2.1.
+This walkthrough is a very basic look at a data exchange between two organizations using the concepts in STIX 2.0. It is meant to give a simple overview of what you can do with STIX SDOs and SROs in one threat intelligence sharing scenario. We really just scratched the surface with what you can do with STIX. There are many more objects used to model threat information such as Threat Actors, Campaigns, Intrusion Sets, Observed Data and Vulnerabilities to name a few. You can also use [Data Markings](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070761) to restrict how the information can be shared as well as [Customized](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070825) objects and properties to suit more specific needs. To learn more about all of these concepts, see the [STIX 2.1 specification]({{site.baseurl}}/resources#stix-21-specification), which contains all the information you need to get started with STIX 2.1.
 
 ### [More specific examples]({{site.baseurl}}/stix/examples)
