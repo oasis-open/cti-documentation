@@ -42,7 +42,7 @@ To read more about the objects in this example as well as common properties and 
 -   [Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_xzbicbtscatx)
 -   [Vocabularies](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_izngjy1g98l2)
 -   [Threat Actor](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_k017w16zutw)
--   [Identity](https://docs.oasis-open.org/cti/stix/v2.1/csprd01/stix-v2.1-csprd01.html#_Toc16070630)
+-   [Identity](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_wh296fiwpklp)
 -   [Intrusion Set](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_5ol9xlbbnrdn)
 -   [Relationship](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e2e1szrqfoan)
 
