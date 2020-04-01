@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>note</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-59 0,-59 0,0 59,0 59,-59"/>
-<image xlink:href="note.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
+<image xlink:href="/cti-documentation/img/icons/note.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
 </g>
 </g>
 </svg>
