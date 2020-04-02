@@ -32,14 +32,14 @@ Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of s
 
 ## What's New in STIX 2.1
 STIX 2.1 differs from STIX 2.0 in the following ways:
-New objects: Grouping, Infrastructure, Language-Content (internationalization), Location, Malware-Analysis, Note, Opinion
-Objects that have undergone significant change: Malware, all SCOs
-New concepts: Confidence
-STIX Cyber-observable Objects can now be directly related using STIX Relationship Objects
-Renamed conflicting properties on Directory Object, File Object, Process Object, and Windows Registry Key Object.
-Added relationship from Indicator to Observed Data called "based-on".
-Added a description to Sighting and added a name to Location.
-Made some SCO relationships external on Domain-Name, IPv4-Addr, and IPv6-Addr.
+* New objects: Grouping, Infrastructure, Language-Content (internationalization), Location, Malware-Analysis, Note, Opinion
+* Objects that have undergone significant change: Malware, all SCOs
+* New concepts: Confidence
+* STIX Cyber-observable Objects can now be directly related using STIX Relationship Objects
+* Renamed conflicting properties on Directory Object, File Object, Process Object, and Windows Registry Key Object.
+* Added relationship from Indicator to Observed Data called "based-on".
+* Added a description to Sighting and added a name to Location.
+* Made some SCO relationships external on Domain-Name, IPv4-Addr, and IPv6-Addr.
 
 ## STIX 2.1 Objects
 STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX. More detail and visual representations can be found [here.]({{ site.baseurl }}/examples/visualized-sdo-relationships)
