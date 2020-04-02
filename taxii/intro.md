@@ -27,25 +27,26 @@ TAXII design principles include minimizing operational changes needed for adopti
 ## What's New in TAXII 2.1
 TAXII 2.1 differs from TAXII 2.0 in the following ways:
  
-- The DNS SRV record was changed from taxii to taxii2
-- The discovery URL was changed from /taxii/ to /taxii2/
-- The Manifest Resource was changed to represent individual versions of an object, instead of an object with all of its versions
-- Item based pagination was removed from this version of the specification
-- The section on content negotiation was updated
-- The media types were changed throughout the document
-- Clarification was added to say that API Roots can be relative paths as well as absolute paths
-- Changed version value in API Roots to match media type
-- Changed status resource to allow status on success and pending
-- Add TAXII media type as Accept type in 5.4 and 5.6 since a TAXII error message could be returned
-- HTTP Basic is now a SHOULD implement for the Server
-- Added a DELETE object by ID endpoint
-- Added a versions endpoint for object by ID.
-- Added section on Server Implementation Considerations
-- Added a limit URL parameter
-- Added a spec_versions match filter parameter
-- Removed STIX media types and STIX Bundle and replaced with TAXII Envelope
-- Added clarifying text around TAXII timestamps needing millisecond precision
-- Cleaned up and deemphasized text around support for content other than STIX
-- Added user-agent HTTP header description
+* The DNS SRV record was changed from taxii to taxii2
+* The discovery URL was changed from /taxii/ to /taxii2/
+* The Manifest Resource was changed to represent individual versions of an object, instead of an object with all of its versions
+* Item based pagination was removed from this version of the specification
+* The section on content negotiation was updated
+* The media types were changed throughout the document
+* Clarification was added to say that API Roots can be relative paths as well as absolute paths
+* Changed version value in API Roots to match media type
+* Changed status resource to allow status on success and pending
+* Add TAXII media type as Accept type in 5.4 and 5.6 since a TAXII error message could be returned
+* HTTP Basic is now a SHOULD implement for the Server
+* Added a DELETE object by ID endpoint
+* Added a versions endpoint for object by ID.
+* Added section on Server Implementation Considerations
+* Added a limit URL parameter
+* Added a next URL parameter
+* Added a spec_versions match filter parameter
+* Removed STIX media types and STIX Bundle and replaced with TAXII Envelope
+* Added clarifying text around TAXII timestamps needing millisecond precision
+* Cleaned up and deemphasized text around support for content other than STIX
+* Added user-agent HTTP header description
 
 ### [TAXII 2.1 Specification Document]({{ site.baseurl }}/resources.html#taxii-21-specification)
