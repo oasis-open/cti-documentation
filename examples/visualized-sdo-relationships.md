@@ -49,11 +49,17 @@ Click the SDO in the table you wish to view.
     <object class="relationshipGraph" id="Attack_Pattern" data="{{ site.baseurl }}/img/relationships/Attack Pattern.svg" type="image/svg+xml">Attack Pattern</object>
     <object class="relationshipGraph" id="Campaign" data="{{ site.baseurl }}/img/relationships/Campaign.svg" type="image/svg+xml">Campaign</object>
     <object class="relationshipGraph" id="Course_of_Action" data="{{ site.baseurl }}/img/relationships/Course of Action.svg" type="image/svg+xml">Course of Action</object>
+      <object class="relationshipGraph" id="Grouping" data="{{ site.baseurl }}/img/relationships/Grouping.svg" type="image/svg+xml">Grouping</object>
     <object class="relationshipGraph" id="Identify" data="{{ site.baseurl }}/img/relationships/Identify.svg" type="image/svg+xml">Identify</object>
     <object class="relationshipGraph" id="Indicator" data="{{ site.baseurl }}/img/relationships/Indicator.svg" type="image/svg+xml">Indicator</object>
+      <object class="relationshipGraph" id="Infrastructure" data="{{ site.baseurl }}/img/relationships/Infrastructure.svg" type="image/svg+xml">Infrastructure</object>
     <object class="relationshipGraph" id="Intrusion_Set" data="{{ site.baseurl }}/img/relationships/Intrusion Set.svg" type="image/svg+xml">Intrusion Set</object>
+      <object class="relationshipGraph" id="Location" data="{{ site.baseurl }}/img/relationships/Location.svg" type="image/svg+xml">Location</object>
     <object class="relationshipGraph" id="Malware" data="{{ site.baseurl }}/img/relationships/Malware.svg" type="image/svg+xml">Malware</object>
+      <object class="relationshipGraph" id="Malware_Analysis" data="{{ site.baseurl }}/img/relationships/Malware Analysis.svg" type="image/svg+xml">Malware Analysis</object>
+      <object class="relationshipGraph" id="Note" data="{{ site.baseurl }}/img/relationships/Note.svg" type="image/svg+xml">Note</object>
     <object class="relationshipGraph" id="Observed_Data" data="{{ site.baseurl }}/img/relationships/Observed Data.svg" type="image/svg+xml">Observed Data</object>
+      <object class="relationshipGraph" id="Opinion" data="{{ site.baseurl }}/img/relationships/Opinion.svg" type="image/svg+xml">Opinion</object>
     <object class="relationshipGraph" id="Report" data="{{ site.baseurl }}/img/relationships/Report.svg" type="image/svg+xml">Report</object>
     <object class="relationshipGraph" id="Threat_Actor" data="{{ site.baseurl }}/img/relationships/Threat Actor.svg" type="image/svg+xml">Threat Actor</object>
     <object class="relationshipGraph" id="Tool" data="{{ site.baseurl }}/img/relationships/Tool.svg" type="image/svg+xml">Tool</object>
