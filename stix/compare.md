@@ -184,7 +184,3 @@ Indicator patterns in STIX 1.x were expressed using XML syntax. This made all bu
 ```
 </div>
 </div>
-
-## Coming Attractions
-
-STIX 2.x establishes a foundation for future development with the intent to add several new SDOs and develop support for other critical CTI concepts. A small number of minor revisions will be developed over the coming months to iteratively mature STIX 2.x. By establishing a foundation that supports the most critical CTI sharing use cases, the CTI TC hopes to gain critical feedback and implementation experience early while also allowing future development of STIX to be more focused on a smaller set of selected topics. Organizations are now actively building capabilities that utilize STIX 2.1.
