@@ -56,7 +56,7 @@ Click the SDO in the table you wish to view.
     <object class="relationshipGraph" id="Intrusion_Set" data="{{ site.baseurl }}/img/relationships/Intrusion Set.svg" type="image/svg+xml">Intrusion Set</object>
       <object class="relationshipGraph" id="Location" data="{{ site.baseurl }}/img/relationships/Location.svg" type="image/svg+xml">Location</object>
     <object class="relationshipGraph" id="Malware" data="{{ site.baseurl }}/img/relationships/Malware.svg" type="image/svg+xml">Malware</object>
-      <object class="relationshipGraph" id="Malware Analysis" data="{{ site.baseurl }}/img/relationships/Malware Analysis.svg" type="image/svg+xml">Malware Analysis</object>
+      <object class="relationshipGraph" id="Malware_Analysis" data="{{ site.baseurl }}/img/relationships/Malware Analysis.svg" type="image/svg+xml">Malware Analysis</object>
       <object class="relationshipGraph" id="Note" data="{{ site.baseurl }}/img/relationships/Note.svg" type="image/svg+xml">Note</object>
     <object class="relationshipGraph" id="Observed_Data" data="{{ site.baseurl }}/img/relationships/Observed Data.svg" type="image/svg+xml">Observed Data</object>
       <object class="relationshipGraph" id="Opinion" data="{{ site.baseurl }}/img/relationships/Opinion.svg" type="image/svg+xml">Opinion</object>
