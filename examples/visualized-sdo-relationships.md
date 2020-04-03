@@ -25,7 +25,7 @@ Click the SDO in the table you wish to view.
     <div class="col-md-4" markdown="1">
 
 {: .table }
-![Attack Pattern]({{ site.baseurl }}/img/icons/attack_pattern.png){: .relationshipIcon data-tag="Attack_Pattern"} 
+|![Attack Pattern]({{ site.baseurl }}/img/icons/attack_pattern.png){: .relationshipIcon data-tag="Attack_Pattern"} 
 ![Campaign]({{ site.baseurl }}/img/icons/campaign.png){: .relationshipIcon data-tag="Campaign"} 
 ![Course of Action]({{ site.baseurl }}/img/icons/course_of_action.png){: .relationshipIcon data-tag="Course_of_Action"} 
 ![Grouping]({{ site.baseurl }}/img/icons/grouping.png){: .relationshipIcon data-tag="Grouping"} 
@@ -42,7 +42,7 @@ Click the SDO in the table you wish to view.
 ![Report]({{ site.baseurl }}/img/icons/report.png){: .relationshipIcon data-tag="Report"} 
 ![Threat Actor]({{ site.baseurl }}/img/icons/threat_actor.png){: .relationshipIcon data-tag="Threat_Actor"} 
 ![Tool]({{ site.baseurl }}/img/icons/tool.png){: .relationshipIcon data-tag="Tool"} 
-![Vulnerability]({{ site.baseurl }}/img/icons/vulnerability.png){: .relationshipIcon data-tag="Vulnerability"} 
+![Vulnerability]({{ site.baseurl }}/img/icons/vulnerability.png){: .relationshipIcon data-tag="Vulnerability"} |
 </div>
 
 <div class="col-md-8 text-center">
