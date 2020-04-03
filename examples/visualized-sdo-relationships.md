@@ -29,19 +29,19 @@ Click the SDO in the table you wish to view.
 |![Attack Pattern]({{ site.baseurl }}/img/icons/attack_pattern.png){: .relationshipIcon data-tag="Attack_Pattern"} 
 ![Campaign]({{ site.baseurl }}/img/icons/campaign.png){: .relationshipIcon data-tag="Campaign"} 
 ![Course of Action]({{ site.baseurl }}/img/icons/course_of_action.png){: .relationshipIcon data-tag="Course_of_Action"} 
-![Grouping]({{ site.baseurl }}/img/icons/grouping.png){: .relationshipIcon data-tag="Grouping"} 
+![Grouping]({{ site.baseurl }}/img/icons/grouping.png){: .relationshipIcon data-tag="Grouping"}| 
 ![Identity]({{ site.baseurl }}/img/icons/identity.png){: .relationshipIcon data-tag="Identify"} 
 ![Indicator]({{ site.baseurl }}/img/icons/indicator.png){: .relationshipIcon data-tag="Indicator"} 
 ![Infrastructure]({{ site.baseurl }}/img/icons/infrastructure.png){: .relationshipIcon data-tag="Infrastructure"} 
-![Intrusion Set]({{ site.baseurl }}/img/icons/intrusion_set.png){: .relationshipIcon data-tag="Intrusion_Set"} 
+![Intrusion Set]({{ site.baseurl }}/img/icons/intrusion_set.png){: .relationshipIcon data-tag="Intrusion_Set"}| 
 ![Location]({{ site.baseurl }}/img/icons/location.png){: .relationshipIcon data-tag="Location"} 
 ![Malware]({{ site.baseurl }}/img/icons/malware.png){: .relationshipIcon data-tag="Malware"} 
 ![Malware Analysis]({{ site.baseurl }}/img/icons/malware_analysis.png){: .relationshipIcon data-tag="Malware_Analysis"} 
-![Note]({{ site.baseurl }}/img/icons/note.png){: .relationshipIcon data-tag="Note"} 
+![Note]({{ site.baseurl }}/img/icons/note.png){: .relationshipIcon data-tag="Note"}| 
 ![Observed Data]({{ site.baseurl }}/img/icons/observed_data.png){: .relationshipIcon data-tag="Observed_Data"} 
 ![Opinion]({{ site.baseurl }}/img/icons/opinion.png){: .relationshipIcon data-tag="Opinion"} 
 ![Report]({{ site.baseurl }}/img/icons/report.png){: .relationshipIcon data-tag="Report"} 
-![Threat Actor]({{ site.baseurl }}/img/icons/threat_actor.png){: .relationshipIcon data-tag="Threat_Actor"} 
+![Threat Actor]({{ site.baseurl }}/img/icons/threat_actor.png){: .relationshipIcon data-tag="Threat_Actor"}| 
 ![Tool]({{ site.baseurl }}/img/icons/tool.png){: .relationshipIcon data-tag="Tool"} 
 ![Vulnerability]({{ site.baseurl }}/img/icons/vulnerability.png){: .relationshipIcon data-tag="Vulnerability"} |
 </div>
