@@ -25,7 +25,6 @@ Click the SDO in the table you wish to view.
     <div class="col-md-4" markdown="1">
 
 {: .table }
-|---|
 ![Attack Pattern]({{ site.baseurl }}/img/icons/attack_pattern.png){: .relationshipIcon data-tag="Attack_Pattern"} 
 ![Campaign]({{ site.baseurl }}/img/icons/campaign.png){: .relationshipIcon data-tag="Campaign"} 
 ![Course of Action]({{ site.baseurl }}/img/icons/course_of_action.png){: .relationshipIcon data-tag="Course_of_Action"} 
@@ -33,7 +32,7 @@ Click the SDO in the table you wish to view.
 ![Identity]({{ site.baseurl }}/img/icons/identity.png){: .relationshipIcon data-tag="Identify"} 
 ![Indicator]({{ site.baseurl }}/img/icons/indicator.png){: .relationshipIcon data-tag="Indicator"} 
 ![Infrastructure]({{ site.baseurl }}/img/icons/infrastructure.png){: .relationshipIcon data-tag="Infrastructure"} 
-![Intrusion Set]({{ site.baseurl }}/img/icons/intrusion_set.png){: .relationshipIcon data-tag="Intrusion_Set"}| 
+![Intrusion Set]({{ site.baseurl }}/img/icons/intrusion_set.png){: .relationshipIcon data-tag="Intrusion_Set"} 
 ![Location]({{ site.baseurl }}/img/icons/location.png){: .relationshipIcon data-tag="Location"} 
 ![Malware]({{ site.baseurl }}/img/icons/malware.png){: .relationshipIcon data-tag="Malware"} 
 ![Malware Analysis]({{ site.baseurl }}/img/icons/malware_analysis.png){: .relationshipIcon data-tag="Malware_Analysis"} 
