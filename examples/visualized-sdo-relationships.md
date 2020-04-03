@@ -25,6 +25,7 @@ Click the SDO in the table you wish to view.
     <div class="col-md-4" markdown="1">
 
 {: .table }
+|---|
 |![Attack Pattern]({{ site.baseurl }}/img/icons/attack_pattern.png){: .relationshipIcon data-tag="Attack_Pattern"} 
 ![Campaign]({{ site.baseurl }}/img/icons/campaign.png){: .relationshipIcon data-tag="Campaign"} 
 ![Course of Action]({{ site.baseurl }}/img/icons/course_of_action.png){: .relationshipIcon data-tag="Course_of_Action"} 
