@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Getting Started with STIX 2.0
+title: Getting Started with STIX 2.1
 categories: stix
 ---
 
 ## Overview
 
-This guide provides information on several of the tools and resources available which can help you get started with STIX 2.0. Before getting started, it would be beneficial for you to have a basic understanding of STIX 2. Some of the most helpful information can be found here:
+This guide provides information on several of the tools and resources available which can help you get started with STIX 2.1. Before getting started, it would be beneficial for you to have a basic understanding of STIX 2. Some of the most helpful information can be found here:
 
--   [About STIX](about)—Gives a general overview of STIX and the objects used in STIX 2.
+-   [Introduction to STIX](intro)—Gives a general overview of STIX and the objects used in STIX 2.
 
--   [STIX FAQ](../faq)—Provides an FAQ-style review of STIX 2.0. Also, each part of the STIX 2.0 specification is located here.
+-   [STIX FAQ](../faq)—Provides an FAQ-style review of STIX 2.1. Also, each part of the STIX 2.1 specification is located here.
 
 -   [Comparing STIX 1 to STIX 2](compare)—If you’re familiar with STIX 1.x, this will help you get caught up on the key differences.
 
@@ -20,9 +20,9 @@ This guide provides information on several of the tools and resources available 
 
 ## JSON Schemas
 
-One of the biggest changes between STIX 1.x and STIX 2.0 is the transition from XML to JSON. So before getting started with creating objects and properties, it may be helpful to have some knowledge of JSON. An introduction to JSON can be found at [www.json.org](http://www.json.org){: target=_"blank"}.
+One of the biggest changes between STIX 1.x and STIX 2.1 is the transition from XML to JSON. So before getting started with creating objects and properties, it may be helpful to have some knowledge of JSON. An introduction to JSON can be found at [www.json.org](http://www.json.org){: target=_"blank"}.
 
-Prior to creating your STIX objects you may want to review the [JSON schemas]( https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} as well as the examples (see link above in the Overview section) to understand the properties for each object and the relationships among objects. The schemas were built to follow the STIX 2.0 specification and enforce several of the MUST requirements indicated in the spec. However, there are limits to what the schemas can enforce, so some requirements needed to be implemented with the STIX 2 validator tool (see next section). To understand the checks not enforced by the schemas, check out the README guide from the stix2-json-schemas repository on github.
+Prior to creating your STIX objects you may want to review the [JSON schemas]( https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} as well as the examples (see link above in the Overview section) to understand the properties for each object and the relationships among objects. The schemas were built to follow the STIX 2.1 specification and enforce several of the MUST requirements indicated in the spec. However, there are limits to what the schemas can enforce, so some requirements needed to be implemented with the STIX 2 validator tool (see next section). To understand the checks not enforced by the schemas, check out the README guide from the stix2-json-schemas repository on github.
 
 A sample of how an object is structured can be seen below:
 
@@ -77,15 +77,15 @@ A sample of how an object is structured can be seen below:
 
 ## STIX Validator
 
-The [STIX validator](https://github.com/oasis-open/cti-stix-validator) tool is a useful resource for validating that STIX JSON content conforms to the 2.0 specification. It goes beyond what is checked in the schemas, and enforces MUST requirements the schemas cannot capture. Feel free to download this tool (instructions on github) in order to check that your created content abides by STIX 2 requirements.
+The [STIX validator](https://github.com/oasis-open/cti-stix-validator) tool is a useful resource for validating that STIX JSON content conforms to the 2.1 specification. It goes beyond what is checked in the schemas, and enforces MUST requirements the schemas cannot capture. Feel free to download this tool (instructions on github) in order to check that your created content abides by STIX 2 requirements.
 
 ## Pattern Validator
 
-Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, `[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']` would pass the pattern validator tool whereas something like, `[file:hashes.'SHA-256'= 'example.exe']` would not. This tool can be used via command line or as a Python library.
+Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e8slinrhxcc9). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, `[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']` would pass the pattern validator tool whereas something like, `[file:hashes.'SHA-256'= 'example.exe']` would not. This tool can be used via command line or as a Python library.
 
 ## STIX Visualization
 
-Since many of the relationships among STIX objects can be difficult to see by simply looking at a block of JSON, the [STIX visualization tool](https://oasis-open.github.io/cti-stix-visualization/){: target="_blank"} is provided to help convert this JSON into a more concise, legible diagram. The visualization tool also reinforces the common comparison of STIX 2.0 to a graph with nodes and edges. It converts the SDOs into nodes and the SROs into the edges connecting each node. The tool is browser-based and also interactive, allowing you to drag nodes around to visualize the objects in different ways. By clicking on the nodes and edges, you can also obtain more information about the SDOs and SROs. There are several ways to upload JSON as well, including via file, copy and paste, or a link to a valid URL. A sample of this diagram can be seen below:
+Since many of the relationships among STIX objects can be difficult to see by simply looking at a block of JSON, the [STIX visualization tool](https://oasis-open.github.io/cti-stix-visualization/){: target="_blank"} is provided to help convert this JSON into a more concise, legible diagram. The visualization tool also reinforces the common comparison of STIX 2.1 to a graph with nodes and edges. It converts the SDOs into nodes and the SROs into the edges connecting each node. The tool is browser-based and also interactive, allowing you to drag nodes around to visualize the objects in different ways. By clicking on the nodes and edges, you can also obtain more information about the SDOs and SROs. There are several ways to upload JSON as well, including via file, copy and paste, or a link to a valid URL. A sample of this diagram can be seen below:
 
 <div class="center-block text-center" markdown="span">
     ![STIX Viz Diagram]({{ site.baseurl }}/img/STIXdiagram4.png)
@@ -99,7 +99,7 @@ When clicking on the Malware SDO above (Poison Ivy Variant d1c6), the visualizer
 
 ## STIX Elevator
 
-If you are familiar with the first version of STIX, which was modeled using XML, you may have STIX 1.x content that you would like to convert to STIX 2.0. The [elevator](https://github.com/oasis-open/cti-stix-elevator){: target=_"blank"} tool helps serve that purpose and will provide a best-effort conversion from 1.x to 2.0. There are limitations with this tool, as it cannot transform STIX 2.0 content into 1.x, and it makes some assumptions from the 1.x content that it needs to convert to 2.0. Nonetheless, it is a useful tool for transitioning your old STIX content into the new version.
+If you are familiar with the first version of STIX, which was modeled using XML, you may have STIX 1.x content that you would like to convert to STIX 2.1. The [elevator](https://github.com/oasis-open/cti-stix-elevator){: target=_"blank"} tool helps serve that purpose and will provide a best-effort conversion from 1.x to 2.1. There are limitations with this tool, as it cannot transform STIX 2.1 content into 1.x, and it makes some assumptions from the 1.x content that it needs to convert to 2.1. Nonetheless, it is a useful tool for transitioning your old STIX content into the new version.
 
 For instance, putting this STIX 1.x XML content into the elevator (NOTE: STIX_Package information is truncated):
 ```xml
@@ -120,10 +120,11 @@ For instance, putting this STIX 1.x XML content into the elevator (NOTE: STIX_Pa
 </stix:STIX_Package>
 ```
 
-Results in the following STIX 2.0 JSON output:
+Results in the following STIX 2.1 JSON output:
 ```json
 {
     "id": "bundle--8fab937e-b694-41e3-b71c-0800271e87d2",
+    "type": "bundle",
     "objects": [
         {
             "created": "2017-09-26T10:36:01.961Z",
@@ -134,12 +135,12 @@ Results in the following STIX 2.0 JSON output:
             "modified": "2017-09-26T10:36:01.961Z",
             "name": "Malicious site hosting downloader",
             "pattern": "[url:value = 'http://x4z9arb.cn/4712']",
+            "pattern_type": "stix",
+            "spec_version": "2.1",
             "type": "indicator",
             "valid_from": "2017-09-26T10:36:01.961333Z"
         }
-    ],
-    "spec_version": "2.0",
-    "type": "bundle"
+    ]
 }
 ```
 
@@ -148,7 +149,7 @@ The [pattern matching](https://github.com/oasis-open/cti-pattern-matcher){: targ
 
 ## Python STIX 2 API
 
-Finally, the STIX 2 API provides a variety of features and functionality for creating STIX 2.0 content. The [README](https://github.com/oasis-open/cti-python-stix2\#cti-python-stix2){: target="_blank"} provides the best synopsis of the API, but a brief list of the functionality is included below:
+Finally, the STIX 2 API provides a variety of features and functionality for creating STIX 2.1 content. The [README](https://github.com/oasis-open/cti-python-stix2\#cti-python-stix2){: target="_blank"} provides the best synopsis of the API, but a brief list of the functionality is included below:
 
 -   Serializes/de-serializes JSON content
 

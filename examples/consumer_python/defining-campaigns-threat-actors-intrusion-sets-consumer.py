@@ -10,13 +10,13 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
-        print("Labels: " + str(obj.labels))
+        print("Threat Actor Types: " + str(obj.threat_actor_types))
         print("Roles: " + str(obj.roles))
         print("Goals: " + str(obj.goals))
+        print("Sophistication: " + obj.sophistication)
         print("Resource Level: " + obj.resource_level)
         print("Primary Motivation: " + obj.primary_motivation)
         print("Secondary Motivations: " + str(obj.secondary_motivations))
-        print("Sophistication: " + obj.sophistication)
 
     elif obj == identity1:
         print("------------------")
@@ -36,7 +36,7 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
-        print("External References: " + str(obj.external_references))
+        print("Identity Class: " + obj.identity_class)
 
     elif obj == attack_pattern1:
         print("------------------")
@@ -46,6 +46,7 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        print("Type: " + obj.type)
         print("External References: " + str(obj.external_references))
 
     elif obj == attack_pattern2:
@@ -56,7 +57,9 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        print("Type: " + obj.type)
         print("External References: " + str(obj.external_references))
+
 
     elif obj == campaign1:
         print("------------------")
@@ -66,6 +69,8 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        print("Description: " + obj.description)
+        print("Type: " + obj.type)
         print("Aliases: " + str(obj.aliases))
         print("First Seen: " + str(obj.first_seen))
         print("Objective: " + obj.objective)
@@ -78,6 +83,8 @@ for obj in bundle.objects:
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
+        print("Description: " + obj.description)
+        print("Type: " + obj.type)
         print("Aliases: " + str(obj.aliases))
         print("First Seen: " + str(obj.first_seen))
         print("Objective: " + obj.objective)
@@ -91,12 +98,13 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
         print("Description: " + obj.name)
-        print("Resource Level: " + obj.resource_level)
+        print("Type: " + obj.type)
+        print("Aliases: " + str(obj.aliases))
         print("First Seen: " + str(obj.first_seen))
+        print("Goals: " + str(obj.goals))
+        print("Resource Level: " + obj.resource_level)
         print("Primary Motivation: " + obj.primary_motivation)
         print("Secondary Motivations: " + str(obj.secondary_motivations))
-        print("Aliases: " + str(obj.aliases))
-        print("Goals: " + str(obj.goals))
 
     elif re.search('relationship*', str(obj)):
         print("------------------")
@@ -105,6 +113,7 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
+        print("Type: " + obj.type)
         print("Relationship Type: " + obj.relationship_type)
         print("Source Ref: " + obj.source_ref)
         print("Target Ref: " + obj.target_ref)

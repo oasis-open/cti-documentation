@@ -1,4 +1,4 @@
-import stix2
+from stix2.v21 import (Bundle)
 
 for obj in bundle.objects:
     if obj == malware:
@@ -10,7 +10,9 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0] + ", " + obj.labels[1])
+        print("Type: " + obj.type)
+        print("Malware Types: " + str(obj.malware_types))
+        print("Is Family:" + str(obj.is_family))
         print("Kill Chain: " + str(obj.kill_chain_phases))
 
     elif obj == indicator:
@@ -22,8 +24,10 @@ for obj in bundle.objects:
         print("Modified: " + str(obj.modified))
         print("Name: " + obj.name)
         print("Description: " + obj.description)
-        print("Labels: " + obj.labels[0])
+        print("Type: " + obj.type)
+        print("Indicator Types: " + str(obj.indicator_types))
         print("Pattern: " + obj.pattern)
+        print("Pattern Type: " + obj.pattern_type)
         print("Valid From: " + str(obj.valid_from))
 
     elif obj == relationship:
@@ -33,6 +37,7 @@ for obj in bundle.objects:
         print("ID: " + obj.id)
         print("Created: " + str(obj.created))
         print("Modified: " + str(obj.modified))
+        print("Type: " + obj.type)
         print("Relationship Type: " + obj.relationship_type)
         print("Source Ref: " + obj.source_ref)
         print("Target Ref: " + obj.target_ref)

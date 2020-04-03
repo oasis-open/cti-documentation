@@ -15,17 +15,17 @@ This scenario consists of an indicator for the URL <span class="values">http://
 **Data model**
 --------------
 
-Malicious URL values are just one of many indicators that can be represented using the [Indicator](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.muftrcpnf89v) STIX Domain Object (SDO). This is accomplished using the Indicator SDO’s <span class="sdo">**pattern**</span> property which is based on the [STIX patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub) language. Using this language, the URL can be structured using a comparison expression: <span class="values">\[url:value= 'http://x4z9arb.cn/4712/'\]</span>.
+Malicious URL values are just one of many indicators that can be represented using the [Indicator](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_muftrcpnf89v) STIX Domain Object (SDO). This is accomplished using the Indicator SDO’s <span class="sdo">**pattern**</span> property which is based on the [STIX patterning](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e8slinrhxcc9) language. Using this language, the URL can be structured using a comparison expression: <span class="values">\[url:value= 'http://x4z9arb.cn/4712/'\]</span>.
 
-This Indicator object must also contain a <span class="sdo">**labels**</span> property that provides more context about the URL. The URL in this scenario is known to be malicious so the appropriate label for this Indicator is <span class="values">malicious-activity</span>. This value is taken from an [Indicator Label](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.cvhfwe3t9vuo) open vocabulary which contains other useful labels for categorizing indicators.
+This Indicator object must also contain a <span class="sdo">**indicator_types**</span> property that provides more context about the URL. The URL in this scenario is known to be malicious so the appropriate type for this Indicator is <span class="values">malicious-activity</span>. This value is taken from an [Indicator Type](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_cvhfwe3t9vuo) open vocabulary which contains other useful types for categorizing indicators.
 
 Another required field for Indicator objects called <span class="sdo">**valid\_from**</span> dictates the time from which this URL should be considered worthwhile intelligence. In this case, the URL is valid from the time the object was created.
 
-The malware associated with the URL in this scenario is a type of backdoor and can be modeled using the STIX [Malware](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.s5l7katgbp09) SDO. Like with the Indicator object, Malware objects can be further classified using a <span class="sdo">**labels**</span> property that comes from the [Malware Label](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.8cyb6e9yqzwr) open vocabulary. For instance, a piece of malware might be classified as a keylogger, spyware, worm, virus, etc. In this example, the malware affiliated with the URL is a type of <span class="values">backdoor</span> and <span class="values">remote-access-trojan</span>.
+The malware associated with the URL in this scenario is a type of backdoor and can be modeled using the STIX [Malware](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_s5l7katgbp09) SDO. Like with the Indicator object, Malware objects can be further classified using a <span class="sdo">**malware_types**</span> property that comes from the [Malware Types](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_oxlc4df65spl) open vocabulary. For instance, a piece of malware might be classified as a keylogger, spyware, worm, virus, etc. In this example, the malware affiliated with the URL is a type of <span class="values">backdoor</span> and <span class="values">remote-access-trojan</span>.
 
 A Malware SDO can also be useful for capturing kill chain information about the malware instance. It is known that this piece of malware attempts to establish a backdoor foothold and download remote files. Therefore, the Malware object represents this with a <span class="sdo">**kill\_chain\_phases**</span> list which contains both the name of the kill chain used and the phase within that kill chain. For this scenario, the Mandiant Attack Lifecycle Model was used as the kill chain and contains the <span class="sdo">**phase\_name**</span> <span class="values">establish-foothold</span>. Other kill chains such as Lockheed Martin’s or organization-specific ones can be used as well.
 
-Finally, a [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan) SRO can be used to link the Indicator and Malware objects. The URL Indicator <span class="values">indicates</span> the backdoor Malware object. In this relationship, the indicator id is the <span class="sdo">**source\_ref**</span>, and the malware id is the <span class="sdo">**target\_ref**</span>.
+Finally, a [Relationship](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e2e1szrqfoan) SRO can be used to link the Indicator and Malware objects. The URL Indicator <span class="values">indicates</span> the backdoor Malware object. In this relationship, the indicator id is the <span class="sdo">**source\_ref**</span>, and the malware id is the <span class="sdo">**target\_ref**</span>.
 
 A diagram of this relationship below shows the Indicator and Malware SDO’s and the Relationship SRO between them [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/indicator-for-malicious-url.json){: target="_blank"}:
 
@@ -36,12 +36,12 @@ A diagram of this relationship below shows the Indicator and Malware SDO’s and
 
 To read more about the objects in this example as well as common properties and STIX patterning, check out the links below:
 
--   [Common Properties](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.xzbicbtscatx)
--   [Vocabularies](https://docs.google.com/document/d/1dIrh1Lp3KAjEMm8o2VzAmuV0Peu-jt9aAh1IHrjAroM/pub#h.iit7tolczlxv)
--   [Malware](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.s5l7katgbp09)
--   [Indicator](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.muftrcpnf89v)
--   [Relationship](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.e2e1szrqfoan)
--   [STIX Patterning](https://docs.google.com/document/d/1nK1RXcE2aMvQoG1Kgr3aTBtHZ1IyehzOk7vU0n5FUGY/pub)
+-   [Common Properties](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_xzbicbtscatx)
+-   [Vocabularies](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_izngjy1g98l2)
+-   [Malware](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_s5l7katgbp09)
+-   [Indicator](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_muftrcpnf89v)
+-   [Relationship](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e2e1szrqfoan)
+-   [STIX Patterning](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e8slinrhxcc9)
 
 **Implementation**
 ------------------

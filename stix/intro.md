@@ -30,46 +30,64 @@ Contributing and ingesting CTI becomes a lot easier. With STIX, all aspects of s
   </div>
 </div>
 
+## What's New in STIX 2.1
+STIX 2.1 differs from STIX 2.0 in the following ways:
+* New objects: Grouping, Infrastructure, Language-Content (internationalization), Location, Malware-Analysis, Note, Opinion
+* Objects that have undergone significant change: Malware, all SCOs
+* New concepts: Confidence
+* STIX Cyber-observable Objects can now be directly related using STIX Relationship Objects
+* Renamed conflicting properties on Directory Object, File Object, Process Object, and Windows Registry Key Object.
+* Added relationship from Indicator to Observed Data called "based-on".
+* Added a description to Sighting and added a name to Location.
+* Made some SCO relationships external on Domain-Name, IPv4-Addr, and IPv6-Addr.
 
-## STIX 2 Objects
+## STIX 2.1 Objects
 STIX Objects categorize each piece of information with specific attributes to be populated. Chaining multiple objects together through relationships allow for easy or complex representations of CTI. Below is a list of what can be represented through STIX. More detail and visual representations can be found [here.]({{ site.baseurl }}/examples/visualized-sdo-relationships)
 
-#### STIX 2 defines twelve STIX Domain Objects (SDOs):
+#### STIX 2.1 defines 18 STIX Domain Objects (SDOs):
 
 {: .table .table-hover .table-example .table-desc}
 | Object | Name | Description |
 | :---: | :---: | --- |
-| ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png "Attack Pattern Icon") | [**Attack Pattern**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.axjijf603msy){: target="_blank"} | A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. |
-| ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png "Campaign Icon") | [**Campaign**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.pcpvfz4ik6d6){: target="_blank"} | A grouping of adversarial behaviors that describes a set of malicious activities or attacks that occur over a period of time against a specific set of targets. |
-| ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png "Course of Action Icon") | [**Course of Action**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a925mpw39txn){: target="_blank"} | An action taken to either prevent an attack or respond to an attack. |
-| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png "Identity Icon") | [**Identity**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.wh296fiwpklp){: target="_blank"} | Individuals, organizations, or groups, as well as classes of individuals, organizations, or groups.
-| ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png "Indicator Icon") | [**Indicator**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.muftrcpnf89v){: target="_blank"} | Contains a pattern that can be used to detect suspicious or malicious cyber activity. |
-| ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png "Intrusion Set Icon") | [**Intrusion Set**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.5ol9xlbbnrdn){: target="_blank"} | A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. |
-| ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png "Malware Icon") | [**Malware**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.s5l7katgbp09){: target="_blank"} | A type of TTP, also known as malicious code and malicious software, used to compromise the confidentiality, integrity, or availability of a victim’s data or system. |
-| ![Observed Data Icon]({{ site.baseurl }}/img/icons/observed_data.png "Observed Data Icon") | [**Observed Data**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.p49j1fwoxldc){: target="_blank"} | Conveys information observed on a system or network (e.g., an IP address). |
-| ![Report Icon]({{ site.baseurl }}/img/icons/report.png "Report Icon") | [**Report**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.n8bjzg1ysgdq){: target="_blank"} | Collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details. |
-| ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png "Threat Actor Icon") | [**Threat Actor**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.k017w16zutw){: target="_blank"} |Individuals, groups, or organizations believed to be operating with malicious intent. |
-| ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png "Tool Icon") | [**Tool**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.z4voa9ndw8v){: target="_blank"} | Legitimate software that can be used by threat actors to perform attacks. |
-| ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png "Vulnerability Icon") | [**Vulnerability**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.q5ytzmajn6re){: target="_blank"} | A mistake in software that can be directly used by a hacker to gain access to a system or network. |
+| ![Attack Pattern Icon]({{ site.baseurl }}/img/icons/attack_pattern.png "Attack Pattern Icon") | [**Attack Pattern**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_axjijf603msy){: target="_blank"} | A type of TTP that describe ways that adversaries attempt to compromise targets. |
+| ![Campaign Icon]({{ site.baseurl }}/img/icons/campaign.png "Campaign Icon") | [**Campaign**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_pcpvfz4ik6d6){: target="_blank"} |  A grouping of adversarial behaviors that describes a set of malicious activities or attacks (sometimes called waves) that occur over a period of time against a specific set of targets.  |
+| ![Course of Action Icon]({{ site.baseurl }}/img/icons/course_of_action.png "Course of Action Icon") | [**Course of Action**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_a925mpw39txn){: target="_blank"} | A recommendation from a producer of intelligence to a consumer on the actions that they might take in response to that intelligence. |
+| ![Grouping Icon]({{ site.baseurl }}/img/icons/grouping.png "Grouping Icon") | [**Grouping**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_t56pn7elv6u7){: target="_blank"} | Explicitly asserts that the referenced STIX Objects have a shared context, unlike a STIX Bundle (which explicitly conveys no context). |
+| ![Identity Icon]({{ site.baseurl }}/img/icons/identity.png "Identity Icon") | [**Identity**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_wh296fiwpklp){: target="_blank"} | Actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, systems or groups (e.g., the finance sector).
+| ![Indicator Icon]({{ site.baseurl }}/img/icons/indicator.png "Indicator Icon") | [**Indicator**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_muftrcpnf89v){: target="_blank"} | Contains a pattern that can be used to detect suspicious or malicious cyber activity. |
+| ![Infrastructure]({{ site.baseurl }}/img/icons/infrastructure.png "Infrastructure Icon") | [**Infrastructure**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_jo3k1o6lr9){: target="_blank"} | Represents a type of TTP and describes any systems, software services and any associated physical or virtual resources intended to support some purpose (e.g., C2 servers used as part of an attack, device or server that are part of defence, database servers targeted by an attack, etc.). |
+| ![Intrusion Set Icon]({{ site.baseurl }}/img/icons/intrusion_set.png "Intrusion Set Icon") | [**Intrusion Set**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_5ol9xlbbnrdn){: target="_blank"} | A grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. |
+| ![Location Icon]({{ site.baseurl }}/img/icons/location.png "Location Icon") | [**Location**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_th8nitr8jb4k){: target="_blank"} | Represents a geographic location. |
+| ![Malware Icon]({{ site.baseurl }}/img/icons/malware.png "Malware Icon") | [**Malware**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_s5l7katgbp09){: target="_blank"} | A type of TTP that represents malicious code. |
+| ![Malware Analysis Icon]({{ site.baseurl }}/img/icons/malware_analysis.png "Malware Analysis Icon") | [**Malware Analysis**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_6hdrixb3ua4j){: target="_blank"} | The metadata and results of a particular static or dynamic analysis performed on a malware instance or family. |
+| ![Note Icon]({{ site.baseurl }}/img/icons/note.png "Note Icon") | [**Note**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_gudodcg1sbb9){: target="_blank"} | Conveys informative text to provide further context and/or to provide additional analysis not contained in the STIX Objects, Marking Definition objects, or Language Content objects which the Note relates to. |
+| ![Observed Data Icon]({{ site.baseurl }}/img/icons/observed_data.png "Observed Data Icon") | [**Observed Data**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_p49j1fwoxldc){: target="_blank"} | Conveys information about cyber security related entities such as files, systems, and networks using the STIX Cyber-observable Objects (SCOs). |
+| ![Opinion Icon]({{ site.baseurl }}/img/icons/opinion.png "Opinion Icon") | [**Opinion**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_ht1vtzfbtzda){: target="_blank"} | An assessment of the correctness of the information in a STIX Object produced by a different entity. |
+| ![Report Icon]({{ site.baseurl }}/img/icons/report.png "Report Icon") | [**Report**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_n8bjzg1ysgdq){: target="_blank"} | Collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including context and related details. |
+| ![Threat Actor Icon]({{ site.baseurl }}/img/icons/threat_actor.png "Threat Actor Icon") | [**Threat Actor**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_k017w16zutw){: target="_blank"} | Actual individuals, groups, or organizations believed to be operating with malicious intent. |
+| ![Tool Icon]({{ site.baseurl }}/img/icons/tool.png "Tool Icon") | [**Tool**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_z4voa9ndw8v){: target="_blank"} | Legitimate software that can be used by threat actors to perform attacks. |
+| ![Vulnerability Icon]({{ site.baseurl }}/img/icons/vulnerability.png "Vulnerability Icon") | [**Vulnerability**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_q5ytzmajn6re){: target="_blank"} | A mistake in software that can be directly used by a hacker to gain access to a system or network. |
 
 #### STIX 2 defines two STIX Relationship Objects (SROs):
 
 {:.table .table-hover .table-example .table-desc}
 | Object | Name | Description |
 | :---: | :---:| --- |
-| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png "Relationship Icon") | [**Relationship**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.e2e1szrqfoan){: target="_blank"} | Used to link two SDOs and to describe how they are related to each other. |
-| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png "Sighting Icon") | [**Sighting**](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/edit#heading=h.a795guqsap3r){: target="_blank"} | Denotes the belief that an element of CTI was seen (e.g., indicator, malware). |
+| ![Relationship Icon]({{ site.baseurl }}/img/icons/relationship.png "Relationship Icon") | [**Relationship**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e2e1szrqfoan){: target="_blank"} | Used to link together two SDOs or SCOs in order to describe how they are related to each other. |
+| ![Sighting Icon]({{ site.baseurl }}/img/icons/sighting.png "Sighting Icon") | [**Sighting**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_a795guqsap3r){: target="_blank"} | Denotes the belief that something in CTI (e.g., an indicator, malware, tool, threat actor, etc.) was seen.  |
 
 
 ## A look at the structure
 
-STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.0 Campaign object](https://docs.google.com/document/d/1IvkLxg_tCnICsatu2lyxKmWmh1gY2h8HUNssKIE-UIA/pub#h.pcpvfz4ik6d6){: target="_blank"}:
+STIX 2 objects are represented in JSON. The following is a JSON-based example of a [STIX 2.1 Campaign object](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_pcpvfz4ik6d6){: target="_blank"}:
 
 ```json
 {
     "type": "campaign",
     "id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+    "spec_version": "2.1",
     "created": "2016-04-06T20:03:00.000Z",
+    "modified": "2016-04-06T20:03:23.000Z",
     "name": "Green Group Attacks Against Finance",
     "description": "Campaign by Green Group against targets in the financial services sector."
 }
@@ -81,17 +99,3 @@ STIX 2 objects are represented in JSON. The following is a JSON-based example of
 </div>
 
 Complete information for STIX 2 is available on the [OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti){: target="_blank"} website. [Specification documents, schemas and tools]({{ site.baseurl }}/resources) are also available.
-
-
-Objects Overview
-----------------
-
-The video below provides an overview of STIX 2 objects. It highlights the four types of objects in STIX 2: STIX Domain Objects (SDOs), STIX Relationship Objects (SROs), Marking Definition objects, and Bundle objects.
-
-<div class="video-wrapper">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/iAnd3rApMcA?ecver=2" width="640" height="360" frameborder="0"></iframe>
-    </div>
-    <!-- /video --><br><br>
-</div>
-<!-- /video-wrapper -->
