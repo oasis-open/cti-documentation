@@ -64,11 +64,12 @@ Note: This version of the specification is no longer a multipart document.
 | [**cti-pattern-matcher**](https://github.com/oasis-open/cti-pattern-matcher){: target="_blank"} | Match STIX content against STIX patterns |
 | [**cti-pattern-validator**](https://github.com/oasis-open/cti-pattern-validator){: target="_blank"} | Validate patterns used to express Cyber Observable content in STIX Indicators |
 | [**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2){: target="_blank"} | Python APIs for STIX 2 |
-| [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"} | Convert STIX 1.2 XML to STIX 2.0 JSON |
-| [**cti-stix-slider**](https://github.com/oasis-open/cti-stix-slider){: target="_blank"} | Convert STIX 2.0 JSON to STIX 1.2 XML |
-| [**cti-stix-validator**](https://github.com/oasis-open/cti-stix-validator){: target="_blank"} | Validator for STIX 2.0 JSON normative requirements and best practices |
-| [**cti-stix-visualization**](https://github.com/oasis-open/cti-stix-visualization){: target="_blank"} | Lightweight visualization for STIX 2.0 objects and relationships |
-| [**cti-stix2-json-schemas**](https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} | Non-normative STIX and Cyber Observable schemas and examples |
+| [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals |
+| [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"} | Convert STIX 1 XML to STIX 2 JSON |
+| [**cti-stix-slider**](https://github.com/oasis-open/cti-stix-slider){: target="_blank"} | Convert STIX 2 JSON to STIX 1 XML |
+| [**cti-stix-validator**](https://github.com/oasis-open/cti-stix-validator){: target="_blank"} | Validator for STIX 2 JSON normative requirements and best practices |
+| [**cti-stix-visualization**](https://github.com/oasis-open/cti-stix-visualization){: target="_blank"} | Lightweight visualization for STIX 2 objects and relationships |
+| [**cti-stix2-json-schemas**](https://github.com/oasis-open/cti-stix2-json-schemas){: target="_blank"} | Non-normative STIX schemas and examples |
 | [**cti-taxii-client**](https://github.com/oasis-open/cti-taxii-client){: target="_blank"} | TAXII 2 Client Library Written in Python |
 | [**cti-taxii-server**](https://github.com/oasis-open/cti-taxii-server){: target="_blank"} | TAXII 2 Server Library Written in Python |
 | [**cti-training**](https://github.com/oasis-open/cti-training){: target="_blank"} | Collection of CTI-related training materials |
