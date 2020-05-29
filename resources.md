@@ -78,3 +78,4 @@ Note: This version of the specification is no longer a multipart document.
 {: .table .table-hover .table-example .table-desc .table-col1-width}
 | :------: | ----------- |
 |[**FreeTAXII YouTube Channel**](https://www.youtube.com/channel/UCmW_oi_zce3On4LyK9KDnfg){: target="_blank"}|Informational videos about STIX/TAXII  - _Not affiliated with OASIS_|
+|[**STIX 2 Preferred Program**](https://oasis-stixpreferred.org/){: target="_blank"}| Self-Certification Program for STIX/TAXII |
