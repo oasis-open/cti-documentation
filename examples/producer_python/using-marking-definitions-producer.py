@@ -7,7 +7,7 @@ identity = Identity(
     name="Stark Industries",
     contact_information="info@stark.com",
     identity_class="organization",
-    sectors=["defence"]
+    sectors=["defense"]
 )
 
 marking_def_amber = MarkingDefinition(
@@ -32,6 +32,7 @@ indicator = Indicator(
     modified="2017-04-14T13:07:49.812Z",
     created_by_ref="identity--611d9d41-dba5-4e13-9b29-e22488058ffc",
     name="Known malicious IP Address",
+    description="Detected malicious activity from this address",
     indicator_types=["malicious-activity"],
     pattern="[ipv4-addr:value = '10.0.0.0']",
     pattern_type="stix",

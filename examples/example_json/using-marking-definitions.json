@@ -11,7 +11,7 @@
           "name": "Stark Industries",
           "identity_class": "organization",
           "sectors": [
-              "defence"
+              "defense"
           ],
           "contact_information": "info@stark.com"
       },
@@ -23,6 +23,7 @@
           "created": "2017-04-14T13:07:49.812Z",
           "modified": "2017-04-14T13:07:49.812Z",
           "name": "Known malicious IP Address",
+          "description": "Detected malicious activity from this address",
           "indicator_types": [
               "malicious-activity"
           ],
