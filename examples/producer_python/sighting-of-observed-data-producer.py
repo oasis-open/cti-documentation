@@ -1,4 +1,4 @@
-from stix2.v21 import (Identity, Malware, ObservedData, Sighting, Bundle)
+from stix2.v21 import (File, Identity, Malware, ObservedData, Sighting, WindowsRegistryKey, Bundle)
 
 identityOscorp = Identity(
     id="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
@@ -37,6 +37,22 @@ malware = Malware(
     is_family="false"
 )
 
+file_malicious = File(
+    hashes={
+        "MD5": "1717b7fff97d37a1e1a0029d83492de1",
+        "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+    },
+    name="resume.pdf",
+    size=83968,
+    id="file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
+)
+
+winRegKey = WindowsRegistryKey(
+    key="HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2",
+    spec_version="2.1",
+    id="windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
+)
+
 observedDataFile = ObservedData(
     id="observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1",
     created="2017-02-28T19:37:11.213Z",
@@ -45,17 +61,9 @@ observedDataFile = ObservedData(
     last_observed="2017-02-27T21:37:11.213Z",
     number_observed=1,
     created_by_ref="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-    objects={
-        "0": {
-            "type": "file",
-            "hashes": {
-                "MD5": "1717b7fff97d37a1e1a0029d83492de1",
-                "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
-            },
-            "name": "resume.pdf",
-            "size": 83968
-        }
-    }, 
+    object_refs=[
+        "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
+    ], 
     spec_version="2.1",
     type="observed-data"
 )
@@ -68,12 +76,9 @@ observedDataRegKey = ObservedData(
     last_observed="2017-02-27T21:37:11.213Z",
     number_observed=1,
     created_by_ref="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-    objects={
-        "0": {
-            "type": "windows-registry-key",
-            "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
-        }
-    }, 
+    object_refs=[
+        "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
+    ], 
     spec_version="2.1",
     type="observed-data"
 )

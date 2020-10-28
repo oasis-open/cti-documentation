@@ -52,19 +52,20 @@
             "first_observed": "2017-02-27T21:37:11.213Z",
             "last_observed": "2017-02-27T21:37:11.213Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "file",
-                    "id": "file--c931e2c0-e3a1-50af-8447-affe2e1500d0",
-                    "spec_version": "2.1",
-                    "hashes": {
-                        "MD5": "1717b7fff97d37a1e1a0029d83492de1",
-                        "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
-                    },
-                    "size": 83968,
-                    "name": "resume.pdf"
-                }
-            }
+            "object_refs": [
+                "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
+            ]
+        },
+        {
+            "type": "file",
+            "id": "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d",
+            "spec_version": "2.1",
+            "hashes": {
+                "MD5": "1717b7fff97d37a1e1a0029d83492de1",
+                "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+            },
+            "size": 83968,
+            "name": "resume.pdf"
         },
         {
             "type": "sighting",
@@ -95,14 +96,15 @@
             "first_observed": "2017-02-27T21:37:11.213Z",
             "last_observed": "2017-02-27T21:37:11.214Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "windows-registry-key",
-                    "id": "windows-registry-key--fcde6a83-2a92-5390-b991-95650f51db33",
-                    "spec_version": "2.1",
-                    "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
-                }
-            }
+            "object_refs": [
+                "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
+            ]
+        },
+        {
+            "type": "windows-registry-key",
+            "id": "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26",
+            "spec_version": "2.1",
+            "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
         }
     ]
 }
