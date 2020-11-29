@@ -1,9 +1,9 @@
-from stix2.v21 import (Identity, Malware, ObservedData, Sighting, Bundle)
+from stix2.v21 import (File, Identity, Malware, ObservedData, Sighting, WindowsRegistryKey, Bundle)
 
 identityOscorp = Identity(
     id="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
-    created="2017-04-14T13:07:49.812Z",
-    modified="2017-04-14T13:07:49.812Z",
+    created="2017-01-14T13:07:49.812Z",
+    modified="2017-01-14T13:07:49.812Z",
     name="Oscorp Industries",
     identity_class="organization",
     contact_information="norman@oscorp.com",
@@ -14,8 +14,8 @@ identityOscorp = Identity(
 
 identityPym = Identity(
     id="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-    created="2017-04-14T13:07:49.812Z",
-    modified="2017-04-14T13:07:49.812Z",
+    created="2013-04-14T13:07:49.812Z",
+    modified="2013-04-14T13:07:49.812Z",
     name="Pym Technologies",
     identity_class="organization",
     contact_information="hank@pymtech.com",
@@ -28,13 +28,24 @@ malware = Malware(
     id="malware--ae560258-a5cb-4be8-8f05-013d6712295f",
     created="2014-02-20T09:16:08.989Z",
     modified="2014-02-20T09:16:08.989Z",
-    created_by_ref="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
+    created_by_ref=identityPym.id,
     name="Online Job Site Trojan",
     description="Trojan that is disguised as the executable file resume.pdf., it also creates a registry key.",
     malware_types=["remote-access-trojan"], 
     spec_version="2.1",
     type="malware",
     is_family="false"
+)
+
+fileMalicious = File(
+    hashes={
+        "MD5": "1717b7fff97d37a1e1a0029d83492de1",
+        "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+    },
+    name="resume.pdf",
+    size=83968,
+    id="file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d",
+    spec_version="2.1"
 )
 
 observedDataFile = ObservedData(
@@ -44,20 +55,18 @@ observedDataFile = ObservedData(
     first_observed="2017-02-27T21:37:11.213Z",
     last_observed="2017-02-27T21:37:11.213Z",
     number_observed=1,
-    created_by_ref="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-    objects={
-        "0": {
-            "type": "file",
-            "hashes": {
-                "MD5": "1717b7fff97d37a1e1a0029d83492de1",
-                "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
-            },
-            "name": "resume.pdf",
-            "size": 83968
-        }
-    }, 
+    created_by_ref=identityOscorp.id,
+    object_refs=[
+        "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
+    ], 
     spec_version="2.1",
     type="observed-data"
+)
+
+winRegKey = WindowsRegistryKey(
+    key="HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2",
+    spec_version="2.1",
+    id="windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
 )
 
 observedDataRegKey = ObservedData(
@@ -67,20 +76,17 @@ observedDataRegKey = ObservedData(
     first_observed="2017-02-27T21:37:11.213Z",
     last_observed="2017-02-27T21:37:11.213Z",
     number_observed=1,
-    created_by_ref="identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-    objects={
-        "0": {
-            "type": "windows-registry-key",
-            "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
-        }
-    }, 
+    created_by_ref=identityOscorp.id,
+    object_refs=[
+        "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
+    ], 
     spec_version="2.1",
     type="observed-data"
 )
 
 sighting = Sighting(
     id="sighting--779c4ae8-e134-4180-baa4-03141095d971",
-    created_by_ref="identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+    created_by_ref=identityOscorp.id,
     created="2017-02-28T19:37:11.213Z",
     modified="2017-02-28T19:37:11.213Z",
     first_seen="2017-02-28T19:07:24.856Z",

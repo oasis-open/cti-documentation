@@ -6,8 +6,8 @@
             "type": "identity",
             "spec_version": "2.1",
             "id": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
-            "created": "2017-04-14T13:07:49.812Z",
-            "modified": "2017-04-14T13:07:49.812Z",
+            "created": "2013-04-14T13:07:49.812Z",
+            "modified": "2013-04-14T13:07:49.812Z",
             "name": "Pym Technologies",
             "identity_class": "organization",
             "sectors": [
@@ -19,8 +19,8 @@
             "type": "identity",
             "spec_version": "2.1",
             "id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
-            "created": "2017-04-14T13:07:49.812Z",
-            "modified": "2017-04-14T13:07:49.812Z",
+            "created": "2017-01-14T13:07:49.812Z",
+            "modified": "2017-01-14T13:07:49.812Z",
             "name": "Oscorp Industries",
             "identity_class": "organization",
             "sectors": [
@@ -43,28 +43,29 @@
             "is_family": false
         },
         {
+            "type": "file",
+            "id": "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d",
+            "spec_version": "2.1",
+            "hashes": {
+                "MD5": "1717b7fff97d37a1e1a0029d83492de1",
+                "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
+            },
+            "size": 83968,
+            "name": "resume.pdf"
+        },
+        {
             "type": "observed-data",
             "spec_version": "2.1",
             "id": "observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1",
-            "created_by_ref": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
+            "created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
             "created": "2017-02-28T19:37:11.213Z",
             "modified": "2017-02-28T19:37:11.213Z",
             "first_observed": "2017-02-27T21:37:11.213Z",
             "last_observed": "2017-02-27T21:37:11.213Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "file",
-                    "id": "file--c931e2c0-e3a1-50af-8447-affe2e1500d0",
-                    "spec_version": "2.1",
-                    "hashes": {
-                        "MD5": "1717b7fff97d37a1e1a0029d83492de1",
-                        "SHA-1": "c79a326f8411e9488bdc3779753e1e3489aaedea"
-                    },
-                    "size": 83968,
-                    "name": "resume.pdf"
-                }
-            }
+            "object_refs": [
+                "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
+            ]
         },
         {
             "type": "sighting",
@@ -86,23 +87,24 @@
             ]
         },
         {
+            "type": "windows-registry-key",
+            "id": "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26",
+            "spec_version": "2.1",
+            "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
+        },
+        {
             "type": "observed-data",
             "spec_version": "2.1",
             "id": "observed-data--a0d34360-66ad-4977-b255-d9e1080421c4",
-            "created_by_ref": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
+            "created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
             "created": "2017-02-28T19:37:11.213Z",
             "modified": "2017-02-28T19:37:11.213Z",
             "first_observed": "2017-02-27T21:37:11.213Z",
             "last_observed": "2017-02-27T21:37:11.214Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "windows-registry-key",
-                    "id": "windows-registry-key--fcde6a83-2a92-5390-b991-95650f51db33",
-                    "spec_version": "2.1",
-                    "key": "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\WSALG2"
-                }
-            }
+            "object_refs": [
+                "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
+            ]
         }
     ]
 }
