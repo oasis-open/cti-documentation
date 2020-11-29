@@ -79,7 +79,7 @@ for obj in bundle.objects:
         print("Sighting of Ref: " + obj.sighting_of_ref)
         print("Observed Data Ref: " + str(obj.observed_data_refs))
         print("Where Sighted Refs: " + str(obj.where_sighted_refs))
-    
+
     elif obj == fileMalicious:
         print("------------------")
         print("== FILE ==")
@@ -89,7 +89,7 @@ for obj in bundle.objects:
         print("Hashes: " + str(obj.hashes))
         print ("Name: " + obj.name)
         print ("Size: " + str(obj.size))
-    
+
     elif obj == winRegKey:
         print("------------------")
         print("== WINDOWS REGISTRY KEY ==")

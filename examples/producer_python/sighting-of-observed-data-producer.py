@@ -7,7 +7,7 @@ identityOscorp = Identity(
     name="Oscorp Industries",
     identity_class="organization",
     contact_information="norman@oscorp.com",
-    sectors=["technology"], 
+    sectors=["technology"],
     spec_version="2.1",
     type="identity"
 )
@@ -19,7 +19,7 @@ identityPym = Identity(
     name="Pym Technologies",
     identity_class="organization",
     contact_information="hank@pymtech.com",
-    sectors=["technology"], 
+    sectors=["technology"],
     spec_version="2.1",
     type="identity"
 )
@@ -31,7 +31,7 @@ malware = Malware(
     created_by_ref=identityPym.id,
     name="Online Job Site Trojan",
     description="Trojan that is disguised as the executable file resume.pdf., it also creates a registry key.",
-    malware_types=["remote-access-trojan"], 
+    malware_types=["remote-access-trojan"],
     spec_version="2.1",
     type="malware",
     is_family="false"
@@ -58,7 +58,7 @@ observedDataFile = ObservedData(
     created_by_ref=identityOscorp.id,
     object_refs=[
         "file--364fe3e5-b1f4-5ba3-b951-ee5983b3538d"
-    ], 
+    ],
     spec_version="2.1",
     type="observed-data"
 )
@@ -79,7 +79,7 @@ observedDataRegKey = ObservedData(
     created_by_ref=identityOscorp.id,
     object_refs=[
         "windows-registry-key--16b80d14-d574-5620-abad-10ff304b1c26"
-    ], 
+    ],
     spec_version="2.1",
     type="observed-data"
 )
@@ -94,7 +94,7 @@ sighting = Sighting(
     count=1,
     sighting_of_ref="malware--ae560258-a5cb-4be8-8f05-013d6712295f",
     where_sighted_refs=["identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"],
-    observed_data_refs=["observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1", "observed-data--a0d34360-66ad-4977-b255-d9e1080421c4"], 
+    observed_data_refs=["observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1", "observed-data--a0d34360-66ad-4977-b255-d9e1080421c4"],
     spec_version="2.1",
     type="sighting"
 )
