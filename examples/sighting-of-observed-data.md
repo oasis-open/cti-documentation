@@ -30,7 +30,7 @@ Finally, it is worth mentioning that none of the objects in this scenario use th
 
 A diagram of this scenario is depicted below [(An interactive version can be found here)](https://oasis-open.github.io/cti-stix-visualization/?url=https://raw.githubusercontent.com/oasis-open/cti-documentation/master/examples/example_json/sighting-of-observed-data.json){: target="_blank"}:
 
-![Sighting of Observed-data](/img/Sighting-of-observed-data.PNG)
+![Sighting of Observed-data]({{ site.baseurl }}/img/Sighting-of-observed-data.PNG)
 
 **Further Reading**
 -------------------
