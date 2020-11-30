@@ -49,7 +49,7 @@ for obj in bundle.objects:
         print("First Observed: " + str(obj.first_observed))
         print("Last Observed: " + str(obj.last_observed))
         print("Number Observed: " + str(obj.number_observed))
-        print("Objects: " + str(obj.objects))
+        print("Object Refs: " + str(obj.object_refs))
 
     elif obj == observedDataRegKey:
         print("------------------")
@@ -62,7 +62,7 @@ for obj in bundle.objects:
         print("First Observed: " + str(obj.first_observed))
         print("Last Observed: " + str(obj.last_observed))
         print("Number Observed: " + str(obj.number_observed))
-        print("Objects: " + str(obj.objects))
+        print("Object Refs: " + str(obj.object_refs))
 
     elif obj == sighting:
         print("------------------")
@@ -79,3 +79,21 @@ for obj in bundle.objects:
         print("Sighting of Ref: " + obj.sighting_of_ref)
         print("Observed Data Ref: " + str(obj.observed_data_refs))
         print("Where Sighted Refs: " + str(obj.where_sighted_refs))
+
+    elif obj == fileMalicious:
+        print("------------------")
+        print("== FILE ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Type: " + obj.type)
+        print("Hashes: " + str(obj.hashes))
+        print ("Name: " + obj.name)
+        print ("Size: " + str(obj.size))
+
+    elif obj == winRegKey:
+        print("------------------")
+        print("== WINDOWS REGISTRY KEY ==")
+        print("------------------")
+        print("ID: " + obj.id)
+        print("Type: " + obj.type)
+        print("Key: " + obj.key)
