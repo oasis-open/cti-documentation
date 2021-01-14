@@ -22,7 +22,7 @@ identity = Identity(
     name="Gotham National Bank",
     contact_information="contact@gothamnational.com",
     identity_class="organization",
-    sectors=["financial-services"], 
+    sectors=["financial-services"],
     spec_version="2.1",
     type="identity"
 )
@@ -38,7 +38,7 @@ threat_actor = ThreatActor(
     roles=["director"],
     resource_level="team",
     primary_motivation="personal-satisfaction",
-    object_marking_refs=[TLP_RED], 
+    object_marking_refs=[TLP_RED],
     spec_version="2.1",
     type="threat-actor"
 )
@@ -54,7 +54,7 @@ indicator = Indicator(
     pattern="[email-message:from_ref.value MATCHES '.+\\\\banking@g0thamnatl\\\\.com$']",
     pattern_type="stix",
     valid_from="2017-04-27T16:18:24.318Z",
-    granular_markings=[granular_red, granular_amber, granular_green], 
+    granular_markings=[granular_red, granular_amber, granular_green],
     spec_version="2.1",
     type="indicator"
 )
@@ -66,7 +66,7 @@ rel = Relationship(
     relationship_type='indicates',
     source_ref="indicator--1ed8caa7-a708-4706-b651-f1186ede6ca1",
     target_ref="threat-actor--8b6297fe-cae7-47c6-9256-5584b417849c",
-    object_marking_refs=[TLP_RED], 
+    object_marking_refs=[TLP_RED],
     spec_version="2.1",
     type="relationship"
 )

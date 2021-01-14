@@ -14,7 +14,7 @@ layout: default
       <div class="panel-heading">
         <div markdown="span">[![STIX Logo]({{ site.baseurl }}/img/LOGO_STIX.svg){: .panel-logo}]({{site.baseurl}}/stix/intro)</div>
         <div class="panel-title text-center">A structured language for cyber threat intelligence</div>
-      </div>  
+      </div>
       <div class="panel-body">
         <p>
           Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI).
@@ -60,7 +60,7 @@ layout: default
           ![TAXII Collections]({{ site.baseurl }}/img/taxii_diagram.png){: .figure-img .img-fluid}
           **TAXII Collections**
         </div>
-        <div style="margin-top: -2px;" class="panel-heading">  
+        <div style="margin-top: -2px;" class="panel-heading">
           <a style="width: 250px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="TAXII Home" href="{{site.baseurl}}/taxii/intro">
               <span class="glyphicon glyphicon-home"></span> Learn More
           </a>
