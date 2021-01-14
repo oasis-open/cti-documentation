@@ -8,7 +8,7 @@ identityAlpha = Identity(
     identity_class="organization",
     contact_information="info@alpha.org",
     roles=["Cyber Security"],
-    sectors=["technology"], 
+    sectors=["technology"],
     spec_version="2.1",
     type="identity"
 )
@@ -21,7 +21,7 @@ identityBeta = Identity(
     identity_class="organization",
     contact_information="info@beta.com",
     roles=["Cyber Security"],
-    sectors=["technology"], 
+    sectors=["technology"],
     spec_version="2.1",
     type="identity"
 )
@@ -36,7 +36,7 @@ indicator = Indicator(
     indicator_types=["malicious-activity"],
     pattern="[url:value = 'http://paypa1.banking.com']",
     pattern_type="stix",
-    valid_from="2015-06-29T09:10:15.915Z", 
+    valid_from="2015-06-29T09:10:15.915Z",
     spec_version="2.1",
     type="indicator"
 )
@@ -50,7 +50,7 @@ sighting = Sighting(
     last_seen="2017-02-27T21:37:11.214Z",
     count=1,
     sighting_of_ref="indicator--9299f726-ce06-492e-8472-2b52ccb53191",
-    where_sighted_refs=["identity--5206ba14-478f-4b0b-9a48-395f690c20a2"], 
+    where_sighted_refs=["identity--5206ba14-478f-4b0b-9a48-395f690c20a2"],
     spec_version="2.1",
     type="sighting"
 )

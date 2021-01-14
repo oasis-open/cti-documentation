@@ -26,7 +26,7 @@ TAXII design principles include minimizing operational changes needed for adopti
 
 ## What's New in TAXII 2.1
 TAXII 2.1 differs from TAXII 2.0 in the following ways:
- 
+
 * The DNS SRV record was changed from taxii to taxii2
 * The discovery URL was changed from /taxii/ to /taxii2/
 * The Manifest Resource was changed to represent individual versions of an object, instead of an object with all of its versions

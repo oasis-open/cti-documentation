@@ -61,12 +61,12 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 ```json
 {
     "type": "attack-pattern",
-    
+
     "id": "attack-pattern--01",
     "spec_version": "2.1",
     "created": "2015-05-15T09:11:12.515Z",
     "modified": "2015-05-15T09:11:12.515Z",
-    "name": "Initial Compromise",  
+    "name": "Initial Compromise",
     "external_references": [
       {
         "source_name": "capec",
