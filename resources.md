@@ -84,6 +84,7 @@ Note: This version of the specification is no longer a multipart document. Older
 | [**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2){: target="_blank"} | Python APIs for STIX 2 |
 | [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals |
 | [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"} | Convert STIX 1 XML to STIX 2 JSON |
+| [**cti-stix-generator**](https://github.com/oasis-open/cti-stix-generator){: target="_blank"} | Tool for generating random STIX content for prototyping and testing |
 | [**cti-stix-slider**](https://github.com/oasis-open/cti-stix-slider){: target="_blank"} | Convert STIX 2 JSON to STIX 1 XML |
 | [**cti-stix-validator**](https://github.com/oasis-open/cti-stix-validator){: target="_blank"} | Validator for STIX 2 JSON normative requirements and best practices |
 | [**cti-stix-visualization**](https://github.com/oasis-open/cti-stix-visualization){: target="_blank"} | Lightweight visualization for STIX 2 objects and relationships |
