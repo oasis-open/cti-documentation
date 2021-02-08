@@ -6,10 +6,9 @@ This repository is a GitHub Pages site storing non-normative information about t
 
 ## Developing
 
-Setting up a development environment requires a working Ruby environment (for Jekyll)
-and a working Python environment (for running git hooks and validating examples).
+Setting up a development environment requires a working Ruby environment (for Jekyll), and a working Python environment (for running git hooks and validating examples).
 
-The following commmands should help:
+The following commands should help:
 
 ```bash
 gem install bundler

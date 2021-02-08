@@ -15,14 +15,23 @@ categories: resources
 
 ### Individual Specification Documents
 
+<div>
+<ul style="margin-left: 0px;" class="nav nav-tabs" role="tablist" id="toggle-tabs">
+  <li role="presentation" class="active"><a href="#v21" aria-controls="v21" role="tab" data-toggle="tab">STIX/TAXII 2.1</a></li>
+  <li role="presentation"><a href="#v20" aria-controls="v20" role="tab" data-toggle="tab">STIX/TAXII 2.0</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="v21" markdown="1">
 
 #### STIX 2.1 Specification
 
 | HTML | PDF | Word | Description |
 | --- | --- | --- | --- |
-| [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.pdf) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.docx) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
+| [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.html) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.pdf) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.docx) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
 
-Note: This version of the specification is no longer a multipart document.
+Note: This version of the specification is no longer a multipart document. Older STIX 2.1 documents can be found [**here**](https://docs.oasis-open.org/cti/stix/v2.1/)
 
 #### TAXII 2.1 Specification
 
@@ -30,6 +39,12 @@ Note: This version of the specification is no longer a multipart document.
 | --- | --- | --- | --- |
 | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.html) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.pdf) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.docx) | Defines the TAXII RESTful API and its resources along with the requirements for TAXII Client and Server implementations |
 
+#### STIX/TAXII 2.1 Interoperability Documents
+
+**These documents are currently in progress.**
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="v20" markdown="1">
 
 #### STIX 2.0 Specification
 
@@ -54,6 +69,9 @@ Note: This version of the specification is no longer a multipart document.
 | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.html) | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.pdf) | [**Part 1: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p1/v1.1/stix-taxii-2-interop-p1-v1.1.docx) | Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX/TAXII 2.0 if they wish to self-certify that their software is verified as interoperable |
 | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.html) | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.pdf) | [**Part 2: STIX/TAXII 2.0 Interoperability Test Document**](https://docs.oasis-open.org/cti/stix-taxii-2-interop-p2/v1.0/stix-taxii-2-interop-p2-v1.0.docx) | Document that provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate conformity with STIX/TAXII 2.0 if they wish to self-certify that their software is verified as interoperable |
 
+  </div>
+</div>
+</div>
 
 ### OASIS CTI TC [Open Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
 

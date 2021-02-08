@@ -16,3 +16,9 @@ $(document).ready(function($) {
 
   $('.btn-spec').tooltip();
 });
+
+
+$('#toggle-tabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
