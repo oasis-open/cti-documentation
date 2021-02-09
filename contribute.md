@@ -19,7 +19,6 @@ Contribute and Join The Global Community
       </a>
     </div>
   </div>
-
   <div class="info-box well pull-left">
     <p>Want to stay up-to-date on the latest STIX discussions?</p>
       <div>
@@ -30,31 +29,29 @@ Contribute and Join The Global Community
   </div>
 </div>
 
-### Contribute Tools and Libaries
+### Contribute Tools and Libraries
 
 To have code commited to OASIS repositories a Contributor License Agreement(CLA) must be submitted and approved.
-Bug reports, suggestions and help requests about specific OASIS github projects should be done through Github issues on their respective repository.
+Bug reports, suggestions and help requests about specific OASIS GitHub projects should be done through GitHub issues on their respective repository.
 
 <div class="row">
   <div class="col-md-4 info-box well pull-left">
     <p>Contributor License Agreement</p>
     <div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="Contributor License Agreement" target="_blank" href="https://www.oasis-open.org/resources/open-repositories/cla">
-          <span class="glyphicon glyphicon-th-list"></span> License Agreement
-        </a>
+      <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="Contributor License Agreement" target="_blank" href="https://www.oasis-open.org/resources/open-repositories/cla">
+        <span class="glyphicon glyphicon-th-list"></span> License Agreement
+      </a>
     </div>
   </div>
-
   <div class="col-md-6 info-box well pull-left">
     <p>Resources</p>
     <div>
-        <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="Notable Resources" href="{{ site.baseurl }}/resources">
-          <span class="glyphicon glyphicon-th-list"></span> Notable Resources
-        </a>
-
-        <a style="margin-left: 20px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="CTI OASIS Open Repositories" target="_blank" href="https://github.com/oasis-open?utf8=%E2%9C%93&q=cti&type=&language=">
-          <img class="icon github-icon" alt="GitHub Octocat" src="{{ site.baseurl }}/img/GitHub-Mark-Light.png"> CTI OASIS Open Repositories
-        </a>
+      <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="Notable Resources" href="{{ site.baseurl }}/resources">
+        <span class="glyphicon glyphicon-th-list"></span> Notable Resources
+      </a>
+      <a style="margin-left: 20px;" class="btn btn-primary btn-spec" data-toggle="tooltip" title="CTI OASIS Open Repositories" target="_blank" href="https://github.com/oasis-open?utf8=%E2%9C%93&q=cti&type=&language=">
+        <img class="icon github-icon" alt="GitHub Octocat" src="{{ site.baseurl }}/img/GitHub-Mark-Light.png"> CTI OASIS Open Repositories
+      </a>
     </div>
   </div>
 </div>
@@ -68,8 +65,8 @@ To be directly involved in the development of the STIX specification one must jo
     <div>
       <p>Join the Technical Committee</p>
       <a class="btn btn-primary btn-spec" data-toggle="tooltip" title="Join Technical Committee" target="_blank" href="https://www.oasis-open.org/join">
-            <span class="glyphicon glyphicon-envelope"></span> Join Technical Committee
-          </a>
+        <span class="glyphicon glyphicon-envelope"></span> Join Technical Committee
+      </a>
     </div>
   </div>
 </div>
