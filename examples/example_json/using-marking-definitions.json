@@ -41,6 +41,7 @@
           "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
           "created": "2017-01-20T00:00:00.000Z",
           "definition_type": "tlp",
+          "name": "TLP:AMBER",
           "definition": {
               "tlp": "amber"
           }
