@@ -29,7 +29,7 @@ categories: resources
 
 | HTML | PDF | Word | Description |
 | --- | --- | --- | --- |
-| [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.html) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.pdf) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/cs02/stix-v2.1-cs02.docx) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
+| [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf) | [**STIX 2.1 Specification**](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.docx) | Defines concepts and structure of the STIX language, domain objects, relationship objects, cyber observable objects, and meta objects. Defines the patterning language to enable the detection of possibly malicious activity on networks and endpoints |
 
 Note: This version of the specification is no longer a multipart document. Older STIX 2.1 documents can be found [**here**](https://docs.oasis-open.org/cti/stix/v2.1/)
 
@@ -37,7 +37,7 @@ Note: This version of the specification is no longer a multipart document. Older
 
 | HTML | PDF | Word | Description |
 | --- | --- | --- | --- |
-| [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.html) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.pdf) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.docx) | Defines the TAXII RESTful API and its resources along with the requirements for TAXII Client and Server implementations |
+| [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/os/taxii-v2.1-os.html) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/os/taxii-v2.1-os.pdf) | [**TAXII 2.1 Specification**](https://docs.oasis-open.org/cti/taxii/v2.1/os/taxii-v2.1-os.docx) | Defines the TAXII RESTful API and its resources along with the requirements for TAXII Client and Server implementations |
 
 #### STIX/TAXII 2.1 Interoperability Documents
 
