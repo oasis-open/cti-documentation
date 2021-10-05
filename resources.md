@@ -99,3 +99,5 @@ Note: This version of the specification is no longer a multipart document. Older
 | :------: | ----------- |
 |[**FreeTAXII YouTube Channel**](https://www.youtube.com/channel/UCmW_oi_zce3On4LyK9KDnfg){: target="_blank"}|Informational videos about STIX/TAXII  - _Not affiliated with OASIS_|
 |[**STIX 2 Preferred Program**](https://oasis-stixpreferred.org/){: target="_blank"}| Self-Certification Program for STIX/TAXII |
+|[**Introduction to STIX**]({{ site.baseurl }}/docs/Introduction_to_Structured_Threat_Information_Expression.pdf){: target="_blank"}| Brief intro to STIX and what it is used for |
+|[**Introduction to TAXII**]({{ site.baseurl }}/docs/Introduction_to_Trusted_Automated_eXchange_of_Intelligence_Information.pdf){: target="_blank"}| Brief intro to TAXII and what it is used for |
