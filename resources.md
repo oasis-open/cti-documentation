@@ -85,7 +85,8 @@ Note: This version of the specification is no longer a multipart document. Older
 | [**cti-pattern-matcher**](https://github.com/oasis-open/cti-pattern-matcher){: target="_blank"} | Match STIX content against STIX patterns |
 | [**cti-pattern-validator**](https://github.com/oasis-open/cti-pattern-validator){: target="_blank"} | Validate patterns used to express Cyber Observable content in STIX Indicators |
 | [**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2){: target="_blank"} | Python APIs for STIX 2 |
-| [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals |
+| [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals (archived) |
+| [**cti-common-objects**](https://github.com/oasis-open/cti-stix-common-objects){: target="_blank"} | Collection of commonly used STIX 2.1 objects and extensions |
 | [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"} | Convert STIX 1 XML to STIX 2 JSON |
 | [**cti-stix-generator**](https://github.com/oasis-open/cti-stix-generator){: target="_blank"} | Tool for generating random STIX content for prototyping and testing |
 | [**cti-stix-slider**](https://github.com/oasis-open/cti-stix-slider){: target="_blank"} | Convert STIX 2 JSON to STIX 1 XML |
