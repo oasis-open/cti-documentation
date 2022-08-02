@@ -41,7 +41,10 @@ Note: This version of the specification is no longer a multipart document. Older
 
 #### STIX/TAXII 2.1 Interoperability Documents
 
-**These documents are currently in progress.**
+| HTML | PDF | Word | Description |
+| --- | --- | --- | --- |
+| [**TAXII 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/taxii-2.1-interop/v1.0/taxii-2.1-interop-v1.0.html) | [**TAXII 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/taxii-2.1-interop/v1.0/taxii-2.1-interop-v1.0.pdf) | [**TAXII 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/taxii-2.1-interop/v1.0/taxii-2.1-interop-v1.0.docx) | This document provides detailed requirements on how product implementers within the threat intelligence ecosystem may demonstrate TAXII 2.1 interoperability compliance. |
+| [**STIX 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/stix-2.1-interop/v1.0/stix-2.1-interop-v1.0.html) | [**STIX 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/stix-2.1-interop/v1.0/stix-2.1-interop-v1.0.pdf) | [**STIX 2.1 Interoperability Test Document Version 1.0**](https://docs.oasis-open.org/cti/stix-2.1-interop/v1.0/stix-2.1-interop-v1.0.docx) | This document provides detailed requirements on how producers of products within the threat intelligence ecosystem may demonstrate STIX 2.1 interoperability compliance.  |
 
   </div>
   <div role="tabpanel" class="tab-pane" id="v20" markdown="1">
