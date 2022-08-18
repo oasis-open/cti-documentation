@@ -15,7 +15,7 @@ baseurl: "/cti-documentation" # the subpath of your site, e.g. /blog
 url: "https://oasis-open.github.io" # the base hostname & protocol for your site
 # DO NOT MODIFY THE `last_updated` date. It should be updated automatically
 # by the git pre-push hook.
-last_updated: "Tue Aug 02 21:35:01 UTC 2022"
+last_updated: "Wed Aug 03 22:49:56 UTC 2022"
 copyright: "Copyright &copy; 2017-2022, OASIS Open"
 
 # Build settings
