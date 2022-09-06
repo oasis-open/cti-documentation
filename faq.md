@@ -164,7 +164,7 @@ No. The CTI TC community will be focusing on advancing STIX and TAXII 2+. Howeve
 
 ### What is happening with all of the tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1? ###
 
-The DHS-sponsored open-source tooling developed by MITRE will be maintained with bug and security fixes.
+The tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1 remain available on Github, but have been deemed end-of-life. Users are encouraged to update to STIX 2.1. In case of a small bug fix or emergency security update, MITRE may update the tools at their discretion. Please contact MITRE directly for assistance.
 
 ## STIX™ 2 Core Design Principles ##
 
@@ -180,6 +180,8 @@ The DHS-sponsored open-source tooling developed by MITRE will be maintained with
 ### What are the criteria for adding a new STIX™ Domain Object (SDO)? ###
 SDOs are used to represent independent concepts. An item becomes an SDO when it is expected to evolve on its own outside the context of any other objects. In other cases, objects become SDOs when there are multiple relationships between it and other SDOs, when a third-party needs to add relationships to/from that SDO and other SDOs, and when you need to express confidence on the object separately from the other objects it might be embedded in.
 
+New SDOs should be proposed as extension objects and may be submitted to the CTI Common Objects repository for development and testing.
+
 ### Why are some relationships "embedded" and others are "external"? ###
 
 External relationships (represented using an SRO) are used whenever third-parties might want to add to the relationship and/or to express an independent confidence assertion on the relationship. For example, the relationship between an Indicator and a Malware object is represented as an external relationship because you might only be sure to a medium degree of confidence that the Indicator is effective in detecting the Malware without false-negatives.
@@ -194,7 +196,9 @@ First, to explain the differences between UUIDv4 and UUIDv5:
 UUIDv4 is randomly generated, so each UUIDv4 ID is essentially just an ID that you can assign to any object you want.
 UUIDv5 is a hash-based ID, where the ID is generated from the object that you want to ID.
 
-STIX 2.1 introduced UUIDv5 for SCOs. STIX Domain Objects, STIX Relationship Objects, STIX Meta Objects, and STIX Bundle Object should continue to use UUIDv4.
+UUIDv5s should be used for SCOs that do not vary between generating systems. For example, an IPv4 address should have a single UUIDv5-style identifier, so that IPv4 address objects do not proliferate for the same IP address. However, for IPv4 localhost you may wish to use UUIDv4.
+
+STIX 2.1 introduced UUIDv5 for SCOs. STIX Domain Objects, STIX Relationship Objects, STIX Meta Objects, and STIX Bundle Object should continue to use UUIDv4. UUIDv5 could be used for SROs and SDOs as described in section 2.9 of the specification.
 
 ### Why are timestamps in RFC3339 format instead of UNIX format? ###
 
