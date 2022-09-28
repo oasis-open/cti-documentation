@@ -18,19 +18,13 @@ Now when you discuss “STIX”, you are talking about the one standard needed f
 
 - JSON vs. XML
 
-Whereas STIX 1 was serialized using eXtensible Mark-up Language (XML), STIX 2 specifies JavaScript Object Notation (JSON) as the “Mandatory To Implement” (MTI) serialization, i.e. it requires implementations to, at a minimum, support JSON serialization. Though both XML and JSON have their own benefits, the CTI TC determined that JSON was more lightweight, preferred by most developers, and easier to understand while being sufficient to express the semantics of STIX.
-
-STIX 2.x requires implementations to [support JSON serialization](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_vj2dopx186bb), while STIX 1.x was defined using XML. Though both XML and JSON have benefits, the CTI TC determined that JSON was more lightweight, and sufficient to express the semantics of cyber threat intelligence information. It is simpler to use and increasingly preferred by developers.
+Whereas STIX 1 was serialized using eXtensible Mark-up Language (XML), STIX 2 specifies JavaScript Object Notation (JSON) as the “Mandatory To Implement” (MTI) serialization, i.e. it requires implementations to, at a minimum, [support JSON serialization](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_vj2dopx186bb). Though both XML and JSON have their own benefits, the CTI TC determined that JSON was more lightweight, preferred by most developers, and easier to understand while being sufficient to express the semantics of STIX.
 
 - STIX™ Domain Objects
 
-STIX 1 allowed certain objects to be defined within other objects (e.g., a TTP could be defined within an Indicator) in addition to being defined outside any other object (i.e., at the “top-level” of a STIX document). In STIX 2, all STIX Domain Objects (SDOs) are peers that are defined at the top-level of a STIX document, rather than being embedded in other objects. This change simplifies the parsing and storage of STIX 2 objects.
+STIX 1 allowed certain objects to be defined within other objects (e.g., a TTP could be defined within an Indicator) in addition to being defined outside any other object (i.e., at the “top-level” of a STIX document). In STIX 2, all objects in STIX 2.x are [at the top-level](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_nrhq5e9nylke), rather than being embedded in other objects. This change simplifies the parsing and storage of STIX 2 objects.
 
 During the development of the STIX 2 SDOs the community felt that the generic TTP object (tactics, techniques, procedures) and Exploit Target object from STIX 1 were semantically-overloaded, so these have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with a tighter focus on their respective use-cases in STIX 2.
-
-All objects in STIX 2.x are [at the top-level](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_1j0vun2r7rgb), rather than being embedded in other objects. These objects are called STIX Domain Objects (SDO). Some object properties use a reference to another object’s id directly (e.g., created\_by\_ref), but most relationships are expressed using the top-level Relationship object.
-
-The generic TTP (tactics, techniques, procedures) and Exploit Target types from STIX 1.X have been split into separate top-level objects (Attack Pattern, Malware, Tool and Vulnerability) with specific purposes in STIX 2.
 
 **Note**: The IDs in these examples have been simplified to them easier to read. STIX 2 requires that IDs contain UUIDs after the `--`.
 
@@ -95,13 +89,13 @@ The generic TTP (tactics, techniques, procedures) and Exploit Target types from 
 </div>
 </div>
 
+- STIX™ Cyber-observable Objects
+
 - Relationships as Top-Level Objects
 
-STIX 2 introduces a top-level STIX Relationship Object (SRO), which links STIX Domain Objects (SDOs) via a named relationship type. The STIX 2 data-model was designed to be a connected graph, wherein nodes are SDOs and edges are SROs. The STIX 2 specification includes a default set of named relationships, but content producers are also able to define their own relationships. In contrast, STIX 1 defined relationships as properties that were “embedded” in other objects. The types of relationships supported were restricted by the STIX 1 specification. Accordingly, because STIX 1 relationships themselves were not top-level objects, you could not express a relationship between two objects without changing one of them. As only the creator of an SDO is allowed to make changes to it, this effectively prevented “third-party” relationships, where an entity other than the creator of one or both of the objects asserts a relationship between them. In the workflows around CTI, it is often desirable for others to assert a relationship; for example, a threat analyst might want to assert a relationship between an indicator and a threat actor even though the analyst was not the original creator of either object. Using the new graph-based STIX data-model in STIX 2, others (i.e., not just the original content creator) can define new relationships between entities in order to add to the shared knowledge. The following graphic shows an illustration of this for the Indicator SDO.
+STIX 2 introduces a top-level [STIX Relationship Object (SRO)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_cqhkqvhnlgfh), which links two other top-level objects via a named relationship type. The STIX 2 data-model was designed to be a connected graph, wherein nodes are SDOs (or SCOs) and edges are SROs. The STIX 2 specification includes a default set of named relationships, but content producers are also able to define their own relationships. In contrast, STIX 1 defined relationships as properties that were “embedded” in other objects. The types of relationships supported were restricted by the STIX 1 specification. Accordingly, because STIX 1 relationships themselves were not top-level objects, you could not express a relationship between two objects without changing one of them. As only the creator of an SDO is allowed to make changes to it, this effectively prevented “third-party” relationships, where an entity other than the creator of one or both of the objects asserts a relationship between them. In the workflows around CTI, it is often desirable for others to assert a relationship; for example, a threat analyst might want to assert a relationship between an indicator and a threat actor even though the analyst was not the original creator of either object. Using the new graph-based STIX data-model in STIX 2, others (i.e., not just the original content creator) can define new relationships between entities in order to add to the shared knowledge. The following graphic shows an illustration of this for the Indicator SDO.
 
 ![STIX Illustration of Indicator Relationships]({{ site.baseurl }}/img/stix2-indicator-diagram-72dpi-v1.png){: .figure-img .img-fluid}
-
-STIX 2.x introduces a top-level [Relationship object](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_o3xe01pbsgzj), which links two other top-level objects via a named relationship type. STIX 2.x content can be thought of as a connected graph, where nodes are SDOs and edges are Relationship Objects. The STIX 2.x specification suggests different named relationships, but content producers are able to define their own. In STIX 1.X relationships were “embedded” in other objects. The types of relationships supported was restricted by the STIX 1.X specification. Because STIX 1.X relationships themselves were not top-level objects, you could not express a relationship between two objects without changing one of them. In CTI, it is often desirable for others to assert a relationship. Using this new Relationship object, others, besides the original content creator, can add to the shared knowledge in an independent way.
 
 <div class="col-md-offset-3 col-md-6" markdown="1">
 {:.text-center}
@@ -131,28 +125,15 @@ Experience with STIX 1 showed that a common subset of capabilities were widely-u
 
 STIX 2 takes a radically different approach. Many more properties are required, and the number of objects and properties have been reduced to a core set of well-understood features, modeled in such a way as to eliminate the problem of multiple ways of encoding semantically-equivalent CTI. Future releases of STIX will incorporate additional concepts as they are needed.
 
-It is understood that certain communities will need to exchange data not defined within the STIX 2 specification. This need is addressed via the ability to use custom objects and properties within STIX 2.
- 
-
-Experience with STIX 1.X showed that a common set of features were widely used and well understood while many other features lacked shared understanding and had only limited, if any use at all. In addition, almost all properties of objects were optional. Overall, the breadth of STIX 1.x was an impediment to sharing intelligence, and necessitated a formal agreement among threat groups on what should be shared (i.e., profiles).
-
-STIX 2 takes a different approach – many properties are required, and the number of objects and properties have been reduced to a core set of well understood features. Future releases of STIX will incorporate additional concepts as they are needed.
-
-However, the need to incorporate concepts not yet in the specification is enabled through the ability to use custom properties and custom objects.
+It is understood that certain communities will need to exchange data not defined within the STIX 2 specification. This need is addressed via the ability to use [extensions defintions](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_32j232tfvtly) Note: using custom objects and properties in STIX 2 has been deprecated.
 
 - Data Markings
 
-As part of the move from XML to JSON, Data markings no longer use XPath. In STIX 2, there are two types of data markings: object markings – applicable to an entire object, and granular markings – applicable to one or more object properties within a single object. In order to clarify the semantics of markings, all objects must be marked individually - there is no inheritance of markings in STIX 2.
-
-
-[Data markings](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_95gfoglikdzh) no longer use a serialization specific language, e.g., XPath. In STIX 2.x, there are two types of data markings: object marking – applicable to a whole object, and granular markings – applicable to a property or properties of an object. Data markings scope is only within the object where they are defined.
+As part of the move from XML to JSON, [data markings](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_95gfoglikdzh) no longer use XPath. In STIX 2, there are two types of data markings: object markings – applicable to an entire object, and granular markings – applicable to one or more object properties within a single object. In order to clarify the semantics of markings, all objects must be marked individually - there is no inheritance of markings in STIX 2.
 
 - STIX™ Patterning Language
 
-Indicator patterns in STIX 1 were an area where the "many ways of expressing semantically-equivalent content" problem was particularly manifested. As a result, for a consumer of STIX 1 content, rigorously parsing all but the simplest patterns was unnecessarily difficult. STIX 2 takes a radically different approach by defining a human-readable, SQL-like Indicator Patterning Language. As a result, patterns written in the STIX Patterning Language are more compact and far easier to read.
- 
-
-Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. STIX 2.x takes a different approach, specifying [a language for patterns](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e8slinrhxcc9) which is independent of the serialization language. Patterns written in the STIX patterning language are more compact and easier to read. Additionally, there is no confusion between patterns and observations, because a pattern is not a top-level object, but a property of an indicator object.
+Indicator patterns in STIX 1 were an area where the "many ways of expressing semantically-equivalent content" problem was particularly manifested. As a result, for a consumer of STIX 1 content, rigorously parsing all but the simplest patterns was unnecessarily difficult. STIX 2 takes a radically different approach by defining a human-readable, SQL-like Indicator [Patterning Language](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_e8slinrhxcc9), which is independent of the serialization language. Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. As a result, patterns written in the STIX Patterning Language are more compact and far easier to read.
 
 <div class="row">
 <div class="col-md-7" markdown="1">
@@ -274,9 +255,4 @@ No. The CTI TC community will be focusing on advancing STIX and TAXII 2+. Howeve
 ### What is happening with all of the tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1? ###
 
 The tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1 remain available on Github, but have been deemed end-of-life. Users are encouraged to update to STIX 2.1. In case of a small bug fix or emergency security update, MITRE may update the tools at their discretion. Please contact MITRE directly for assistance.
-
-
-
-
-
-
+ 
