@@ -7,7 +7,7 @@ categories: stix
 
 ## One Standard
 
-First, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the two specifications into one. Cyber Observable eXpression (CybOX™) objects are now called STIX Cyber Observables.
+In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the two specifications into one. Cyber Observable eXpression (CybOX™) objects are now called STIX Cyber Observables.
 
 Now when you discuss “STIX”, you are talking about the one standard needed for sharing cyber threat intelligence!
 
