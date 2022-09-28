@@ -5,7 +5,13 @@ short_title: Comparing STIX 1 and 2
 categories: stix
 ---
 
-## One Standard
+## The Transition to STIX™/TAXII™ 2 ##
+
+### Why were new versions of STIX™ and TAXII™ created? ###
+
+While STIX and TAXII 1 have been widely adopted and deployed around the world by operational sharing communities, the CTI TC recognized that these specifications were difficult to implement. The primary sources of that difficulty were excessive complexity in certain advanced XML constructs (e.g., XSI types) and the choice of XML as a representation. The community also learned that having multiple ways of doing things and excessive optionality in the data model led to differences in data-modelling and challenges in interoperability. As a result the CTI TC decided to rework the data model and serialization for STIX 2. Similarly, armed with the lessons learned over the years the community made the decision to rework TAXII as an HTTP Representational State Transfer (RESTful) based design.
+
+### One Standard ###
 
 In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the two specifications into one. Cyber Observable eXpression (CybOX™) objects are now called STIX Cyber Observables.
 
@@ -90,6 +96,72 @@ During the development of the STIX 2 SDOs the community felt that the generic TT
 </div>
 
 - STIX™ Cyber-observable Objects
+ 
+STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 and 2.0. In STIX 1, every CybOX object needed to be wrapped in an Observable object.  Similarly in STIX 2.0, a cyber observable needed to be wrapped in an Observed Data object.  This made it difficult to defined a cyber observable just once (e.g., an IPv4 address) and use it in many different contexts. This is possible with the introduction of [STIX Cyber-Observable Objects (SCOs)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_mlbmudhl16lr).
+ 
+**Note**: The IDs in these examples have been simplified to them easier to read. STIX 2 requires that IDs contain UUIDs after the `--`.
+
+<div class="row">
+<div class="col-md-7" markdown="1">
+{:.text-center}
+### STIX 1 Sample Object
+
+```xml
+<stix:TTPs>
+ <stix:TTP id="attack-pattern:ttp-01" xsi:type='ttp:TTPType'
+           version="1.1">
+   <ttp:Title>Initial Compromise</ttp:Title>
+    <ttp:Behavior>
+     <ttp:Attack_Patterns>
+      <ttp:Attack_Pattern capec_id="CAPEC-163">
+       <ttp:Description>Spear Phishing</ttp:Description>
+        </ttp:Attack_Pattern>
+      </ttp:Attack_Patterns>
+    </ttp:Behavior>
+ </stix:TTP>
+</stix:TTPs>
+<stix:TTPs>
+ <stix:Kill_Chains>
+  <stixCommon:Kill_Chain id="stix:TTP-02"
+                         name="mandiant-attack-lifecycle-model">
+  <stixCommon:Kill_Chain_Phase name="initial-compromise"
+                               phase_id="stix:TTP-03"/>
+ </stix:Kill_Chains>
+</stix:TTPs>
+```
+</div>
+
+<div class="col-md-5" markdown="1">
+{:.text-center}
+### STIX 2 Sample SDO
+
+```json
+{
+    "type": "ipv4-addr",
+
+    "id": "attack-pattern--01",
+    "spec_version": "2.1",
+    "created": "2015-05-15T09:11:12.515Z",
+    "modified": "2015-05-15T09:11:12.515Z",
+    "name": "Initial Compromise",
+    "external_references": [
+      {
+        "source_name": "capec",
+        "description": "spear phishing",
+        "external_id": "CAPEC-163"
+      }
+    ],
+    "kill_chain_phases": [
+      {
+        "kill_chain_name": "mandiant-attack-lifecycle-model",
+        "phase_name": "initial-compromise"
+      }
+    ]
+   }
+```
+</div>
+</div>
+
 
 - Relationships as Top-Level Objects
 
