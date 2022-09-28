@@ -64,12 +64,6 @@ We have a very active and supportive community.  If you post your question on CT
 
 Email cti-users at lists.oasis-open.org or file an issue in the [CTI TC's repository](https://github.com/oasis-tcs/cti-stix2/issues) on Github.
 
-## The Transition to STIX™/TAXII™ 2 ##
-
-### Why were new versions of STIX™ and TAXII™ created? ###
-
-While STIX and TAXII 1 have been widely adopted and deployed around the world by operational sharing communities, the CTI TC recognized that these specifications were difficult to implement. The primary sources of that difficulty were excessive complexity in certain advanced XML constructs (e.g., XSI types) and the choice of XML as a representation. The community also learned that having multiple ways of doing things and excessive optionality in the data model led to differences in data-modelling and challenges in interoperability. As a result the CTI TC decided to rework the data model and serialization for STIX 2. Similarly, armed with the lessons learned over the years the community made the decision to rework TAXII as an HTTP Representational State Transfer (RESTful) based design.
-
 ## STIX™ 2 Core Design Principles ##
 
 ### What are the core design principles of STIX™ 2? ###
