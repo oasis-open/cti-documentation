@@ -51,7 +51,7 @@ The list of repositories on the [Resources]({{ site.baseurl }}/resources) page c
 
 ### How do I verify my software is STIX™/TAXII™ 2 interoperable? ###
 
-The Interoperability Subcommittee of the CTI TC has developed a 2-Part Committee Note that establishes a step-by-step guide to a self-certification process. Once a Producer of STIX feeds, a vendor providing a Threat Intelligence Platform (TIP), a vendor providing a Security Incident and Event Management (SIEM) tool, a vendor that provides threat mitigation systems (TMS), or a vendor that provides threat detection systems (TDS) executes the steps outlined, demonstrates successful interoperability, and documents such, that supplier may submit a statement to OASIS testifying to the self-certification.We are using TMS to refer to tools such as firewalls and intrusion prevention systems. We are using TDS to refer to tools such as intrusion detection software and web proxies.
+The Interoperability Subcommittee of the CTI TC has developed a 2-Part Committee Note that establishes a step-by-step guide to a self-certification process for various personas. Once a Producer of STIX feeds content, a vendor providing a Threat Intelligence Platform (TIP), a vendor providing a Security Incident and Event Management (SIEM) tool, a vendor that provides threat mitigation systems (TMS), or a vendor that provides threat detection systems (TDS) executes the steps outlined, demonstrates successful interoperability, and documents such, that supplier may submit a statement to OASIS testifying to the self-certification. We are using TMS to refer to tools such as firewalls and intrusion prevention systems. We are using TDS to refer to tools such as intrusion detection software and web proxies.
 
 The self-certification process is intended to be policed by market forces. If a vendor or supplier self-certifies and is shown to be misrepresenting its products the OASIS Community will remove the vendor from the STIX/TAXII 2 compatible products list after verification of the claim.
 
@@ -106,10 +106,6 @@ The CTI TC had to pick one way of encoding timestamps. There was no lack of deba
 
 Requiring that all timestamps be represented in UTC reduces ambiguity for consumers parsing STIX data. For STIX content producers, this has the additional benefit of one less thing they have to worry about from an interoperability perspective.
 
-### Why are labels required on some objects and not others? ###
-
-Labels (often referred to as “tags” in other contexts) are meant to help producers and consumers categorize objects. Labels are required on objects when there's a predefined vocabulary with suggested (not required) values to use for that object type. For example, the Report object has a predefined vocabulary and so labels are required, whereas Attack Pattern does not not have a predefined labels vocabulary and so in this case labels aren't required.
-
 ### Why does the Observed-Data object not have a name and description? ###
 
 Observed Data will almost always be created and consumed by automated processes, and therefore there wasn't a strong need to add a name or description field. This can be revisited if a compelling use case emerges in future.
@@ -118,15 +114,13 @@ Observed Data will almost always be created and consumed by automated processes,
 
 Data markings are applied to objects by referencing the ID of the data marking from the object. For example, to say a Campaign is marked with a copyright statement, the Campaign would have the ID of the Data Marking representing the copyright statement in its list of data markings (object_marking_refs). Because IDs are not specific to a single version of an object, the community felt that data markings should not be versionable. Making data markings versioned would allow producers to change the data markings and have that change automatically applied to any objects already referencing that marking.
 
-### Why aren't Cyber Observables objects top-level objects? ###
+### Are Cyber Observables objects top-level objects? ###
 
-There were several considerations that led to this decision. Unlike the other higher-level STIX Domain Objects (e.g,Threat Actor, Campaign, etc.), Cyber Observables are almost exclusively machine produced and therefore not intended to be globally unique. Accordingly, Cyber Observables do not have the same requirements as the SDOs in terms of needing capabilities such as versioning and confidence. In addition, given their nature as elements that provide supporting evidence to other SDOs such as Observed Data, Cyber Observables do not require the ability to support the creation of non-factual (i.e., asserted) relationships via the STIX Relationship Objects. These factors, and also the desire for a more streamlined data model (as having Cyber Observables as top-level objects would significantly increase the number of such objects in STIX), led to the decision to use Cyber Observables in an embedded form rather than making them top-level objects.
+IN STIX 2.0, there were several considerations that led to this decision. Unlike the other higher-level STIX Domain Objects (e.g,Threat Actor, Campaign, etc.), Cyber Observables are almost exclusively machine produced and therefore not intended to be globally unique. Accordingly, Cyber Observables do not have the same requirements as the SDOs in terms of needing capabilities such as versioning and confidence. In addition, given their nature as elements that provide supporting evidence to other SDOs such as Observed Data, Cyber Observables do not require the ability to support the creation of non-factual (i.e., asserted) relationships via the STIX Relationship Objects. These factors, and also the desire for a more streamlined data model (as having Cyber Observables as top-level objects would significantly increase the number of such objects in STIX), led to the decision to use Cyber Observables in an embedded form rather than making them top-level objects.
 
-In STIX 2.1, STIX Cyber Observerable Objects were promoted to Core Objects. Previously, in STIX 2.0, Cyber-observable Objects could only exist as objects within an Observed Data object. It is still possible to represent Cyber-observable Objects in this way, but this method has been deprecated.
+In STIX 2.1, after much discussion, STIX Cyber Observerable Objects (SCOs) were promoted to top-level objects. The STIX 2.0 specification made it difficult to defined a cyber observable just once (e.g., an IPv4 address) and use it in many different contexts.  Addtionally, as top-level objects, they can also be used in relationships.
 
-### Why are the IDs in the Cyber Observable container not just STIX IDs? ###
-
-Cyber Observables are not globally unique and therefore need to be unique only to their respective container. Therefore, the decision was made to use a simplified, non-UUID ID structure for ease of use in terms of content creation and parsing.
+It is still possible to represent Cyber-observable Objects using the method described for STIX 2.0, but this method has been deprecated.
 
 ### Why are there stub objects in STIX™ 2.0 and 2.1? ###
 
@@ -134,7 +128,7 @@ The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were desi
 
 ### What happened to TAXII channels? ###
 
-During the planning of TAXII 2.0 the TC considered the inclusion of a channels feature to address the publish-subscribe use-case. However, the CTI TC decided to solve the major use-case of request-response first. The publish-subscribe use case was deferred to a later release.
+During the planning of TAXII the TC considered the inclusion of a channels feature to address the publish-subscribe use-case. However, the CTI TC decided to solve the major use-case of request-response first. The publish-subscribe use case was deferred to a later release.
 
 ### Why are Note and Opinion separate objects? ###
 
@@ -146,16 +140,6 @@ The Note object should be used to provide additional details or further analysis
 
 The TC will make a best effort to avoid making either forwards or backwards-breaking changes in minor releases. That said, on occasion breaking changes may need to be made. For example, with stub objects the TC will more than likely make forward and backward-breaking changes, but these objects are marked as such and should not be considered stable. Other forward or backward breaking changes will be done carefully and only when the TC deems that the justification of doing so justifies the potential impact on implementers.
 
-### Why are there fewer objects in STIX™ 2.0/Cyber Observables than there were in the previous versions? ###
-
-The community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.
-
-### I was using CybOX™ <Object X> before, but now I can't find it, what should I do? ###
-
-If you were using a CybOX object and it's not a part of STIX 2, let us know! Create the object as a STIX 2.1 Extension and submit it to the [CTI STIX Common Object repository](https://github.com/oasis-open/cti-stix-common-objects) to give it greater visibility.
-
-If you're a TC member, post to the cti-cybox@lists.oasis-open.org list. If you're not, post to cti-comment@lists.oasis-open.org (instructions here: https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cti).
-
 ### Why is Location an SDO? ###
 
 Location was made an SDO for several reasons:
@@ -164,7 +148,6 @@ Location was made an SDO for several reasons:
 - To provide confidence that a given object is at that location
 - To allow third parties to provide information about a location for another object
 - To allow for re-use of Location objects
-
 
 ### Why did the TC not use normative text to describe a material change in versioning? ###
 
