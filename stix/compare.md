@@ -107,61 +107,38 @@ STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 
 ### STIX 1 Sample Object
 
 ```xml
-<stix:TTPs>
- <stix:TTP id="attack-pattern:ttp-01" xsi:type='ttp:TTPType'
-           version="1.1">
-   <ttp:Title>Initial Compromise</ttp:Title>
-    <ttp:Behavior>
-     <ttp:Attack_Patterns>
-      <ttp:Attack_Pattern capec_id="CAPEC-163">
-       <ttp:Description>Spear Phishing</ttp:Description>
-        </ttp:Attack_Pattern>
-      </ttp:Attack_Patterns>
-    </ttp:Behavior>
- </stix:TTP>
-</stix:TTPs>
-<stix:TTPs>
- <stix:Kill_Chains>
-  <stixCommon:Kill_Chain id="stix:TTP-02"
-                         name="mandiant-attack-lifecycle-model">
-  <stixCommon:Kill_Chain_Phase name="initial-compromise"
-                               phase_id="stix:TTP-03"/>
- </stix:Kill_Chains>
-</stix:TTPs>
+<cybox:Observable id="stix:observable-01">
+            <cybox:Title>IP: 219.90.112.203</cybox:Title>
+            <cybox:Object id="stix:object-02">
+                <cybox:Properties category="ipv4-addr" xsi:type="AddressObj:AddressObjectType">
+                    <AddressObj:Address_Value condition="Equals">219.90.112.203</AddressObj:Address_Value>
+             </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
 ```
 </div>
 
 <div class="col-md-5" markdown="1">
 {:.text-center}
-### STIX 2 Sample SDO
+### STIX 2 Sample SCO
 
 ```json
 {
-    "type": "ipv4-addr",
-
-    "id": "attack-pattern--01",
-    "spec_version": "2.1",
-    "created": "2015-05-15T09:11:12.515Z",
-    "modified": "2015-05-15T09:11:12.515Z",
-    "name": "Initial Compromise",
-    "external_references": [
-      {
-        "source_name": "capec",
-        "description": "spear phishing",
-        "external_id": "CAPEC-163"
-      }
-    ],
-    "kill_chain_phases": [
-      {
-        "kill_chain_name": "mandiant-attack-lifecycle-model",
-        "phase_name": "initial-compromise"
-      }
-    ]
-   }
+            "id": "ipv4-addr--02",
+            "type": "ipv4-addr",
+            "value": "219.90.112.203"
+        }
 ```
 </div>
 </div>
 
+There are fewer objects in STIX™ 2 than in CybOX 2.1.  For STIX 2, the community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.  If there is a need for additional SCOs, they can be added in a future release.
+
+### I was using CybOX™ <Object X> before, but now I can't find it, what should I do? ###
+
+If you were using a CybOX object and it's not a part of STIX 2, let us know! Create the object as a STIX 2.1 Extension and submit it to the [CTI STIX Common Object repository](https://github.com/oasis-open/cti-stix-common-objects) to give it greater visibility.
+
+If you're a TC member, post to the cti-cybox@lists.oasis-open.org list. If you're not, post to cti-comment@lists.oasis-open.org (instructions here: https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cti).
 
 - Relationships as Top-Level Objects
 
