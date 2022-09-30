@@ -26,12 +26,13 @@ STIX — the Structured Threat Information eXpression — is a language and seri
 TAXII — the Trusted Automated Exchange of Intelligence Information — is an application layer protocol for the communication of CTI in a simple and scalable manner over HTTPS. TAXII enables organizations to share CTI by defining a standard API that aligns with common sharing models. TAXII is specifically designed to support the exchange of CTI represented in STIX.
 
 ### Who controls STIX™ and TAXII™? ###
-The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society. Since June of 2015, the CTI TC has been working to create the next generation of STIX and TAXII standards.
+The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society. 
 
 ### What are the current versions of STIX™ and TAXII™? ###
 
 In 2021, OASIS approved STIX 2.1 and TAXII 2.1 as OASIS Standards. See the [Resources]({{ site.baseurl }}/resources) page for links to the latest specs.
-Looking for information about STIX 1?  See ?
+
+Looking for information about STIX 1?  See [The Transition to STIX™/TAXII™ 2]({{ site.baseurl }}/?)
 
 ### Are there “real-world” examples of STIX™ 2 content I can look at? ###
 
@@ -88,7 +89,7 @@ Embedded relationships (represented using a property in an object with the ID of
 
 ## Specific STIX™ 2 Design Decisions ##
 
-### Why are IDs in UUIDv4 format vs UUIDv5? ###
+### When are IDs in UUIDv4 format vs UUIDv5? ###
 First, to explain the differences between UUIDv4 and UUIDv5:
 
 UUIDv4 is randomly generated, so each UUIDv4 ID is essentially just an ID that you can assign to any object you want.
@@ -116,15 +117,17 @@ Data markings are applied to objects by referencing the ID of the data marking f
 
 ### Are Cyber Observables objects top-level objects? ###
 
-IN STIX 2.0, there were several considerations that led to this decision. Unlike the other higher-level STIX Domain Objects (e.g,Threat Actor, Campaign, etc.), Cyber Observables are almost exclusively machine produced and therefore not intended to be globally unique. Accordingly, Cyber Observables do not have the same requirements as the SDOs in terms of needing capabilities such as versioning and confidence. In addition, given their nature as elements that provide supporting evidence to other SDOs such as Observed Data, Cyber Observables do not require the ability to support the creation of non-factual (i.e., asserted) relationships via the STIX Relationship Objects. These factors, and also the desire for a more streamlined data model (as having Cyber Observables as top-level objects would significantly increase the number of such objects in STIX), led to the decision to use Cyber Observables in an embedded form rather than making them top-level objects.
+IN STIX 2.0, they were not. There were several considerations that led to this decision. Unlike the other higher-level STIX Domain Objects (e.g,Threat Actor, Campaign, etc.), Cyber Observables are almost exclusively machine produced and therefore not intended to be globally unique. Accordingly, Cyber Observables do not have the same requirements as the SDOs in terms of needing capabilities such as versioning and confidence. In addition, given their nature as elements that provide supporting evidence to other SDOs such as Observed Data, Cyber Observables do not require the ability to support the creation of non-factual (i.e., asserted) relationships via the STIX Relationship Objects. These factors, and also the desire for a more streamlined data model (as having Cyber Observables as top-level objects would significantly increase the number of such objects in STIX), led to the decision to use Cyber Observables in an embedded form rather than making them top-level objects.
 
-In STIX 2.1, after much discussion, STIX Cyber Observerable Objects (SCOs) were promoted to top-level objects. The STIX 2.0 specification made it difficult to defined a cyber observable just once (e.g., an IPv4 address) and use it in many different contexts.  Addtionally, as top-level objects, they can also be used in relationships.
+In STIX 2.1, after much discussion, STIX Cyber Observerable Objects (SCOs) were promoted to top-level objects. The STIX 2.0 specification made it difficult to defined a cyber observable just once (e.g., an IPv4 address) and use it in many different contexts.  Addtionally, as top-level objects, they can also be used in relationships, which was determed to be desirable.
 
 It is still possible to represent Cyber-observable Objects using the method described for STIX 2.0, but this method has been deprecated.
 
 ### Why are there stub objects in STIX™ 2.0 and 2.1? ###
 
-The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were designed to capture basic unstructured data and serve as a placeholder for future enhancements. For example, the Malware stub can be used to provide malware names and descriptions in STIX 2.0 (useful for high-level threat intel and IOC sharing) but does not have capabilities to represent malware analysis data. Marking them as stub objects was intended to clearly demonstrate that these objects are not complete (due to time and resource constraints) and will be enhanced in future releases of STIX. The Incident object is being prototyped as a STIX 2.1 Extension object and is available in the [CTI STIX Common Object repo](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/incident-core).
+The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were designed to capture basic unstructured data and serve as a placeholder for future enhancements. For example, the Malware stub can be used to provide malware names and descriptions in STIX 2.0 (useful for high-level threat intel and IOC sharing) but does not have capabilities to represent malware analysis data. Marking them as stub objects was intended to clearly demonstrate that these objects are not complete (due to time and resource constraints) and will be enhanced in future releases of STIX. 
+
+The Incident object is being prototyped as a STIX 2.1 Extension object and is available in the [CTI STIX Common Object repo](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/incident-core).
 
 ### What happened to TAXII channels? ###
 
