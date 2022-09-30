@@ -26,13 +26,13 @@ STIX — the Structured Threat Information eXpression — is a language and seri
 TAXII — the Trusted Automated Exchange of Intelligence Information — is an application layer protocol for the communication of CTI in a simple and scalable manner over HTTPS. TAXII enables organizations to share CTI by defining a standard API that aligns with common sharing models. TAXII is specifically designed to support the exchange of CTI represented in STIX.
 
 ### Who controls STIX™ and TAXII™? ###
-The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society. 
+The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society.
 
 ### What are the current versions of STIX™ and TAXII™? ###
 
 In 2021, OASIS approved STIX 2.1 and TAXII 2.1 as OASIS Standards. See the [Resources]({{ site.baseurl }}/resources) page for links to the latest specs.
 
-Looking for information about STIX 1?  See [The Transition to STIX™/TAXII™ 2]({{ site.baseurl }}/?)
+Looking for information about STIX 1?  See [The Transition to STIX™/TAXII™ 2]({{ site.baseurl }}/stix/compare)
 
 ### Are there “real-world” examples of STIX™ 2 content I can look at? ###
 
@@ -125,7 +125,7 @@ It is still possible to represent Cyber-observable Objects using the method desc
 
 ### Why are there stub objects in STIX™ 2.0 and 2.1? ###
 
-The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were designed to capture basic unstructured data and serve as a placeholder for future enhancements. For example, the Malware stub can be used to provide malware names and descriptions in STIX 2.0 (useful for high-level threat intel and IOC sharing) but does not have capabilities to represent malware analysis data. Marking them as stub objects was intended to clearly demonstrate that these objects are not complete (due to time and resource constraints) and will be enhanced in future releases of STIX. 
+The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were designed to capture basic unstructured data and serve as a placeholder for future enhancements. For example, the Malware stub can be used to provide malware names and descriptions in STIX 2.0 (useful for high-level threat intel and IOC sharing) but does not have capabilities to represent malware analysis data. Marking them as stub objects was intended to clearly demonstrate that these objects are not complete (due to time and resource constraints) and will be enhanced in future releases of STIX.
 
 The Incident object is being prototyped as a STIX 2.1 Extension object and is available in the [CTI STIX Common Object repo](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/incident-core).
 
