@@ -13,11 +13,11 @@ While STIX and TAXII 1 have been widely adopted and deployed around the world by
 
 ### One Standard ###
 
-In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the two specifications into one. Cyber Observable eXpression (CybOX™) objects are now called STIX Cyber Observables.
+In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the STIX and Cyber Observable eXpression (CybOX™) specifications into one.  CybOX objects are now called STIX Cyber Observables.
 
 Now when you discuss “STIX”, you are talking about the one standard needed for sharing cyber threat intelligence!
 
-## STIX™ 1 vs STIX™ 2 FAQ
+## STIX™ 1 vs STIX™ 2 Frequently Asked Questions
 
 
 ### What are the key differences between STIX™ 1 and STIX™ 2? ###
@@ -108,13 +108,13 @@ STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 
 
 ```xml
 <cybox:Observable id="stix:observable-01">
-            <cybox:Title>IP: 219.90.112.203</cybox:Title>
-            <cybox:Object id="stix:object-02">
-                <cybox:Properties category="ipv4-addr" xsi:type="AddressObj:AddressObjectType">
-                    <AddressObj:Address_Value condition="Equals">219.90.112.203</AddressObj:Address_Value>
-             </cybox:Properties>
-            </cybox:Object>
-        </cybox:Observable>
+     <cybox:Title>IP: 219.90.112.203</cybox:Title>
+     <cybox:Object id="stix:object-02">
+          <cybox:Properties category="ipv4-addr" xsi:type="AddressObj:AddressObjectType">
+               <AddressObj:Address_Value condition="Equals">219.90.112.203</AddressObj:Address_Value>
+          </cybox:Properties>
+     </cybox:Object>
+</cybox:Observable>
 ```
 </div>
 
@@ -124,21 +124,15 @@ STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 
 
 ```json
 {
-            "id": "ipv4-addr--02",
-            "type": "ipv4-addr",
-            "value": "219.90.112.203"
-        }
+   "id": "ipv4-addr--02",
+   "type": "ipv4-addr",
+   "value": "219.90.112.203"
+}
 ```
 </div>
 </div>
 
-There are fewer objects in STIX™ 2 than in CybOX 2.1.  For STIX 2, the community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.  If there is a need for additional SCOs, they can be added in a future release.
-
-### I was using CybOX™ <Object X> before, but now I can't find it, what should I do? ###
-
-If you were using a CybOX object and it's not a part of STIX 2, let us know! Create the object as a STIX 2.1 Extension and submit it to the [CTI STIX Common Object repository](https://github.com/oasis-open/cti-stix-common-objects) to give it greater visibility.
-
-If you're a TC member, post to the cti-cybox@lists.oasis-open.org list. If you're not, post to cti-comment@lists.oasis-open.org (instructions here: https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cti).
+There are fewer objects in STIX™ 2 than in CybOX 2.1.  For STIX 2, the community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.  If there is a need for additional SCOs, they can be added in a future release or via extensions.
 
 - Relationships as Top-Level Objects
 
@@ -170,11 +164,11 @@ STIX 2 introduces a top-level [STIX Relationship Object (SRO)](https://docs.oasi
 
 - Streamlined Model
 
-Experience with STIX 1 showed that a common subset of capabilities were widely-used and well-understood while many others were problematic, poorly-understood, and in many cases never used. In addition, almost all object properties in STIX 1 were optional, presenting significant parsing challenges for consumers of STIX 1 content. At a high-level, the breadth of capabilities and multiple ways of representing semantically identical content in STIX 1 was an impediment to interoperable sharing of CTI, leading sharing communities to formally define how different types of CTI would be represented via STIX 1 Profiles.
+Experience with STIX 1 showed that a common subset of capabilities were widely-used and well-understood while many others were problematic, poorly-understood, and in many cases never used. In addition, almost all object properties in STIX 1 were optional, presenting significant parsing challenges for consumers of STIX 1 content. At a high-level, the breadth of capabilities and multiple ways of representing semantically identical content in STIX 1 was an impediment to interoperable sharing of CTI, leading sharing communities to need to formally define how different types of CTI would be represented via STIX 1 Profiles.
 
 STIX 2 takes a radically different approach. Many more properties are required, and the number of objects and properties have been reduced to a core set of well-understood features, modeled in such a way as to eliminate the problem of multiple ways of encoding semantically-equivalent CTI. Future releases of STIX will incorporate additional concepts as they are needed.
 
-It is understood that certain communities will need to exchange data not defined within the STIX 2 specification. This need is addressed via the ability to use [extensions defintions](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_32j232tfvtly) Note: using custom objects and properties in STIX 2 has been deprecated.
+It is understood that certain communities will need to exchange data not defined within the STIX 2 specification. This need is addressed via the ability to use [extensions defintions](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_32j232tfvtly) Note: using custom objects and properties in STIX 2.1 has been deprecated.
 
 - Data Markings
 
@@ -276,6 +270,12 @@ STIX 2 uses a property, created_by_ref, to replace the second usage of namespace
 During the design and development of STIX 2, the CTI TC concluded that due to the tightly-coupled nature of STIX and the Cyber Observable eXpression (CybOX) language that CybOX should be merged into STIX. These objects are now characterized as Cyber Observable objects within STIX and are defined in the STIX specification.
 
 The TC felt that it would be easier for the market to understand and adopt STIX if it was a single standard. This consolidation eliminated the need for a complex interoperability matrix between the two standards.
+ 
+### I was using a CybOX™ object before, but now I can't find it, what should I do? ###
+
+If you were using a CybOX object and it's not a part of STIX 2, let us know! Create the object as a STIX 2.1 Extension and submit it to the [CTI STIX Common Object repository](https://github.com/oasis-open/cti-stix-common-objects) to give it greater visibility.
+
+If you're a TC member, post to the cti-cybox@lists.oasis-open.org list. If you're not, post to cti-comment@lists.oasis-open.org (instructions here: https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cti).
 
 ### What are the key differences between TAXII™ 1 and TAXII™ 2? ###
 
@@ -296,6 +296,8 @@ Yes. The [STIX Elevator](https://github.com/oasis-open/cti-stix-elevator) does a
 The most recent (and final) version of the STIX 1 specifications is STIX 1.2.1, the specifications can be found here: http://docs.oasis-open.org/cti/stix/v1.2.1/stix-v1.2.1-part1-overview.html
 
 The most recent (and final) version of the TAXII 1 specifications is TAXII 1.1.1, the specifications can be found here: http://docs.oasis-open.org/cti/taxii/v1.1.1/taxii-v1.1.1-part1-overview.html
+ 
+Additional documentation can be found at stix.mitre.org.
 
 ### Will there be any further revisions of STIX™ 1.2.1, CybOX™ 2.1.1, or TAXII™ 1.1.1? ###
 
