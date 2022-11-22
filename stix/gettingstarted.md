@@ -81,7 +81,7 @@ The [STIX validator](https://github.com/oasis-open/cti-stix-validator) tool is a
 
 ## Pattern Validator
 
-Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.oasis-open.org/cti/stix/v2.1/cs01/stix-v2.1-cs01.html#_e8slinrhxcc9). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, `[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']` would pass the pattern validator tool whereas something like, `[file:hashes.'SHA-256'= 'example.exe']` would not. This tool can be used via command line or as a Python library.
+Another [validating tool](https://github.com/oasis-open/cti-pattern-validator) you can use helps check STIX [patterns](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_e8slinrhxcc9). STIX patterns are expressions that represent Cyber Observable objects within a STIX Indicator SDO. They are helpful for modeling intelligence that indicates cyber activity. This tool simply makes sure patterning syntax adheres to the patterning expression. For instance, the pattern, `[file:hashes.'SHA-256' = 'ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c']` would pass the pattern validator tool whereas something like, `[file:hashes.'SHA-256'= 'example.exe']` would not. This tool can be used via command line or as a Python library.
 
 ## STIX Visualization
 
