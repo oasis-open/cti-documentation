@@ -77,8 +77,10 @@ Note: This version of the specification is no longer a multipart document. Older
 </div>
 
 ### STIX Extensions
+
 {: .table .table-hover .table-example .table-desc .table-col1-width}
-| :------: | ----------- |
+| Extension Name & Link | Extension Description | 
+| ------ | ----------- |
 | [**Incident**](https://github.com/oasis-open/cti-stix-common-objects/blob/main/extension-definition-specifications/incident-core/Incident%20Extension%20Suite.adoc){: target="_blank"} | Objects to allow tracking an incident across its lifecycle |
 | [**TLP 2.0**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/tlp-2.0){: target="_blank"} | Enable the ability to apply TLP 2.0 markings |
 | [**Malware Artifact**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-artifact){: target="_blank"} | Enable the capture of malware artifacts |
