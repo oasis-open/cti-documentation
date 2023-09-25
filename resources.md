@@ -79,13 +79,17 @@ Note: This version of the specification is no longer a multipart document. Older
 ### STIX Extensions
 
 {: .table .table-hover .table-example .table-desc .table-col1-width}
-| Extension Name & Link | Extension Description | 
-| ------ | ----------- |
-| [**Incident**](https://github.com/oasis-open/cti-stix-common-objects/blob/main/extension-definition-specifications/incident-core/Incident%20Extension%20Suite.adoc){: target="_blank"} | Objects to allow tracking an incident across its lifecycle |
-| [**TLP 2.0**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/tlp-2.0){: target="_blank"} | Enable the ability to apply TLP 2.0 markings |
-| [**Malware Artifact**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-artifact){: target="_blank"} | Enable the capture of malware artifacts |
+| Extension Name & Link | Extension Status | Extension Description | 
+| ------ | ------ | ----------- |
+| [**Incident**](https://github.com/oasis-open/cti-stix-common-objects/blob/main/extension-definition-specifications/incident-core/Incident%20Extension%20Suite.adoc){: target="_blank"} | Specification Track | Objects to allow tracking an incident across its lifecycle |
+| [**TLP 2.0**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/tlp-2.0){: target="_blank"} | External | Apply TLP 2.0 markings to STIX objects |
+| [**Malware Artifact**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-artifact){: target="_blank"} | Open | Capture malware artifacts |
+| [**Malware Behavior**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior){: target="_blank"} | Open | Objects to capture malware behavior information, including objectives, behaviors, and methods |
+| [**ACS Data Markings**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/acs-data-markings){: target="_blank"} | External | Mark STIX obects using the Information Sharing Architecture (ISA) Access Control Specification (ACS) tagging specification |
 
 Please submit a pull request or an issue to the [cti-documentation](https://github.com/oasis-open/cti-documentation){: target="_blank"} project, if you would like to have your open extension listed here.
+
+More informataion about how extensions are developed and managed is available in the [STIX Extensions Definition Policy](https://www.oasis-open.org/committees/document.php?document_id=69806&wg_abbrev=cti).
 
 
 ### OASIS CTI TC [Open Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
