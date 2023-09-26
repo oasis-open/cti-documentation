@@ -85,11 +85,11 @@ Note: This version of the specification is no longer a multipart document. Older
 | [**TLP 2.0**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/tlp-2.0){: target="_blank"} | External | Apply TLP 2.0 markings to STIX objects |
 | [**Malware Artifact**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-artifact){: target="_blank"} | Open | Capture malware artifacts |
 | [**Malware Behavior**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior){: target="_blank"} | Open | Objects to capture malware behavior information, including objectives, behaviors, and methods |
-| [**ACS Data Markings**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/acs-data-markings){: target="_blank"} | External | Mark STIX obects using the Information Sharing Architecture (ISA) Access Control Specification (ACS) tagging specification |
+| [**ACS Data Markings**](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/acs-data-markings){: target="_blank"} | External | Mark STIX objects using the Information Sharing Architecture (ISA) Access Control Specification (ACS) tagging specification |
 
 Please submit a pull request or an issue to the [cti-documentation](https://github.com/oasis-open/cti-documentation){: target="_blank"} project, if you would like to have your open extension listed here.
 
-More informataion about how extensions are developed and managed is available in the [STIX Extensions Definition Policy](https://www.oasis-open.org/committees/document.php?document_id=69806&wg_abbrev=cti).
+More information about how extensions are developed and managed is available in the [STIX Extensions Definition Policy](https://www.oasis-open.org/committees/document.php?document_id=69806&wg_abbrev=cti).
 
 
 ### OASIS CTI TC [Open Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
@@ -97,11 +97,9 @@ More informataion about how extensions are developed and managed is available in
 {: .table .table-hover .table-example .table-desc .table-col1-width}
 | :------: | ----------- |
 | [**cti-documentation**](https://github.com/oasis-open/cti-documentation){: target="_blank"} | GitHub Pages site for STIX and TAXII |
-| [**cti-marking-prototype**](https://github.com/oasis-open/cti-marking-prototype){: target="_blank"} | Prototype for processing granular data markings in STIX (archived) |
 | [**cti-pattern-matcher**](https://github.com/oasis-open/cti-pattern-matcher){: target="_blank"} | Match STIX content against STIX patterns |
 | [**cti-pattern-validator**](https://github.com/oasis-open/cti-pattern-validator){: target="_blank"} | Validate patterns used to express Cyber Observable content in STIX Indicators |
 | [**cti-python-stix2**](https://github.com/oasis-open/cti-python-stix2){: target="_blank"} | Python APIs for STIX 2 |
-| [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals (archived) |
 | [**cti-common-objects**](https://github.com/oasis-open/cti-stix-common-objects){: target="_blank"} | Collection of commonly used STIX 2.1 objects and extensions |
 | [**cti-stix-elevator**](https://github.com/oasis-open/cti-stix-elevator){: target="_blank"} | Convert STIX 1 XML to STIX 2 JSON |
 | [**cti-stix-generator**](https://github.com/oasis-open/cti-stix-generator){: target="_blank"} | Tool for generating random STIX content for prototyping and testing |
@@ -112,6 +110,13 @@ More informataion about how extensions are developed and managed is available in
 | [**cti-taxii-client**](https://github.com/oasis-open/cti-taxii-client){: target="_blank"} | TAXII 2 Client Library Written in Python |
 | [**cti-taxii-server**](https://github.com/oasis-open/cti-taxii-server){: target="_blank"} | TAXII 2 Server Library Written in Python |
 | [**cti-training**](https://github.com/oasis-open/cti-training){: target="_blank"} | Collection of CTI-related training materials |
+
+### ARCHIVED OASIS CTI TC [Repositories](https://www.oasis-open.org/resources/open-repositories/){: target="_blank"}
+
+{: .table .table-hover .table-example .table-desc .table-col1-width}
+| :------: | ----------- |
+| [**cti-marking-prototype**](https://github.com/oasis-open/cti-marking-prototype){: target="_blank"} | Prototype for processing granular data markings in STIX |
+| [**cti-sep-repository**](https://github.com/oasis-open/cti-sep-repository){: target="_blank"} | Collection of STIX Enhancement Proposals |
 
 ### Other Resources
 
