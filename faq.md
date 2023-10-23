@@ -17,24 +17,24 @@ Frequently Asked Questions
 
 ## General ##
 
-### What is STIX™? ###
+### What is STIX? ###
 
 STIX — the Structured Threat Information eXpression — is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX enables organizations to share CTI with one another in a consistent and machine-readable manner, allowing security communities to better understand what computer-based attacks they are likely to see and to better prepare for and/or respond to those attacks faster and more effectively. STIX is designed to improve many different capabilities, such as collaborative threat analysis, automated threat exchange, automated detection and response, and more.
 
-### What is TAXII™? ###
+### What is TAXII? ###
 
 TAXII — the Trusted Automated Exchange of Intelligence Information — is an application layer protocol for the communication of CTI in a simple and scalable manner over HTTPS. TAXII enables organizations to share CTI by defining a standard API that aligns with common sharing models. TAXII is specifically designed to support the exchange of CTI represented in STIX.
 
-### Who controls STIX™ and TAXII™? ###
+### Who controls STIX and TAXII? ###
 The STIX and TAXII standards are governed by the OASIS Cyber Threat Intelligence Technical Committee (CTI TC). STIX and TAXII were created in 2012 under the auspices of the US Department of Homeland Security. In June of 2015, DHS licensed all of the intellectual property and trademarks associated with STIX and TAXII to OASIS, a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society.
 
-### What are the current versions of STIX™ and TAXII™? ###
+### What are the current versions of STIX and TAXII? ###
 
 In 2021, OASIS approved STIX 2.1 and TAXII 2.1 as OASIS Standards. See the [Resources]({{ site.baseurl }}/resources) page for links to the latest specs.
 
-Looking for information about STIX 1?  See [The Transition to STIX™/TAXII™ 2]({{ site.baseurl }}/stix/compare)
+Looking for information about STIX 1?  See [The Transition to STIX/TAXII 2]({{ site.baseurl }}/stix/compare)
 
-### Are there “real-world” examples of STIX™ 2 content I can look at? ###
+### Are there “real-world” examples of STIX 2 content I can look at? ###
 
 There are two example threat reports in the [CTI STIX2 JSON Schemas repository](https://github.com/oasis-open/cti-stix2-json-schemas/tree/master/examples/threat-reports).
 
@@ -44,13 +44,13 @@ Many threat intelligence providers offer their intelligence in the STIX format.
 
 Finally, there are several examples in the [Examples]({{ site.baseurl }}/stix/examples) section of this site.
 
-### Are there APIs and Tools for STIX™ and TAXII™ 2? ###
+### Are there APIs and Tools for STIX and TAXII 2? ###
 
 Yes, see the Github repositories for the [CTI TC open repositories](https://github.com/oasis-open?utf8=%E2%9C%93&q=cti-&type=&language=).
 
 The list of repositories on the [Resources]({{ site.baseurl }}/resources) page contains direct links to useful tools.
 
-### How do I verify my software is STIX™/TAXII™ 2 interoperable? ###
+### How do I verify my software is STIX/TAXII 2 interoperable? ###
 
 The Interoperability Subcommittee of the CTI TC has developed a 2-Part Committee Note that establishes a step-by-step guide to a self-certification process for various personas. Once a Producer of STIX feeds content, a vendor providing a Threat Intelligence Platform (TIP), a vendor providing a Security Incident and Event Management (SIEM) tool, a vendor that provides threat mitigation systems (TMS), or a vendor that provides threat detection systems (TDS) executes the steps outlined, demonstrates successful interoperability, and documents such, that supplier may submit a statement to OASIS testifying to the self-certification. We are using TMS to refer to tools such as firewalls and intrusion prevention systems. We are using TDS to refer to tools such as intrusion detection software and web proxies.
 
@@ -58,16 +58,16 @@ The self-certification process is intended to be policed by market forces. If a 
 
 The vendor or supplier will need to re-test the attested product and submit documentation as per the Interoperability Specification to once again achieve listing on the interoperability list.
 
-See the [Resources]({{ site.baseurl }}/resources) page for direct links to the STIX™ and TAXII™ Interoperability specifications.
+See the [Resources]({{ site.baseurl }}/resources) page for direct links to the STIX and TAXII Interoperability specifications.
 
-### I'm implementing STIX™ and/or TAXII™ 2 and I have a question about something in the specification. What should I do? ###
+### I'm implementing STIX and/or TAXII 2 and I have a question about something in the specification. What should I do? ###
 We have a very active and supportive community.  If you post your question on CTI Users List you will likely receive a response from one of our community members.
 
 Email cti-users at lists.oasis-open.org or file an issue in the [CTI TC's repository](https://github.com/oasis-tcs/cti-stix2/issues) on Github.
 
-## STIX™ 2 Core Design Principles ##
+## STIX 2 Core Design Principles ##
 
-### What are the core design principles of STIX™ 2? ###
+### What are the core design principles of STIX 2? ###
 
 - Flatter is better than nested
 - Only one way to do something
@@ -76,7 +76,7 @@ Email cti-users at lists.oasis-open.org or file an issue in the [CTI TC's reposi
 - It’s easier to add objects and properties than it is to take them away
 - It's easier to make a required property optional later than to make an optional property required.
 
-### What are the criteria for adding a new STIX™ Domain Object (SDO)? ###
+### What are the criteria for adding a new STIX Domain Object (SDO)? ###
 SDOs are used to represent independent concepts. An item becomes an SDO when it is expected to evolve on its own outside the context of any other objects. In other cases, objects become SDOs when there are multiple relationships between it and other SDOs, when a third-party needs to add relationships to/from that SDO and other SDOs, and when you need to express confidence on the object separately from the other objects it might be embedded in.
 
 New SDOs should be proposed as extension objects and may be submitted to the CTI Common Objects repository for development and testing.
@@ -87,7 +87,7 @@ External relationships (represented using an SRO) are used whenever third-partie
 
 Embedded relationships (represented using a property in an object with the ID of another object) are used when the relationship is a fact about the object. For example, the Producer that created an indicator is not up for debate; it's definitely from a particular Producer and they know that they created the SDO. Similarly, the contents of a Report are what they are. If later on it's determined that the Report should have different contents, it can be updated by the original Producer, but applying confidence or allowing third parties to arbitrarily add new objects to an existing Report doesn't make sense.
 
-## Specific STIX™ 2 Design Decisions ##
+## Specific STIX 2 Design Decisions ##
 
 ### When are IDs in UUIDv4 format vs UUIDv5? ###
 First, to explain the differences between UUIDv4 and UUIDv5:
@@ -123,7 +123,7 @@ In STIX 2.1, after much discussion, STIX Cyber Observerable Objects (SCOs) were 
 
 It is still possible to represent Cyber-observable Objects using the method described for STIX 2.0, but this method has been deprecated.
 
-### Why are there stub objects in STIX™ 2.0 and 2.1? ###
+### Why are there stub objects in STIX 2.0 and 2.1? ###
 
 The stub objects in STIX 2.0 (COA and Malware) and STIX 2.1 (Incident) were designed to capture basic unstructured data and serve as a placeholder for future enhancements. For example, the Malware stub can be used to provide malware names and descriptions in STIX 2.0 (useful for high-level threat intel and IOC sharing) but does not have capabilities to represent malware analysis data. Marking them as stub objects was intended to clearly demonstrate that these objects are not complete (due to time and resource constraints) and will be enhanced in future releases of STIX.
 

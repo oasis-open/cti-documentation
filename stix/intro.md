@@ -5,7 +5,7 @@ categories: stix
 ---
 
 ## What is STIX?
-Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/contribute) and [ask questions]({{ site.baseurl }}/faq) freely.
+Structured Threat Information Expression (STIX) is a language and serialization format used to exchange cyber threat intelligence (CTI). STIX is open source and free allowing those interested to [contribute]({{ site.baseurl }}/contribute) and [ask questions]({{ site.baseurl }}/faq) freely.
 
 
 ## Why should you care?

@@ -5,28 +5,28 @@ short_title: Comparing STIX 1 and 2
 categories: stix
 ---
 
-## The Transition to STIX™/TAXII™ 2 ##
+## The Transition to STIX/TAXII 2 ##
 
-### Why were new versions of STIX™ and TAXII™ created? ###
+### Why were new versions of STIX and TAXII created? ###
 
 While STIX and TAXII 1 have been widely adopted and deployed around the world by operational sharing communities, the CTI TC recognized that these specifications were difficult to implement. The primary sources of that difficulty were excessive complexity in certain advanced XML constructs (e.g., XSI types) and the choice of XML as a representation. The community also learned that having multiple ways of doing things and excessive optionality in the data model led to differences in data-modelling and challenges in interoperability. As a result the CTI TC decided to rework the data model and serialization for STIX 2. Similarly, armed with the lessons learned over the years the community made the decision to rework TAXII as an HTTP Representational State Transfer (RESTful) based design.
 
 ### One Standard ###
 
-In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the STIX and Cyber Observable eXpression (CybOX™) specifications into one.  CybOX objects are now called STIX Cyber Observables.
+In 2016, the OASIS Cyber Threat Intelligence (CTI) Technical Committee (TC) decided to merge the STIX and Cyber Observable eXpression (CybOX) specifications into one.  CybOX objects are now called STIX Cyber Observables.
 
 Now when you discuss “STIX”, you are talking about the one standard needed for sharing cyber threat intelligence!
 
-## STIX™ 1 vs STIX™ 2 Frequently Asked Questions
+## STIX 1 vs STIX 2 Frequently Asked Questions
 
 
-### What are the key differences between STIX™ 1 and STIX™ 2? ###
+### What are the key differences between STIX 1 and STIX 2? ###
 
 - JSON vs. XML
 
 Whereas STIX 1 was serialized using eXtensible Mark-up Language (XML), STIX 2 specifies JavaScript Object Notation (JSON) as the “Mandatory To Implement” (MTI) serialization, i.e. it requires implementations to, at a minimum, [support JSON serialization](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_vj2dopx186bb). Though both XML and JSON have their own benefits, the CTI TC determined that JSON was more lightweight, preferred by most developers, and easier to understand while being sufficient to express the semantics of STIX.
 
-- STIX™ Domain Objects
+- STIX Domain Objects
 
 STIX 1 allowed certain objects to be defined within other objects (e.g., a TTP could be defined within an Indicator) in addition to being defined outside any other object (i.e., at the “top-level” of a STIX document). In STIX 2, all objects in STIX 2.x are [at the top-level](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_nrhq5e9nylke), rather than being embedded in other objects. This change simplifies the parsing and storage of STIX 2 objects.
 
@@ -95,7 +95,7 @@ During the development of the STIX 2 SDOs the community felt that the generic TT
 </div>
 </div>
 
-- STIX™ Cyber-observable Objects
+- STIX Cyber-observable Objects
  
 STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 and 2.0. In STIX 1, every CybOX object needed to be wrapped in an Observable object.  Similarly in STIX 2.0, a cyber observable needed to be wrapped in an Observed Data object.  This made it difficult to defined a cyber observable just once (e.g., an IPv4 address) and use it in many different contexts. This is possible with the introduction of [STIX Cyber-Observable Objects (SCOs)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_mlbmudhl16lr).
  
@@ -132,7 +132,7 @@ STIX 2.1 defines cyber observable object at the top-level, as opposed to STIX 1 
 </div>
 </div>
 
-There are fewer objects in STIX™ 2 than in CybOX 2.1.  For STIX 2, the community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.  If there is a need for additional SCOs, they can be added in a future release or via extensions.
+There are fewer objects in STIX 2 than in CybOX 2.1.  For STIX 2, the community focused on developing objects that saw significant usage in practice. Many CybOX objects were defined but never (or rarely) used.  If there is a need for additional SCOs, they can be added in a future release or via extensions.
 
 - Relationships as Top-Level Objects
 
@@ -174,7 +174,7 @@ It is understood that certain communities will need to exchange data not defined
 
 As part of the move from XML to JSON, [data markings](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_95gfoglikdzh) no longer use XPath. In STIX 2, there are two types of data markings: object markings – applicable to an entire object, and granular markings – applicable to one or more object properties within a single object. In order to clarify the semantics of markings, all objects must be marked individually - there is no inheritance of markings in STIX 2.
 
-- STIX™ Patterning Language
+- STIX Patterning Language
 
 Indicator patterns in STIX 1 were an area where the "many ways of expressing semantically-equivalent content" problem was particularly manifested. As a result, for a consumer of STIX 1 content, rigorously parsing all but the simplest patterns was unnecessarily difficult. STIX 2 takes a radically different approach by defining a human-readable, SQL-like Indicator [Patterning Language](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_e8slinrhxcc9), which is independent of the serialization language. Indicator patterns in STIX 1.x were expressed using XML syntax. This made all but the simplest patterns difficult to create and to understand. As a result, patterns written in the STIX Patterning Language are more compact and far easier to read.
 
@@ -240,7 +240,7 @@ Indicator patterns in STIX 1 were an area where the "many ways of expressing sem
 
 In STIX 1, the duality between Observations and Patterns (i.e., a pattern was essentially an observation with an operator) was a point of confusion for many end users. STIX 2 resolves this issue by having a separate pattern construct that uses its own language (see above) and is a property of an Indicator object instead of a top-level object. Accordingly, there is no semantic overlap in STIX 2 between the specification of observations using the Observed Data object and patterns via the Indicator object, as these entities were designed to be distinct.
 
-### What are the key differences between STIX™ 2.0 and STIX™ 2.1? ###
+### What are the key differences between STIX 2.0 and STIX 2.1? ###
 
 STIX 2.1 differs from STIX 2.0 in the following ways:
 
@@ -255,7 +255,7 @@ STIX 2.1 differs from STIX 2.0 in the following ways:
 - Added STIX Extension mechanisms and deprecated custom properties, objects, and extensions.
 
 
-### STIX™ 1 had XML Namespaces. Is there something similar in STIX™ 2? ###
+### STIX 1 had XML Namespaces. Is there something similar in STIX 2? ###
 
 STIX 1 made use of XML namespaces for two purposes:
 
@@ -265,19 +265,19 @@ While it is common practice for XML content to make use of namespaces, most JSON
 
 STIX 2 uses a property, created_by_ref, to replace the second usage of namespaces. In other words, in STIX 1 you would examine the namespace of an ID attribute value on an object to determine who created it, while in STIX 2 you look in the created_by_ref property.
 
-### What happened to CybOX™? ###
+### What happened to CybOX? ###
 
 During the design and development of STIX 2, the CTI TC concluded that due to the tightly-coupled nature of STIX and the Cyber Observable eXpression (CybOX) language that CybOX should be merged into STIX. These objects are now characterized as Cyber Observable objects within STIX and are defined in the STIX specification.
 
 The TC felt that it would be easier for the market to understand and adopt STIX if it was a single standard. This consolidation eliminated the need for a complex interoperability matrix between the two standards.
  
-### I was using a CybOX™ object before, but now I can't find it, what should I do? ###
+### I was using a CybOX object before, but now I can't find it, what should I do? ###
 
 If you were using a CybOX object and it's not a part of STIX 2, let us know! Create the object as a STIX 2.1 Extension and submit it to the [CTI STIX Common Object repository](https://github.com/oasis-open/cti-stix-common-objects) to give it greater visibility.
 
 If you're a TC member, post to the cti-cybox@lists.oasis-open.org list. If you're not, post to cti-comment@lists.oasis-open.org (instructions here: https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cti).
 
-### What are the key differences between TAXII™ 1 and TAXII™ 2? ###
+### What are the key differences between TAXII 1 and TAXII 2? ###
 
 - HTTPS as the Transport Protocol
 
@@ -287,11 +287,11 @@ TAXII 1 was designed to the TAXII application protocol to be hosted on top of mu
 
 TAXII 2 provides a RESTful interface to data and services. RESTful is an architectural style for networked hypermedia applications; it is primarily used to build Web services that are lightweight, maintainable, and scalable. RESTful is not dependent on any protocol, but almost every RESTful service uses HTTP as its underlying protocol. As is noted above, TAXII 2 is built on top of HTTPS the secure HTTP analogue.
 
-### Are there tools to help me migrate between STIX™ 1 and STIX™ 2? ###
+### Are there tools to help me migrate between STIX 1 and STIX 2? ###
 
 Yes. The [STIX Elevator](https://github.com/oasis-open/cti-stix-elevator) does a best-effort conversion of STIX 1 content into STIX 2. The [STIX Slider](https://github.com/oasis-open/cti-stix-elevator) converts STIX 2 to STIX 1.
 
-### What are the latest versions of STIX™ and TAXII™ 1? ###
+### What are the latest versions of STIX and TAXII 1? ###
 
 The most recent (and final) version of the STIX 1 specifications is STIX 1.2.1, the specifications can be found here: http://docs.oasis-open.org/cti/stix/v1.2.1/stix-v1.2.1-part1-overview.html
 
@@ -299,11 +299,11 @@ The most recent (and final) version of the TAXII 1 specifications is TAXII 1.1.1
  
 Additional documentation can be found at stix.mitre.org.
 
-### Will there be any further revisions of STIX™ 1.2.1, CybOX™ 2.1.1, or TAXII™ 1.1.1? ###
+### Will there be any further revisions of STIX 1.2.1, CybOX 2.1.1, or TAXII 1.1.1? ###
 
 No. The CTI TC community will be focusing on advancing STIX and TAXII 2+. However, OASIS rules ensure that all OASIS specifications are available in perpetuity and therefore STIX 1.2.1, CybOX 2.1.1, and TAXII 1.1.1 will remain available to anyone who wishes to use them.
 
-### What is happening with all of the tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1? ###
+### What is happening with all of the tools and APIs that MITRE built for STIX 1, CybOX 2, and TAXII 1? ###
 
-The tools and APIs that MITRE built for STIX™ 1, CybOX™ 2, and TAXII™ 1 remain available on Github, but have been deemed end-of-life. Users are encouraged to update to STIX 2.1. In case of a small bug fix or emergency security update, MITRE may update the tools at their discretion. Please contact MITRE directly for assistance.
+The tools and APIs that MITRE built for STIX 1, CybOX 2, and TAXII 1 remain available on Github, but have been deemed end-of-life. Users are encouraged to update to STIX 2.1. In case of a small bug fix or emergency security update, MITRE may update the tools at their discretion. Please contact MITRE directly for assistance.
  
