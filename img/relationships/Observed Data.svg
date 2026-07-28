@@ -13,13 +13,13 @@
 <g id="node1" class="node">
 <title>indicator</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-136 0,-136 0,-77 59,-77 59,-136"/>
-<image xlink:href="/cti-documentation/img/icons/indicator.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-136"/>
+<image xlink:href="/cti-documentation/img/icons/indicator.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-136"/>
 </g>
 <!-- observed_data -->
 <g id="node3" class="node">
 <title>observed_data</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="260.02,-97 201.02,-97 201.02,-38 260.02,-38 260.02,-97"/>
-<image xlink:href="/cti-documentation/img/icons/observed_data.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="201.021" y="-97"/>
+<image xlink:href="/cti-documentation/img/icons/observed_data.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="201.021" y="-97"/>
 </g>
 <!-- indicator&#45;&gt;observed_data -->
 <g id="edge1" class="edge">
@@ -32,7 +32,7 @@
 <g id="node2" class="node">
 <title>infrastructure</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-59 0,-59 0,0 59,0 59,-59"/>
-<image xlink:href="/cti-documentation/img/icons/infrastructure.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
+<image xlink:href="/cti-documentation/img/icons/infrastructure.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
 </g>
 <!-- infrastructure&#45;&gt;observed_data -->
 <g id="edge2" class="edge">
