@@ -2,12 +2,30 @@
 
 These SVGs are derived from the
 [STIX 2.1 Community SVG Icons](https://github.com/Kevinwochan/stix-2.1-community-svg-icons)
-at commit `58aad32` and are provided under this repository's BSD-3-Clause
-license. Each SVG declares the same 77-by-77 intrinsic dimensions as its PNG
-predecessor. The historical PNG files are retained for compatibility.
+at commit `3295ecdbe344d663e6031e0c0c6587cbebd9ecd1` and are provided under
+this repository's BSD-3-Clause license. Each
+label-free compatibility SVG declares the same 77-by-77 intrinsic dimensions
+as its PNG predecessor. The historical PNG files are retained for
+compatibility.
 
 The icons are non-normative illustrations. Their shapes and ordinary object
 colors do not add meaning to the STIX specification.
+
+Two presentation forms are included:
+
+- The flat files in this directory are transparent, label-free glyphs. Use
+  them when nearby text already names the object, such as the object tables
+  and walkthrough headings.
+- `labeled/<category>/<slug>.svg` files are filled tiles with the readable
+  object or marking name beneath the glyph. Use them when the artwork is the
+  only visible type identifier, such as the example type cells, relationship
+  selector, and nodes embedded in relationship diagrams.
+
+The labeled path mirrors the source repository's
+`icons/labeled/<category>/<slug>.svg` convention. Labels are font-free path
+outlines, so their rendering does not depend on locally installed fonts.
+They are part of the artwork for visual identification; surrounding Markdown
+still supplies meaningful alternative text for assistive technology.
 
 The TLP icons pair a visible letterform with the color used by the four fixed
 STIX 2.1 TLP markings, so color is not the only distinction. STIX 2.1 uses
