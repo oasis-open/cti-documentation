@@ -11,6 +11,8 @@ jobs:
     name: Python 3.x Build
     steps:
     - uses: actions/checkout@v2
+    - name: Audit SVG icon references
+      run: ./audit-icon-references.sh
     - name: Set up Python 3.x
       uses: actions/setup-python@v2
       with:

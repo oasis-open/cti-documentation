@@ -13,13 +13,13 @@
 <g id="node1" class="node">
 <title>attack_pattern</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="246.03,-213 187.03,-213 187.03,-154 246.03,-154 246.03,-213"/>
-<image xlink:href="/cti-documentation/img/icons/attack_pattern.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="187.034" y="-213"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/attack-pattern.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="187.034" y="-213"/>
 </g>
 <!-- identity -->
 <g id="node4" class="node">
 <title>identity</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="427.6,-367 368.6,-367 368.6,-308 427.6,-308 427.6,-367"/>
-<image xlink:href="/cti-documentation/img/icons/identity.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-367"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/identity.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-367"/>
 </g>
 <!-- attack_pattern&#45;&gt;identity -->
 <g id="edge2" class="edge">
@@ -32,7 +32,7 @@
 <g id="node7" class="node">
 <title>location</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="427.6,-290 368.6,-290 368.6,-231 427.6,-231 427.6,-290"/>
-<image xlink:href="/cti-documentation/img/icons/location.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-290"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/location.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-290"/>
 </g>
 <!-- attack_pattern&#45;&gt;location -->
 <g id="edge3" class="edge">
@@ -45,7 +45,7 @@
 <g id="node8" class="node">
 <title>malware</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="427.6,-213 368.6,-213 368.6,-154 427.6,-154 427.6,-213"/>
-<image xlink:href="/cti-documentation/img/icons/malware.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-213"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/malware.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-213"/>
 </g>
 <!-- attack_pattern&#45;&gt;malware -->
 <g id="edge1" class="edge">
@@ -65,7 +65,7 @@
 <g id="node10" class="node">
 <title>tool</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="427.6,-136 368.6,-136 368.6,-77 427.6,-77 427.6,-136"/>
-<image xlink:href="/cti-documentation/img/icons/tool.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-136"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/tool.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-136"/>
 </g>
 <!-- attack_pattern&#45;&gt;tool -->
 <g id="edge6" class="edge">
@@ -78,7 +78,7 @@
 <g id="node11" class="node">
 <title>vulnerability</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="427.6,-59 368.6,-59 368.6,0 427.6,0 427.6,-59"/>
-<image xlink:href="/cti-documentation/img/icons/vulnerability.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-59"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/vulnerability.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="368.6" y="-59"/>
 </g>
 <!-- attack_pattern&#45;&gt;vulnerability -->
 <g id="edge4" class="edge">
@@ -91,7 +91,7 @@
 <g id="node2" class="node">
 <title>campaign</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-367 0,-367 0,-308 59,-308 59,-367"/>
-<image xlink:href="/cti-documentation/img/icons/campaign.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-367"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/campaign.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-367"/>
 </g>
 <!-- campaign&#45;&gt;attack_pattern -->
 <g id="edge9" class="edge">
@@ -104,7 +104,7 @@
 <g id="node3" class="node">
 <title>course_of_action</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-290 0,-290 0,-231 59,-231 59,-290"/>
-<image xlink:href="/cti-documentation/img/icons/course_of_action.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-290"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/course-of-action.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-290"/>
 </g>
 <!-- course_of_action&#45;&gt;attack_pattern -->
 <g id="edge8" class="edge">
@@ -117,7 +117,7 @@
 <g id="node5" class="node">
 <title>indicator</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-213 0,-213 0,-154 59,-154 59,-213"/>
-<image xlink:href="/cti-documentation/img/icons/indicator.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-213"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/indicator.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-213"/>
 </g>
 <!-- indicator&#45;&gt;attack_pattern -->
 <g id="edge7" class="edge">
@@ -130,7 +130,7 @@
 <g id="node6" class="node">
 <title>intrusion_set</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-136 0,-136 0,-77 59,-77 59,-136"/>
-<image xlink:href="/cti-documentation/img/icons/intrusion_set.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-136"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/intrusion-set.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-136"/>
 </g>
 <!-- intrusion_set&#45;&gt;attack_pattern -->
 <g id="edge10" class="edge">
@@ -150,7 +150,7 @@
 <g id="node9" class="node">
 <title>threat_actor</title>
 <polygon fill="none" stroke="black" stroke-width="0" points="59,-59 0,-59 0,0 59,0 59,-59"/>
-<image xlink:href="/cti-documentation/img/icons/threat_actor.png" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
+<image xlink:href="/cti-documentation/img/icons/labeled/sdo/threat-actor.svg" width="59px" height="59px" preserveAspectRatio="xMinYMin meet" x="0" y="-59"/>
 </g>
 <!-- threat_actor&#45;&gt;attack_pattern -->
 <g id="edge12" class="edge">
